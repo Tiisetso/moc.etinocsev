@@ -1,0 +1,230 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Keywords" content="pump bearing design manual vesconite special offer">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Request a Pump Design Manual</title>
+
+<meta name="Microsoft Border" content="b">
+</head>
+
+<body stylesrc="../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<table border="1" cellspacing="0" cellpadding="0" bordercolor="#000086" width="471">
+  <tr>
+    <td bordercolor="#000086" width="465">
+      <p align="center"><font face="Arial" size="2" color="#FF0000"><b><a href="http://www.vesconite.com/">vesconite.com</a>&nbsp;
+      </b></font><font face="Arial" size="2"><b>&nbsp;&gt;</b></font><font size="2">&nbsp;&nbsp;</font> <b><font face="Arial" size="2" color="#FF0000"><a href="../lhs_headings/vescoplastics.htm">VescoPlastics</a>&nbsp;&nbsp;</font></b><font face="Arial" size="2"><b>&nbsp;&gt;</b></font><b><font face="Arial" size="2" color="#000086">
+      &nbsp; Pump </font><font face="Arial" size="2" color="#000080">Design Manual</font></b></td>
+  </tr>
+</table>
+
+<p align="left"><b><font color="#000086" face="Arial,Helvetica" size="5">Request
+a Pump Design Manual</font></b></p>
+
+<ul>
+  <!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.Contact_person.value == "")
+  {
+    alert("Please enter a value for the \"Contact_person\" field.");
+    theForm.Contact_person.focus();
+    return (false);
+  }
+
+  if (theForm.Contact_person.value.length > 100)
+  {
+    alert("Please enter at most 100 characters in the \"Contact_person\" field.");
+    theForm.Contact_person.focus();
+    return (false);
+  }
+
+  if (theForm.Company.value == "")
+  {
+    alert("Please enter a value for the \"Company\" field.");
+    theForm.Company.focus();
+    return (false);
+  }
+
+  if (theForm.email_address.value == "")
+  {
+    alert("Please enter a value for the \"email_address\" field.");
+    theForm.email_address.focus();
+    return (false);
+  }
+
+  if (theForm.email_address.value.length > 100)
+  {
+    alert("Please enter at most 100 characters in the \"email_address\" field.");
+    theForm.email_address.focus();
+    return (false);
+  }
+
+  if (theForm.postal_address.value == "")
+  {
+    alert("Please enter a value for the \"postal_address\" field.");
+    theForm.postal_address.focus();
+    return (false);
+  }
+
+  if (theForm.City.value == "")
+  {
+    alert("Please enter a value for the \"City\" field.");
+    theForm.City.focus();
+    return (false);
+  }
+
+  if (theForm.Country.value == "")
+  {
+    alert("Please enter a value for the \"Country\" field.");
+    theForm.Country.focus();
+    return (false);
+  }
+
+  if (theForm.Telephone.value == "")
+  {
+    alert("Please enter a value for the \"Telephone\" field.");
+    theForm.Telephone.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" action="../_vti_bin/shtml.dll/vesco/pump_design.htm" onsubmit="return FrontPage_Form1_Validator(this)" name="FrontPage_Form1" language="JavaScript" webbot-action="--WEBBOT-SELF--">
+    <!--webbot bot="SaveResults" S-Email-Format="HTML/BR" S-Email-Address="vesconite@vesconite.com" B-Email-Label-Fields="TRUE" B-Email-Subject-From-Field="FALSE" S-Email-Subject="Pump Design Manual Request" S-Date-Format="%A %B %d, %Y" S-Time-Format="%I:%M %p" S-Builtin-Fields="REMOTE_NAME REMOTE_USER HTTP_USER_AGENT Date Time" U-Confirmation-Url="confirm/pump_manual.htm" startspan --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot bot="SaveResults" i-checksum="43374" endspan --><table border="0" style="font-family: Arial" cellspacing="1" cellpadding="2" width="86%">
+      <tr>
+        <td align="right" width="100%" colspan="2">
+          <p align="left"><font face="Arial" size="3" color="#000086">Fields in</font><b><font face="Arial" size="3" color="#FF0000">
+          red </font></b><font face="Arial" size="3" color="#000086">are
+          required</font>
+        </td>
+      </tr>
+      <tr>
+        <td align="right" width="10%"><font face="Arial"><div align="left"><p><font size="3"><input type="checkbox" name="Pump_design_manual" value="ON" checked></font></font>
+          </div>
+        </td>
+        <td align="left" width="90%"><font face="Arial"><div align="left"><p><b><font color="#000086" size="3" face="Arial">Pump
+            Bearing
+            Design Manual.</font></b>
+            </font>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td align="right" width="10%">
+          <p align="left"><input type="checkbox" name="eNewsletter" value="ON" checked>
+        </td>
+        <td align="left" width="90%"><font color="#000086" face="Arial" size="3"><b>Newsletter</b></font>
+        </td>
+      </tr>
+    </table>
+    <table WIDTH="459">
+      <tr>
+        <td WIDTH="205"><font face="Arial,Helvetica" color="#FF0000">Your name</font></td>
+        <td WIDTH="251">
+        <!--webbot bot="Validation" b-value-required="TRUE" i-maximum-length="100" --><input type="text" name="Contact_person" size="20" maxlength="100"></td>
+      </tr>
+      <tr>
+        <td WIDTH="205"><font face="Arial" size="3" color="#FF0000">Company</font>
+        </td>
+        <td WIDTH="251"><!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="Company" size="20"></td>
+      </tr>
+      <tr>
+        <td WIDTH="205"><font face="Arial,Helvetica" color="#FF0000">E-mail address</font></td>
+        <td WIDTH="251">
+        <!--webbot bot="Validation" b-value-required="TRUE" i-maximum-length="100" --><input type="text" name="email_address" size="20" maxlength="100"></td>
+      </tr>
+      <tr>
+        <td WIDTH="205"><font face="Arial,Helvetica" color="#FF0000">Postal address</font> <br>
+        </td>
+        <td WIDTH="251"><!--webbot bot="Validation" b-value-required="TRUE" --><textarea rows="6" name="postal_address" cols="40"></textarea></td>
+      </tr>
+      <tr>
+        <td WIDTH="205"><font face="Arial" size="3" color="#FF0000">City</font>
+        </td>
+        <td WIDTH="251"><!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="City" size="20"></td>
+      </tr>
+      <tr>
+        <td WIDTH="205"><font size="3" face="Arial">Postal code</font>
+        </td>
+        <td WIDTH="251"><input type="text" name="post_code" size="20"></td>
+      </tr>
+      <tr>
+        <td WIDTH="177"><font face="Arial">State</font></td>
+        <td WIDTH="263"><input type="text" name="State" size="20"></td>
+      </tr>
+      <tr>
+        <td WIDTH="177"><font size="3" color="#FF0000" face="Arial">Country</font></td>
+        <td WIDTH="263"><!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="Country" size="20"></td>
+      </tr>
+      <tr>
+        <td WIDTH="177"><font size="3" color="#FF0000" face="Arial">Telephone no
+          and city code</font></td>
+        <td WIDTH="263"><!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="Telephone" size="20"></td>
+      </tr>
+      <tr>
+        <td WIDTH="177"><font face="Arial" size="3">Fax no and city code</font></td>
+        <td WIDTH="263"><input type="text" name="Fax" size="20" value="        " style="font-weight: bold"></td>
+      </tr>
+      <tr>
+        <td WIDTH="177"><font face="Arial" size="3">website address</font></td>
+        <td WIDTH="263"><input type="text" name="website" size="20"></td>
+      </tr>
+    </table>
+    <p><input type="submit" value="  Send  " name="B1"> </p>
+  </form>
+</ul>
+<p align="left"><font size="-2" face="Arial,Helvetica">Updated Mar 15 2002</font></p>
+
+<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<div align="center">
+  <center>
+  <table border="0" cellspacing="1" cellpadding="2" width="570">
+    <tr>
+      <td width="4">
+        <p align="center"><a href="../index.htm"><img border="0" src="../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></p>
+      </td>
+      <td width="556">
+        <p align="center"><font face="Arial" size="2"><font color="#000000">
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
+e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</a></font>
+      </td>
+    </tr>
+    <tr>
+      <td width="528" colspan="2"><p align="center"><font face="Arial" size="2"><a href="../index.htm">Home</a><font color="#000080">&nbsp;
+        | &nbsp;</font><a href="contact.htm">Contact us</a> &nbsp;<font color="#000080">
+        |</font>&nbsp; <a href="site.htm">Site map</a>&nbsp;<font color="#000080">
+        |&nbsp; <a href="site_search.htm">Search</a>&nbsp;
+        |&nbsp;&nbsp;</font><a href="../enquiry.htm">Enquiry
+        form</a><font color="#000080">&nbsp;&nbsp; |&nbsp; <a href="../footer_links/copyright.htm">Copyright</a>&nbsp;
+        |&nbsp; <a href="../footer_links/privacy.htm">Privacy</a></font></font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial"><font color="#FF0000">Feedback</font>
+        is appreciated!&nbsp; Please e-mail the <a href="mailto:jm@vescoplastics.com">webmaster</a></font></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font face="Arial" color="#FF0000" size="1">UK toll
+        free 0800 731 9745.&nbsp; USA toll
+        free (7-5 EST) 1-866-635-7596.&nbsp; Linea gratuita desde Chile 800 104 646<br>
+        &nbsp; Rest of world +2711 616 44 44. South
+        Africa (011) 616 11 11</font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial">All Rights Reserved ©
+        1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../footer_links/warranty.htm">Warranty
+        disclaimer</a></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p>&nbsp;</p>
+
+</td></tr><!--msnavigation--></table></body>
+</html>

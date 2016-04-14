@@ -1,0 +1,162 @@
+'     Copyright (c) 2000 ComCity.  All Rights Reserved
+'     SalesCart 2.5
+'     
+'     File: global.asa
+'     Version: 2.0
+'     ASP file that controls application and session-wide variables
+'     
+'     DO NOT CHANGE- UNLESS YOU REALLY KNOW WHAT YOU'RE DOING!
+'     
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+Sub Application_OnStart
+	'==FrontPage Generated - startspan==
+	Dim FrontPage_UrlVars(4)
+	'--Project Data Connection
+		Application("SalesCart_ConnectionString") = "DRIVER={Microsoft Access Driver (*.mdb)};DBQ=URL=fpdb/shop.mdb"
+		FrontPage_UrlVars(0) = "SalesCart_ConnectionString"
+		Application("SalesCart_ConnectionTimeout") = 15
+		Application("SalesCart_CommandTimeout") = 30
+		Application("SalesCart_CursorLocation") = 3
+		Application("SalesCart_RuntimeUserName") = ""
+		Application("SalesCart_RuntimePassword") = ""
+	'--Project Data Connection
+		Application("Database5_ConnectionString") = "DRIVER={Microsoft Access Driver (*.mdb)};DBQ=URL=fpdb/ves0001.mdb"
+		FrontPage_UrlVars(1) = "Database5_ConnectionString"
+		Application("Database5_ConnectionTimeout") = 15
+		Application("Database5_CommandTimeout") = 30
+		Application("Database5_CursorLocation") = 3
+		Application("Database5_RuntimeUserName") = ""
+		Application("Database5_RuntimePassword") = ""
+	'--Project Data Connection
+		Application("Database1_ConnectionString") = "DRIVER={Microsoft Access Driver (*.mdb)};DBQ=URL=fpdb/stockXL.mdb"
+		FrontPage_UrlVars(2) = "Database1_ConnectionString"
+		Application("Database1_ConnectionTimeout") = 15
+		Application("Database1_CommandTimeout") = 30
+		Application("Database1_CursorLocation") = 3
+		Application("Database1_RuntimeUserName") = ""
+		Application("Database1_RuntimePassword") = ""
+	'--Project Data Connection
+		Application("Database2_ConnectionString") = "DRIVER={Microsoft Access Driver (*.mdb)};DBQ=URL=fpdb/stockc.mdb"
+		FrontPage_UrlVars(3) = "Database2_ConnectionString"
+		Application("Database2_ConnectionTimeout") = 15
+		Application("Database2_CommandTimeout") = 30
+		Application("Database2_CursorLocation") = 3
+		Application("Database2_RuntimeUserName") = ""
+		Application("Database2_RuntimePassword") = ""
+	'--
+	Application("FrontPage_UrlVars") = FrontPage_UrlVars
+	'==FrontPage Generated - endspan==
+End Sub
+Sub FrontPage_StartSession
+	On Error Resume Next
+	if Len(Application("FrontPage_VRoot")) > 0 then Exit Sub
+	
+	sFile = "global.asa"
+	sRootPath = Request.ServerVariables("APPL_PHYSICAL_PATH")
+	if Left(sRootPath,1) = "/" then sSep = "/" else sSep = "\"
+	if Right(sRootPath,1) <> sSep then sRootPath = sRootPath & sSep
+	sRootPath = sRootPath & sFile
+	
+	' discover the VRoot for the current page;
+	' walk back up VPath until we match VRoot
+	Vroot = Request.ServerVariables("PATH_INFO")
+	iCount = 0
+	do while Len(Vroot) > 1
+		idx = InStrRev(Vroot, "/")
+		if idx > 0 then
+			Vroot = Left(Vroot,idx)
+		else
+			' error; assume root web
+			Vroot = "/"
+		end if
+		if Server.MapPath(Vroot & sFile) = sRootPath then exit do
+		if Right(Vroot,1) = "/" then Vroot = Left(Vroot,Len(Vroot)-1)
+		iCount = iCount + 1
+		if iCount > 100 then
+			' error; assume root web
+			Vroot = "/"
+			exit do
+		end if
+	loop
+	' map all URL= attributes in _ConnectionString variables
+	Application.Lock
+	if Len(Application("FrontPage_VRoot")) = 0 then
+		Application("FrontPage_VRoot") = Vroot
+		UrlVarArray = Application("FrontPage_UrlVars")
+		for i = 0 to UBound(UrlVarArray)
+			if Len(UrlVarArray(i)) > 0 then FrontPage_MapUrl(UrlVarArray(i))
+		next
+	end if
+	Application.Unlock
+End Sub
+Function FrontPage_FileExists(fspath)
+On Error Resume Next
+FrontPage_FileExists = False
+Set fs = CreateObject("Scripting.FileSystemObject")
+Err.Clear
+Set istream = fs.OpenTextFile(fspath)
+if Err.Number = 0 then
+FrontPage_FileExists = True
+istream.Close
+end if
+Set istream = Nothing
+Set fs = Nothing
+End Function
+Sub FrontPage_MapUrl(AppVarName)
+	' convert URL attribute in conn string to absolute file location
+	strVal = Application(AppVarName)
+	strKey = "URL="
+	idxStart = InStr(strVal, strKey)
+	If idxStart = 0 Then Exit Sub
+	strBefore = Left(strVal, idxStart - 1)
+	idxStart = idxStart + Len(strKey)
+	idxEnd = InStr(idxStart, strVal, ";")
+	If idxEnd = 0 Then
+		strAfter = ""
+		strURL = Mid(strVal, idxStart)
+	Else
+		strAfter = ";" & Mid(strVal, idxEnd + 1)
+		strURL = Mid(strVal, idxStart, idxEnd - idxStart)
+	End If
+	strOut = strBefore & Server.MapPath(Application("FrontPage_VRoot") & strURL) & strAfter
+	Application(AppVarName) = strOut
+End Sub
+Sub Application_OnEnd
+End Sub
+Sub Session_OnStart
+  FrontPage_StartSession '==FrontPage Generated==
+  SC_StartSession '==SalesCart Generated==
+End Sub
+Sub SC_StartSession()
+On Error Resume Next
+'       Do session specific initialization
+  Session("orderid") = 0
+  Session("mallid") = 0
+'       Set your email address here
+  Session("myemail") = "jm@vescoplastics.com"
+'       Set your default text that shows on top of emails here
+'       Absolute path required
+  Session("mytext") = Server.MapPath(Application("FrontPage_VRoot")) & "\cgi-bin\email.txt"
+'       This is where you set the email subject for emailed receipts
+  Session("receiptsubject") = "VescoPlastics SalesCart Order Receipt"
+'       This is where you set the email subject for confirmations sent to merchants
+  Session("confsubject") = "VescoPlastics SalesCart Order to-be-processed"
+'       Set your DSN or Database usernames and passwords here
+  Session("ConnectionString") = Application("SalesCart_ConnectionString") & "; UID=" & Application("SalesCart_RuntimeUserName") & "; PWD=" & Application("SalesCart_RuntimePassword") & ";"
+'       Set your whole order discounting here as a % of 100 (ie 10%)
+'       Set TotalDiscount to 0 for NO discount
+  Session("TotalDiscount") = 0
+'       Set the amount to start applying the whole order discount
+'       Use the same units (ie > $100 dollars) that you would use
+  Session("StartDiscount") = 10000000
+End Sub
+Sub Session_OnEnd
+End Sub
+</SCRIPT>
+<head><title>Web Settings for Active Server Pages</title><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:connectionstatus msdt:dt="string">SalesCart=1 Database5=1 Database1=1 Database2=1</mso:connectionstatus>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>

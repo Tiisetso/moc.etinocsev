@@ -1,0 +1,2246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<%@ Language=JavaScript%> <HTML>
+<meta name="Microsoft Border" content="b">
+<BODY stylesrc="../../../Index.htm" topmargin="0" bgcolor="#F2F7FF"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<HEAD><TITLE>Quotes</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content=JavaScript name=VI60_defaultClientScript>
+<META content=FrontPage.Editor.Document name=ProgId>
+<META content=noindex,nofollow name=robots>
+<SCRIPT id=clientEventHandlersJS language=javascript>
+<!--
+
+function calc1_onclick() 
+{
+
+<!-- ALLOCATIONS  -->
+bushod=document.FrontPage_Form1.bushod.value;
+bushid=document.FrontPage_Form1.bushid.value;
+bushlen=document.FrontPage_Form1.bushlen.value;
+flange=document.FrontPage_Form1.flange.value;
+flangelen=document.FrontPage_Form1.flangelen.value;
+qtya=document.FrontPage_Form1.qtya.value;
+qtyb=document.FrontPage_Form1.qtyb.value;
+qtyc=document.FrontPage_Form1.qtyc.value;
+setp_factor=document.FrontPage_Form1.setp_factor.value;
+
+
+if (eval(document.FrontPage_Form1.bushod.value)<=eval(document.FrontPage_Form1.bushid.value))
+	alert("OD is smaller than ID");
+if (eval(document.FrontPage_Form1.flange.value)>0.0)
+{
+if (eval(document.FrontPage_Form1.flange.value)<=eval(document.FrontPage_Form1.bushod.value))
+	alert("Flange is smaller than OD");
+}
+
+if (flange>0)
+{
+if (flangelen==0)
+	alert("Flange length missing");
+}
+
+if (flangelen>0)
+{
+if (flange==0)
+	alert("Flange diameter missing");
+}
+
+<!--DESIGN PROBLEM ALERTS   -->
+popup1=("  ");
+popup2=("  ");
+popup3=("  ");
+popup4=("  ");
+popup5=("  ");
+
+wall=0;
+depth=0;
+
+wall=bushid/bushod;
+depth=flange-bushod;
+
+if (wall>0.90)
+	popup1=("Thin walled bush, please check");
+if (wall<0.50)
+	popup1=("Thick walled bush, please check");
+
+if (depth>20.0)
+	popup2=("Deep flange, please check");
+
+flangeratio=0;
+if (flange>0)
+	flangeratio=(flange-bushod)/flangelen;
+if (flangeratio>4)
+	{popup2=("Thin flange, please check");
+	popup5=("Refer to VGA");}
+if (flangelen<1.0&&flangelen>0)   
+	{popup2=("Thin flange, please check");
+	popup5=("Refer to VGA");}
+lengthratio=bushlen/bushod;
+if (lengthratio>2)
+	{popup4=("Long bush, please check");
+	popup5=("Refer to VGA");}
+
+
+<!-- CALULATION OF OD SIZES -->
+od=0;
+outside=0;
+outside=bushod;
+if (eval(document.FrontPage_Form1.flange.value)>eval(document.FrontPage_Form1.bushod.value))
+	outside=flange;
+
+od=10;
+if (outside>10)
+	od=Math.ceil(outside/2)*2;
+if (outside>20)
+	od=Math.ceil(outside/5)*5;
+if (outside>100)
+	od=Math.ceil(outside/10)*10;
+if (outside>150)
+	od=Math.ceil(outside/25)*25;
+
+<!-- CALCULATION OF ID SIZES  -->
+
+id=0;
+if (bushid>20)
+	id=Math.floor(bushid/5)*5;
+if (bushid>100)
+	id=Math.floor(bushid/10)*10;
+if (bushid>150)
+	id=Math.floor(bushid/25)*25;
+
+
+if ((od-id)<10)
+	id=od-10;
+if (od>150)
+{
+if ((od-id)<20)
+	id=od-20;
+}
+if (od<20)
+	id=0;
+thick=od/bushid;
+if (thick>3)
+	id=0;
+
+<!-- CALCULATION OF LENGTH  -->
+len=0;
+c=0;
+yield=0;
+c=eval(document.FrontPage_Form1.bushlen.value)+eval(document.FrontPage_Form1.flangelen.value)+3.0;
+
+yield=Math.floor(960/c);
+len=c+(40/yield);
+
+<!-- CALCULATION OF MATERIAL COSTS  -->
+
+matmass=((od*od-id*id)+4*(od+id))*len*0.0011;
+
+<!-- CALCULATION OF COMPONENT MASS  -->
+
+flangem=((flange*flange-bushid*bushid)*flangelen)*0.0011;
+bushm=((bushod*bushod-bushid*bushid)*bushlen)*0.0011;
+m=flangem+bushm;
+document.FrontPage_Form1.mass.value=Math.round(m);
+
+
+<!-- CALCULATION OF MACHINING TIMES AND COSTS  -->
+
+machrate=28.94;
+if (od>30)
+	machrate=40.51;
+if (od>70)
+	machrate=50.94;
+
+
+basetime=(od*len/50)+10;
+basetime1=(od*len/300);
+
+flangetime=0;
+addtime1=0;
+addtime2=0;
+addtime3=0;
+
+addtime1fac=Math.ceil((od-bushod-6)/3);
+addtime2fac=Math.ceil((bushid-id-6)/3);
+
+if (flange>bushod)
+	flangetime=10;
+if ((od-bushod)>6)
+	addtime1=addtime1fac*basetime1;
+if ((bushid-id)>6)
+	addtime2=addtime2fac*basetime1;
+if (id==0)
+	addtime3=10;
+
+timetot=flangetime+basetime+addtime1+addtime2+addtime3;
+
+maccost=timetot*machrate/3600;
+
+<!-- DISCOUNT LIMITS-->
+
+lim1=2000000;
+lim2=2000000;
+lim3=2000000;
+lim4=2000000;
+lim5=2000000;
+
+<!-- VESCONITE PRICES  -->
+
+matcost=matmass*0.0357;
+
+<!-- PRICES FOR QTYA  -->
+
+mattotala=matcost*qtya;
+qdisca=0;
+if (mattotala>lim1)
+	qdisca=10;
+if (mattotala>lim2)
+	qdisca=15;
+if (mattotala>lim3)
+	qdisca=20;
+if (mattotala>lim4)
+	qdisca=25;
+if (mattotala>lim5)
+	qdisca=30;
+
+matcosta=matcost*(100-qdisca)/100;
+
+setupa=0;
+if (qtya>0)
+	setupa=setp_factor*75/qtya;
+pra=0;
+if (qtya>0)
+	pra=setupa+matcosta+maccost;
+pta=pra*qtya;
+
+<!-- PRICES FOR QTY B  -->
+
+mattotalb=matcost*qtyb;
+qdiscb=0;
+if (mattotalb>lim1)
+	qdiscb=10;
+if (mattotalb>lim2)
+	qdiscb=15;
+if (mattotalb>lim3)
+	qdiscb=20;
+if (mattotalb>lim4)
+	qdiscb=25;
+if (mattotalb>lim5)
+	qdiscb=30;
+
+matcostb=matcost*(100-qdiscb)/100;
+
+setupb=0;
+if (qtyb>0)
+	setupb=setp_factor*75/qtyb;
+prb=0;
+if (qtyb>0)
+	prb=setupb+matcostb+maccost;
+ptb=prb*qtyb;
+
+<!-- PRICES FOR QTY C  -->
+
+mattotalc=matcost*qtyc;
+qdiscc=0;
+if (mattotalc>lim1)
+	qdiscc=10;
+if (mattotalc>lim2)
+	qdiscc=15;
+if (mattotalc>lim3)
+	qdiscc=20;
+if (mattotalc>lim4)
+	qdiscc=25;
+if (mattotalc>lim5)
+	qdiscc=30;
+
+matcostc=matcost*(100-qdiscc)/100;
+
+setupc=0;
+if (qtyc>0)
+	setupc=setp_factor*75/qtyc;
+prc=0;
+if (qtyc>0)
+	prc=setupc+matcostc+maccost;
+ptc=prc*qtyc;
+
+
+
+<!-- HILUBE CALCULATIONS-->
+
+matcosth=matmass*0.0467;
+
+<!-- PRICES FOR QTY A  -->
+
+mattotalha=matcosth*qtya;
+qdischa=0;
+if (mattotalha>lim1)
+	qdischa=10;
+if (mattotalha>lim2)
+	qdischa=15;
+if (mattotalha>lim3)
+	qdischa=20;
+if (mattotalha>lim4)
+	qdischa=25;
+if (mattotalha>lim5)
+	qdischa=30;
+
+matcostha=matcosth*(100-qdischa)/100;
+prha=0;
+if (qtya>0)
+	prha=setupa+matcostha+maccost;
+ptha=prha*qtya;
+
+<!-- PRICES CALC FOR QTY B   -->
+
+mattotalhb=matcosth*qtyb;
+qdischb=0;
+if (mattotalhb>lim1)
+	qdischb=10;
+if (mattotalhb>lim2)
+	qdischb=15;
+if (mattotalhb>lim3)
+	qdischb=20;
+if (mattotalhb>lim4)
+	qdischb=25;
+if (mattotalhb>lim5)
+	qdischb=30;
+
+matcosthb=matcosth*(100-qdischb)/100;
+prhb=0;
+if (qtyb>0)
+	prhb=setupb+matcosthb+maccost;
+pthb=prhb*qtyb;
+
+<!-- PRICES CALC FOR QTY C  -->
+
+mattotalhc=matcosth*qtyc;
+qdischc=0;
+if (mattotalhc>lim1)
+	qdischc=10;
+if (mattotalhc>lim2)
+	qdischc=15;
+if (mattotalhc>lim3)
+	qdischc=20;
+if (mattotalhc>lim4)
+	qdischc=25;
+if (mattotalhc>lim5)
+	qdischc=30;
+
+matcosthc=matcosth*(100-qdischc)/100;
+prhc=0;
+if (qtyc>0)
+	prhc=setupc+matcosthc+maccost;
+pthc=prhc*qtyc;
+
+
+popup3=("   ");
+if (pthc>1000||pthb>1000||ptha>1000)
+	popup3=("Refer to Managing Director");
+if (outside>150)
+	popup5=("Refer to VGA for quote");
+
+<!-- OUTPUTS  -->
+
+document.FrontPage_Form1.pricea.value=(Math.round(pra*100))/100;
+document.FrontPage_Form1.priceb.value=(Math.round(prb*100))/100;
+document.FrontPage_Form1.pricec.value=(Math.round(prc*100))/100;
+document.FrontPage_Form1.ordera.value=Math.round(pta);
+document.FrontPage_Form1.orderb.value=Math.round(ptb);
+document.FrontPage_Form1.orderc.value=Math.round(ptc);
+document.FrontPage_Form1.priceha.value=(Math.round(prha*100))/100;
+document.FrontPage_Form1.pricehb.value=(Math.round(prhb*100))/100;
+document.FrontPage_Form1.pricehc.value=(Math.round(prhc*100))/100;
+document.FrontPage_Form1.orderha.value=Math.round(ptha);
+document.FrontPage_Form1.orderhb.value=Math.round(pthb);
+document.FrontPage_Form1.orderhc.value=Math.round(pthc);
+
+document.FrontPage_Form1.qa.value=document.FrontPage_Form1.qtya.value;
+document.FrontPage_Form1.qb.value=document.FrontPage_Form1.qtyb.value;
+document.FrontPage_Form1.qc.value=document.FrontPage_Form1.qtyc.value;
+document.FrontPage_Form1.qha.value=document.FrontPage_Form1.qtya.value;
+document.FrontPage_Form1.qhb.value=document.FrontPage_Form1.qtyb.value;
+document.FrontPage_Form1.qhc.value=document.FrontPage_Form1.qtyc.value;
+
+document.FrontPage_Form1.out1.value=qdisca;
+document.FrontPage_Form1.out2.value=qdiscb;
+document.FrontPage_Form1.out3.value=qdiscc;
+document.FrontPage_Form1.out4.value=qdischa;
+document.FrontPage_Form1.out5.value=qdischb;
+document.FrontPage_Form1.out6.value=qdischc;
+document.FrontPage_Form1.out7.value=(Math.round(matcost*100))/100;
+document.FrontPage_Form1.out8.value=(Math.round(matcosth*100))/100;
+document.FrontPage_Form1.out9.value=(Math.round(timetot));
+document.FrontPage_Form1.out10.value=(Math.round(maccost*100))/100;
+
+document.FrontPage_Form1.OD.value=od;
+document.FrontPage_Form1.ID.value=id;
+document.FrontPage_Form1.length.value=Math.round(len);
+
+document.FrontPage_Form1.popup1.value=popup1;
+document.FrontPage_Form1.popup2.value=popup2;
+document.FrontPage_Form1.popup3.value=popup3;
+document.FrontPage_Form1.popup4.value=popup4;
+document.FrontPage_Form1.popup5.value=popup5;
+
+}
+
+//-->
+</SCRIPT>
+
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+</HEAD>
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.bushod.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"bushod\" field.");
+    theForm.bushod.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"bushod\" field.");
+    theForm.bushod.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.bushid.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"bushid\" field.");
+    theForm.bushid.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"bushid\" field.");
+    theForm.bushid.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.bushlen.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"bushlen\" field.");
+    theForm.bushlen.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"bushlen\" field.");
+    theForm.bushlen.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.flange.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"flange\" field.");
+    theForm.flange.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"flange\" field.");
+    theForm.flange.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.flangelen.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"flangelen\" field.");
+    theForm.flangelen.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"flangelen\" field.");
+    theForm.flangelen.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qtya.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qtya\" field.");
+    theForm.qtya.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qtya\" field.");
+    theForm.qtya.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qtyb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qtyb\" field.");
+    theForm.qtyb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qtyb\" field.");
+    theForm.qtyb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qtyc.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qtyc\" field.");
+    theForm.qtyc.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qtyc\" field.");
+    theForm.qtyc.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qa.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qa\" field.");
+    theForm.qa.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qa\" field.");
+    theForm.qa.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qb\" field.");
+    theForm.qb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qb\" field.");
+    theForm.qb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qc.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qc\" field.");
+    theForm.qc.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qc\" field.");
+    theForm.qc.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.pricea.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"pricea\" field.");
+    theForm.pricea.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"pricea\" field.");
+    theForm.pricea.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.priceb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"priceb\" field.");
+    theForm.priceb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"priceb\" field.");
+    theForm.priceb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.pricec.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"pricec\" field.");
+    theForm.pricec.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"pricec\" field.");
+    theForm.pricec.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.ordera.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"ordera\" field.");
+    theForm.ordera.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"ordera\" field.");
+    theForm.ordera.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.orderb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"orderb\" field.");
+    theForm.orderb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"orderb\" field.");
+    theForm.orderb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.orderc.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"orderc\" field.");
+    theForm.orderc.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"orderc\" field.");
+    theForm.orderc.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qha.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qha\" field.");
+    theForm.qha.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qha\" field.");
+    theForm.qha.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qhb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qhb\" field.");
+    theForm.qhb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qhb\" field.");
+    theForm.qhb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qhc.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qhc\" field.");
+    theForm.qhc.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qhc\" field.");
+    theForm.qhc.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.priceha.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"priceha\" field.");
+    theForm.priceha.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"priceha\" field.");
+    theForm.priceha.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.pricehb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"pricehb\" field.");
+    theForm.pricehb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"pricehb\" field.");
+    theForm.pricehb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.pricehc.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"pricehc\" field.");
+    theForm.pricehc.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"pricehc\" field.");
+    theForm.pricehc.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.orderha.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"orderha\" field.");
+    theForm.orderha.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"orderha\" field.");
+    theForm.orderha.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.orderhb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"orderhb\" field.");
+    theForm.orderhb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"orderhb\" field.");
+    theForm.orderhb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.orderhc.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"orderhc\" field.");
+    theForm.orderhc.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"orderhc\" field.");
+    theForm.orderhc.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out1.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out1\" field.");
+    theForm.out1.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out1\" field.");
+    theForm.out1.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out2.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out2\" field.");
+    theForm.out2.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out2\" field.");
+    theForm.out2.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out3.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out3\" field.");
+    theForm.out3.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out3\" field.");
+    theForm.out3.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out4.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out4\" field.");
+    theForm.out4.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out4\" field.");
+    theForm.out4.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out5.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out5\" field.");
+    theForm.out5.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out5\" field.");
+    theForm.out5.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out6.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out6\" field.");
+    theForm.out6.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out6\" field.");
+    theForm.out6.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out7.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out7\" field.");
+    theForm.out7.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out7\" field.");
+    theForm.out7.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out8.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out8\" field.");
+    theForm.out8.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out8\" field.");
+    theForm.out8.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out10.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out10\" field.");
+    theForm.out10.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out10\" field.");
+    theForm.out10.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out9.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out9\" field.");
+    theForm.out9.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out9\" field.");
+    theForm.out9.focus();
+    return (false);
+  }
+
+  if (theForm.Contact_name.value == "")
+  {
+    alert("Please enter a value for the \"Contact_name\" field.");
+    theForm.Contact_name.focus();
+    return (false);
+  }
+
+  if (theForm.email_address.value == "")
+  {
+    alert("Please enter a value for the \"email_address\" field.");
+    theForm.email_address.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><FORM action=../../../_vti_bin/shtml.dll/mall/stff/export/bushd.htm method=POST name=FrontPage_Form1 
+      onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" webbot-action="--WEBBOT-SELF--">
+  <!--webbot bot="SaveResults" s-email-format="HTML/BR" s-email-address="vesconite@vesconite.com" b-email-label-fields="TRUE" b-email-subject-from-field="FALSE" s-email-subject="Quote from Export Dealer login on www.vesconite.com" s-date-format="%A, %B %d, %Y" s-time-format="%I:%M %p %Z" s-builtin-fields="REMOTE_NAME REMOTE_USER HTTP_USER_AGENT Date Time" s-form-fields="Contact_name email_address Comments bushod bushid bushlen flange flangelen qtya qtyb qtyc pricea priceb pricec priceha pricehb pricehc OD ID length setp_factor B2 " u-confirmation-url="../../basic_confirm.htm" startspan --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot bot="SaveResults" endspan i-checksum="43374" --> 
+      <DIV align=center>
+      <CENTER>
+      <TABLE border=0 cellSpacing=1 width=617>
+        <TBODY>
+        <TR>
+          <TD colSpan=7 width=893>
+          <p align="left"><font face="Arial" size="1">&nbsp;</font></TD></TR>
+        <TR>
+          <TD colSpan=7 width=893><B><FONT color=#FF0000 face=Arial>US 
+            DOLLARS</FONT><FONT color=#000086 face=Arial>&nbsp; <font size="2">Machined Straight and Flanged 
+          Bushes for VescoPlastics Distributors</font></FONT></B></TD></TR>
+        <TR>
+          <TD width=114><font face="Arial" size="1" color="#000086">&nbsp;</font></TD>
+          <TD width=84></TD>
+          <TD width=114></TD>
+          <TD width=84></TD>
+          <TD width=349 colspan="3" align="right">
+          <font size="2" color="#000086" face="Arial"><b>v3.0</b> Updated 
+          Feb 2005</font></TD>
+          </TR>
+        <TR>
+          <TD width=114><FONT color=#000086 face=Arial size=3>Bush 
+OD</FONT></TD>
+          <TD width=84><FONT color=#000086 face=Arial size=3>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=bushod size=6 tabIndex=1 value=""></FONT></TD>
+          <TD width=114><FONT color=#000086 face=Arial size=3>Bush 
+ID</FONT></TD>
+          <TD width=84><FONT color=#000086 face=Arial size=3>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=bushid size=6 tabIndex=2 value=""></FONT></TD>
+          <TD width=265 colspan="2"><FONT color=#000086 face=Arial size=3>Bush 
+            Length (excl flange)</FONT></TD>
+          <TD width=84><FONT color=#000086 face=Arial size=3>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=bushlen size=6 tabIndex=3 value=""></FONT></TD></TR>
+        <TR>
+          <TD width=114><FONT color=#000086 face=Arial size=3>Flange 
+          OD</FONT></TD>
+          <TD width=84><FONT color=#000086 face=Arial size=3>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=flange size=6 tabIndex=4 value=0></FONT></TD>
+          <TD width=114><FONT color=#000086 face=Arial size=3>Flange 
+            length</FONT></TD>
+          <TD width=84><FONT color=#000086 face=Arial size=3>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=flangelen size=6 tabIndex=5 value=0></FONT></TD>
+          <TD colSpan=3 width=291><INPUT name=popup1 size=40 
+            style="FONT-FAMILY: Times New Roman" tabIndex=-1 value="  "></TD></TR>
+        <TR>
+          <TD width=114><FONT color=#000086 face=Arial 
+          size=3>Quantities</FONT></TD>
+          <TD width=84><FONT color=#000086 face=Arial size=3>Qty A</FONT></TD>
+          <TD width=77><FONT color=#000086 face=Arial size=3>Qty B</FONT></TD>
+          <TD width=73><FONT color=#000086 face=Arial size=3>Qty C</FONT></TD>
+          <TD colSpan=3 width=291><INPUT name=popup2 size=40 
+            style="FONT-FAMILY: Times New Roman" tabIndex=-1 value="  "></TD></TR>
+        <TR>
+          <TD width=114><INPUT language=javascript name=calc1 onclick="return calc1_onclick()" style="COLOR: #000086; FONT-FAMILY: Arial; FONT-SIZE: 10pt; LETTER-SPACING: -1pt" tabIndex=9 type=button value=Calculate></TD>
+          <TD width=84><FONT color=#000086 face=Arial size=3>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=qtya size=6 tabIndex=6 value=0></FONT></TD>
+          <TD width=77><FONT color=#000086 face=Arial size=3>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=qtyb size=6 tabIndex=7 value=0></FONT></TD>
+          <TD width=73><FONT color=#000086 face=Arial size=3>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=qtyc size=6 tabIndex=8 value=0></FONT></TD>
+          <TD colSpan=3 width=291><INPUT name=popup4 size=40 
+            style="FONT-FAMILY: Times New Roman" tabIndex=-1></TD></TR>
+        <TR>
+          <TD width=639 colspan="7">
+          <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#E9E9E9" width="100%" bgcolor="#E6FFE6">
+            <tr>
+              <td width="10%"><font color="#000080" face="Arial" size="2">Qty</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">1-5</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">5-9</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">10-24</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">25-49</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">50-99</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">100-199</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">200-499</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">500-999</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">1000-2999</font></td>
+            </tr>
+            <tr>
+              <td width="10%"><font face="Arial" size="2" color="#000080">Quote 
+              on</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">2</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">5</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">10</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">25</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">50</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">100</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">200</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">500</font></td>
+              <td width="10%" align="center">
+              <font face="Arial" size="2" color="#000080">1000</font></td>
+            </tr>
+          </table>
+          </TD>
+          </TR>
+        <TR>
+          <TD width=114><font size="1">&nbsp;</font></TD>
+          <TD width=84></TD>
+          <TD width=77></TD>
+          <TD width=73></TD>
+          <TD width=176></TD>
+          <TD width=33></TD>
+          <TD width=84></TD></TR></TBODY></TABLE>
+      <DIV align=center>
+      <TABLE border=1 borderColor=#000086 cellPadding=0 cellSpacing=0>
+        <TBODY>
+        <TR>
+          <TD>
+            <DIV align=center>
+            <TABLE border=0 cellSpacing=1 height=142>
+              <TBODY>
+              <TR>
+                <TD bgColor=#c8afcf height=21>&nbsp;&nbsp;<FONT face=Arial 
+                  size=3>&nbsp;</FONT></TD>
+                <TD bgColor=#c8afcf height=21>&nbsp;</TD>
+                <TD bgColor=#c8afcf height=21>
+                  <P align=center><B><FONT color=#000086 face=Arial 
+                  size=3>Vesconite</FONT></B></P></TD>
+                <TD bgColor=#c8afcf height=21>&nbsp;</TD></TR>
+              <TR>
+                <TD bgColor=#c8afcf height=25 width=77><FONT color=#000086 
+                  face=Arial size=3>Quantities</FONT></TD>
+                <TD bgColor=#c8afcf height=25 width=66>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT name=qa size=6 tabIndex=-1></TD>
+                <TD bgColor=#c8afcf height=25 width=78>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT name=qb size=6 tabIndex=-1></TD>
+                <TD bgColor=#c8afcf height=25 width=87>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT name=qc size=6 tabIndex=-1></TD></TR>
+              <TR>
+                <TD bgColor=#c8afcf height=38 width=77><FONT color=#000086 
+                  face=Arial size=3>Price&nbsp;<BR>each US$</FONT></TD>
+                <TD bgColor=#c8afcf height=38 width=66>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT name=pricea size=6 
+tabIndex=-1></TD>
+                <TD bgColor=#c8afcf height=38 width=78>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT name=priceb size=6 
+tabIndex=-1></TD>
+                <TD bgColor=#c8afcf height=38 width=87>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT name=pricec size=6 
+              tabIndex=-1></TD></TR>
+              <TR>
+                <TD bgColor=#c8afcf height=42 width=77><FONT color=#000086 
+                  face=Arial size=3>Order&nbsp;<BR>value US$</FONT></TD>
+                <TD bgColor=#c8afcf height=42 width=66>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT name=ordera size=8 
+tabIndex=-1></TD>
+                <TD bgColor=#c8afcf height=42 width=78>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT name=orderb size=7 
+tabIndex=-1></TD>
+                <TD bgColor=#c8afcf height=42 width=87>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT name=orderc size=7 
+              tabIndex=-1></TD></TR></TBODY></TABLE></DIV></TD>
+          <TD>
+            <DIV align=left>
+            <TABLE border=0 borderColor=#e6ffe6 cellSpacing=1 height=142 
+            width=294>
+              <TBODY>
+              <TR>
+                <TD bgColor=#ffff99 width=23><FONT color=#000086 face=Arial 
+                  size=3><B>&nbsp;</B> <B>&nbsp;</B></FONT></TD>
+                <TD bgColor=#ffff99 width=82>&nbsp;</TD>
+                <TD bgColor=#ffff99 width=75>
+                  <P align=center><B><FONT color=#000086 face=Arial 
+                  size=3>Hilube</FONT></B></P></TD>
+                <TD bgColor=#ffff99 width=88>&nbsp;</TD></TR>
+              <TR>
+                <TD bgColor=#ffff99 width=23><FONT face=Arial 
+                  size=3>&nbsp;&nbsp;</FONT></TD>
+                <TD bgColor=#ffff99 width=82>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+                  name=qha size=6 tabIndex=-1></TD>
+                <TD bgColor=#ffff99 width=75>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+                  name=qhb size=6 tabIndex=-1></TD>
+                <TD bgColor=#ffff99 width=88>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+                  name=qhc size=6 tabIndex=-1></TD></TR>
+              <TR>
+                <TD bgColor=#ffff99 width=23><FONT face=Arial 
+                  size=3>&nbsp;<BR>&nbsp;</FONT></TD>
+                <TD bgColor=#ffff99 width=82>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+                  name=priceha size=6 tabIndex=-1></TD>
+                <TD bgColor=#ffff99 width=75>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+                  name=pricehb size=6 tabIndex=-1></TD>
+                <TD bgColor=#ffff99 width=88>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+                  name=pricehc size=6 tabIndex=-1></TD></TR>
+              <TR>
+                <TD bgColor=#ffff99 width=23><FONT face=Arial 
+                  size=3>&nbsp;<BR>&nbsp;</FONT></TD>
+                <TD bgColor=#ffff99 width=82>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+                  name=orderha size=8 tabIndex=-1></TD>
+                <TD bgColor=#ffff99 width=75>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+                  name=orderhb size=7 tabIndex=-1></TD>
+                <TD bgColor=#ffff99 width=88>
+                <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+                  name=orderhc size=7 
+        tabIndex=-1></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></DIV>
+      <TABLE border=0 cellSpacing=1 width=618>
+        <TBODY>
+        <TR>
+          <TD bgColor=#f7fff7 width=114>&nbsp;</TD>
+          <TD bgColor=#d6ddd8 width=84>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=out1 size=8 tabIndex=-1></TD>
+          <TD bgColor=#d6ddd8 width=107>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=out2 size=7 tabIndex=-1></TD>
+          <TD bgColor=#d6ddd8 width=72>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=out3 size=7 tabIndex=-1></TD>
+          <TD bgColor=#d6ddd8 width=147>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=out4 size=8 tabIndex=-1></TD>
+          <TD bgColor=#d6ddd8 width=79>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=out5 size=7 tabIndex=-1></TD>
+          <TD bgColor=#d6ddd8 width=85>
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=out6 size=7 tabIndex=-1></TD></TR>
+        <TR>
+          <TD bgColor=#f7fff7 width=114><FONT color=#000086 face=Arial 
+            size=3>Material size</FONT></TD></CENTER>
+          <TD bgColor=#d6ddd8 width=84>
+            <P align=right><FONT face=Arial size=3 color="#000086">OD</FONT></P></TD>
+          <CENTER>
+          <TD bgColor=#d6ddd8 width=107><font color="#000086"><INPUT name=OD size=5 
+          tabIndex=-1></font></TD></CENTER>
+          <TD bgColor=#d6ddd8 width=76>
+            <P align=right><FONT face=Arial size=3 color="#000086">ID</FONT></P></TD>
+          <CENTER>
+          <TD bgColor=#d6ddd8 width=147><font color="#000086"><INPUT name=ID size=5 tabIndex=-1></font></TD>
+          <TD bgColor=#d6ddd8 width=79><FONT face=Arial 
+size=3 color="#000086">Length</FONT></TD>
+          <TD bgColor=#d6ddd8 width=89><INPUT name=length size=5 
+          tabIndex=-1></TD></TR>
+        <TR>
+          <TD bgColor=#f7fff7 width=114><FONT color=#000086 face=Arial 
+            size=3>Material Price US$</FONT></TD>
+          <TD bgColor=#d6ddd8 width=84><font color="#000086">
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=out7 size=8 tabIndex=-1></font></TD>
+          <TD bgColor=#d6ddd8 width=107>&nbsp;</TD>
+          <TD bgColor=#d6ddd8 width=83>&nbsp;</TD>
+          <TD bgColor=#d6ddd8 width=147><font color="#000086">
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=out8 size=8 tabIndex=-1></font></TD>
+          <TD bgColor=#d6ddd8 width=79><FONT face=Arial 
+            size=3 color="#000086">Setup<BR>factor</FONT></TD>
+          <TD bgColor=#d6ddd8 width=89><INPUT name=setp_factor size=5 
+            tabIndex=9 value=0.5></TD></TR>
+        <TR>
+          <TD bgColor=#f7fff7 width=107><FONT color=#000086 face=Arial 
+            size=3>Machining Cost US$</FONT></TD>
+          <TD bgColor=#d6ddd8 width=83><font color="#000086">
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=out10 size=8 tabIndex=-1></font></TD>
+          <TD bgColor=#d6ddd8 width=114><FONT face=Arial size=3 color="#000086">Machining Time 
+            (s) </FONT></TD>
+          <TD bgColor=#d6ddd8 width=84><font color="#000086">
+          <!--webbot bot="Validation" s-data-type="Number" s-number-separators=",." --><INPUT 
+            name=out9 size=8 tabIndex=-1></font></TD>
+          <TD bgColor=#d6ddd8 width=177><FONT face=Arial size=3 color="#000086">Mass 
+            of<BR>part grams</FONT></TD>
+          <TD bgColor=#d6ddd8 width=86><font color="#000086"><INPUT name=mass size=6 tabIndex=-1></font></TD>
+          <TD bgColor=#d6ddd8 width=89>&nbsp;</TD></TR></TBODY></TABLE>
+      <TABLE border=0 cellSpacing=1 height=258 width=618>
+        <TBODY>
+        <TR>
+          <TD colSpan=4 height=25 width=530>
+          <INPUT name=popup3 size=40 
+            style="FONT-FAMILY: Times New Roman; visibility:hidden" tabIndex=0 
+            value="  ">&nbsp;&nbsp;&nbsp; 
+          <INPUT name=popup5 size=10 
+            style="FONT-FAMILY: Times New Roman; visibility:hidden" tabIndex=0><FONT color=#000086 
+            face=Arial size=3>&nbsp; <INPUT name=Vesco_staff_name 
+            tabIndex=0 size="20" style="visibility: hidden"></FONT></TD></TR>
+        <TR>
+          <TD colSpan=4 height=25 width=530><font face="Arial">To confirm this 
+          quote, please complete the details below and click SEND</font></TD></CENTER></TR>
+        <CENTER>
+        <TR>
+          <TD colSpan=2 height=24 width=304><b>
+          <font face="Arial" color="#000086">Distributor</font></b><FONT color=#000086 face=Arial 
+            size=3><B> Information&nbsp; </B></FONT>
+          </TD>
+          <TD align=right height=24 width=67></TD>
+          <TD height=24 width=159></TD></TR></CENTER>
+        <TR>
+          <TD height=25 width=134>
+            <P align=left><FONT color=#000086 face=Arial size=3>Name</FONT></P></TD>
+          <CENTER>
+          <TD height=25 width=170><FONT color=#000086 face=Arial size=3>
+          <!--webbot bot="Validation" b-value-required="TRUE" --><INPUT 
+            name=Contact_name tabIndex=11 size="20"></FONT></TD></CENTER>
+          <TD height=25 width=79>
+            <P align=right><FONT color=#000086 face=Arial 
+            size=3>Email</FONT></P></TD>
+          <CENTER>
+          <TD height=25 width=179><FONT color=#000086 face=Arial size=3>
+          <!--webbot bot="Validation" b-value-required="TRUE" --><INPUT 
+            name=email_address tabIndex=13 size="20"></FONT></TD></TR>
+        <TR>
+          </CENTER>
+          <CENTER>
+          </TR>
+        <TR>
+          <TD height=76 width=134><FONT color=#000086 face=Arial 
+            size=3>Comments</FONT></TD>
+          <TD colSpan=3 height=76 width=408><FONT color=#000086 face=Arial 
+            size=3><TEXTAREA cols=54 name=Comments rows=3 tabIndex=17></TEXTAREA></FONT></TD></TR>
+        <TR>
+          <TD colSpan=4 height=27 width=491>
+          <font face="Arial" size="2">Please print this Quote Request for your 
+          records. If you do not receive a reply within one working day, please 
+          fax your printout to +27 57 212 66 66</font></TD>
+          </TR>
+        <TR>
+          <TD colSpan=2 height=27 width=265>
+          <input type="submit" value="SEND" name="B2"></TD>
+          <TD height=27 width=67>&nbsp;</TD>
+          <TD height=27 width=159>
+            <FONT size=1>Updated Feb 28 2005 &nbsp; </FONT></TD></TR>
+        <TR>
+          </CENTER>
+          </TR></TBODY></TABLE></DIV></FORM>
+
+<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+
+  <div align="center">
+    <center>
+  <table border="0" cellspacing="0" cellpadding="2" width="703" style="border-collapse: collapse" bordercolor="#111111">
+    <tr>
+    <td width="711" height="1" colspan="3" align="center">
+        <font face="Arial" size="2"><font color="#000000">
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000"> 
+        e-mail </font><a href="mailto:vesconite@vesconite.com">
+        vesconite@vesconite.com</a></font>
+        <br>
+        <font face="Arial" size="2"><font color="#FF0000">Feedback</font> is 
+        appreciated.
+        <a href="mailto:vesconite@vesconite.com?subject=Feedback to the WEBMASTER">
+        e-mail the webmaster</a></font></td>
+    </tr>
+    <tr>
+    <td width="691" height="1" colspan="3">
+        <p align="center"><font face="Arial" size="2">
+      <a href="http://www.vesconite.com/">Home</a><font color="#000080">&nbsp;
+        | &nbsp;</font><a href="http://www.vesconite.com/vesco/contact.htm">Contact us</a> &nbsp;<font color="#000080">
+        |</font>&nbsp; <a href="http://www.vesconite.com/vesco/site.htm">Site map</a>&nbsp;<font color="#000080">
+        |&nbsp; <a href="http://www.vesconite.com/vesco/site_search.htm">Search</a>&nbsp;
+        |&nbsp;&nbsp;</font><a href="http://www.vesconite.com/enquiry.htm">Enquiry
+        form</a><font color="#000080">&nbsp;&nbsp; |&nbsp;
+      <a href="http://www.vesconite.com/footer_links/copyright.htm">Copyright</a>&nbsp;
+        |&nbsp; <a href="http://www.vesconite.com/footer_links/privacy.htm">Privacy</a></font><br>
+      &nbsp; <span style="background-color: #FFFFFF" lang="en-za">
+        <a href="../../PassageWay/All%202011.asp">Stock Finder</a></span></font><font color="#000080" face="Arial" size="2">
+        &nbsp;|&nbsp;
+    <a href="../../lobby.asp">Dealer Update</a>&nbsp; | &nbsp;<a href="../../LTXL_nokia.asp">Mobile</a></font><font face="Arial" size="2">&nbsp; 
+      |&nbsp;
+      <a href="exp_login.asp">Export</a><span lang="en-za">&nbsp; 
+        |&nbsp;&nbsp;
+        <a href="https://vescosales.com/wstore/">Webstore</a></span></font></td>
+    </tr>
+    <tr>
+    <td width="323" height="1" valign="top">
+        <font face="Arial" color="#FF0000" size="2">
+        <span style="letter-spacing: -1pt"><b>Toll free/Linea gratuita</b></span></font><font face="Arial" color="#000080" size="2"><b><br>
+        Australia </b>
+        </font>
+          <font face="Arial" color="#000086" size="2">1800 
+        833 448</font><font face="Arial" size="2" color="#000080"><b><br>
+        Brasil</b> </font><strong style="font-weight: 400">
+        <font face="Arial" color="#000080" size="2">0800 891 87 16</font></strong><font face="Arial" color="#000080" size="2"><b><br>
+        Canada</b> 1 866 682 3484<br>
+        <b>Chile</b> </font><font face="Arial" size="2" color="#000086">(2) 570 
+        3855<br>
+        </font><font face="Arial" color="#000080" size="2">
+        <b>Germany</b> 0443 1892 3899</font><font face="Arial" size="2" color="#000086"><br>
+        </font><font face="Arial" size="2" color="#000080"><b>Hong Kong</b> </font>
+        <font face="Arial" size="2" color="#000086">800 930 211</font><font face="Arial" size="2" color="#000080"><br>
+        </font><span class="443554203-21102008"><b>
+        <font size="2" face="Arial" color="#000080">Ireland </font></b></span>
+        <font face="Arial" size="2" color="#000080">1800 552 711</font><span class="443554203-21102008"><font size="2" face="Arial" color="#000080"><b><br>
+        Netherlands&nbsp;</b></font></span><font face="Arial" size="2" color="#000080">08000 223 805<b><br>
+        New Zealand</b> 0800 450 878<b><br>
+        Portugal</b> 800 827 007<br>
+        </font>
+          <font face="Arial" size="2" color="#000086">
+          <b>UAE</b> 800 027 01 03</font><font face="Arial" size="2" color="#000080"><br>
+        <b>
+        UK </b>0800 731 9745 / 020 3239 9044<b><br>
+        USA</b> (7-3EST) 1 866 635 75 96 / (713) 574-7255</font></td>
+    <td width="1" height="1" valign="top">
+    <font size="2" face="Arial">
+    <br>
+&nbsp;</font></td>
+    <td width="299" height="1" valign="top">
+        <b><font color="#FF0000" size="2" face="Arial">Fax</font></b><font face="Arial" color="#000080" size="2"><b><br>
+        Australia </b><strong style="font-weight: 400">+61 386 485 671</strong></font><b><font face="Arial" size="2" color="#000080"><br>
+        <br>
+        Canada
+        </font></b><font face="Arial" color="#000080" size="2">
+        (416) 352 15 27<b><br>
+        </b><strong style="font-weight: 400"><br>
+        </strong><br>
+        &nbsp;</font><p>&nbsp;</p>
+        <p><font face="Arial" color="#000080" size="2">
+        <br>
+        <b>UK</b> 0207 681 3444<b><br>
+        USA</b> (212) 937 3184</font></td>
+    </tr>
+    <tr>
+    <td width="699" colspan="3" height="1" valign="top">
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+      <tr>
+        <td width="12%"><a href="http://www.vesconite.com/"><img border="0" src="../../../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></td>
+        <td width="88%">
+        <p align="center"><font size="2" face="Arial">©</font><span style="FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px" class="Apple-style-span">2012 
+        Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site 
+        may not be copied or redistributed without the express written consent 
+        of Vesco Plastics Sales, Pty Ltd.</span><font size="2" face="Arial">&nbsp;
+    <a href="http://www.vesconite.com/footer_links/warranty.htm">Warranty 
+        disclaimer</a></font></td>
+      </tr>
+    </table>
+    </td>
+    </tr>
+    <tr>
+    <td width="699" colspan="3" height="1" valign="top">
+    <p align="center"></td>
+    </tr>
+  </table>
+    </center>
+  </div>
+
+    </td></tr><!--msnavigation--></table></BODY></HTML>
