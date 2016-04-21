@@ -1,0 +1,21 @@
+vti_encoding:SR|utf8-nl
+/italian:_borders/left.htm
+/lhs_headings/useful_info.htm:_borders/left.htm
+/lhs_headings/orders.htm:_borders/left.htm
+/lhs_headings/vescoplastics.htm:_borders/left.htm
+x-dataconn\://www.vesconite.com/export/salescart/driver={microsoft access driver (*.mdb)};dbq=url=fpdb/shop.mdb:global.asa
+/design/bush/entry_alldesigns2.htm:_borders/left.htm
+/lhs_headings/industry.htm:_borders/left.htm
+index.html:ship_class_certs/ship_class_certific.htm
+/lhs_headings/products.htm:_borders/left.htm
+http\://www.salescart.com:inc.htm
+/lhs_headings/special_offer.htm:_borders/left.htm
+/vesco/site.htm:_borders/left.htm
+/vesco/employ.htm:_borders/left.htm
+/usa/index.htm:index.htm default.htm
+/vesco/site_search.htm:_borders/left.htm
+/lhs_headings/languages.htm:_borders/left.htm
+x-dataconn\://www.vesconite.com/export/database2:dbf_update.asp
+x-dataconn\://www.vesconite.com/export/database5/driver={microsoft access driver (*.mdb)};dbq=url=fpdb/ves0001.mdb:global.asa
+/lhs_headings/current_ads.htm:_borders/left.htm
+_borders/images/salescart.gif:inc.htm

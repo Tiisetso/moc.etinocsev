@@ -1,0 +1,531 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="Author" content="Joan Marran">
+<meta name="KeyWords" content="VescoPlastics,enquiry form">
+<title>Enquiry form1 - vesconite</title>
+
+
+<meta name="Microsoft Border" content="b">
+</head>
+
+<body stylesrc="http://marran/usapr01/Default.htm"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+
+<p align="center"><font color="#FF0000" face="Arial,Helvetica" size="5"><b>Vesconite
+Enquiry Form</b></font><big><big><big> </big></big></big></p>
+
+<p><font size="+0" color="#009900" face="Arial,Helvetica"><b>A Vesconite technical
+consultant will respond promptly.</b></font> </p>
+
+<p><br>
+<font face="Arial" color="#0000FF" size="3"><strong>This form can be completed and
+submitted to VescoPlastics by clicking on the SUBMIT button at the end of the form </strong></font></p>
+
+<p><font face="Arial" color="#0000FF" size="3"><strong>&nbsp;&nbsp;&nbsp; OR</strong></font></p>
+
+<p><font face="Arial" color="#0000FF" size="3"><strong>Print this page, complete and fax
+to &nbsp; (+27 +11) 616 2222</strong></font></p>
+
+<p><font color="#FF0000" face="Arial,Helvetica">The two questions in <b>RED</b> are <b>required</b>.&nbsp;
+However, the more information you give us, the better we are able to help.</font></p>
+
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.username.value == "")
+  {
+    alert("Please enter a value for the \"username\" field.");
+    theForm.username.focus();
+    return (false);
+  }
+
+  if (theForm.username.value.length > 30)
+  {
+    alert("Please enter at most 30 characters in the \"username\" field.");
+    theForm.username.focus();
+    return (false);
+  }
+
+  if (theForm.email.value == "")
+  {
+    alert("Please enter a value for the \"email\" field.");
+    theForm.email.focus();
+    return (false);
+  }
+
+  if (theForm.email.value.length > 50)
+  {
+    alert("Please enter at most 50 characters in the \"email\" field.");
+    theForm.email.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" action="../../_vti_bin/shtml.dll/_private/vesco/survey.htm" onsubmit="return FrontPage_Form1_Validator(this)" name="FrontPage_Form1" webbot-action="--WEBBOT-SELF--">
+  <!--webbot bot="SaveResults" S-Email-Format="TEXT/CSV" S-Email-Address="jm@vescoplastics.com" B-Email-Label-Fields="TRUE" S-Builtin-Fields="Date Time REMOTE_NAME REMOTE_USER HTTP_USER_AGENT" U-Confirmation-Url="../../confirm.htm" startspan --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot bot="SaveResults" endspan i-checksum="43374" --><input type="hidden" name="VTI-GROUP" value="0"><p><font size="+1" color="#0000FF" face="Arial,Helvetica"><b>Client</b></font> </p>
+  <table WIDTH="70%">
+    <tr>
+      <td WIDTH="50%"><strong><font color="#FF0000" face="Arial,Helvetica">Contact person</font></strong></td>
+      <td WIDTH="50%"><!--webbot bot="Validation" B-Value-Required="TRUE" I-Maximum-Length="30" --><input type="text" size="30" maxlength="30" name="username"></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%"><font face="Arial,Helvetica">Company Name</font></td>
+      <td WIDTH="50%"><input type="text" size="30" maxlength="50" name="A2"></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%"><font face="Arial,Helvetica">Address</font></td>
+      <td WIDTH="50%"><input type="text" size="30" maxlength="60" name="A3"></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%"></td>
+      <td WIDTH="50%"><input type="text" size="30" maxlength="60" name="A4"></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%"></td>
+      <td WIDTH="50%"><input type="text" size="30" maxlength="60" name="A5"></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%"><font face="Arial,Helvetica">Tel</font></td>
+      <td WIDTH="50%"><input type="text" size="20" maxlength="60" name="A6"></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%"><font face="Arial,Helvetica">Fax</font></td>
+      <td WIDTH="50%"><input type="text" size="20" maxlength="50" name="A7"></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%"><strong><font color="#FF0000" face="Arial,Helvetica">E-mail</font></strong></td>
+      <td WIDTH="50%"><!--webbot bot="Validation" B-Value-Required="TRUE" I-Maximum-Length="50" --><input type="text" size="20" name="email" maxlength="50"></td>
+    </tr>
+  </table>
+  <p><font size="+1" color="#0000FF" face="Arial,Helvetica"><b>Part Description</b></font><input type="text" size="50" maxlength="200" name="B1"> </p>
+  <p><font size="+1" color="#0000FF" face="Arial,Helvetica"><b>Application Description</b></font><input type="text" size="50" maxlength="200" name="C1"> </p>
+  <p>&nbsp;</p>
+  <p><font size="+1" color="#0000FF" face="Arial,Helvetica"><b>Current Material Used</b></font>
+  </p>
+  <table WIDTH="80%">
+    <tr>
+      <td align="left"><dl>
+        <dd align="right"><input type="checkbox" name="D1" value="ON"></dd>
+      </dl>
+      </td>
+      <td align="left"><font face="Arial,Helvetica">bronze</font></td>
+      <td align="left"><dl>
+        <dd align="right"><input type="checkbox" name="D2" value="ON"></dd>
+      </dl>
+      </td>
+      <td align="left"><font face="Arial,Helvetica">laminated phenolic</font></td>
+    </tr>
+    <tr>
+      <td align="left"><dl>
+        <dd align="right"><input type="checkbox" name="D3" value="ON"></dd>
+      </dl>
+      </td>
+      <td align="left"><font face="Arial,Helvetica">acetal</font></td>
+      <td align="left"><dl>
+        <dd align="right"><input type="checkbox" name="D4" value="ON"></dd>
+      </dl>
+      </td>
+      <td align="left"><font face="Arial,Helvetica">hardened steel</font></td>
+    </tr>
+    <tr>
+      <td align="left"><dl>
+        <dd align="right"><input type="checkbox" name="D5" value="ON"></dd>
+      </dl>
+      </td>
+      <td align="left"><font face="Arial,Helvetica">nylon</font></td>
+      <td align="left"><dl>
+        <dd align="right"><input type="checkbox" name="D5" value="ON"></dd>
+      </dl>
+      </td>
+      <td align="left"><font face="Arial,Helvetica">other</font><input type="text" size="20" maxlength="100" name="D6"></td>
+    </tr>
+  </table>
+  <p><br>
+  &nbsp; </p>
+  <p><font size="+1" color="#0000FF" face="Arial,Helvetica"><b>Reasons for change,properties
+  looked for</b></font> </p>
+  <table WIDTH="100%">
+    <tr>
+      <td align="right"><input type="checkbox" name="E1" value="ON"></td>
+      <td><font face="Arial,Helvetica">life</font></td>
+      <td align="right"><input type="checkbox" name="E2" value="ON"></td>
+      <td><font face="Arial,Helvetica">maintenance</font></td>
+      <td align="right"><input type="checkbox" name="E3" value="ON"></td>
+      <td><font face="Arial,Helvetica">precision</font></td>
+    </tr>
+    <tr>
+      <td align="right"><input type="checkbox" name="E4" value="ON"></td>
+      <td><font face="Arial,Helvetica">noise</font></td>
+      <td align="right"><input type="checkbox" name="E5" value="ON"></td>
+      <td><font face="Arial,Helvetica">no lubrication</font></td>
+      <td align="right"><input type="checkbox" name="E6" value="ON"></td>
+      <td><font face="Arial,Helvetica">non-stick properties</font></td>
+    </tr>
+    <tr>
+      <td align="right"><input type="checkbox" name="E7" value="ON"></td>
+      <td><font face="Arial,Helvetica">impact</font></td>
+      <td align="right"><input type="checkbox" name="E8" value="ON"></td>
+      <td><font face="Arial,Helvetica">availability</font></td>
+      <td align="right"><input type="checkbox" name="E9" value="ON"></td>
+      <td><font face="Arial,Helvetica">high temperature</font></td>
+    </tr>
+    <tr>
+      <td align="right"><input type="checkbox" name="E10" value="ON"></td>
+      <td><font face="Arial,Helvetica">cost</font></td>
+      <td align="right"><input type="checkbox" name="E11" value="ON"></td>
+      <td><font face="Arial,Helvetica">wear resistance</font></td>
+      <td align="right"><input type="checkbox" name="E12" value="ON"></td>
+      <td><font face="Arial,Helvetica">chemical resistance</font></td>
+    </tr>
+    <tr>
+      <td align="right"><input type="checkbox" name="E13" value="ON"></td>
+      <td><font face="Arial,Helvetica">environmental</font></td>
+      <td align="right"><input type="checkbox" name="E14" value="ON"></td>
+      <td><font face="Arial,Helvetica">dimensional stability</font></td>
+      <td align="right"><input type="checkbox" name="E15" value="ON"></td>
+      <td><font face="Arial,Helvetica">shaft wear</font></td>
+    </tr>
+    <tr>
+      <td align="right"><input type="checkbox" name="E16" value="ON"></td>
+      <td><font face="Arial,Helvetica">low friction</font></td>
+      <td align="right"><input type="checkbox" name="E17" value="ON"></td>
+      <td><font face="Arial,Helvetica">load bearing ability</font></td>
+      <td align="right"><input type="checkbox" name="E18" value="ON"></td>
+      <td><font face="Arial,Helvetica">other</font><input type="text" name="E18" size="20" maxlength="100"></td>
+    </tr>
+  </table>
+  <p><br>
+  &nbsp; <br>
+  &nbsp; <br>
+  &nbsp; </p>
+  <p><font size="+1" color="#3333FF" face="Arial,Helvetica"><b>Basic Design information</b></font>
+  </p>
+  <table WIDTH="90%">
+    <tr>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">Shaft diameter</font></td>
+      <td><input type="text" size="8" maxlength="8" name="F1"></td>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">housing diameter</font></td>
+      <td><input type="text" size="8" maxlength="8" name="F2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">Bush length&nbsp;</font></td>
+      <td><input type="text" size="8" maxlength="8" name="F3"></td>
+      <td ALIGN="RIGHT"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">Total load&nbsp;</font></td>
+      <td><input type="text" size="8" maxlength="8" name="F4"></td>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">for</font></td>
+      <td><input type="text" size="8" maxlength="8" name="F5"></td>
+      <td COLSPAN="2"><font face="Arial,Helvetica">number of bushes</font></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT" COLSPAN="2"><input type="text" name="F6" size="4" maxlength="20"><font face="Arial,Helvetica">Flange required:</font></td>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">diameter</font></td>
+      <td><input type="text" size="8" maxlength="8" name="F7"></td>
+      <td></td>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">thickness&nbsp;</font></td>
+      <td><input type="text" size="8" maxlength="8" name="F8"></td>
+    </tr>
+  </table>
+  <p><br>
+  &nbsp; <br>
+  &nbsp; <br>
+  &nbsp; </p>
+  <p><font size="+1" color="#3333FF" face="Arial,Helvetica"><b>Temperature Exposure</b></font>
+  </p>
+  <table WIDTH="90%">
+    <tr>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">Normal operating temperature</font></td>
+      <td><input type="text" size="8" maxlength="8" name="G1"></td>
+      <td ALIGN="RIGHT"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">Maximum</font></td>
+      <td><input type="text" size="8" maxlength="8" name="G2"></td>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">minimum&nbsp;</font></td>
+      <td><input type="text" size="8" maxlength="8" name="G3"></td>
+    </tr>
+  </table>
+  <p><br>
+  &nbsp; <br>
+  &nbsp; <br>
+  &nbsp; </p>
+  <p><font size="+1" color="#3333FF" face="Arial,Helvetica"><b>Bush/Shaft Movement</b></font>
+  </p>
+  <table WIDTH="90%">
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="h1" value="ON"></td>
+      <td><font face="Arial,Helvetica">shaft moves relative to bush</font></td>
+      <td ALIGN="RIGHT"></td>
+      <td ALIGN="RIGHT"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="h2" value="ON"></td>
+      <td><font face="Arial,Helvetica">bush moves relative to housing&nbsp;</font></td>
+      <td ALIGN="RIGHT"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="h3" value="ON"></td>
+      <td><font face="Arial,Helvetica">rotating</font></td>
+      <td ALIGN="RIGHT"></td>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">rpm:</font></td>
+      <td><input type="text" size="10" maxlength="10" name="h4"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="h5" value="ON"></td>
+      <td><font face="Arial,Helvetica">intermittent rotation</font></td>
+      <td ALIGN="RIGHT"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="h6" value="ON"></td>
+      <td><font face="Arial,Helvetica">oscillating: cycles per minute&nbsp;</font></td>
+      <td ALIGN="RIGHT"><input type="text" size="6" maxlength="6" name="h7"></td>
+      <td ALIGN="RIGHT"><div align="center"><center><p><font face="Arial,Helvetica">angle</font>
+      </td>
+      <td ALIGN="center"><input type="text" size="8" maxlength="8" name="h8"></td>
+    </tr>
+    <tr ALIGN="center">
+      <td ALIGN="RIGHT"><input type="checkbox" name="h9" value="ON"></td>
+      <td><font face="Arial,Helvetica">recipocrating: stroke length</font></td>
+      <td ALIGN="RIGHT"><input type="text" size="6" maxlength="6" name="h10"></td>
+      <td ALIGN="RIGHT"><div align="center"><center><p><font face="Arial,Helvetica">cycles per
+      minute&nbsp;</font> </td>
+      <td ALIGN="center"><input type="text" size="6" maxlength="6" name="h11"></td>
+    </tr>
+    <tr ALIGN="center">
+      <td ALIGN="RIGHT"></td>
+      <td><font face="Arial,Helvetica">Duty: operating hours/month&nbsp;</font></td>
+      <td ALIGN="RIGHT"><input type="text" size="6" maxlength="6" name="h12"></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <div align="center"><center><p>&nbsp;</p>
+  </center></div><div align="center"><center><p><font size="+1" color="#3333FF" face="Arial,Helvetica"><b>Lubrication</b></font> </p>
+  </center></div><div align="center"><center><table WIDTH="80%">
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="I1" value="ON"></td>
+      <td><font face="Arial,Helvetica">none</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="I5" value="ON"></td>
+      <td><font face="Arial,Helvetica">initial at assembly</font></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="I2" value="ON"></td>
+      <td><font face="Arial,Helvetica">regular</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="I6" value="ON"></td>
+      <td><font face="Arial,Helvetica">how often</font></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="I3" value="ON"></td>
+      <td><font face="Arial,Helvetica">continuous</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="I7" value="ON"></td>
+      <td><font face="Arial,Helvetica">oil-maximum oil pressure</font></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="I4" value="ON"></td>
+      <td><font face="Arial,Helvetica">grease</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="I8" value="ON"></td>
+      <td><font face="Arial,Helvetica">water</font></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p>&nbsp;</p>
+  </center></div><div align="center"><center><p><font size="+1" color="#3333FF" face="Arial,Helvetica"><b>Mating Surface</b></font> </p>
+  </center></div><div align="center"><center><table WIDTH="95%">
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="j1" value="ON"></td>
+      <td><font face="Arial,Helvetica">mild steel</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="j4" value="ON"></td>
+      <td><font face="Arial,Helvetica">hardened steel</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="j7" value="ON"></td>
+      <td><font face="Arial,Helvetica">hard chrome</font></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="j2" value="ON"></td>
+      <td><font face="Arial,Helvetica">stainless steel</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="j3" value="ON"></td>
+      <td><font face="Arial,Helvetica">surface finish</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="j5" value="ON"></td>
+      <td><font face="Arial,Helvetica">other</font></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p>&nbsp;</p>
+  </center></div><div align="center"><center><p><font size="+1" color="#3333FF" face="Arial,Helvetica"><b>Operating Conditions</b></font> </p>
+  </center></div><div align="center"><center><table WIDTH="50%">
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="k1" value="ON"></td>
+      <td><font face="Arial,Helvetica">clean</font></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="k2" value="ON"></td>
+      <td><font face="Arial,Helvetica">immersed in water</font></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="k3" value="ON"></td>
+      <td><font face="Arial,Helvetica">dirty</font></td>
+    </tr>
+  </table>
+  </center></div><font face="Arial,Helvetica"><div align="center"><center><p>please describe</font><input type="text" size="50" maxlength="100" name="k4"> </p>
+  </center></div><div align="center"><center><p>&nbsp;</p>
+  </center></div><div align="center"><center><p><font size="+1" color="#3333FF" face="Arial,Helvetica"><b>Chemical Exposure</b></font> </p>
+  </center></div><div align="center"><center><table WIDTH="80%">
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="l1" value="ON"></td>
+      <td><font face="Arial,Helvetica">steam</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="l3" value="ON"></td>
+      <td><font face="Arial,Helvetica">hot water</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="l4" value="ON"></td>
+      <td><font face="Arial,Helvetica">alkalis</font></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="l2" value="ON"></td>
+      <td><font face="Arial,Helvetica">other chemicals</font></td>
+      <td ALIGN="RIGHT"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p>&nbsp;</p>
+  </center></div><div align="center"><center><p><font size="+1" color="#3333FF" face="Arial,Helvetica"><b>Quantity Required<input type="text" size="8" maxlength="8" name="m"></b></font><font size="-1" color="#000000" face="Arial,Helvetica">per year</font>
+  </p>
+  </center></div><div align="center"><center><p>&nbsp;</p>
+  </center></div><div align="center"><center><p><font size="+1" color="#3333FF" face="Arial,Helvetica"><b>Level of Precision Required</b></font> </p>
+  </center></div><div align="center"><center><table WIDTH="80%">
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="n1" value="ON"></td>
+      <td><font face="Arial,Helvetica">high</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="n2" value="ON"></td>
+      <td><font face="Arial,Helvetica">standard</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="n3" value="ON"></td>
+      <td><font face="Arial,Helvetica">medium</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="n4" value="ON"></td>
+      <td><font face="Arial,Helvetica">moulded</font></td>
+    </tr>
+  </table>
+  </center></div><font color="#000000" face="Arial,Helvetica"><div align="center"><center><p>Runout
+  allowed for moulded bushes?</font> </p>
+  </center></div><div align="center"><center><table WIDTH="40%">
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="n5" value="ON"></td>
+      <td><font face="Arial,Helvetica">Yes</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="n6" value="ON"></td>
+      <td><font face="Arial,Helvetica">No</font></td>
+    </tr>
+  </table>
+  </center></div><font color="#000000" face="Arial,Helvetica"><div align="center"><center><p>Standard
+  fits and clearances acceptable?</font> </p>
+  </center></div><div align="center"><center><table WIDTH="40%">
+    <tr>
+      <td ALIGN="RIGHT"><input type="checkbox" name="n7" value="ON"></td>
+      <td><font face="Arial,Helvetica">Yes</font></td>
+      <td ALIGN="RIGHT"><input type="checkbox" name="n8" value="ON"></td>
+      <td><font face="Arial,Helvetica">No</font></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><table WIDTH="80%">
+    <tr>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">chamfers required</font></td>
+      <td><input type="text" size="8" maxlength="8" name="n9"></td>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">on OD</font></td>
+      <td><input type="text" size="8" maxlength="8" name="n10"></td>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">on ID</font></td>
+      <td><input type="text" size="8" maxlength="8" name="n11"></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p><input type="text" size="8" maxlength="8" name="n12"><font face="Arial,Helvetica">&nbsp;&nbsp; grooves required (describe)</font><input type="text" size="40" maxlength="100" name="n13"> </p>
+  </center></div><div align="center"><center><p>&nbsp;</p>
+  </center></div><div align="center"><center><p><font size="+1" color="#3333FF" face="Arial,Helvetica"><b>Service Life Required</b></font> </p>
+  </center></div><div align="center"><center><table WIDTH="80%">
+    <tr>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">Total life (operating hours)</font></td>
+      <td><input type="text" size="8" maxlength="8" name="o1"></td>
+      <td ALIGN="RIGHT"><font face="Arial,Helvetica">Total allowable wear</font></td>
+      <td><input type="text" size="8" maxlength="8" name="o2"></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p>&nbsp;</p>
+  </center></div><div align="center"><center><p><font color="#3333FF" face="Arial,Helvetica"><b>Further
+  features Required</b></font></p>
+  </center></div><div align="center"><center><p><textarea rows="3" name="P1" cols="30"></textarea></p>
+  </center></div><div align="center"><center><p>&nbsp;</p>
+  </center></div><div align="center"><center><p><input type="submit" name="Submit" value="Submit Form"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="reset" name="Reset" value="Clear Form"></p>
+  </center></div><div align="center"><center><p>&nbsp;</p>
+  </center></div>
+</form>
+
+<p align="center"><font color="#000000" face="Arial,Helvetica" size="3">For </font><font face="Arial,Helvetica" color="#FF0000" size="3">information and quotes</font><font color="#000000" face="Arial,Helvetica" size="3"> on your requirements, e-mail </font><font face="Arial,Helvetica" size="3"><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</a></font><big><big><big>
+</big></big></big></p>
+
+<p align="center">&nbsp; </p>
+
+<p align="center">&nbsp;</p>
+
+<h5 align="center"><font face="Arial,Helvetica" size="1">Last updated: Jun 29, 1999</font></h5>
+
+<p align="center"><font face="Arial,Helvetica" size="1">&nbsp;</font> 
+<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<div align="center">
+  <center>
+  <table border="0" cellspacing="1" cellpadding="2" width="570">
+    <tr>
+      <td width="4">
+        <p align="center"><a href="../../index.htm"><img border="0" src="../../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></p>
+      </td>
+      <td width="556">
+        <p align="center"><font face="Arial" size="2"><font color="#000000">
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
+e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</a></font>
+      </td>
+    </tr>
+    <tr>
+      <td width="528" colspan="2"><p align="center"><font face="Arial" size="2"><a href="../../index.htm">Home</a><font color="#000080">&nbsp;
+        | &nbsp;</font><a href="../../vesco/contact.htm">Contact us</a> &nbsp;<font color="#000080">
+        |</font>&nbsp; <a href="../../vesco/site.htm">Site map</a>&nbsp;<font color="#000080">
+        |&nbsp; <a href="../../vesco/site_search.htm">Search</a>&nbsp;
+        |&nbsp;&nbsp;</font><a href="../../enquiry.htm">Enquiry
+        form</a><font color="#000080">&nbsp;&nbsp; |&nbsp; <a href="../../footer_links/copyright.htm">Copyright</a>&nbsp;
+        |&nbsp; <a href="../../footer_links/privacy.htm">Privacy</a></font></font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial"><font color="#FF0000">Feedback</font>
+        is appreciated!&nbsp; Please e-mail the <a href="mailto:jm@vescoplastics.com">webmaster</a></font></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font face="Arial" color="#FF0000" size="1">UK toll
+        free 0800 731 9745.&nbsp; USA toll
+        free (7-5 EST) 1-866-635-7596.&nbsp; Linea gratuita desde Chile 800 104 646<br>
+        &nbsp; Rest of world +2711 616 44 44. South
+        Africa (011) 616 11 11</font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial">All Rights Reserved ©
+        1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../../footer_links/warranty.htm">Warranty
+        disclaimer</a></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p>&nbsp;</p>
+
+</td></tr><!--msnavigation--></table></body>
+</html>

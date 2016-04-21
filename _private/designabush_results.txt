@@ -1,0 +1,522 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Results from Form 1 of Page _private/designabush.htm</title>
+</head>
+
+<body>
+
+<hr>
+<p><b>D: </b>100<br>
+<b>d: </b>50<br>
+<b>L: </b>2<br>
+<b>M: </b>0<br>
+<b>N: </b>1<br>
+<b>R: </b>0<br>
+<b>Tmax: </b>21<br>
+<b>Tmin: </b>21<br>
+<b>calc1: </b><br>
+<b>P: </b>0<br>
+<b>V: </b>0<br>
+<b>PV: </b>0<br>
+<b>OD: </b>100.25<br>
+<b>ODtol: </b>0.1<br>
+<b>ID: </b>51.05<br>
+<b>IDtol: </b>0.05<br>
+<b>L1: </b>2<br>
+<b>L1tol: </b>0.3<br>
+<b>Contact_person: </b>7 39 8<br>
+<b>email_address: </b>7899 87<br>
+<b>tel: </b>987 9<br>
+<b>Country: </b>897 98<br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>155.239.76.77<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.0; Windows 95; DigExt)<br>
+<b>Date: </b>Tuesday, October 31, 2000<br>
+<b>Time: </b>04:23:11 AM<br>
+</p>
+<h3>Comments</h3>
+<p>joan on contact Tues am</p>
+<hr>
+<p><b>D: </b>150<br>
+<b>d: </b>100<br>
+<b>L: </b>200<br>
+<b>M: </b>200<br>
+<b>N: </b>1<br>
+<b>R: </b>100<br>
+<b>Tmax: </b>80<br>
+<b>Tmin: </b>-50<br>
+<b>calc1: </b><br>
+<b>P: </b>0.09800000000000002<br>
+<b>V: </b>31.41592653589793<br>
+<b>PV: </b>3.0787608005179976<br>
+<b>OD: </b>150.8<br>
+<b>ODtol: </b>0.15<br>
+<b>ID: </b>102.19<br>
+<b>IDtol: </b>0.1<br>
+<b>L1: </b>200<br>
+<b>L1tol: </b>1<br>
+<b>Contact_person: </b>Joan on the site Thu pm<br>
+<b>email_address: </b>jm@<br>
+<b>tel: </b>home<br>
+<b>Country: </b>sa<br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>155.239.76.131<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.0; Windows 95; DigExt)<br>
+<b>Date: </b>Thursday, November 02, 2000<br>
+<b>Time: </b>10:14:10 AM<br>
+</p>
+<h3>Comments</h3>
+<p>Jean
+This is directly off the site.
+It seems OK
+Joan</p>
+<hr>
+<p><b>D: </b>110<br>
+<b>d: </b>100<br>
+<b>L: </b>100<br>
+<b>M: </b>1000<br>
+<b>N: </b>1<br>
+<b>R: </b>100<br>
+<b>Tmax: </b>50<br>
+<b>Tmin: </b>21<br>
+<b>calc1: </b><br>
+<b>P: </b>0.98<br>
+<b>V: </b>31.41592653589793<br>
+<b>PV: </b>30.787608005179972<br>
+<b>OD: </b>110.27<br>
+<b>ODtol: </b>0.11<br>
+<b>ID: </b>100.48<br>
+<b>IDtol: </b>0.1<br>
+<b>L1: </b>100<br>
+<b>L1tol: </b>0.5<br>
+<b>Contact_person: </b>afl<br>
+<b>email_address: </b>legeraf@global.co.za<br>
+<b>tel: </b><br>
+<b>Country: </b>vga<br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>155.239.108.222<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 4.01; Windows 95)<br>
+<b>Date: </b>Friday, November 03, 2000<br>
+<b>Time: </b>12:49:00 AM<br>
+</p>
+<h3>Comments</h3>
+<p>1. Windows for steps 2,3,4, are too narrow as they ony print 2 digits and .  .
+<p>
+2. I have not checked  actual clearance calculations from basics, but quick look shows that with maximum od tolerance and minimum id tolerance:no clearance after fit
+This page has no data if sent by e mail, so is sent to customer service&quot;</p>
+<hr>
+<p><b>D: </b>150<br>
+<b>d: </b>130<br>
+<b>L: </b>180<br>
+<b>M: </b>20000<br>
+<b>N: </b>2<br>
+<b>R: </b>5<br>
+<b>Tmax: </b>100<br>
+<b>Tmin: </b>-5<br>
+<b>calc1: </b><br>
+<b>P: </b>4.188034188034188<br>
+<b>V: </b>2.0420352248333655<br>
+<b>PV: </b>8.552113334772215<br>
+<b>OD: </b>150.43<br>
+<b>ODtol: </b>0.15<br>
+<b>ID: </b>130.95<br>
+<b>IDtol: </b>0.13<br>
+<b>L1: </b>180<br>
+<b>L1tol: </b>0.9<br>
+<b>Contact_person: </b>Ian Moffett<br>
+<b>email_address: </b>moffett@vescoplastics.com<br>
+<b>tel: </b><br>
+<b>Country: </b>Only passing trough<br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>155.239.65.162<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.0; Windows 98; DigExt)<br>
+<b>Date: </b>Friday, November 03, 2000<br>
+<b>Time: </b>01:18:17 AM<br>
+</p>
+<h3>Comments</h3>
+<p>Testing.
+<p>
+Comparison with what I have seems good.
+Ian</p>
+<hr>
+<p><b>D: </b>150<br>
+<b>d: </b>100<br>
+<b>L: </b>20<br>
+<b>M: </b>0<br>
+<b>N: </b>1<br>
+<b>R: </b>0<br>
+<b>Tmax: </b>21<br>
+<b>Tmin: </b>21<br>
+<b>calc1: </b><br>
+<b>P: </b>0<br>
+<b>V: </b>0<br>
+<b>PV: </b>0<br>
+<b>OD: </b>150.35<br>
+<b>ODtol: </b>0.15<br>
+<b>ID: </b>101.08<br>
+<b>IDtol: </b>0.1<br>
+<b>WT: </b>25<br>
+<b>WTtol: </b>0.03<br>
+<b>L1: </b>20<br>
+<b>L1tol: </b>0.3<br>
+<b>Contact_person: </b>test contact design<br>
+<b>email_address: </b>3r 32<br>
+<b>tel: </b> 12<br>
+<b>Country: </b>w57 45 <br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>155.239.76.191<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.0; Windows 95; DigExt)<br>
+<b>Date: </b>Friday, December 01, 2000<br>
+<b>Time: </b>05:38:04 AM<br>
+</p>
+<h3>Comments</h3>
+<p></p>
+<hr>
+<p><b>D: </b>100<br>
+<b>d: </b>20<br>
+<b>L: </b>10<br>
+<b>M: </b>0<br>
+<b>N: </b>1<br>
+<b>R: </b>0<br>
+<b>Tmax: </b>21<br>
+<b>Tmin: </b>21<br>
+<b>calc1: </b><br>
+<b>P: </b>0<br>
+<b>V: </b>0<br>
+<b>PV: </b>0<br>
+<b>OD: </b>100.25<br>
+<b>ODtol: </b>0.1<br>
+<b>ID: </b>22.1<br>
+<b>IDtol: </b>0.03<br>
+<b>WT: </b>40<br>
+<b>WTtol: </b>0.03<br>
+<b>L1: </b>10<br>
+<b>L1tol: </b>0.3<br>
+<b>Contact_person: </b>JOan testing<br>
+<b>email_address: </b>email<br>
+<b>tel: </b><br>
+<b>Country: </b>rfver<br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>155.239.76.184<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.0; Windows 95; DigExt)<br>
+<b>Date: </b>Monday, December 18, 2000<br>
+<b>Time: </b>12:26:18 AM<br>
+</p>
+<h3>Comments</h3>
+<p></p>
+<hr>
+<p><b>D: </b>150<br>
+<b>d: </b>100<br>
+<b>L: </b>20<br>
+<b>M: </b>0<br>
+<b>N: </b>1<br>
+<b>R: </b>0<br>
+<b>Tmax: </b>21<br>
+<b>Tmin: </b>21<br>
+<b>calc1: </b><br>
+<b>P: </b>0<br>
+<b>V: </b>0<br>
+<b>PV: </b>0<br>
+<b>OD: </b>150.35<br>
+<b>ODtol: </b>0.15<br>
+<b>ID: </b>101.08<br>
+<b>IDtol: </b>0.1<br>
+<b>WT: </b>25<br>
+<b>WTtol: </b>0.03<br>
+<b>L1: </b>20<br>
+<b>L1tol: </b>0.3<br>
+<b>Contact_person: </b>Joan testing<br>
+<b>email_address: </b>jm@<br>
+<b>tel: </b>453 4488<br>
+<b>Country: </b>SA<br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>155.239.76.15<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.0; Windows 95; DigExt)<br>
+<b>Date: </b>Thursday, December 28, 2000<br>
+<b>Time: </b>01:39:10 AM<br>
+</p>
+<h3>Comments</h3>
+<p>Hi Marco
+Greetings from design-a-bush
+This web page was set to jm@vesco.... as it is still in 'beta' testing.  However, with me away for 3 weeks now I thought somebody better be watching out!
+You are my best SOMEBODY.
+Best wishes for the season!  Lionel says to get a hands free set!!!  Please tell him to get one too!!!!
+Regards
+Joan.... plse let me know you received this....with thanks</p>
+<hr>
+<p><b>D: </b>150<br>
+<b>d: </b>100<br>
+<b>L: </b>15<br>
+<b>M: </b>0<br>
+<b>N: </b>1<br>
+<b>R: </b>0<br>
+<b>Tmax: </b>21<br>
+<b>Tmin: </b>21<br>
+<b>calc1: </b><br>
+<b>P: </b>0<br>
+<b>V: </b>0<br>
+<b>PV: </b>0<br>
+<b>OD: </b>150.35<br>
+<b>ODtol: </b>0.15<br>
+<b>ID: </b>101.08<br>
+<b>IDtol: </b>0.1<br>
+<b>WT: </b>25<br>
+<b>WTtol: </b>0.03<br>
+<b>L1: </b>15<br>
+<b>L1tol: </b>0.3<br>
+<b>Contact_person: </b>Joan<br>
+<b>email_address: </b>jm@<br>
+<b>tel: </b>uiyui y<br>
+<b>Country: </b>yiu y<br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>155.239.72.62<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.0; Windows 98; DigExt)<br>
+<b>Date: </b>Thursday, January 18, 2001<br>
+<b>Time: </b>05:18:02 AM<br>
+</p>
+<h3>Comments</h3>
+<p>Mark
+please fwd ASAP
+TO jm@vescoplastics.com
+Thanks
+Joan</p>
+<hr>
+<p><b>D: </b>126<br>
+<b>d: </b>89<br>
+<b>L: </b>100<br>
+<b>M: </b>10000<br>
+<b>N: </b>1<br>
+<b>R: </b>50<br>
+<b>Tmax: </b>21<br>
+<b>Tmin: </b>10<br>
+<b>calc1: </b><br>
+<b>P: </b>5.50561797752809<br>
+<b>V: </b>13.98008730847458<br>
+<b>PV: </b>76.96902001294992<br>
+<b>OD: </b>126.3<br>
+<b>ODtol: </b>0.13<br>
+<b>ID: </b>89.85<br>
+<b>IDtol: </b>0.09<br>
+<b>WT: </b>18.23<br>
+<b>WTtol: </b>0.03<br>
+<b>L1: </b>100<br>
+<b>L1tol: </b>0.5<br>
+<b>Contact_person: </b>Reg Taylor<br>
+<b>email_address: </b>spes@mweb.co.za<br>
+<b>tel: </b>+2712 541 3332<br>
+<b>Country: </b>South Africa<br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>196.31.187.187<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.0; Windows 98; DigExt)<br>
+<b>Date: </b>Monday, January 22, 2001<br>
+<b>Time: </b>10:04:32 AM<br>
+</p>
+<h3>Comments</h3>
+<p>We need to replace roller bearings of 126 OD 98 ID and 100 length (total - double-roll=40 wide and triple-roll=60 wide) with Vesconite or similar to operate in sea water.</p>
+<hr>
+<p><b>D: </b>126<br>
+<b>d: </b>89<br>
+<b>L: </b>100<br>
+<b>M: </b>10000<br>
+<b>N: </b>1<br>
+<b>R: </b>50<br>
+<b>Tmax: </b>21<br>
+<b>Tmin: </b>10<br>
+<b>calc1: </b><br>
+<b>P: </b>11.01123595505618<br>
+<b>V: </b>13.98008730847458<br>
+<b>PV: </b>153.93804002589985<br>
+<b>OD: </b>126.3<br>
+<b>ODtol: </b>0.13<br>
+<b>ID: </b>89.85<br>
+<b>IDtol: </b>0.09<br>
+<b>WT: </b>18.23<br>
+<b>WTtol: </b>0.03<br>
+<b>L1: </b>100<br>
+<b>L1tol: </b>0.5<br>
+<b>Contact_person: </b>Ian Moffett<br>
+<b>email_address: </b>moffett@vescoplastics.com<br>
+<b>tel: </b><br>
+<b>Country: </b>SA<br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>155.239.68.66<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.0; Windows 98; DigExt)<br>
+<b>Date: </b>Tuesday, January 23, 2001<br>
+<b>Time: </b>04:23:57 AM<br>
+</p>
+<h3>Comments</h3>
+<p>Mark, I am just testing the system. Please print for me the results that you get on the mail.
+the on screen results confirm the results that you got P=11 MPa
+Thanks
+Ian</p>
+<hr>
+<p><b>D: </b>150<br>
+<b>d: </b>100<br>
+<b>L: </b>10<br>
+<b>M: </b>0<br>
+<b>N: </b>1<br>
+<b>R: </b>0<br>
+<b>Tmax: </b>21<br>
+<b>Tmin: </b>21<br>
+<b>calc1: </b><br>
+<b>P: </b>0<br>
+<b>V: </b>0<br>
+<b>PV: </b>0<br>
+<b>OD: </b>150.35<br>
+<b>ODtol: </b>0.15<br>
+<b>ID: </b>101.08<br>
+<b>IDtol: </b>0.1<br>
+<b>WT: </b>24.64<br>
+<b>WTtol: </b>0.03<br>
+<b>L1: </b>10<br>
+<b>L1tol: </b>0.3<br>
+<b>Contact_person: </b>Joan<br>
+<b>email_address: </b>email<br>
+<b>tel: </b>jjjjj<br>
+<b>Country: </b>;;;;;<br>
+<b>qty_per_year: </b>1000<br>
+<b>Qty_per_order: </b>100<br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>155.239.76.24<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.0; Windows 95; DigExt)<br>
+<b>Date: </b>Thursday, January 25, 2001<br>
+<b>Time: </b>02:07:54 AM<br>
+</p>
+<h3>Comments</h3>
+<p>Hi Mark
+This is from design-a-bush where I have put in the qty to order!!
+please fwd this page to me
+Thanks
+Joan</p>
+<hr>
+<p><b>D: </b>100<br>
+<b>d: </b>75<br>
+<b>L: </b>100<br>
+<b>M: </b>10<br>
+<b>N: </b>1<br>
+<b>R: </b>3000<br>
+<b>Tmax: </b>35<br>
+<b>Tmin: </b>21<br>
+<b>calc1: </b><br>
+<b>P: </b>0.013066666666666667<br>
+<b>V: </b>706.8583470577034<br>
+<b>PV: </b>9.236282401553992<br>
+<b>OD: </b>100.25<br>
+<b>ODtol: </b>0.1<br>
+<b>ID: </b>75.63<br>
+<b>IDtol: </b>0.08<br>
+<b>WT: </b>12.31<br>
+<b>WTtol: </b>0.03<br>
+<b>L1: </b>100<br>
+<b>L1tol: </b>0.5<br>
+<b>Contact_person: </b>beben bunyamin<br>
+<b>email_address: </b>beben@up3-pertamina.net<br>
+<b>tel: </b>62-711-596531<br>
+<b>Country: </b>palembang, Indonesia<br>
+<b>qty_per_year: </b><br>
+<b>Qty_per_order: </b><br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>202.154.30.44<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 4.01; Windows 98)<br>
+<b>Date: </b>Wednesday, January 31, 2001<br>
+<b>Time: </b>02:52:52 AM<br>
+</p>
+<h3>Comments</h3>
+<p>please could you gave me about mechanical properties of vesconite</p>
+<hr>
+<p><b>D: </b>150<br>
+<b>d: </b>100<br>
+<b>L: </b>50<br>
+<b>M: </b>44<br>
+<b>N: </b>1<br>
+<b>R: </b>0<br>
+<b>Tmax: </b>21<br>
+<b>Tmin: </b>21<br>
+<b>calc1: </b><br>
+<b>P: </b>0.08624000000000001<br>
+<b>V: </b>0<br>
+<b>PV: </b>0<br>
+<b>OD: </b>150.35<br>
+<b>ODtol: </b>0.15<br>
+<b>ID: </b>101.08<br>
+<b>IDtol: </b>0.1<br>
+<b>WT: </b>24.64<br>
+<b>WTtol: </b>0.03<br>
+<b>L1: </b>50<br>
+<b>L1tol: </b>0.3<br>
+<b>Contact_person: </b>Joan testing NEW QUOTING<br>
+<b>email_address: </b>8i7 8<br>
+<b>tel: </b>;7o7<br>
+<b>Country: </b>87 987<br>
+<b>Quote_req: </b>Y<br>
+<b>qty_per_year: </b>999,999,9<br>
+<b>Qty_per_order: </b>88888888<br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>155.239.76.123<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.0; Windows 95; DigExt)<br>
+<b>Date: </b>Friday, February 16, 2001<br>
+<b>Time: </b>01:54:56 AM<br>
+</p>
+<h3>Comments</h3>
+<p>Mark please fwd so I can quote number 
+Thanks
+Joan</p>
+<hr>
+<p><b>D: </b>125<br>
+<b>d: </b>95<br>
+<b>L: </b>95<br>
+<b>M: </b>600<br>
+<b>N: </b>1<br>
+<b>R: </b>1800<br>
+<b>Tmax: </b>15<br>
+<b>Tmin: </b>15<br>
+<b>calc1: </b><br>
+<b>P: </b>0.6515235457063712<br>
+<b>V: </b>537.2123437638546<br>
+<b>PV: </b>350.0064910062565<br>
+<b>OD: </b>125.3<br>
+<b>ODtol: </b>0.13<br>
+<b>ID: </b>95.74<br>
+<b>IDtol: </b>0.1<br>
+<b>WT: </b>14.78<br>
+<b>WTtol: </b>0.03<br>
+<b>L1: </b>95<br>
+<b>L1tol: </b>0.48<br>
+<b>Contact_person: </b>Morten Osvoll<br>
+<b>email_address: </b>morten.osvoll@kvaerner.com<br>
+<b>tel: </b>+47 32 859455<br>
+<b>Country: </b>Norway<br>
+<b>Quote_req: </b><br>
+<b>qty_per_year: </b><br>
+<b>Qty_per_order: </b><br>
+<b>B1: </b>Customer Service<br>
+<b>Remote Name: </b>193.215.226.132<br>
+<b>Remote User: </b><br>
+<b>HTTP User Agent: </b>Mozilla/4.0 (compatible; MSIE 5.01; Windows NT)<br>
+<b>Date: </b>Tuesday, February 27, 2001<br>
+<b>Time: </b>09:02:16 AM<br>
+</p>
+<h3>Comments</h3>
+<p>Is this suitable for a sea water service ?</p>
+<!--webbot BOT="FormInsertHere"
+DESCR="The FrontPage FormInsertHere Component indicates the point in an HTML file where you want a default, Registration, or Discussion Component to insert new results."
+-->
+
+</body>
+
+</html>

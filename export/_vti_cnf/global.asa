@@ -1,0 +1,26 @@
+vti_encoding:SR|utf8-nl
+vti_author:SR|XAND-WEB3\\vesconite
+vti_charset:SR|windows-1252
+connectionstatus:SW|SalesCart=1 Database5=1
+vti_timelastmodified:TR|08 Aug 2003 05:53:19 -0000
+vti_title:SR|Web Settings for Active Server Pages
+vti_modifiedby:SR|XAND-WEB3\\vesconite
+vti_timecreated:TR|03 Sep 2003 13:21:34 -0000
+vti_backlinkinfo:VX|dbf_update.asp
+vti_extenderversion:SR|4.0.2.7802
+vti_syncwith_localhost\\c\:\\my documents\\webs\\vescom\\exp/c\:/my documents/webs/vescom/exp:TR|08 Aug 2003 05:53:19 -0000
+vti_filesize:IR|5546
+vti_dataconns:VR|SalesCart Database5
+vti_cacheddtm:TX|03 Sep 2003 13:21:34 -0000
+vti_cachedlinkinfo:VX|D|X-DATACONN://www.vesconite.com/export/SalesCart/DRIVER={Microsoft\\ Access\\ Driver\\ (*.mdb)};DBQ=URL=fpdb/shop.mdb D|X-DATACONN://www.vesconite.com/export/Database5/DRIVER={Microsoft\\ Access\\ Driver\\ (*.mdb)};DBQ=URL=fpdb/ves0001.mdb
+vti_cachedsvcrellinks:VX|NDUS|X-DATACONN://www.vesconite.com/export/SalesCart/DRIVER={Microsoft\\ Access\\ Driver\\ (*.mdb)};DBQ=URL=fpdb/shop.mdb NDUS|X-DATACONN://www.vesconite.com/export/Database5/DRIVER={Microsoft\\ Access\\ Driver\\ (*.mdb)};DBQ=URL=fpdb/ves0001.mdb
+vti_cachedtitle:SR|Web Settings for Active Server Pages
+vti_cachedhasbots:BR|false
+vti_cachedhastheme:BR|false
+vti_cachedhasborder:BR|false
+vti_cacheddataconns:VR|SalesCart Database5
+vti_cacheddataconnattrs_SalesCart:VR|_type=fp40 connectionstring=DRIVER={Microsoft\\ Access\\ Driver\\ (*.mdb)};DBQ=URL=fpdb/shop.mdb connectiontimeout=15 commandtimeout=30 cursorlocation=3 runtimeusername= runtimepassword=
+vti_cacheddataconnattrs_Database5:VR|_type=fp40 connectionstring=DRIVER={Microsoft\\ Access\\ Driver\\ (*.mdb)};DBQ=URL=fpdb/ves0001.mdb connectiontimeout=15 commandtimeout=30 cursorlocation=3 runtimeusername= runtimepassword=
+vti_error0:SX|The data connection 'SalesCart' contains a URL 'fpdb/shop.mdb' that is not in the current web.
+vti_error1:SX|The data connection 'Database5' contains a URL 'fpdb/ves0001.mdb' that is not in the current web.
+vti_error:IX|2
