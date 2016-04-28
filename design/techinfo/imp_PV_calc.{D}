@@ -11,7 +11,18 @@
 	</STYLE>
     <meta name="Microsoft Border" content="b">
 </HEAD>
-<BODY stylesrc="../../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<BODY stylesrc="../../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
 <table border="1" width="92%" bordercolor="#000086" cellspacing="0" cellpadding="2">
   <tr>
     <td width="100%">
@@ -84,8 +95,8 @@ following equations apply:<BR>
   </tr>
   <tr>
     <td width="81%">
-<P STYLE="margin-bottom: 0in"><B>		
- <FONT color="#008000" face="Arial" size="3">		
+<P STYLE="margin-bottom: 0in"><B>
+ <FONT color="#008000" face="Arial" size="3">
  shaft diameter (inches) x bearing length (inches)</FONT></B></P>
     </td>
   </tr>
@@ -230,7 +241,7 @@ e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</
     </tr>
     <tr>
       <td width="560" colspan="2">
-        <p align="center"><font size="1" face="Arial">All Rights Reserved ©
+        <p align="center"><font size="1" face="Arial">All Rights Reserved ï¿½
         1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../../footer_links/warranty.htm">Warranty
         disclaimer</a></font></td>
     </tr>

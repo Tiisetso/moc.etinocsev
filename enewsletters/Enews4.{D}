@@ -6,7 +6,18 @@
 <meta name="Microsoft Border" content="b">
 </head>
 
-<body stylesrc="../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<body stylesrc="../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
 
 <p align="center"><b><font face="Arial" color="#000086" size="4">e-Newsletter #4&nbsp;
 July 2000</font></b></p>
@@ -20,11 +31,11 @@ July 2000</font></b></p>
     <p><font color="#000000" size="3"><font size="2"><font face="Arial" size="3">These
     include:</font></p>
     <blockquote>
-      <p><font color="#0000ff" face="Arial">• Vesconite GF6 bushing, the
+      <p><font color="#0000ff" face="Arial">ï¿½ Vesconite GF6 bushing, the
       original Vesconite grade,</font></p>
-      <p><font color="#0000ff" face="Arial">• Polypropylene and polyethylene
+      <p><font color="#0000ff" face="Arial">ï¿½ Polypropylene and polyethylene
       plates,</font></p>
-      <p><font color="#0000ff" face="Arial">• Vesconylon BMS bushing and
+      <p><font color="#0000ff" face="Arial">ï¿½ Vesconylon BMS bushing and
       plate, a&nbsp;superior internally lubricated nylon product, ideal for high
       impact applications</font></p>
     </blockquote>
@@ -815,7 +826,7 @@ e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</
     </tr>
     <tr>
       <td width="560" colspan="2">
-        <p align="center"><font size="1" face="Arial">All Rights Reserved ©
+        <p align="center"><font size="1" face="Arial">All Rights Reserved ï¿½
         1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../footer_links/warranty.htm">Warranty
         disclaimer</a></font></td>
     </tr>
