@@ -10,7 +10,18 @@
 <meta name="Microsoft Border" content="t">
 </head>
 
-<body stylesrc="../../../Index.htm" topmargin="0" bgcolor="#F2F7FF"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<body stylesrc="../../../Index.htm" topmargin="0" bgcolor="#F2F7FF">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
 
 <table border="0" cellpadding="2" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="649">
   <tr>
@@ -44,7 +55,7 @@
     <a style="text-decoration: none" title="Search the site" href="http://www.vesconite.com/vesco/site_search.htm">Search</a></font></b></td>
   </tr>
 </table>
-  
+
 </td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
 <form BOTID="0" METHOD="POST" ACTION="exp_xl_stock.asp">
   <table BORDER="0">
@@ -70,7 +81,7 @@
 <table border="1" cellspacing="0" cellpadding="2" style="border-collapse: collapse" bordercolor="#111111" width="100%">
   <thead>
     <tr>
-      <td width="195" rowspan="2"><b><font face="Arial" color="#800000" size="2">Lengths 
+      <td width="195" rowspan="2"><b><font face="Arial" color="#800000" size="2">Lengths
       returned in metres<br>
       VG=Superclad, VF=continuous meter</font></b></td>
       <td width="42" rowspan="2">

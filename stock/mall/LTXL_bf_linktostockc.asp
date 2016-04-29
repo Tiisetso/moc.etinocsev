@@ -20,7 +20,18 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
 
 
 
-<body stylesrc="../index.htm" topmargin="0" bgcolor="#F2F7FF"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<body stylesrc="../index.htm" topmargin="0" bgcolor="#F2F7FF">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
 
 <table border="0" cellpadding="2" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="649">
   <tr>
@@ -54,7 +65,7 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
     <a style="text-decoration: none" title="Search the site" href="http://www.vesconite.com/vesco/site_search.htm">Search</a></font></b></td>
   </tr>
 </table>
-  
+
 </td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
 
 <table border="0" cellpadding="0" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" height="26" width="127">
@@ -65,32 +76,32 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
   <tr>
     <td width="187" rowspan="2" valign="top" bgcolor="#EAEAEA" height="273">
           <form method="POST" action="../--WEBBOT-SELF--" onSubmit="" name="linkform">
-           
+
           <p align="left">
           <font face="Arial" size="2">
           <a title="vesconite@vesconite.com" href="mailto:vesconite@vesconite.com?subject=Contact from www.vesconite.com">
           Email us</a></font><br>
           <font size="1">&nbsp;&nbsp; </font><br>
-           
+
           <font face="Arial" size="2">
           <span style="background-color: #FFFFFF" lang="en-za">
           <a href="PassageWay/All%202011.asp">Stock Finder</a></span></font><br>
-          
-          	
+
+
           <font size="1">&nbsp;</font><br>
-          
-          	
+
+
           <font face="Arial" size="2"><a href="lobby.asp">Dealer Update</a><br>
           <span lang="en-za">
         <a href="https://vescosales.com/wstore/">Webstore</a></span></font><br>
           <font face="Arial" size="2" color="#000086">
           <a href="http://www.vesconite.com/vesco/self_service/self_home.htm">Self Service</a></font><br>
-          
-          	
+
+
          <font face="Arial" size="2" color="#000080">
           <a title="Request a quote" href="http://www.vesconite.com/vesco/enquiry_send.htm">Request quote</a></b></font><br>
-          
-          	
+
+
           <font face="Arial" size="2">
           <a href="LTXL_nokia.asp">Mobile</a></font><font face="Arial" size="2" color="#000086"><br>
           </font>
@@ -119,18 +130,18 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
           <font face="Arial" size="1" color="#000086">
           &nbsp;</font><font face="Arial" size="2" color="#000086"><br>
           </font>
-          
-          	
+
+
          <font face="Arial"><a href="http://www.vesconite.com/french/">
          <img border="1" src="../_borders/France.gif" alt="Francais" width="25" height="15"></a>
     <a href="http://www.vesconite.com/span">
-    <img border="1" src="../_borders/Spanish.gif" alt="Español" width="23" height="16"></a> </font>
+    <img border="1" src="../_borders/Spanish.gif" alt="Espaï¿½ol" width="23" height="16"></a> </font>
     <a href="http://www.vesconite.com/finnish">
     <img border="1" src="../_borders/finnland.gif" alt="Suomi" width="23" height="15"></a>
     <a href="http://www.vesconite.com/russian">
     <img border="1" src="../_borders/russian.gif" width="23" height="16" alt="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; "></a><br>
     <a href="http://www.vesconite.com/port/">
-    <img border="1" src="../_borders/port.gif" alt="Português" width="27" height="16"></a>
+    <img border="1" src="../_borders/port.gif" alt="Portuguï¿½s" width="27" height="16"></a>
     <a href="http://www.vesconite.com/italian">
     <img border="1" src="../_borders/italy.gif" width="25" height="16" alt="Italian"></a>
     <a href="http://www.vesconite.com/afrikaans">
@@ -138,15 +149,15 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
          <a href="http://www.vesconite.com/chineses">
          <img border="1" src="../_borders/China.gif" alt="&#32321;&#39636;&#20013;&#25991;" width="22" height="15"></a> </p>
           </form>
-          
-          	
+
+
           <p align="left">
-          
-          	
+
+
          <font face="Arial">
          <a href="http://www.vesconite.com/lhs_headings/industry.htm">Industries</a></font><p align="left">
-          
-          	
+
+
          <font face="Arial">
          <a title="Bearings for rudders, propeller shafts" href="http://www.vesconite.com/industry/marine/marine.htm">
     <img border="0" src="../_borders/ship_icon.jpg" alt="Rudder and stern tube bearings, strut cutlass, drum roller, winch clavit" width="34" height="22"></a><br>
@@ -157,27 +168,27 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
     <img border="0" src="../_borders/Centrifugal%20pump%20small.gif" alt="Vesconite and Vesconite Hilube pump bearings, ideal for long life as lineshaft, pump bowl and stuffing box bearings. Used in vertical turbine, sump, centrifugal pumps, vertical spindle and wear rings. Low friction and able to run dry." width="26" height="23"></a><br>
          </font><span style="letter-spacing: -1pt"><font face="Arial">
          <a title="Bearings for lineshaft bearings, support bearings and wear rings" href="http://www.vesconite.com/industry/pumps/pump.htm">Pumps</a></font></span><p align="left">
-          
-          	
+
+
          <font face="Arial">
          <a title="Bogie center liners, axle box guides" href="http://www.vesconite.com/industry/railways/wear_parts.htm">
     <img border="0" src="../_borders/train_icon.jpg" alt="Solve rail wear problems, bogie centre pedestal, horn check liners, suspension bushes" width="25" height="22"></a><br>
          </font><span style="letter-spacing: -1pt"><font face="Arial">
           <a title="Bogie center liners, axle box guides" href="http://www.vesconite.com/industry/railways/wear_parts.htm">Rail</a></font></span><p align="left">
-          
-          	
+
+
          <font face="Arial"><b>
          <a href="http://www.vesconite.com/industry/mining/mine1.htm">
          <img src="../_borders/Crusher.jpg" border="0" width="19" height="21"></a></b><br>
          <a href="http://www.vesconite.com/industry/mining/mine1.htm">Mining</a></font><p align="left">
-          
-          	
+
+
          <a href="http://www.vesconite.com/industry/transport/no_grease_suspension.htm">
          <img border="0" src="../_borders/truck_icon.jpg" alt="Trunnion, suspension, walking beam kingpin and shackle bushes" width="35" height="22"></a><br>
          <font face="Arial">
          <a href="http://www.vesconite.com/industry/transport/no_grease_suspension.htm">Suspension Systems</a></font><p align="center">
-          
-          	
+
+
          <a href="stff/staff_login.asp" style="text-decoration: none">
          <span lang="en-za"><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          </font></span></a></td>
@@ -192,18 +203,18 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
 
     <td width="100%">
     <p align="center"><b><font face="Arial" size="2">
-    <a href="../index.htm">Home</a>&nbsp;&nbsp; <font color="#000086">&gt;&nbsp;&nbsp; <a href="lobby.asp">Stock 
+    <a href="../index.htm">Home</a>&nbsp;&nbsp; <font color="#000086">&gt;&nbsp;&nbsp; <a href="lobby.asp">Stock
     lobby</a>&nbsp;&nbsp; &gt;&nbsp;&nbsp; </font></font></b></td>
 
 </strong>
   </tr>
 </table>
 <p align="left">
-<font color="#000080" face="Arial"> <strong>The World's Largest 
+<font color="#000080" face="Arial"> <strong>The World's Largest
 Bushing Stock Range</strong><b>, from 10 mm to 720 mm diameter.</b></font></p>
 <p align="left">
-<font color="#000080" face="Arial"> The <b> Company Stock Range</b> 
-(10 mm to 240 mm) 
+<font color="#000080" face="Arial"> The <b> Company Stock Range</b>
+(10 mm to 240 mm)
 is available for immediate despatch from Johannesburg</font><b><font face="Arial" size="4" color="#FF0000">*&nbsp; </font></b>
 <font color="#000080" face="Arial">Type in <b>material, </b>the <b>housing size, </b>
 and<b> </b>
@@ -252,7 +263,7 @@ function FrontPage_Form2_Validator(theForm)
   <input type="text" name="stockno" size="20" value="<%=Request("stockno")%>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <input type="submit" value="View Company stock ready for despatch" name="B1" style="color: #000086; font-family: Arial; font-size: 10pt; font-weight: bold"></p>
 </form>
-<p><a href="stockc.asp"><font face="Arial">V</font></a><font face="Arial" color="#FF0000"><a href="stockc.asp">iew 
+<p><a href="stockc.asp"><font face="Arial">V</font></a><font face="Arial" color="#FF0000"><a href="stockc.asp">iew
 Company stock ready for despatch</a></font></p>
 <table width="709" border="1" cellspacing="0" cellpadding="2" style="border-collapse: collapse" bordercolor="#000080" bgcolor="#E1C5A8" height="124">
   <thead>
@@ -363,7 +374,7 @@ fp_iRegion=BOTID
     </tr>
     <!--webbot bot="DatabaseRegionEnd" b-tableformat="TRUE" b-menuformat="FALSE" u-dbrgn2="../_fpclass/fpdbrgn2.inc" i-groupsize="8" clientside tag="TBODY" preview="&lt;tr&gt;&lt;td colspan=64 bgcolor=&quot;#FFFF00&quot; align=&quot;left&quot; width=&quot;100%&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;This is the end of a Database Results region.&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;TR&gt;&lt;TD ALIGN=LEFT VALIGN=MIDDLE COLSPAN=64&gt;&lt;NOBR&gt;&lt;INPUT TYPE=Button VALUE=&quot;  |&lt;  &quot;&gt;&lt;INPUT TYPE=Button VALUE=&quot;   &lt;  &quot;&gt;&lt;INPUT TYPE=Button VALUE=&quot;  &gt;   &quot;&gt;&lt;INPUT TYPE=Button VALUE=&quot;  &gt;|  &quot;&gt;  [1/8]&lt;/NOBR&gt;&lt;BR&gt;&lt;/td&gt;&lt;/tr&gt;" startspan --><!--#include file="../_fpclass/fpdbrgn2.inc"-->
 <!--webbot bot="DatabaseRegionEnd" endspan --></tbody>
-</table>  
+</table>
 
 <!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
 
@@ -373,11 +384,11 @@ fp_iRegion=BOTID
     <tr>
     <td width="711" height="1" colspan="3" align="center">
         <font face="Arial" size="2"><font color="#000000">
-        For </font><font color="#FF0000">information and quotes,</font><font color="#000000"> 
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
         e-mail </font><a href="mailto:vesconite@vesconite.com">
         vesconite@vesconite.com</a></font>
         <br>
-        <font face="Arial" size="2"><font color="#FF0000">Feedback</font> is 
+        <font face="Arial" size="2"><font color="#FF0000">Feedback</font> is
         appreciated.
         <a href="mailto:vesconite@vesconite.com?subject=Feedback to the WEBMASTER">
         e-mail the webmaster</a></font></td>
@@ -396,9 +407,9 @@ fp_iRegion=BOTID
       &nbsp; <span style="background-color: #FFFFFF" lang="en-za">
         <a href="PassageWay/All%202011.asp">Stock Finder</a></span></font><font color="#000080" face="Arial" size="2">
         &nbsp;|&nbsp;
-    <a href="lobby.asp">Dealer Update</a>&nbsp; | &nbsp;<a href="LTXL_nokia.asp">Mobile</a></font><font face="Arial" size="2">&nbsp; 
+    <a href="lobby.asp">Dealer Update</a>&nbsp; | &nbsp;<a href="LTXL_nokia.asp">Mobile</a></font><font face="Arial" size="2">&nbsp;
       |&nbsp;
-      <a href="stff/export/exp_login.asp">Export</a><span lang="en-za">&nbsp; 
+      <a href="stff/export/exp_login.asp">Export</a><span lang="en-za">&nbsp;
         |&nbsp;&nbsp;
         <a href="https://vescosales.com/wstore/">Webstore</a></span></font></td>
     </tr>
@@ -408,12 +419,12 @@ fp_iRegion=BOTID
         <span style="letter-spacing: -1pt"><b>Toll free/Linea gratuita</b></span></font><font face="Arial" color="#000080" size="2"><b><br>
         Australia </b>
         </font>
-          <font face="Arial" color="#000086" size="2">1800 
+          <font face="Arial" color="#000086" size="2">1800
         833 448</font><font face="Arial" size="2" color="#000080"><b><br>
         Brasil</b> </font><strong style="font-weight: 400">
         <font face="Arial" color="#000080" size="2">0800 891 87 16</font></strong><font face="Arial" color="#000080" size="2"><b><br>
         Canada</b> 1 866 682 3484<br>
-        <b>Chile</b> </font><font face="Arial" size="2" color="#000086">(2) 570 
+        <b>Chile</b> </font><font face="Arial" size="2" color="#000086">(2) 570
         3855<br>
         </font><font face="Arial" color="#000080" size="2">
         <b>Germany</b> 0443 1892 3899</font><font face="Arial" size="2" color="#000086"><br>
@@ -456,11 +467,11 @@ fp_iRegion=BOTID
       <tr>
         <td width="12%"><a href="http://www.vesconite.com/"><img border="0" src="../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></td>
         <td width="88%">
-        <p align="center"><font size="2" face="Arial">©</font><span style="FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px" class="Apple-style-span">2012 
-        Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site 
-        may not be copied or redistributed without the express written consent 
+        <p align="center"><font size="2" face="Arial">ï¿½</font><span style="FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px" class="Apple-style-span">2012
+        Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site
+        may not be copied or redistributed without the express written consent
         of Vesco Plastics Sales, Pty Ltd.</span><font size="2" face="Arial">&nbsp;
-    <a href="http://www.vesconite.com/footer_links/warranty.htm">Warranty 
+    <a href="http://www.vesconite.com/footer_links/warranty.htm">Warranty
         disclaimer</a></font></td>
       </tr>
     </table>

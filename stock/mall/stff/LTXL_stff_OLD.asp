@@ -21,7 +21,18 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
 
 
 
-<body stylesrc="../../Index.htm" topmargin="0" bgcolor="#F2F7FF"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<body stylesrc="../../Index.htm" topmargin="0" bgcolor="#F2F7FF">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
 
 <table border="0" cellpadding="2" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="649">
   <tr>
@@ -55,7 +66,7 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
     <a style="text-decoration: none" title="Search the site" href="http://www.vesconite.com/vesco/site_search.htm">Search</a></font></b></td>
   </tr>
 </table>
-  
+
 </td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
 <table width="982" border="1" cellspacing="0" bordercolor="#000080" style="border-collapse: collapse" cellpadding="0">
   <thead>
@@ -85,14 +96,14 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
       </select><font color="#000080"> </font> <font face="Arial" color="#000080">
       &nbsp;Outside dia<img border="0" src="../../images/greater%20than.gif" width="21" height="25"></font>&nbsp;
       <input NAME="OD" VALUE="<%=Request("OD")%>" size="3"><font face="Arial" color="#000080"><b>&nbsp;
-  &nbsp; &nbsp;</b>Inside 
+  &nbsp; &nbsp;</b>Inside
       dia<img border="0" src="../images/less%20than.gif"><b>
-  
+
   </b>&nbsp;</font><input NAME="ID" VALUE="<%=Request("ID")%>" size="3"><font face="Arial" color="#000080">&nbsp;&nbsp;&nbsp; </font>
       <input TYPE="submit" value="Search"><br>
-<font face="Arial" color="#000080">If 
-  no suitable stock, try the 
-  <strong style="font-weight: 400"><a href="#Superclad Bearings">Superclad option</a> 
+<font face="Arial" color="#000080">If
+  no suitable stock, try the
+  <strong style="font-weight: 400"><a href="#Superclad Bearings">Superclad option</a>
 or the <a href="#Non Standard Stock">Non Standard Stock</a></strong></font></td>
     </tr>
   </table>
@@ -101,7 +112,7 @@ or the <a href="#Non Standard Stock">Non Standard Stock</a></strong></font></td>
   <thead>
     <tr>
       <td colspan="4" height="43" width="251">
-      <p align="center"><b><font face="Arial" color="#800000" size="2">Lengths 
+      <p align="center"><b><font face="Arial" color="#800000" size="2">Lengths
       returned in metres<br>
       VG = Superclad</font></b></td>
       <td height="43" bgcolor="#F9FBFF" width="25">&nbsp;</td>
@@ -422,9 +433,9 @@ fp_iRegion=BOTID
   <thead>
     <tr>
       <td width="274" colspan="4">
-      <p align="center"><b><font face="Arial" color="#FF0066">Bushings suitable 
+      <p align="center"><b><font face="Arial" color="#FF0066">Bushings suitable
       for Superclad<br>
-      Lengths returned 
+      Lengths returned
       in metres</font></b></td>
       <td width="51" bgcolor="#FFFFFF">&nbsp;</td>
       <td width="44" bgcolor="#FFFFFF">&nbsp;</td>
@@ -543,7 +554,7 @@ fp_iRegion=BOTID
 <!--#include file="../../_fpclass/fpdbrgn1.inc"-->
 <!--webbot bot="DatabaseRegionStart" endspan --><tr>
       <td><br>
-      <font face="Arial" color="#000080"><b><a name="Updated">Updated</a>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <font face="Arial" color="#000080"><b><a name="Updated">Updated</a>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       Company Stock&nbsp;&nbsp; </b></font><font face="Arial" color="#FF0066">
       <b>
       <!--webbot bot="DatabaseResultColumn" s-columnnames="Stockno,bat,Mat,P,OD,ID,len,Jhb,Vga,IE02,IN05,HW03,WTH,TI01,MA09,VS03,WTC,VS04,SE40,Randm,RwVAT,D3,D4,Massm,Dollm" s-column="Mat" b-tableformat="TRUE" b-hashtml="FALSE" b-makelink="FALSE" clientside b-MenuFormat preview="&lt;font size=&quot;-1&quot;&gt;&amp;lt;&amp;lt;&lt;/font&gt;Mat&lt;font size=&quot;-1&quot;&gt;&amp;gt;&amp;gt;&lt;/font&gt;" startspan --><%=FP_FieldVal(fp_rs,"Mat")%><!--webbot bot="DatabaseResultColumn" endspan --></b></font></td>
@@ -578,7 +589,7 @@ fp_iRegion=BOTID
 %>
 <!--#include file="../../_fpclass/fpdbrgn1.inc"-->
 <!--webbot bot="DatabaseRegionStart" endspan --><tr>
-      <td><b><font face="Arial" color="#000080">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <td><b><font face="Arial" color="#000080">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       Non Standard Stock</font><font color="#FF0066" face="Arial">&nbsp;&nbsp;
       <!--webbot bot="DatabaseResultColumn" s-columnnames="itemcode,mat,P,OD,ID,len,Vga,Jhb,jonk,VSLV,VSLJ,NSS2,INCO,Discol,rand,dollar,wght,vol" s-column="mat" b-tableformat="TRUE" b-hashtml="FALSE" b-makelink="FALSE" clientside b-MenuFormat preview="&lt;font size=&quot;-1&quot;&gt;&amp;lt;&amp;lt;&lt;/font&gt;mat&lt;font size=&quot;-1&quot;&gt;&amp;gt;&amp;gt;&lt;/font&gt;" startspan --><%=FP_FieldVal(fp_rs,"mat")%><!--webbot bot="DatabaseResultColumn" endspan --></font></b></td>
     </tr>

@@ -20,7 +20,18 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
 
 
 
-<body stylesrc="../../../../Index.htm" topmargin="0" bgcolor="#F2F7FF"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<body stylesrc="../../../../Index.htm" topmargin="0" bgcolor="#F2F7FF">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
 
 <table border="0" cellpadding="2" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="649">
   <tr>
@@ -54,7 +65,7 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
     <a style="text-decoration: none" title="Search the site" href="http://www.vesconite.com/vesco/site_search.htm">Search</a></font></b></td>
   </tr>
 </table>
-  
+
 </td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
 <table width="982" border="1" cellspacing="0" bordercolor="#000080" style="border-collapse: collapse" cellpadding="0">
   <thead>
@@ -95,13 +106,13 @@ Material</b>, and type in <b>outside diameter</b> and <b>inside diameter</b>.<b>
       </select><font color="#000080"> </font> <font face="Arial" color="#000080">
       &nbsp;Outside dia<img border="0" src="../../../../images/greater%20than.gif" width="21" height="25"></font>&nbsp;
       <input NAME="OD" VALUE="<%=Request("OD")%>" size="3"><font face="Arial" color="#000080"><b>&nbsp;
-  &nbsp; &nbsp;</b>Inside 
+  &nbsp; &nbsp;</b>Inside
       dia<img border="0" src="../../../images/less%20than.gif"><b>
-  
+
   </b>&nbsp;</font><input NAME="ID" VALUE="<%=Request("ID")%>" size="3"><font face="Arial" color="#000080">&nbsp;&nbsp;&nbsp; </font>
       <input TYPE="submit" value="Search"><br>
-<font face="Arial" color="#000080">If 
-  no suitable stock, try the 
+<font face="Arial" color="#000080">If
+  no suitable stock, try the
   <strong style="font-weight: 400"><a href="#Superclad Bearings">Superclad option</a></strong></font></td>
     </tr>
   </table>
@@ -110,7 +121,7 @@ Material</b>, and type in <b>outside diameter</b> and <b>inside diameter</b>.<b>
   <thead>
     <tr>
       <td colspan="4" height="48" width="294">
-      <p align="center"><b><font face="Arial" color="#800000" size="2">Lengths 
+      <p align="center"><b><font face="Arial" color="#800000" size="2">Lengths
       returned in metres<br>
       VG = Superclad</font></b></td>
       <td height="48" bgcolor="#F9FBFF" width="51">&nbsp;</td>
@@ -247,14 +258,14 @@ fp_iRegion=BOTID
 <font color="#000080" face="Arial"> <strong>
 <font size="4"><a name="Superclad Bearings">Superclad Bearings</a></font></strong></font><font face="Arial"><br>
 Many customers require special bearing sizes at short notice. To meet this need,
-<font color="#000080"><strong>Vesconite and Vesconite Superclad bearings are 
+<font color="#000080"><strong>Vesconite and Vesconite Superclad bearings are
 produced to order, with practically any wall thickness.</strong></font><br>
 <br>
-The outside of a bearing with a suitable inside diameter is wound with a cloth 
-membrane and impregnated with an epoxy compound until the desired outside 
-diameter is built up. Left to cure overnight, the Superclad bearing is ready for 
-machining and despatch the next day. The resulting&nbsp;bearing,&nbsp;encased in a high 
-strength reinforced Superclad jacket, has an extremely strong final structure, 
+The outside of a bearing with a suitable inside diameter is wound with a cloth
+membrane and impregnated with an epoxy compound until the desired outside
+diameter is built up. Left to cure overnight, the Superclad bearing is ready for
+machining and despatch the next day. The resulting&nbsp;bearing,&nbsp;encased in a high
+strength reinforced Superclad jacket, has an extremely strong final structure,
 combined&nbsp;with the good bearing properties of Vesconite on the inside.</font></td>
   </tr>
 </table>
@@ -262,9 +273,9 @@ combined&nbsp;with the good bearing properties of Vesconite on the inside.</font
   <thead>
     <tr>
       <td width="274" colspan="4">
-      <p align="center"><b><font face="Arial" color="#FF0066">Bushings suitable 
+      <p align="center"><b><font face="Arial" color="#FF0066">Bushings suitable
       for Superclad<br>
-      Lengths returned 
+      Lengths returned
       in metres</font></b></td>
       <td width="51" bgcolor="#FFFFFF">&nbsp;</td>
       <td width="44" bgcolor="#FFFFFF">&nbsp;</td>
@@ -350,7 +361,7 @@ fp_iRegion=BOTID
 </table>
 
 <p><font face="Arial" size="1">
-<!--webbot bot="HitCounter" u-custom i-image="2" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../../../_vti_bin/fpcount.exe/stock/?Page=mall/stff/export/PassageWay/Europe.asp|Image=2" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="8298" endspan --> 
+<!--webbot bot="HitCounter" u-custom i-image="2" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../../../_vti_bin/fpcount.exe/stock/?Page=mall/stff/export/PassageWay/Europe.asp|Image=2" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="8298" endspan -->
 visitors</font></p>
 
 <p><b><font face="Arial" color="#FF0066"><a name="Date updated">Date updated</a></font></b></p>
@@ -397,11 +408,11 @@ fp_iRegion=BOTID
     <tr>
     <td width="711" height="1" colspan="3" align="center">
         <font face="Arial" size="2"><font color="#000000">
-        For </font><font color="#FF0000">information and quotes,</font><font color="#000000"> 
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
         e-mail </font><a href="mailto:vesconite@vesconite.com">
         vesconite@vesconite.com</a></font>
         <br>
-        <font face="Arial" size="2"><font color="#FF0000">Feedback</font> is 
+        <font face="Arial" size="2"><font color="#FF0000">Feedback</font> is
         appreciated.
         <a href="mailto:vesconite@vesconite.com?subject=Feedback to the WEBMASTER">
         e-mail the webmaster</a></font></td>
@@ -420,9 +431,9 @@ fp_iRegion=BOTID
       &nbsp; <span style="background-color: #FFFFFF" lang="en-za">
         <a href="../../../PassageWay/All%202011.asp">Stock Finder</a></span></font><font color="#000080" face="Arial" size="2">
         &nbsp;|&nbsp;
-    <a href="../../../lobby.asp">Dealer Update</a>&nbsp; | &nbsp;<a href="../../../LTXL_nokia.asp">Mobile</a></font><font face="Arial" size="2">&nbsp; 
+    <a href="../../../lobby.asp">Dealer Update</a>&nbsp; | &nbsp;<a href="../../../LTXL_nokia.asp">Mobile</a></font><font face="Arial" size="2">&nbsp;
       |&nbsp;
-      <a href="../exp_login.asp">Export</a><span lang="en-za">&nbsp; 
+      <a href="../exp_login.asp">Export</a><span lang="en-za">&nbsp;
         |&nbsp;&nbsp;
         <a href="https://vescosales.com/wstore/">Webstore</a></span></font></td>
     </tr>
@@ -432,12 +443,12 @@ fp_iRegion=BOTID
         <span style="letter-spacing: -1pt"><b>Toll free/Linea gratuita</b></span></font><font face="Arial" color="#000080" size="2"><b><br>
         Australia </b>
         </font>
-          <font face="Arial" color="#000086" size="2">1800 
+          <font face="Arial" color="#000086" size="2">1800
         833 448</font><font face="Arial" size="2" color="#000080"><b><br>
         Brasil</b> </font><strong style="font-weight: 400">
         <font face="Arial" color="#000080" size="2">0800 891 87 16</font></strong><font face="Arial" color="#000080" size="2"><b><br>
         Canada</b> 1 866 682 3484<br>
-        <b>Chile</b> </font><font face="Arial" size="2" color="#000086">(2) 570 
+        <b>Chile</b> </font><font face="Arial" size="2" color="#000086">(2) 570
         3855<br>
         </font><font face="Arial" color="#000080" size="2">
         <b>Germany</b> 0443 1892 3899</font><font face="Arial" size="2" color="#000086"><br>
@@ -480,11 +491,11 @@ fp_iRegion=BOTID
       <tr>
         <td width="12%"><a href="http://www.vesconite.com/"><img border="0" src="../../../../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></td>
         <td width="88%">
-        <p align="center"><font size="2" face="Arial">©</font><span style="FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px" class="Apple-style-span">2012 
-        Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site 
-        may not be copied or redistributed without the express written consent 
+        <p align="center"><font size="2" face="Arial">ï¿½</font><span style="FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px" class="Apple-style-span">2012
+        Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site
+        may not be copied or redistributed without the express written consent
         of Vesco Plastics Sales, Pty Ltd.</span><font size="2" face="Arial">&nbsp;
-    <a href="http://www.vesconite.com/footer_links/warranty.htm">Warranty 
+    <a href="http://www.vesconite.com/footer_links/warranty.htm">Warranty
         disclaimer</a></font></td>
       </tr>
     </table>

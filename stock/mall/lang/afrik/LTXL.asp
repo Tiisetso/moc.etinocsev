@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Language" content="en-us">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Verskaffers van die wêreld se grootste busse en soliede stawe</title>
+<title>Verskaffers van die wï¿½reld se grootste busse en soliede stawe</title>
 <meta name="Microsoft Border" content="none">
 </head>
 
@@ -21,6 +21,17 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
 
 
 <body stylesrc="../../../Index.htm" topmargin="0" bgcolor="#F2F7FF">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+
 <table border="1" cellspacing="0" style="border-collapse: collapse" bordercolor="#000080" width="92%" bgcolor="#D7EBFF">
   <tr>
     <td width="100%">
@@ -28,16 +39,16 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
     <a href="http://www.vesconite.com/afrikaans">Tuisblad</a></font><font color="#000080" face="Arial" size="2">&nbsp; |&nbsp;
     <a href="LTXL.asp">Voorraad Vinder</a> &nbsp;|&nbsp;
     <a href="../../lobby.asp">Handelaars</a>&nbsp; |&nbsp;
-    <a href="http://www.vesconite.com/charts/prodlist.htm">Groottes</a>&nbsp; 
+    <a href="http://www.vesconite.com/charts/prodlist.htm">Groottes</a>&nbsp;
     |&nbsp; <a href="../../LTXL_nokia.asp">Mobiele</a></font></td>
   </tr>
 </table>
 
-<p><font FACE="Arial" COLOR="#000080"><b>Verskaffers van die wêreld se grootste busse en soliede stawe, tot 730mm in 
+<p><font FACE="Arial" COLOR="#000080"><b>Verskaffers van die wï¿½reld se grootste busse en soliede stawe, tot 730mm in
 deursnee.</b></font></p>
 <p align="left">
 <font FACE="Arial" COLOR="#000080">Kies Vesconite of Vesconite Hilube by <b>
-Materiaal, </b> tik die <b>buitemaat</b> en<b> binnemaat </b>in. Lengtes getoon 
+Materiaal, </b> tik die <b>buitemaat</b> en<b> binnemaat </b>in. Lengtes getoon
 is in meters.</font></p>
 <form BOTID="5" METHOD="POST" ACTION="LTXL.asp">
   <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
@@ -46,22 +57,22 @@ is in meters.</font></p>
       <option>Vesconite</option>
       <option>V.Hilube</option>
       <option selected><%=Request("Mat")%></option>
-      </select><font color="#000080">&nbsp;&nbsp; </font> 
-      <font FACE="Arial" COLOR="#000080">Buitemaat&#8805;</font><input NAME="OD" VALUE="<%=Request("OD")%>" size="3"> &nbsp;&nbsp; <font face="Arial" color="#000080"><b>&nbsp;</b>Binnemaat 
+      </select><font color="#000080">&nbsp;&nbsp; </font>
+      <font FACE="Arial" COLOR="#000080">Buitemaat&#8805;</font><input NAME="OD" VALUE="<%=Request("OD")%>" size="3"> &nbsp;&nbsp; <font face="Arial" color="#000080"><b>&nbsp;</b>Binnemaat
       &#8804;</font><input NAME="ID" VALUE="<%=Request("ID")%>" size="3"></td>
       <td width="24%">
       <input TYPE="submit" value="Soek" style="font-family: Comic Sans MS; font-size: 10pt; color: #000080; font-weight: bold"></td>
     </tr>
   </table>
-  <p><font face="Arial"><a href="../../new_win.htm">Versoek 'n kwotasie</a></font><font face="Arial" color="#000080">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indien 
-  geen aanvaarbare grootte, probeer die&nbsp; 
+  <p><font face="Arial"><a href="../../new_win.htm">Versoek 'n kwotasie</a></font><font face="Arial" color="#000080">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indien
+  geen aanvaarbare grootte, probeer die&nbsp;
   <strong style="font-weight: 400"><a href="../../superclad.asp">Superclad opsie</a></strong></font></p>
 </form>
 <table border="1" cellspacing="0" bordercolor="#000080" style="border-collapse: collapse" cellpadding="0">
   <thead>
     <tr>
       <td bgcolor="#C0C0C0" width="230" colspan="4" height="32">
-      <p align="center"><font FACE="Arial" COLOR="#800000"><b>Lengtes getoon in 
+      <p align="center"><font FACE="Arial" COLOR="#800000"><b>Lengtes getoon in
       meters</b></font></td>
       <td colspan="2" bgcolor="#E9E9E9" height="32" align="center">
       <span style="letter-spacing: -1pt"><b>
@@ -207,7 +218,7 @@ fp_iRegion=BOTID
 
 <p><font face="Arial" size="1">
 Besoekers&nbsp;
-<!--webbot bot="HitCounter" u-custom i-image="0" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../../_vti_bin/fpcount.exe/stock/?Page=mall/lang/afrik/LTXL.asp|Image=0" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="19051" endspan -->&nbsp; 
+<!--webbot bot="HitCounter" u-custom i-image="0" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../../_vti_bin/fpcount.exe/stock/?Page=mall/lang/afrik/LTXL.asp|Image=0" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="19051" endspan -->&nbsp;
 Feb 20 2003</font></p>
 
 <table BORDER="0" COLS="4" cellspacing="1" height="55" width="592">
@@ -242,7 +253,7 @@ e-pos ons by<font color="#000000"> </font><a href="mailto:vesconite@vesconite.co
   <tr>
     <td height="24" width="87" align="center"></td>
     <td height="6" width="491" align="center" colspan="4"><font face="Courier New,Courier" size="1"><p align="center"></font><font face="Arial" size="1">Alle
-      regte voorbehou © 1999-2003 VescoPlastics Sales (Edms) Bpk
+      regte voorbehou ï¿½ 1999-2003 VescoPlastics Sales (Edms) Bpk
     &nbsp;&nbsp; <a href="http://www.vesconite.com/warranty.htm">Waarborg
       afstanddoening</a></font></td>
   </tr>

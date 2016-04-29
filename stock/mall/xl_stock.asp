@@ -10,7 +10,18 @@
 <meta name="Microsoft Border" content="t">
 </head>
 
-<body stylesrc="../Index.htm" topmargin="0" bgcolor="#F2F7FF"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<body stylesrc="../Index.htm" topmargin="0" bgcolor="#F2F7FF">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
 
 <table border="0" cellpadding="2" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="649">
   <tr>
@@ -44,7 +55,7 @@
     <a style="text-decoration: none" title="Search the site" href="http://www.vesconite.com/vesco/site_search.htm">Search</a></font></b></td>
   </tr>
 </table>
-  
+
 </td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
 
 <p><font size="1">&nbsp;</font></p>
@@ -123,7 +134,7 @@ fp_iRegion=BOTID
 
 <p>&nbsp;</p>
 <p>
-<!--webbot bot="HitCounter" u-custom i-image="0" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../_vti_bin/fpcount.exe/stock/?Page=mall/xl_stock.asp|Image=0" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="6209" endspan --> 
+<!--webbot bot="HitCounter" u-custom i-image="0" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../_vti_bin/fpcount.exe/stock/?Page=mall/xl_stock.asp|Image=0" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="6209" endspan -->
 visitors from Jan 13 2005</p>
 
 <!--msnavigation--></td></tr><!--msnavigation--></table></body>

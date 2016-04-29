@@ -9,7 +9,18 @@
 <meta name="Microsoft Border" content="lb, default">
 </head>
 
-<body stylesrc="../Default.htm" bgcolor="#F3F8FE" text="#000000"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
+<body stylesrc="../Default.htm" bgcolor="#F3F8FE" text="#000000">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
 
 <table border="0" cellpadding="0" cellspacing="0" bgcolor="#C0C0C0" width="93">
   <tr>
@@ -30,9 +41,9 @@
         <tr>
           <td width="156" height="16"><font size="2"><a href="../lhs_headings/languages.htm">
             <font face="Arial">
- <i>Afrikaans|Espanól</i></font></a><i><a href="../lhs_headings/languages.htm"><font face="Arial">
+ <i>Afrikaans|Espanï¿½l</i></font></a><i><a href="../lhs_headings/languages.htm"><font face="Arial">
  |</font></a></i><font face="Arial"><a href="../lhs_headings/languages.htm"><i>Francais</i></a></font><i><a href="../lhs_headings/languages.htm"><font face="Arial">
- |Português
+ |Portuguï¿½s
  |</font><font face="Arial" size="2">Suom</font><font face="Arial">i|Italian</font></a></i></font></td>
         </tr>
         <tr>
@@ -303,7 +314,7 @@ buttons in right hand bottom corner of every screen for movement</font></p>
   &nbsp; <br>
   &nbsp;</font> </p>
   <p align="left"><font face="Arial"><a href="../images/factory.jpg"><img SRC="../images/factory.jpg" ALT="Virgnia  factory" BORDER="0" height="152" width="209" align="LEFT"></a>Today the factory is established over 9 industrial sites in
-  Virginia, covering over 10,000 m² of workshops on 35,000 m²&nbsp; of ground. <br>
+  Virginia, covering over 10,000 mï¿½ of workshops on 35,000 mï¿½&nbsp; of ground. <br>
   &nbsp; <br>
   &nbsp;</font> </p>
   <p align="left">&nbsp; </p>
@@ -313,7 +324,7 @@ buttons in right hand bottom corner of every screen for movement</font></p>
   </font></b>Both the present chairman and managing director are qualified
   chemical engineers, with the emphasis throughout the organisation on personnel with
   technical qualifications in mechanical engineering.&nbsp; Some 60 persons are employed in
-  the company.&nbsp;&nbsp;</font> 
+  the company.&nbsp;&nbsp;</font>
   <p align="left"><font face="Arial"><b><font color="#000099">FACILITIES</font> </b> <br>
   The company is highly integrated and includes the following
   departments most of which occupy their own individual sites:</font> <ul>
@@ -325,7 +336,7 @@ buttons in right hand bottom corner of every screen for movement</font></p>
       <p align="left"><font face="Arial">Injection Moulding up to 3000 grams, mainly of parts for
       final machining</font></li>
     <li>
-      <p align="left"><font face="Arial">Machine Shop for finishing up to Ø 800 mm</font></li>
+      <p align="left"><font face="Arial">Machine Shop for finishing up to ï¿½ 800 mm</font></li>
     <li>
       <p align="left"><font face="Arial">Stores and warehouses</font></li>
     <li>
@@ -491,7 +502,7 @@ e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</
     </tr>
     <tr>
       <td width="560" colspan="2">
-        <p align="center"><font size="1" face="Arial">All Rights Reserved ©
+        <p align="center"><font size="1" face="Arial">All Rights Reserved ï¿½
         1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../footer_links/warranty.htm">Warranty
         disclaimer</a></font></td>
     </tr>

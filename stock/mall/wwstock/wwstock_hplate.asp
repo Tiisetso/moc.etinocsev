@@ -9,6 +9,17 @@
 </head>
 
 <body stylesrc="../../index.htm" topmargin="0" bgcolor="#F2F7FF">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+
 
 <table border="2" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#000086" width="85%">
   <tr>
@@ -16,7 +27,7 @@
 
     <td width="100%">
     <p align="center"><b><font face="Arial" size="2"><a href="../../index.htm">
-    Home</a>&nbsp;&nbsp; <font color="#000086">&gt;&nbsp;&nbsp; <a href="../lobby.asp">Stock 
+    Home</a>&nbsp;&nbsp; <font color="#000086">&gt;&nbsp;&nbsp; <a href="../lobby.asp">Stock
     catalog</a>&nbsp;&nbsp; &gt;&nbsp;&nbsp; Vesconite Hilube machined plate</font></font></b></td>
 
 </strong>
@@ -42,12 +53,12 @@ Length - Width - Thickness</font></b></strong></p>
       <td align="center" width="72" bgcolor="#FFFFFF"><b>
       <font face="Arial" size="2" color="#000086">Singapore</font></b></td>
       <td align="center" width="72" rowspan="2"><b>
-      <font face="Arial" size="2" color="#000086">Estimated packed w</font></b><font face="Arial" color="#000086" size="2"><b>eight 
+      <font face="Arial" size="2" color="#000086">Estimated packed w</font></b><font face="Arial" color="#000086" size="2"><b>eight
       kg</b></font></td>
       <td align="center" width="60">&nbsp;</td>
     </tr>
     <tr>
-      <td width="146"><b><font size="2" face="Arial" color="#000086">S</font></b><font face="Arial" color="#000086"><b><font size="2">tock 
+      <td width="146"><b><font size="2" face="Arial" color="#000086">S</font></b><font face="Arial" color="#000086"><b><font size="2">tock
       item</font></b></font></td>
       <td align="center" width="73" bgcolor="#FFFFFF"><b>
       <font face="Arial" size="2" color="#000086">Hydro-<br>
@@ -115,7 +126,7 @@ fp_iRegion=BOTID
 <p>
 <strong>
 
-    <b> <font color="#000086" face="Arial"> <a href="../lobby.asp">Return to stock 
+    <b> <font color="#000086" face="Arial"> <a href="../lobby.asp">Return to stock
     catalog</a></font></b></strong></p>
 
 </body>

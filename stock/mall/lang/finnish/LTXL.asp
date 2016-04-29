@@ -19,7 +19,18 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
 
 
 
-<body stylesrc="../../../Index.htm" topmargin="0" bgcolor="#F2F7FF"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<body stylesrc="../../../Index.htm" topmargin="0" bgcolor="#F2F7FF">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
 
 <table border="0" cellpadding="2" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="649">
   <tr>
@@ -53,15 +64,15 @@ flyout=window.open(new_win,"flyout","resizable=yes,scrollbars=yes,toolbar=yes,to
     <a style="text-decoration: none" title="Search the site" href="http://www.vesconite.com/vesco/site_search.htm">Search</a></font></b></td>
   </tr>
 </table>
-  
+
 </td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
 <p align="left">
 <font color="#000080" face="Arial"> <strong><br>
-</strong></font><font FACE="Arial" SIZE="4" color="#000080"><b>Maailman suurin 
+</strong></font><font FACE="Arial" SIZE="4" color="#000080"><b>Maailman suurin
 ainesputki- ja umpitankovalikoima, 730 mm:iin saakka</p>
 </b></font><font FACE="Arial" SIZE="3" COLOR="#000080">
-<p>Valitse <b>Materiaali</b> Vesconite tai Vesconite Hilube ja syötä sekä ulko- 
-että sisähalkaisijan mitta. Pituudet ilmoitetaan metreinä.</p>
+<p>Valitse <b>Materiaali</b> Vesconite tai Vesconite Hilube ja syï¿½tï¿½ sekï¿½ ulko-
+ettï¿½ sisï¿½halkaisijan mitta. Pituudet ilmoitetaan metreinï¿½.</p>
 </font><font FACE="Arial" SIZE="3"></font>
 <font FACE="Arial" SIZE="3" COLOR="#000080"></font><font FACE="Arial" SIZE="3">
 </font>
@@ -72,25 +83,25 @@ että sisähalkaisijan mitta. Pituudet ilmoitetaan metreinä.</p>
       <option>Vesconite</option>
       <option>V.Hilube</option>
       <option selected><%=Request("Mat")%></option>
-      </select><font color="#000080">&nbsp;&nbsp; </font> 
-      <font FACE="Arial" SIZE="3" COLOR="#000080">Ulkohalkaisija</font><font face="Arial" color="#000080">&#8805;</font><input NAME="OD" VALUE="<%=Request("OD")%>" size="3"> &nbsp;&nbsp; <font face="Arial" color="#000080"><b>&nbsp;</b></font><font FACE="Arial" SIZE="3" COLOR="#000080">Sisähalkaisija</font><font face="Arial" color="#000080">&#8804;</font><input NAME="ID" VALUE="<%=Request("ID")%>" size="3"></td>
+      </select><font color="#000080">&nbsp;&nbsp; </font>
+      <font FACE="Arial" SIZE="3" COLOR="#000080">Ulkohalkaisija</font><font face="Arial" color="#000080">&#8805;</font><input NAME="OD" VALUE="<%=Request("OD")%>" size="3"> &nbsp;&nbsp; <font face="Arial" color="#000080"><b>&nbsp;</b></font><font FACE="Arial" SIZE="3" COLOR="#000080">Sisï¿½halkaisija</font><font face="Arial" color="#000080">&#8804;</font><input NAME="ID" VALUE="<%=Request("ID")%>" size="3"></td>
       <td width="50%">
       <input TYPE="submit" value="Search" style="font-family: Comic Sans MS; font-size: 10pt; color: #000080; font-weight: bold"></td>
     </tr>
   </table>
-  <p><font face="Arial" color="#000080">&nbsp;</font><font FACE="Arial" SIZE="3" COLOR="#000080"><a href="../../new_win.htm">Tarjouspyyntö</a> 
-  Jos varastosta ei löydy sopivaa, valitse vaihtoehtoisesti <strong>
+  <p><font face="Arial" color="#000080">&nbsp;</font><font FACE="Arial" SIZE="3" COLOR="#000080"><a href="../../new_win.htm">Tarjouspyyntï¿½</a>
+  Jos varastosta ei lï¿½ydy sopivaa, valitse vaihtoehtoisesti <strong>
   <a href="../../superclad.asp">Superclad</a></strong></font></p>
 </form>
 <table width="982" border="1" cellspacing="0" bordercolor="#000080" style="border-collapse: collapse" cellpadding="0">
   <thead>
     <tr>
       <td bgcolor="#C0C0C0" width="230" colspan="4" height="32">
-      <p align="center"><font FACE="Arial" SIZE="2" COLOR="#800000"><b>Pituudet 
-      ilmoitetaan metreinä</b></font><b><font face="Arial" color="#800000" size="2"><br>
+      <p align="center"><font FACE="Arial" SIZE="2" COLOR="#800000"><b>Pituudet
+      ilmoitetaan metreinï¿½</b></font><b><font face="Arial" color="#800000" size="2"><br>
       VG = Superclad</font></b></td>
       <td colspan="2" bgcolor="#E9E9E9" height="32" align="center" width="80">
-      <font FACE="Arial" SIZE="2" COLOR="#000080"><b>Etelä- Afrikka</b></font></td>
+      <font FACE="Arial" SIZE="2" COLOR="#000080"><b>Etelï¿½- Afrikka</b></font></td>
       <td WIDTH="80" VALIGN="MIDDLE" BGCOLOR="#ffffff" HEIGHT="32">
       <font FACE="Arial" SIZE="2" COLOR="#000080"><b>
       <p ALIGN="CENTER">Singapore</b></font></td>
@@ -127,7 +138,7 @@ että sisähalkaisijan mitta. Pituudet ilmoitetaan metreinä.</p>
       [mm]</b></font></td>
       <td WIDTH="80" VALIGN="MIDDLE" BGCOLOR="#FFFFFF" HEIGHT="48">
       <font FACE="Arial" SIZE="2" COLOR="#000080"><b>
-      <p ALIGN="CENTER">Sisä-<br>
+      <p ALIGN="CENTER">Sisï¿½-<br>
       halkaisija<br>
       [mm]</b></font></td>
       <td bgcolor="#E9E9E9" width="80" height="48" align="center">
@@ -240,7 +251,7 @@ fp_iRegion=BOTID
 </table>
 
 <p><font face="Arial" size="1">
-<!--webbot bot="HitCounter" u-custom i-image="2" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../../_vti_bin/fpcount.exe/stock/?Page=mall/lang/finnish/LTXL.asp|Image=2" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="26109" endspan --> 
+<!--webbot bot="HitCounter" u-custom i-image="2" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../../_vti_bin/fpcount.exe/stock/?Page=mall/lang/finnish/LTXL.asp|Image=2" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="26109" endspan -->
 visitors since Mar 19 2003</font></p>
 
 <!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
@@ -251,11 +262,11 @@ visitors since Mar 19 2003</font></p>
     <tr>
     <td width="711" height="1" colspan="3" align="center">
         <font face="Arial" size="2"><font color="#000000">
-        For </font><font color="#FF0000">information and quotes,</font><font color="#000000"> 
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
         e-mail </font><a href="mailto:vesconite@vesconite.com">
         vesconite@vesconite.com</a></font>
         <br>
-        <font face="Arial" size="2"><font color="#FF0000">Feedback</font> is 
+        <font face="Arial" size="2"><font color="#FF0000">Feedback</font> is
         appreciated.
         <a href="mailto:vesconite@vesconite.com?subject=Feedback to the WEBMASTER">
         e-mail the webmaster</a></font></td>
@@ -274,9 +285,9 @@ visitors since Mar 19 2003</font></p>
       &nbsp; <span style="background-color: #FFFFFF" lang="en-za">
         <a href="../../PassageWay/All%202011.asp">Stock Finder</a></span></font><font color="#000080" face="Arial" size="2">
         &nbsp;|&nbsp;
-    <a href="../../lobby.asp">Dealer Update</a>&nbsp; | &nbsp;<a href="../../LTXL_nokia.asp">Mobile</a></font><font face="Arial" size="2">&nbsp; 
+    <a href="../../lobby.asp">Dealer Update</a>&nbsp; | &nbsp;<a href="../../LTXL_nokia.asp">Mobile</a></font><font face="Arial" size="2">&nbsp;
       |&nbsp;
-      <a href="../../stff/export/exp_login.asp">Export</a><span lang="en-za">&nbsp; 
+      <a href="../../stff/export/exp_login.asp">Export</a><span lang="en-za">&nbsp;
         |&nbsp;&nbsp;
         <a href="https://vescosales.com/wstore/">Webstore</a></span></font></td>
     </tr>
@@ -286,12 +297,12 @@ visitors since Mar 19 2003</font></p>
         <span style="letter-spacing: -1pt"><b>Toll free/Linea gratuita</b></span></font><font face="Arial" color="#000080" size="2"><b><br>
         Australia </b>
         </font>
-          <font face="Arial" color="#000086" size="2">1800 
+          <font face="Arial" color="#000086" size="2">1800
         833 448</font><font face="Arial" size="2" color="#000080"><b><br>
         Brasil</b> </font><strong style="font-weight: 400">
         <font face="Arial" color="#000080" size="2">0800 891 87 16</font></strong><font face="Arial" color="#000080" size="2"><b><br>
         Canada</b> 1 866 682 3484<br>
-        <b>Chile</b> </font><font face="Arial" size="2" color="#000086">(2) 570 
+        <b>Chile</b> </font><font face="Arial" size="2" color="#000086">(2) 570
         3855<br>
         </font><font face="Arial" color="#000080" size="2">
         <b>Germany</b> 0443 1892 3899</font><font face="Arial" size="2" color="#000086"><br>
@@ -334,11 +345,11 @@ visitors since Mar 19 2003</font></p>
       <tr>
         <td width="12%"><a href="http://www.vesconite.com/"><img border="0" src="../../../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></td>
         <td width="88%">
-        <p align="center"><font size="2" face="Arial">©</font><span style="FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px" class="Apple-style-span">2012 
-        Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site 
-        may not be copied or redistributed without the express written consent 
+        <p align="center"><font size="2" face="Arial">ï¿½</font><span style="FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px" class="Apple-style-span">2012
+        Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site
+        may not be copied or redistributed without the express written consent
         of Vesco Plastics Sales, Pty Ltd.</span><font size="2" face="Arial">&nbsp;
-    <a href="http://www.vesconite.com/footer_links/warranty.htm">Warranty 
+    <a href="http://www.vesconite.com/footer_links/warranty.htm">Warranty
         disclaimer</a></font></td>
       </tr>
     </table>

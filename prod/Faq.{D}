@@ -9,7 +9,18 @@
 <meta name="Microsoft Border" content="lb, default">
 </head>
 
-<body stylesrc="../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
+<body stylesrc="../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
 
 <table border="0" cellpadding="0" cellspacing="0" bgcolor="#C0C0C0" width="93">
   <tr>
@@ -30,9 +41,9 @@
         <tr>
           <td width="156" height="16"><font size="2"><a href="../lhs_headings/languages.htm">
             <font face="Arial">
- <i>Afrikaans|Espanól</i></font></a><i><a href="../lhs_headings/languages.htm"><font face="Arial">
+ <i>Afrikaans|Espanï¿½l</i></font></a><i><a href="../lhs_headings/languages.htm"><font face="Arial">
  |</font></a></i><font face="Arial"><a href="../lhs_headings/languages.htm"><i>Francais</i></a></font><i><a href="../lhs_headings/languages.htm"><font face="Arial">
- |Português
+ |Portuguï¿½s
  |</font><font face="Arial" size="2">Suom</font><font face="Arial">i|Italian</font></a></i></font></td>
         </tr>
         <tr>
@@ -257,8 +268,8 @@
   <tr>
     <td bordercolor="#000086" width="451">
       <p align="center"><font face="Arial" size="2" color="#000086"><b><a href="../index.htm">vesconite.com</a></b></font>&nbsp;
-      <font size="2"><font FACE="Wingdings">à</font>&nbsp;&nbsp;</font>&nbsp; <font face="Arial" size="2" color="#000086"><b><a href="../lhs_headings/vescoplastics.htm">VescoPlastics</a>&nbsp;&nbsp;
-      </b></font><font size="2"><font FACE="Wingdings">à</font> </font><font face="Arial" size="2" color="#000086"><b>&nbsp;
+      <font size="2"><font FACE="Wingdings">ï¿½</font>&nbsp;&nbsp;</font>&nbsp; <font face="Arial" size="2" color="#000086"><b><a href="../lhs_headings/vescoplastics.htm">VescoPlastics</a>&nbsp;&nbsp;
+      </b></font><font size="2"><font FACE="Wingdings">ï¿½</font> </font><font face="Arial" size="2" color="#000086"><b>&nbsp;
       Frequently asked
       questions</b></font></td>
   </tr>
@@ -316,7 +327,7 @@ Vesconite:</font></strong></p>
 <p><font face="Arial" size="3">Maximum recommended continuous operating temperature = 200<sup>o</sup>C
 / Vesconite 100<sup>o</sup>C</font></p>
 
-<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">é</font></a></p>
+<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">ï¿½</font></a></p>
 
 <hr>
 
@@ -357,7 +368,7 @@ water/steam.</font></p>
 100<sup>o</sup>C / Vesconite 100<sup>o</sup>C<br>
 </font></p>
 
-<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">é</font></a></p>
+<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">ï¿½</font></a></p>
 
 <hr>
 
@@ -389,7 +400,7 @@ Vesconite :</strong></font></p>
 <p><font face="Arial" size="3">Maximum operating temperature continuous = acetal 100<sup>o</sup>C
 / Vesconite 100<sup>o</sup>C</font></p>
 
-<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">é</font></a></p>
+<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">ï¿½</font></a></p>
 
 <hr>
 
@@ -415,7 +426,7 @@ bushes and moulded semi- or finished parts.</font></p>
 <p><font face="Arial" size="3">Maximum operating temperature continuous = UHMWPE 50<sup>o</sup>C
 / Vesconite 100<sup>o</sup>C</font></p>
 
-<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">é</font></a></p>
+<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">ï¿½</font></a></p>
 
 <hr>
 
@@ -449,7 +460,7 @@ Vesconite 0.5%</font></p>
 <p><font face="Arial" size="3">Maximum continuous operating temperature = phenolic
 laminates 130<sup>o</sup>C / Vesconite 100<sup>o</sup>C</font></p>
 
-<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">é</font></a></p>
+<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">ï¿½</font></a></p>
 
 <hr>
 
@@ -459,7 +470,7 @@ much greater loads, and is far more resistant to wear, and in particular resista
 dirt.&nbsp; However, PTFE is often used in aggressive chemical environments,&nbsp; which
 Vesconite may not be able to withstand.</font></p>
 
-<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">é</font></a></p>
+<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">ï¿½</font></a></p>
 
 <hr>
 
@@ -478,7 +489,7 @@ bushes.</font></p>
 
 <p><font face="Arial" size="3">Vesconite causes much less wear to shafts </font></p>
 
-<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">é</font></a></p>
+<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">ï¿½</font></a></p>
 
 <hr>
 
@@ -491,7 +502,7 @@ in blue water conditions.</font></p>
 
 <p><font face="Arial" size="3">Vesconite has a much lower friction.</font></p>
 
-<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">é</font></a></p>
+<p><a href="#top"><font color="#0000FF" size="2" face="Arial">Back to top</font><font face="Wingdings" color="#0000FF" size="2">ï¿½</font></a></p>
 
 <hr>
 <b>
@@ -544,7 +555,7 @@ e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</
     </tr>
     <tr>
       <td width="560" colspan="2">
-        <p align="center"><font size="1" face="Arial">All Rights Reserved ©
+        <p align="center"><font size="1" face="Arial">All Rights Reserved ï¿½
         1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../footer_links/warranty.htm">Warranty
         disclaimer</a></font></td>
     </tr>

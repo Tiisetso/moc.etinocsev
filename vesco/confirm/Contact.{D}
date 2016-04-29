@@ -8,7 +8,18 @@
 <meta name="Microsoft Border" content="lb, default">
 </head>
 
-<body stylesrc="../../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
+<body stylesrc="../../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
 
 <table border="0" cellpadding="0" cellspacing="0" bgcolor="#C0C0C0" width="93">
   <tr>
@@ -29,9 +40,9 @@
         <tr>
           <td width="156" height="16"><font size="2"><a href="../../lhs_headings/languages.htm">
             <font face="Arial">
- <i>Afrikaans|Espanól</i></font></a><i><a href="../../lhs_headings/languages.htm"><font face="Arial">
+ <i>Afrikaans|Espanï¿½l</i></font></a><i><a href="../../lhs_headings/languages.htm"><font face="Arial">
  |</font></a></i><font face="Arial"><a href="../../lhs_headings/languages.htm"><i>Francais</i></a></font><i><a href="../../lhs_headings/languages.htm"><font face="Arial">
- |Português
+ |Portuguï¿½s
  |</font><font face="Arial" size="2">Suom</font><font face="Arial">i|Italian</font></a></i></font></td>
         </tr>
         <tr>
@@ -290,14 +301,14 @@ heard from us within 2 working days please e-mail </font>
     <!--webbot bot="ConfirmationField" S-Field="Country" startspan --><strong>Country</strong><!--webbot bot="ConfirmationField" i-checksum="65532" endspan --><br>
     <!--webbot bot="ConfirmationField" S-Field="post_code" startspan --><strong>post_code</strong><!--webbot bot="ConfirmationField" i-checksum="10512" endspan --></font></b></font></td>
     <td width="137%" valign="top" height="37"><font FACE="Arial">
-    <p ALIGN="LEFT">Vesconite is a unique bearing material well suited to 
+    <p ALIGN="LEFT">Vesconite is a unique bearing material well suited to
     applications in
     <a href="../../industry/applications/marine/apps_marine_home.htm">marine</a>,
     <a href="../../industry/applications/mining/apps_mining_home.htm">mining</a>,
     <a href="../../industry/applications/pumps/pump_apps_index.htm">pumps</a>,
     <a href="../../industry/railways/wear_parts.htm">railways</a> and
     <a href="../../industry/applications/az_apps.htm">many other industries</a>.</p>
-    <p>Available are <a href="../../industry/applications/az_apps.htm">success 
+    <p>Available are <a href="../../industry/applications/az_apps.htm">success
     stories </a>and online <a href="../../design/bush/entry_alldesigns2.htm">
     Design-a-Bearing Calculators </a></p>
     <p>We have <a href="../../request.htm">Industrial</a>,
@@ -307,7 +318,7 @@ heard from us within 2 working days please e-mail </font>
 </table>
 </font><font FACE="Arial"><b>
 </b>
-<p ALIGN="LEFT">We look forward to discussing your unique requirements and 
+<p ALIGN="LEFT">We look forward to discussing your unique requirements and
 applications.</p>
 <p ALIGN="LEFT">Regards</p>
 
@@ -363,7 +374,7 @@ e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</
     </tr>
     <tr>
       <td width="560" colspan="2">
-        <p align="center"><font size="1" face="Arial">All Rights Reserved ©
+        <p align="center"><font size="1" face="Arial">All Rights Reserved ï¿½
         1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../../footer_links/warranty.htm">Warranty
         disclaimer</a></font></td>
     </tr>

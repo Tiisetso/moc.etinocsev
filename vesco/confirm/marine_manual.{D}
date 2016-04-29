@@ -8,7 +8,18 @@
 <meta name="Microsoft Border" content="lb, default">
 </head>
 
-<body stylesrc="../../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
+<body stylesrc="../../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
 
 <table border="0" cellpadding="0" cellspacing="0" bgcolor="#C0C0C0" width="93">
   <tr>
@@ -29,9 +40,9 @@
         <tr>
           <td width="156" height="16"><font size="2"><a href="../../lhs_headings/languages.htm">
             <font face="Arial">
- <i>Afrikaans|Espanól</i></font></a><i><a href="../../lhs_headings/languages.htm"><font face="Arial">
+ <i>Afrikaans|Espanï¿½l</i></font></a><i><a href="../../lhs_headings/languages.htm"><font face="Arial">
  |</font></a></i><font face="Arial"><a href="../../lhs_headings/languages.htm"><i>Francais</i></a></font><i><a href="../../lhs_headings/languages.htm"><font face="Arial">
- |Português
+ |Portuguï¿½s
  |</font><font face="Arial" size="2">Suom</font><font face="Arial">i|Italian</font></a></i></font></td>
         </tr>
         <tr>
@@ -260,14 +271,14 @@
   </tr>
 </table>
 
-<p align="left"><b><font face="Arial,Helvetica" size="4" color="#000086">Request 
+<p align="left"><b><font face="Arial,Helvetica" size="4" color="#000086">Request
 for Marine Design Manual</font></b></p>
 
 <font FACE="Arial">
 <p ALIGN="LEFT">Dear <font color="#FF0000"><b>
 <!--webbot bot="ConfirmationField" S-Field="Contact_person" startspan --><strong>Contact_person</strong><!--webbot bot="ConfirmationField" i-checksum="9472" endspan --></b></font></p>
 <p ALIGN="LEFT"></p>
-<p ALIGN="LEFT">Thank you for your interest.&nbsp; The Vesconite Marine Design 
+<p ALIGN="LEFT">Thank you for your interest.&nbsp; The Vesconite Marine Design
 Manual you requested will be sent to you shortly.</p>
 <p ALIGN="LEFT"></p>
 <p ALIGN="LEFT">Please check your details below and if not correct press the
@@ -285,12 +296,12 @@ Manual you requested will be sent to you shortly.</p>
     <!--webbot bot="ConfirmationField" S-Field="State" startspan --><strong>State</strong><!--webbot bot="ConfirmationField" i-checksum="49685" endspan --><br>
     <!--webbot bot="ConfirmationField" S-Field="Country" startspan --><strong>Country</strong><!--webbot bot="ConfirmationField" i-checksum="65532" endspan --><br>
     <!--webbot bot="ConfirmationField" S-Field="post_code" startspan --><strong>post_code</strong><!--webbot bot="ConfirmationField" i-checksum="10512" endspan --></font></b></font></td>
-    <td width="128%" valign="top" height="1"><font FACE="Arial">Vesconite is a 
+    <td width="128%" valign="top" height="1"><font FACE="Arial">Vesconite is a
     bearing material well suited to
-    <a href="../../industry/applications/marine/apps_marine_home.htm">marine 
-    applications</a>. Vesconite does not swell in water and gives excellent wear 
+    <a href="../../industry/applications/marine/apps_marine_home.htm">marine
+    applications</a>. Vesconite does not swell in water and gives excellent wear
     life. Vesconite has been approved as a suitable material for
-    <a href="../../industry/marine/marine.htm">rudder and stern tube bearings</a> 
+    <a href="../../industry/marine/marine.htm">rudder and stern tube bearings</a>
     by leading ship classification societies. </font>&nbsp;</td>
   </tr>
 </table>
@@ -298,11 +309,11 @@ Manual you requested will be sent to you shortly.</p>
 </b>
 <p>You will also be interested in our
 <a href="../../industry/applications/az_apps.htm">Success Stories</a>,&nbsp;
-<a href="../../design/bush/entry_alldesigns2.htm">Design-a-Bearing 
+<a href="../../design/bush/entry_alldesigns2.htm">Design-a-Bearing
 Calculators</a> and <a href="../../enquiry.htm">Enquiry Form</a>.</p>
 <p>Also available are <a href="../pump_design.htm">Pump</a> and
 <a href="../../request.htm">Industrial Design Manuals</a></p>
-<p ALIGN="LEFT">We look forward to discussing your unique requirements and 
+<p ALIGN="LEFT">We look forward to discussing your unique requirements and
 applications.</p>
 <p ALIGN="LEFT">Regards</p>
 
@@ -358,7 +369,7 @@ e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</
     </tr>
     <tr>
       <td width="560" colspan="2">
-        <p align="center"><font size="1" face="Arial">All Rights Reserved ©
+        <p align="center"><font size="1" face="Arial">All Rights Reserved ï¿½
         1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../../footer_links/warranty.htm">Warranty
         disclaimer</a></font></td>
     </tr>
