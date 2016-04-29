@@ -8,7 +8,18 @@
 <meta name="Microsoft Border" content="lb, default">
 </head>
 
-<body stylesrc="../Default.htm" bgcolor="#F3F8FE" text="#000000"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
+<body stylesrc="../Default.htm" bgcolor="#F3F8FE" text="#000000">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%">
 
 <table border="0" cellpadding="0" cellspacing="0" bgcolor="#C0C0C0" width="93">
   <tr>
@@ -29,9 +40,9 @@
         <tr>
           <td width="156" height="16"><font size="2"><a href="../lhs_headings/languages.htm">
             <font face="Arial">
- <i>Afrikaans|Espanól</i></font></a><i><a href="../lhs_headings/languages.htm"><font face="Arial">
+ <i>Afrikaans|Espanï¿½l</i></font></a><i><a href="../lhs_headings/languages.htm"><font face="Arial">
  |</font></a></i><font face="Arial"><a href="../lhs_headings/languages.htm"><i>Francais</i></a></font><i><a href="../lhs_headings/languages.htm"><font face="Arial">
- |Português
+ |Portuguï¿½s
  |</font><font face="Arial" size="2">Suom</font><font face="Arial">i|Italian</font></a></i></font></td>
         </tr>
         <tr>
@@ -463,8 +474,8 @@ are generally required.</font></p>
 </b>
 <p><font face="Arial">The clearance recommended for normal conditions is:</font></p>
 <p><font color="#0000FF" face="Arial">Assembly clearance = 0,05 mm + 2% NWT</font></p>
-<p><font color="#0000FF" face="Arial">NWT = nominal wall thickness = ½(housing
-Ø-shaft Ø)</font></p>
+<p><font color="#0000FF" face="Arial">NWT = nominal wall thickness = ï¿½(housing
+ï¿½-shaft ï¿½)</font></p>
 <i>
 <p><font face="Arial">Figure 1:</font></p>
 </i><b>
@@ -479,14 +490,14 @@ The free standing bush <b>inside diameter</b> (ID) is:</font></p>
 <div align="left">
   <table border="0" cellspacing="1">
     <tr>
-      <td><font face="Arial">ID = shaft Ø + press fit x</font></td>
-      <td><font face="Arial"><u>housing Ø</u>&nbsp;</font></td>
+      <td><font face="Arial">ID = shaft ï¿½ + press fit x</font></td>
+      <td><font face="Arial"><u>housing ï¿½</u>&nbsp;</font></td>
       <td><font face="Arial">+ assembly clearance</font></td>
     </tr>
     <tr>
       <td></td>
       <td>
-        <p align="center"><font face="Arial">shaft Ø</font></td>
+        <p align="center"><font face="Arial">shaft ï¿½</font></td>
       <td></td>
     </tr>
   </table>
@@ -506,7 +517,7 @@ standing bush.</font></p>
 hardly affect the clearance once the bush is press fitted.</font></p>
 <p><font face="Arial">Calculate the <b>average wall thickness</b> (AWT) as
 follows:</font></p>
-<p><font face="Arial">Average wall thickness = ½(OD - ID)</font></p>
+<p><font face="Arial">Average wall thickness = ï¿½(OD - ID)</font></p>
 <b>
 <p><font color="#000086" SIZE="5" face="Arial">Temperature</font></b><font face="Arial"><font color="#000086">
 <b><font SIZE="5">Effects on</font></b> </font><b><font color="#000086" SIZE="5">Bush
@@ -523,7 +534,7 @@ tolerance for the wall thickness because ambient temperature changes cause
 expansion and contraction of the inside and outside diameter of the free
 standing bush.</font></p>
 <p><font face="Arial">Alternatively the bush should be machined and checked at
-20°C, which is more expensive to produce and less convenient to control.</font></p>
+20ï¿½C, which is more expensive to produce and less convenient to control.</font></p>
 <b>
 <p><font color="#000086" SIZE="5" face="Arial">Thermal Conductivity</font></b><font face="Arial"><br>
 Polymers have low rates of heat conduction compared with metals. This means that
@@ -594,14 +605,14 @@ contraction, leading to the wrong conclusions and to parts being rejected.</font
 Standard Precision </b>is the degree of precision that will be used by
 VescoPlastics unless otherwise specified by the client. <b>Standard Precision</b>
 bushes have a tolerance of</font></p>
-<p><font face="Arial">± 0,1% the outside diameter. This accommodates size
-changes caused by temperature variations of ± 10<sup>0</sup>C, as well as some
+<p><font face="Arial">ï¿½ 0,1% the outside diameter. This accommodates size
+changes caused by temperature variations of ï¿½ 10<sup>0</sup>C, as well as some
 tolerance for machining.</font></p>
-<p><font face="Arial">A tolerance five times as great (± 0,5%) is required for
+<p><font face="Arial">A tolerance five times as great (ï¿½ 0,5%) is required for
 nylon operating in a normal atmosphere. This allows for some water absorption
 from the air with consequent swelling or shrinking, as well as a higher thermal
 expansion coefficient. A tolerance four times larger</font></p>
-<p><font face="Arial">(± 0,4%) is required for HDPE (high density polyethylene)
+<p><font face="Arial">(ï¿½ 0,4%) is required for HDPE (high density polyethylene)
 owing to its much higher thermal expansion coefficient.</font></p>
 <p><b><font size="3" color="#000086" face="Arial">Table 1: Press fits, sizing,
 clearance and tolerances for Vesconite and Vesconite Hilube bushes for 4
@@ -629,23 +640,23 @@ standards of&nbsp; precision</font></b></p>
   <td width="158" height="46"><font face="Arial"><font size="1">Press fit</font>
     <font size="1">interference</font></font></td>
   <td width="81" height="46"><font face="Arial"><font size="1">0,05 mm</font> <font size="1">+
-    0,2% housing Ø</font></font></td>
+    0,2% housing ï¿½</font></font></td>
   <td bgcolor="#FFD7EB" width="114" height="46"><font face="Arial"><b><font size="1">0,05
-    mm</font></b> <b><font size="1">+ 0,2% housing Ø</font></b></font></td>
+    mm</font></b> <b><font size="1">+ 0,2% housing ï¿½</font></b></font></td>
   <td width="96" height="46"><font face="Arial"><font size="1">0,05 mm</font> <font size="1">+
-    0,2% housing Ø</font></font></td>
+    0,2% housing ï¿½</font></font></td>
   <td width="69" height="46"><font face="Arial"><font size="1">0,05 mm</font> <font size="1">+
-    0,2% housing Ø</font></font></td>
+    0,2% housing ï¿½</font></font></td>
   </tr>
   <font FACE="Univers,Univers">
   <tr>
     <td width="5" height="28">&nbsp;</td>
   </font>
   <td width="158" height="28"><font size="1" face="Arial">Tolerance</font></td>
-  <td width="81" height="28"><font size="1" face="Arial">± 0,05% OD</font></td>
-  <td bgcolor="#FFD7EB" width="114" height="28"><b><font size="1" face="Arial">±
+  <td width="81" height="28"><font size="1" face="Arial">ï¿½ 0,05% OD</font></td>
+  <td bgcolor="#FFD7EB" width="114" height="28"><b><font size="1" face="Arial">ï¿½
     0,1% OD</font></b></td>
-  <td width="96" height="28"><font size="1" face="Arial">± 0,15% OD</font></td>
+  <td width="96" height="28"><font size="1" face="Arial">ï¿½ 0,15% OD</font></td>
   <td width="69" height="28"><font size="1" face="Arial">-0,1% + 1,1% OD</font></td>
   </tr>
   <font FACE="Univers,Univers">
@@ -686,12 +697,12 @@ standards of&nbsp; precision</font></b></p>
     <td width="5" height="18">&nbsp;</td>
   </font>
   <td width="158" height="18"><font size="1" face="Arial">OD tolerance</font></td>
-  <td width="81" height="18"><font size="1" face="Arial">± 0,05% OD</font></td>
-  <td bgcolor="#FFD7EB" width="114" height="18"><b><font size="1" face="Arial">±
+  <td width="81" height="18"><font size="1" face="Arial">ï¿½ 0,05% OD</font></td>
+  <td bgcolor="#FFD7EB" width="114" height="18"><b><font size="1" face="Arial">ï¿½
     0,10% OD</font></b></td>
-  <td width="96" height="18"><font size="1" face="Arial">± 0,15% OD</font></td>
+  <td width="96" height="18"><font size="1" face="Arial">ï¿½ 0,15% OD</font></td>
   <td width="69" height="18">
-    <p><font size="1" face="Arial">± 0,6% OD</font></p>
+    <p><font size="1" face="Arial">ï¿½ 0,6% OD</font></p>
   </td>
   </tr>
   <font FACE="Univers,Univers">
@@ -699,33 +710,33 @@ standards of&nbsp; precision</font></b></p>
     <td width="5" height="18">&nbsp;</td>
   </font>
   <td width="158" height="18"><font size="1" face="Arial">Minimum</font></td>
-  <td width="81" height="18"><font size="1" face="Arial">± 0,02 mm</font></td>
-  <td bgcolor="#FFD7EB" width="114" height="18"><b><font size="1" face="Arial">±
+  <td width="81" height="18"><font size="1" face="Arial">ï¿½ 0,02 mm</font></td>
+  <td bgcolor="#FFD7EB" width="114" height="18"><b><font size="1" face="Arial">ï¿½
     0,025 mm</font></b></td>
-  <td width="96" height="18"><font size="1" face="Arial">± 0,035 mm</font></td>
-  <td width="69" height="18"><font size="1" face="Arial">± 0,10 mm</font></td>
+  <td width="96" height="18"><font size="1" face="Arial">ï¿½ 0,035 mm</font></td>
+  <td width="69" height="18"><font size="1" face="Arial">ï¿½ 0,10 mm</font></td>
   </tr>
   <font FACE="Univers,Univers">
   <tr>
     <td width="5" height="18">&nbsp;</td>
   </font>
   <td width="158" height="18"><font size="1" face="Arial">ID tolerance</font></td>
-  <td width="81" height="18"><font size="1" face="Arial">± 0,05% ID</font></td>
-  <td bgcolor="#FFD7EB" width="114" height="18"><b><font size="1" face="Arial">±
+  <td width="81" height="18"><font size="1" face="Arial">ï¿½ 0,05% ID</font></td>
+  <td bgcolor="#FFD7EB" width="114" height="18"><b><font size="1" face="Arial">ï¿½
     0,10% OD</font></b></td>
-  <td width="96" height="18"><font size="1" face="Arial">± 0,20% ID</font></td>
-  <td width="69" height="18"><font size="1" face="Arial">± 0,4% ID</font></td>
+  <td width="96" height="18"><font size="1" face="Arial">ï¿½ 0,20% ID</font></td>
+  <td width="69" height="18"><font size="1" face="Arial">ï¿½ 0,4% ID</font></td>
   </tr>
   <font FACE="Univers,Univers">
   <tr>
     <td width="5" height="18">&nbsp;</td>
   </font>
   <td width="158" height="18"><font size="1" face="Arial">Minimum</font></td>
-  <td width="81" height="18"><font size="1" face="Arial">± 0,02 mm</font></td>
-  <td bgcolor="#FFD7EB" width="114" height="18"><b><font size="1" face="Arial">±
+  <td width="81" height="18"><font size="1" face="Arial">ï¿½ 0,02 mm</font></td>
+  <td bgcolor="#FFD7EB" width="114" height="18"><b><font size="1" face="Arial">ï¿½
     0,025 mm</font></b></td>
-  <td width="96" height="18"><font size="1" face="Arial">± 0,05 mm</font></td>
-  <td width="69" height="18"><font size="1" face="Arial">± 0,10 mm</font></td>
+  <td width="96" height="18"><font size="1" face="Arial">ï¿½ 0,05 mm</font></td>
+  <td width="69" height="18"><font size="1" face="Arial">ï¿½ 0,10 mm</font></td>
   </tr>
   <font FACE="Univers,Univers">
   <tr>
@@ -733,15 +744,15 @@ standards of&nbsp; precision</font></b></p>
   </font>
   <td width="158" height="18"><font face="Arial"><font size="1">Wall thickness
     tolerance</font></font></td>
-  <td width="81" height="18"><font size="1" face="Arial">± 0,0 - 0,5% WT</font></td>
+  <td width="81" height="18"><font size="1" face="Arial">ï¿½ 0,0 - 0,5% WT</font></td>
   <td bgcolor="#FFD7EB" width="114" height="18"><b>
-    <p><font size="1" face="Arial">± 0,0 - 0,5% WT</font></p>
+    <p><font size="1" face="Arial">ï¿½ 0,0 - 0,5% WT</font></p>
     </b></td>
   <td width="96" height="18">
-    <p><font size="1" face="Arial">± 0,0 - 1% WT</font></p>
+    <p><font size="1" face="Arial">ï¿½ 0,0 - 1% WT</font></p>
   </td>
   <td width="69" height="18">
-    <p><font size="1" face="Arial">± 0,0 - 3% WT</font></p>
+    <p><font size="1" face="Arial">ï¿½ 0,0 - 3% WT</font></p>
   </td>
   </tr>
   <font FACE="Univers,Univers">
@@ -788,19 +799,19 @@ standards of&nbsp; precision</font></b></p>
     <td colspan="2" width="167" valign="top" height="51"><font size="1" face="Arial">Measured
       at a temperature of</font></td>
     <td width="81" height="51">
-      <p><font size="1" face="Arial">20<sup> 0</sup>C ± 2<sup> 0</sup>C</font><font FACE="Univers,Univers">
+      <p><font size="1" face="Arial">20<sup> 0</sup>C ï¿½ 2<sup> 0</sup>C</font><font FACE="Univers,Univers">
       <p>&nbsp;</td>
     </font>
     <td bgcolor="#FFD7EB" width="114" height="51"><b>
-      <p><font size="1" face="Arial">20<sup> 0</sup>C ± 10<sup> 0</sup>C</font></b><font FACE="Univers,Univers">
+      <p><font size="1" face="Arial">20<sup> 0</sup>C ï¿½ 10<sup> 0</sup>C</font></b><font FACE="Univers,Univers">
       <p>&nbsp;</td>
     </font>
     <td width="96" height="51">
-      <p><font size="1" face="Arial">20<sup> 0</sup>C ± 10<sup> 0</sup>C</font><font FACE="Univers,Univers">
+      <p><font size="1" face="Arial">20<sup> 0</sup>C ï¿½ 10<sup> 0</sup>C</font><font FACE="Univers,Univers">
       <p>&nbsp;</td>
     </font>
     <td width="69" height="51">
-      <p><font size="1" face="Arial">20<sup> 0</sup>C ± 10<sup> 0</sup>C</font><font FACE="Univers,Univers">
+      <p><font size="1" face="Arial">20<sup> 0</sup>C ï¿½ 10<sup> 0</sup>C</font><font FACE="Univers,Univers">
       <p>&nbsp;</td>
     </tr>
   </table>
@@ -866,13 +877,13 @@ per minute</font></font></p>
       <td width="120">
         <p align="right"><font SIZE="2" face="Arial">NWT</font></td>
       <td width="404"><font SIZE="2" face="Arial">= Nominal wall thickness =
-        ½(housing diameter - shaft diameter)</font></td>
+        ï¿½(housing diameter - shaft diameter)</font></td>
     </tr>
     <tr>
       <td width="120">
         <p align="right"><font SIZE="2" face="Arial">AWT</font></td>
       <td width="404"><font SIZE="2" face="Arial">= Average wall thickness =
-        ½(OD - ID)</font></td>
+        ï¿½(OD - ID)</font></td>
     </tr>
     <tr>
       <td width="120">
@@ -913,7 +924,7 @@ per minute</font></font></p>
   </div>
 </font>
 <p><font SIZE="2" face="Arial">Moulded bushes single wall thickness tolerance:
-± 3% NWT to allow for normal variations along length of bush and out of
+ï¿½ 3% NWT to allow for normal variations along length of bush and out of
 concentricity</font></p>
 <b>
 <p><font color="#000086" SIZE="5" face="Arial">Specifying Wall Thickness</font></b><font face="Arial"><br>
@@ -923,7 +934,7 @@ without greatly affecting the bore diameter and assembled clearance.</font></p>
 <p><font face="Arial">For this reason, rather than specifying an <b>outside</b>
 and <b>inside</b> diameter to a close tolerance, for <b>Standard Precision</b>
 bushes it is better to specify the <b>outside diameter</b> to</font></p>
-<p><font face="Arial">± 0,1%, and control the <b>wall thickness</b> to a
+<p><font face="Arial">ï¿½ 0,1%, and control the <b>wall thickness</b> to a
 tolerance of +0,0/-0,5%.</font></p>
 <p><font face="Arial">Specifying the wall thickness and its tolerance also
 avoids the risk of the bush having a plus tolerance on the OD and a minus
@@ -933,7 +944,7 @@ tolerance on the ID.</font></p>
 of a free standing bush, <b>High Precision</b> bushes can be produced. These are
 machined with temperature compensation in relation to a <b>Standard Ambient
 Tempera- ture of</b> 20<sup> 0</sup>C. This increases machining costs. Quality
-control measurement checks will have to be carried out at 20<sup> 0</sup>C ± 2<sup>
+control measurement checks will have to be carried out at 20<sup> 0</sup>C ï¿½ 2<sup>
 0</sup>C, which may not be convenient for the client.</font></p>
 <p><font face="Arial">Tolerances as fine as 0,01 mm can be attained by reaming
 the bush after press fitting it into the housing.</font></p>
@@ -1010,9 +1021,9 @@ because a rusted surface will cause rapid damage to a Vesconite bush.</font></p>
 </font>The Vesconite bush surface finish is not critical on account of its lower
 hardness.</font></p>
 <p><font face="Arial">The surface of the metal counterface is important for long
-bush service. We recommend polishing to 0,5 µm for optimum wear life, and the
-roughness should not exceed 2,5 µm. For solid-drawn shafts which have tool
-marks running in the axial direction, roughness should not exceed 0,5 µm.</font></p>
+bush service. We recommend polishing to 0,5 ï¿½m for optimum wear life, and the
+roughness should not exceed 2,5 ï¿½m. For solid-drawn shafts which have tool
+marks running in the axial direction, roughness should not exceed 0,5 ï¿½m.</font></p>
 <p><font face="Arial"><font color="#000086"><b><font SIZE="5">Grooves and Seals</font></b><br>
 </font>Increase in wear life by 3 to 10 times can be achieved under dirty
 conditions. Firstly, include straight grooves on the bush mating surface. These
@@ -1071,7 +1082,7 @@ e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</
     </tr>
     <tr>
       <td width="560" colspan="2">
-        <p align="center"><font size="1" face="Arial">All Rights Reserved ©
+        <p align="center"><font size="1" face="Arial">All Rights Reserved ï¿½
         1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../footer_links/warranty.htm">Warranty
         disclaimer</a></font></td>
     </tr>

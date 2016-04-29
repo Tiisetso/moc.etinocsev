@@ -11,7 +11,18 @@
 <meta name="Microsoft Border" content="b">
 </head>
 
-<body stylesrc="http://marran/usapr01/Default.htm"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<body stylesrc="http://marran/usapr01/Default.htm">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
 
 <p align="center"><font color="#FF0000" face="Arial,Helvetica" size="5"><b>Vesconite
 Enquiry Form</b></font><big><big><big> </big></big></big></p>
@@ -478,7 +489,7 @@ function FrontPage_Form1_Validator(theForm)
 
 <h5 align="center"><font face="Arial,Helvetica" size="1">Last updated: Jun 29, 1999</font></h5>
 
-<p align="center"><font face="Arial,Helvetica" size="1">&nbsp;</font> 
+<p align="center"><font face="Arial,Helvetica" size="1">&nbsp;</font>
 <!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
 <div align="center">
   <center>
@@ -518,7 +529,7 @@ e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</
     </tr>
     <tr>
       <td width="560" colspan="2">
-        <p align="center"><font size="1" face="Arial">All Rights Reserved ©
+        <p align="center"><font size="1" face="Arial">All Rights Reserved ï¿½
         1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../../footer_links/warranty.htm">Warranty
         disclaimer</a></font></td>
     </tr>
