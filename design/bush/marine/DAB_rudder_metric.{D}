@@ -473,13 +473,13 @@ size=2>
     <TD align=left bgColor=#ffff99 height=35 width=8>&nbsp;</TD>
     <TD align=left bgColor=#ffff99 height=35 width=111><FONT face=Arial
 size=2>
-    <!--webbot bot="Validation" s-data-type="Number" s-number-separators="x." --><INPUT name=Tmax size=4 tabIndex=6 value=40> �C</FONT></TD></TR>
+    <!--webbot bot="Validation" s-data-type="Number" s-number-separators="x." --><INPUT name=Tmax size=4 tabIndex=6 value=40> &deg;C</FONT></TD></TR>
   <TR>
     <TD align=right bgColor=#ffff99 height=20 width=241><FONT face=Arial
       size=2>Minimum operating temp</FONT></TD>
     <TD align=left bgColor=#ffff99 height=20 width=8>&nbsp;</TD>
     <TD align=left bgColor=#ffff99 height=20 width=111><FONT face=Arial
-      size=2><INPUT name=Tmin size=4 tabIndex=7 value=-10> �C</FONT></TD>
+      size=2><INPUT name=Tmin size=4 tabIndex=7 value=-10> &deg;C</FONT></TD>
     <TD align=left bgColor=#ffff99 colSpan=2 height=60 rowSpan=3 width=257><TEXTAREA cols=45 name=popup_tempcold style="FONT-FAMILY: Times New Roman" tabIndex=-1 rows="2">  </TEXTAREA>
     </TD></TR>
   <TR>
@@ -699,7 +699,7 @@ width=262>&nbsp;</TD></TR></TBODY></TABLE></DIV>
                   size=2>ID mm</FONT></B></TD></TR>
               <TR>
                 <TD align=middle vAlign=center width=135><FONT color=#000086
-                  face=Arial size=2>5-10 �C</FONT></TD>
+                  face=Arial size=2>5-10 &deg;C</FONT></TD>
                 <CENTER></CENTER>
                 <TD align=left vAlign=center width=61>
                   <P align=left><INPUT name=ODtemp1 size=7
@@ -712,7 +712,7 @@ width=262>&nbsp;</TD></TR></TBODY></TABLE></DIV>
                   tabIndex=-1 value=0></TD></TR>
               <TR>
                 <TD align=middle vAlign=center width=135><FONT color=#000086
-                  face=Arial size=2>10-15 �C</FONT></TD>
+                  face=Arial size=2>10-15 &deg;C</FONT></TD>
                 <TD align=left vAlign=center width=61><INPUT name=ODtemp2
                   size=7
                   style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid"
@@ -723,7 +723,7 @@ width=262>&nbsp;</TD></TR></TBODY></TABLE></DIV>
                   tabIndex=-1 value=0></TD></TR>
               <TR>
                 <TD align=middle vAlign=center width=135><FONT color=#000086
-                  face=Arial size=2>15-20 �C</FONT></TD>
+                  face=Arial size=2>15-20 &deg;C</FONT></TD>
                 <TD align=left vAlign=center width=61><INPUT name=ODtemp3
                   size=7
                   style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid"
@@ -734,7 +734,7 @@ width=262>&nbsp;</TD></TR></TBODY></TABLE></DIV>
                   tabIndex=-1 value=0></TD></TR>
               <TR>
                 <TD align=middle vAlign=center width=135><FONT color=#000086
-                  face=Arial size=2>20-30 �C</FONT></TD>
+                  face=Arial size=2>20-30 &deg;C</FONT></TD>
                 <TD align=left vAlign=center width=61><INPUT name=ODtemp4
                   size=7
                   style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid"
@@ -745,7 +745,7 @@ width=262>&nbsp;</TD></TR></TBODY></TABLE></DIV>
                   tabIndex=-1 value=0></TD></TR>
               <TR>
                 <TD align=middle vAlign=center width=135><FONT color=#000086
-                  face=Arial size=2>30-35 �C</FONT></TD>
+                  face=Arial size=2>30-35 &deg;C</FONT></TD>
                 <TD align=left vAlign=center width=61><INPUT name=ODtemp5
                   size=7
                   style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid"
@@ -756,7 +756,7 @@ width=262>&nbsp;</TD></TR></TBODY></TABLE></DIV>
                   tabIndex=-1 value=0></TD></TR>
               <TR>
                 <TD align=middle vAlign=center width=135><FONT color=#000086
-                  face=Arial size=2>35-40 �C</FONT></TD>
+                  face=Arial size=2>35-40 &deg;C</FONT></TD>
                 <TD align=left vAlign=center width=61><INPUT name=ODtemp6
                   size=7
                   style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid"
@@ -775,13 +775,13 @@ width=262>&nbsp;</TD></TR></TBODY></TABLE></DIV>
         <TR>
           <TD align=middle colSpan=4 width=265>
             <P align=left><FONT size=3>Maximum operating temp <FONT
-            color=#000086 face=Arial size=2><FONT color=#000000>�C</FONT>
+            color=#000086 face=Arial size=2><FONT color=#000000>&deg;C</FONT>
             </FONT><INPUT name=Tmax_out size=4 tabIndex=-1></FONT></P></TD>
           <CENTER></TR>
         <TR>
           <TD align=left colSpan=4 width=265><FONT size=3>Minimum operating
             temp <FONT color=#000086 face=Arial size=2><FONT
-            color=#000000>�C</FONT> </FONT><INPUT name=Tmin_out size=4
+            color=#000000>&deg;C</FONT> </FONT><INPUT name=Tmin_out size=4
             tabIndex=-1></FONT></TD></TR>
         <TR>
           <TD align=middle width=71></TD>
