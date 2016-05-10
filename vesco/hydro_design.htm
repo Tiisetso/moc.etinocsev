@@ -10,7 +10,7 @@
 <meta name="Microsoft Border" content="tlb, default">
 </head>
 
-<body stylesrc="../index.htm" topmargin="0" bgcolor="#F3F8FE"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<body stylesrc="../index.htm" topmargin="0" bgcolor="#F3F8FE">
   <!-- Google Tag Manager -->
   <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -20,7 +20,44 @@
   '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
   <!-- End Google Tag Manager -->
-  
+
+  <!-- Google Code for Hydro Design Manual SubmitR Conversion Page
+  In your html page, add the snippet and call
+  goog_report_conversion when someone clicks on the
+  chosen link or button. -->
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    goog_snippet_vars = function() {
+      var w = window;
+      w.google_conversion_id = 926695416;
+      w.google_conversion_label = "BnKXCLrWvWYQ-P_wuQM";
+      w.google_remarketing_only = false;
+    }
+    // DO NOT CHANGE THE CODE BELOW.
+    goog_report_conversion = function(url) {
+      goog_snippet_vars();
+      window.google_conversion_format = "3";
+      var opt = new Object();
+      opt.onload_callback = function() {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    }
+    var conv_handler = window['google_trackConversion'];
+    if (typeof(conv_handler) == 'function') {
+      conv_handler(opt);
+    }
+  }
+  /* ]]> */
+  </script>
+  <script type="text/javascript"
+    src="//www.googleadservices.com/pagead/conversion_async.js">
+  </script>
+
+
+
+  <!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+
 <table border="0" cellpadding="2" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="100%">
   <tr>
     <td align="center" width="103" bgcolor="#E1F0FF"><b>
@@ -389,7 +426,7 @@ function FrontPage_Form3_Validator(theForm)
       <!--webbot bot="Validation" s-data-type="Integer" s-number-separators="x" b-value-required="TRUE" i-minimum-length="3" i-maximum-length="3" s-validation-constraint="Greater than" s-validation-value="776" s-validation-constraint="Less than" s-validation-value="778" --><input type="text" name="pass" size="5" maxlength="3"></span></td>
       </tr>
     </table>
-    <p><input type="submit" value="  Send  " name="B1"> </p>
+    <p><input type="submit" value="  Send  " onclick="goog_report_conversion ('/_vti_bin/shtml.dll/vesco/hydro_design.htm')" name="B1"> </p>
   </form>
 </ul>
 <p align="left"><font face="Arial">
