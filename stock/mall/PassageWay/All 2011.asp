@@ -522,7 +522,7 @@ fp_iRegion=BOTID
       <tr>
         <td width="12%"><a href="http://www.vesconite.com/"><img border="0" src="../../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></td>
         <td width="88%">
-        <p align="center"><font size="2" face="Arial">�</font><span style="FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px" class="Apple-style-span">2012
+        <p align="center"><font size="2" face="Arial"></font><span style="FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px" class="Apple-style-span">2012
         Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site
         may not be copied or redistributed without the express written consent
         of Vesco Plastics Sales, Pty Ltd.</span><font size="2" face="Arial">&nbsp;
