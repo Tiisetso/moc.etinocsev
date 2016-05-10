@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Language" content="en-us">
 <meta name="ProgId" content="FrontPage.Editor.Document">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>2011&nbsp; World's largest bushing stock range</title>
+<title>World's largest bushing stock range</title>
 <meta name="Microsoft Border" content="tb">
 </head>
 
