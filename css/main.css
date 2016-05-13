@@ -5,6 +5,7 @@ body {
   background-color: #f3f8fe;
 }
 
-.telephone {
+a:link {
+
   text-decoration: none;
 }
