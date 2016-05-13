@@ -36,7 +36,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <tr>
     <td width="100%">
     <p align="center"><font face="Arial" size="2">
-    <a href="http://www.vesconite.com/afrikaans">Tuisblad</a></font><font color="#000080" face="Arial" size="2">&nbsp; |&nbsp;
+    <a href="http://www.vesconite.com/af">Tuisblad</a></font><font color="#000080" face="Arial" size="2">&nbsp; |&nbsp;
     <a href="LTXL.asp">Voorraad Vinder</a> &nbsp;|&nbsp;
     <a href="../../lobby.asp">Handelaars</a>&nbsp; |&nbsp;
     <a href="http://www.vesconite.com/charts/prodlist.htm">Groottes</a>&nbsp;
@@ -227,11 +227,11 @@ Feb 20 2003</font></p>
     <a href="http://www.vesconite.com/">
     <img border="0" src="../../../images/VSalesLogo.gif"></a></td>
     <td height="8" width="84" align="center"><font face="Arial" size="2">
-    <a href="http://www.vesconite.com/afrikaans/index.htm">Tuisblad</a></font></td>
+    <a href="http://www.vesconite.com/af/index.htm">Tuisblad</a></font></td>
     <td height="8" width="69" align="center"><p align="center"><font face="Arial" size="2">
     <a href="http://www.vesconite.com/vesco/site.htm">Indeks</a></font></td>
     <td height="8" width="146" align="center"><p align="center"><font face="Arial" size="2">
-    <a href="http://www.vesconite.com/afrikaans/enquiry.htm">Navraag
+    <a href="http://www.vesconite.com/af/enquiry.htm">Navraag
       Vorm</a></font></td>
     <td height="8" width="174" align="center"><p align="center"><font face="Arial" size="2">
     <a href="http://www.vesconite.com/vesco/contact.htm">Kontak ons</a></font></td>

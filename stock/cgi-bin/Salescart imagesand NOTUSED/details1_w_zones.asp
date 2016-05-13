@@ -203,21 +203,21 @@ End If
           </font>
           
           	
-         <font face="Arial"><a href="http://www.vesconite.com/french/">
+         <font face="Arial"><a href="http://www.vesconite.com/fr/">
          <img border="1" src="../../_borders/France.gif" alt="Francais" width="25" height="15"></a>
-    <a href="http://www.vesconite.com/span">
-    <img border="1" src="../../_borders/Spanish.gif" alt="Español" width="23" height="16"></a> </font>
-    <a href="http://www.vesconite.com/finnish">
+    <a href="http://www.vesconite.com/es">
+    <img border="1" src="../../_borders/Spanish.gif" alt="Espaï¿½ol" width="23" height="16"></a> </font>
+    <a href="http://www.vesconite.com/fi">
     <img border="1" src="../../_borders/finnland.gif" alt="Suomi" width="23" height="15"></a>
-    <a href="http://www.vesconite.com/russian">
+    <a href="http://www.vesconite.com/ru">
     <img border="1" src="../../_borders/russian.gif" width="23" height="16" alt="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; "></a><br>
-    <a href="http://www.vesconite.com/port/">
-    <img border="1" src="../../_borders/port.gif" alt="Português" width="27" height="16"></a>
-    <a href="http://www.vesconite.com/italian">
+    <a href="http://www.vesconite.com/pt/">
+    <img border="1" src="../../_borders/port.gif" alt="Portuguï¿½s" width="27" height="16"></a>
+    <a href="http://www.vesconite.com/it">
     <img border="1" src="../../_borders/italy.gif" width="25" height="16" alt="Italian"></a>
-    <a href="http://www.vesconite.com/afrikaans">
+    <a href="http://www.vesconite.com/af">
     <img border="1" src="../../_borders/South_Africa.gif" width="24" height="15" alt="Afrikaanse"></a>
-         <a href="http://www.vesconite.com/chineses">
+         <a href="http://www.vesconite.com/zh_CN">
          <img border="1" src="../../_borders/China.gif" alt="&#32321;&#39636;&#20013;&#25991;" width="22" height="15"></a> </p>
           </form>
           
@@ -563,7 +563,7 @@ End If
       <tr>
         <td width="12%"><a href="http://www.vesconite.com/"><img border="0" src="../../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></td>
         <td width="88%">
-        <p align="center"><font size="2" face="Arial">©</font><span style="FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px" class="Apple-style-span">2012 
+        <p align="center"><font size="2" face="Arial">ï¿½</font><span style="FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 12px" class="Apple-style-span">2012 
         Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site 
         may not be copied or redistributed without the express written consent 
         of Vesco Plastics Sales, Pty Ltd.</span><font size="2" face="Arial">&nbsp;
