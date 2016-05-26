@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- <VesconiteIPPhoneDirectory clearlight="true"> -->
+<VesconiteIPPhoneDirectory>
+
+  <Title>Vesco Plastics</Title>
+
+  <!-- <Prompt>Prompt</Prompt> -->
+  <!-- <MenuItem>
+    <Name></Name>
+    <URL></URL>
+  </MenuItem> -->
+
+  <DirectoryEntry>
+    <Name>Dr Jean-Patrick Leger</Name>
+    <Telephone>1105</Telephone>
+    <Telephone>0828802347</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Mark Opperman</Name>
+    <Telephone>1103</Telephone>
+    <Telephone>0829253720</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Ana van Nierop</Name>
+    <Telephone>0833872353</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Deborah Spicer</Name>
+    <Telephone>1116</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Buddy Shuping</Name>
+    <Telephone>1111</Telephone>
+    <Telephone>0790421045</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Charlie Simpson</Name>
+    <Telephone>1108</Telephone>
+    <Telephone>0828887417</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Eddie Swanepoel</Name>
+    <Telephone>1102</Telephone>
+    <Telephone>0866027578</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Florence Mswane</Name>
+    <Telephone>1112</Telephone>
+    <Telephone>0842982481</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Joan Marran</Name>
+    <Telephone>1113</Telephone>
+  </DirectoryEntry>
+
+
+  <DirectoryEntry>
+    <Name>Lorraine Deans</Name>
+    <Telephone>1100</Telephone>
+    <Telephone>0832275433</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Martin Nyathi</Name>
+    <Telephone>1106</Telephone>
+    <Telephone>0839253720</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Paul Potgieter</Name>
+    <Telephone>1103</Telephone>
+    <Telephone>0745892912</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Phillip de Villiers</Name>
+    <Telephone>1110</Telephone>
+    <Telephone>0828673075</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Tiisetso Murray</Name>
+    <Telephone>1117</Telephone>
+    <Telephone>0724754812</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Zumie Agrella</Name>
+    <Telephone>1107</Telephone>
+    <Telephone>0724788898</Telephone>
+    <Telephone>1114</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Boardroom</Name>
+    <Telephone>1115</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Annex</Name>
+    <Telephone>1118</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Ambulance Netcare</Name>
+    <Telephone>082911</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Ambulance ER24</Name>
+    <Telephone>0118037707</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Police Flying Squad</Name>
+    <Telephone>10111</Telephone>
+  </DirectoryEntry>
+
+  <DirectoryEntry>
+    <Name>Fire</Name>
+    <Telephone>10177</Telephone>
+  </DirectoryEntry>
+
+  <!-- <DirectoryEntry>
+    <Name></Name>
+    <Telephone></Telephone>
+    <Telephone></Telephone>
+  </DirectoryEntry> -->
+
+
+  <SoftKeyItem>
+
+  <Name>#</Name>
+
+  <URL>http://xxx/minibrowser/start.xml</URL>
+
+  </SoftKeyItem>
+
+  <SoftKeyItem>
+
+  <Name>*</Name>
+
+  <URL>http://xxx/minibrowser/menu.xml</URL>
+
+  </SoftKeyItem>
+
+</VesconiteIPPhoneDirectory>
