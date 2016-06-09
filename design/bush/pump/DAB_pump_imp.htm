@@ -508,8 +508,7 @@ function FrontPage_Form1_Validator(theForm)
 name=FrontPage_Form1 onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" webbot-action="--WEBBOT-SELF--">
   <!--webbot bot="SaveResults" s-email-format="HTML/BR" s-email-address="vesconite@vesconite.com" b-email-label-fields="TRUE" b-email-subject-from-field="FALSE" s-email-subject="Imperial PUMP Design-a-Bearing CUSTOMER REQUEST" s-date-format="%A, %B %d, %Y" s-time-format="%I:%M:%S %p" s-builtin-fields="REMOTE_NAME REMOTE_USER HTTP_USER_AGENT Date Time" s-form-fields="Contact_person email_address tel Country Company quote_requset Qty_per_order qty_per_year Comments Dmax d L pressfit Tmax Tmin M n R deg trav r freq P V PV " u-confirmation-url="../DAB_confirm.htm" startspan --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot bot="SaveResults" endspan i-checksum="43374" -->
 <DIV align=center>
-<TABLE bgColor=#ffd7eb border=0 borderColor=#000086 cellSpacing=0 height=413
-width=619>
+<TABLE bgColor=#ffd7eb border=0px borderColor=#000086 cellSpacing=0 height=413 width=619>
   <TBODY>
   <TR>
     <TD align=right bgColor=#EAF1FF colSpan=5 height=24 width=612 bordercolor="#EAF1FF">
@@ -600,19 +599,36 @@ size=2>
       face=Arial size=2>&nbsp;&nbsp; Drawing included&nbsp;below&nbsp; </FONT><FONT color=#000086
       face=Wingdings size=2></FONT></TD></TR>
   <TR>
-    <TD align=middle bgColor=#99CCFF colSpan=5 height=18 width=641>&nbsp;
-  </TD></TR>
-  <TR>
-    <TD align=middle bgColor=#EAF1FF colSpan=5 height=18 width=641 bordercolor="#EAF1FF">
-      <P align=center><b><FONT
-      color=#000080 face="Arial" size="3">&nbsp;<SUP>Outside Dia</SUP></FONT></b><FONT color=#ffffff face=Arial size=3><b><FONT color=#000080>
-      </FONT></b><FONT color=#000080 face=Arial size=3><SUP><b><INPUT name=ODc size=5 tabIndex=-1></b></SUP></FONT><b><FONT color=#000080><sup>inches</sup>
-      </FONT></b><SUP><FONT color=#000080 face=Arial size=3><b>&plusmn;<INPUT name=ODtolc size=3
-      tabIndex=-1>&nbsp; &nbsp; Inside Dia <INPUT
-      name=IDc size=5 tabIndex=-1>inches   &plusmn;<INPUT name=IDtolc size=3
-      tabIndex=-1>&nbsp;&nbsp;&nbsp; Length <INPUT
-      name=L1c size=4 tabIndex=-1>+0.0/- <INPUT name=L1tolc size=3
-      tabIndex=-1></b></FONT></SUP></FONT></P></TD></TR>
+    <TD align=middle bgColor=#99CCFF colSpan=5 height=18 width=641>
+			&nbsp;
+  </TD>
+</TR>
+
+			<tr  style="color:#000086" align=middle bgColor=#EAF1FF colSpan=5 height=18 width=641 >
+				<td  align=right colspan="1">Outside Diameter</td>
+				<td></td>
+				<td align=left colspan="3">
+					<INPUT name=ODc size=13 tabIndex=-1>
+					inches
+					&plusmn;<INPUT name=ODtolc size=13 tabIndex=-1></td>
+			</tr>
+			<tr style="color:#000086" align=middle bgColor=#EAF1FF colSpan=5 height=18 width=641 bordercolor="#EAF1FF">
+				<td align=right colspan="1">Inside Diameter</td>
+				<td></td>
+				<td align=left colspan="3">
+					<INPUT name=IDc size=13 tabIndex=-1>
+					inches
+					&plusmn;<INPUT name=IDtolc size=13 tabIndex=-1></td>
+			</tr>
+			<tr style="color:#000086" align=middle bgColor=#EAF1FF colSpan=5 height=18 width=641 bordercolor="#EAF1FF">
+				<td align=right colspan="1">Length</td>
+				<td></td>
+				<td align=left colspan="3">
+					<INPUT name=L1c size=13 tabIndex=-1>
+					inches
+					&plusmn;<INPUT name=L1tolc size=13 tabIndex=-1></td>
+			</tr>
+
   <TR>
     <TD align=right bgColor=#99CCFF height=22 width=241>
       <P align=right><FONT face=Arial size=2>Loading&nbsp;P =</FONT></P></TD>
@@ -749,7 +765,7 @@ width=281>&nbsp;</TD></TR></TBODY></TABLE></DIV>
 
 <DIV align=center>
 <CENTER>
-<TABLE border=0 cellSpacing=1 height=614 width=579>
+<TABLE border=0px cellSpacing=0 height=614 width=579>
   <TBODY>
   <TR>
     <TD height=20 width=139></TD></CENTER>
@@ -763,9 +779,9 @@ width=281>&nbsp;</TD></TR></TBODY></TABLE></DIV>
     <TD height=23 width=139></TD>
     <TD colSpan=2 height=23 width=319>
       <P align=center><FONT color=#000086 face=Arial size=2>&nbsp; </FONT><INPUT
-      name=L1 size=6 tabIndex=-1><FONT color=#000086 face=Arial size=2>
+      name=L1 size=9 tabIndex=-1><FONT color=#000086 face=Arial size=2>
       +0.0/</FONT><FONT color=#000086 face=Arial size=3>- </FONT><INPUT
-      name=L1tol size=3 tabIndex=-1>  <font color="#000086" face="Arial" size="2">inches</font></P></TD>
+      name=L1tol size=9 tabIndex=-1>  <font color="#000086" face="Arial" size="2">inches</font></P></TD>
     <TD height=23 width=138></TD></TR>
   <TR>
     <TD height=238 width=139><FONT size=2><FONT color=#000086
@@ -773,7 +789,7 @@ width=281>&nbsp;</TD></TR></TBODY></TABLE></DIV>
       tabIndex=-1><FONT color=#000086 face=Arial
       size=2>&nbsp;</FONT></FONT><FONT color=#000086 face=Arial
       size=2>+/</FONT><FONT color=#000086 face=Arial size=3>-</FONT><FONT
-      color=#000086 face=Arial size=2><INPUT name=ODtol size=3 tabIndex=-1>
+      color=#000086 face=Arial size=2><INPUT name=ODtol size=7 tabIndex=-1>
       inches</FONT></TD>
     <TD colSpan=2 height=238 width=319><img border="0" src="../bushwt2.gif" width="321" height="234"></TD>
     <TD height=238 width=138>
@@ -781,10 +797,10 @@ width=281>&nbsp;</TD></TR></TBODY></TABLE></DIV>
       <P><FONT color=#000086 face=Arial size=2>Inside Diameter<BR></FONT><INPUT
       name=ID size=6 tabIndex=-1> <FONT color=#000086 face=Arial
       size=2>+/</FONT><FONT color=#000086 face=Arial size=3>-</FONT><FONT
-      face=Arial size=2><INPUT name=IDtol size=3 tabIndex=-1>  <font color="#000086">inches</font> </FONT></P>
-      <P><FONT color=#000086 face=Arial size=2><BR><BR>Wall Thickness inches</FONT><BR><INPUT name=WT size=4 tabIndex=-1> <FONT color=#000086
-      face=Arial size=2>+0.0/</FONT><FONT color=#000086 face=Arial
-      size=3>-</FONT><INPUT name=WTtol size=4 tabIndex=-1></P></TD></TR>
+      face=Arial size=2><INPUT name=IDtol size=7 tabIndex=-1>  <font color="#000086">inches</font> </FONT></P>
+      <P><FONT color=#000086 face=Arial size=2><BR><BR>Wall Thickness inches</FONT><BR><INPUT name=WT size=7 tabIndex=-1> <FONT color=#000086
+      face=Arial size=2><br>+0.0/</FONT><FONT color=#000086 face=Arial
+      size=3>-</FONT><INPUT name=WTtol size=7 tabIndex=-1></P></TD></TR>
   <TR>
     <TD colSpan=4 height=317 width=585>&nbsp;
       <DIV align=left>
