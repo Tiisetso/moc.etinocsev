@@ -116,8 +116,8 @@ function FrontPage_Form1_Validator(theForm)
   }
   return (true);
 }
-//--></script><!--webbot BOT="GeneratedScript" endspan --><form action="http://www.SnapHost.com/captcha/send.aspx" method="POST"
-id="myform" onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" name="FrontPage_Form1">
+//--></script><!--webbot BOT="GeneratedScript" endspan -->
+<form action="enquiry.php" method="POST" id="myform" onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" name="FrontPage_Form1">
 
 
 <input type="hidden" name="skip_WhereToSend"
@@ -129,61 +129,44 @@ value="SHORT Inquiry / RFQ 2010/07" />
 <input type="hidden" name="skip_WhereToReturn"
 value="www.vesconite.com/vesco/confirm/basic_confirm.htm" /><input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID"
 value="MFKT2L7JTQLS" />
-<table CELLSPACING="0" BORDER="0" WIDTH="100%" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" height="83">
-    <tr>
-      <td WIDTH="10%" VALIGN="MIDDLE" height="9">
-      <font face="Arial" color="#000080">Name</font><font FACE="Arial" SIZE="3" color="#000080">
-      </font></td>
-      <td WIDTH="39%" VALIGN="MIDDLE" height="9">
-      <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="name" size="20"></td>
-      <td WIDTH="20%" VALIGN="MIDDLE" height="9">
-      </td>
-      <td WIDTH="30%" VALIGN="MIDDLE" height="9">
-      </td>
+
+<table CELLSPACING="4px" BORDER="0px" WIDTH="100%" style="font-family:Arial; color=#000080" bordercolor="#111111" cellpadding="0" height="83">
+    <tr style="font-family:Arial; color=#000080">
+      <td>Name</td>
+      <td><input type="text" name="name" size="52"></td>
     </tr>
     <tr>
-      <td WIDTH="10%" VALIGN="MIDDLE" height="1">
-      <font FACE="Arial" SIZE="3" COLOR="#000080">e-mail</font></td>
-      <td WIDTH="39%" VALIGN="MIDDLE" height="1">
-      <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="email" size="20"></td>
-      <td WIDTH="20%" VALIGN="MIDDLE" height="1"></td>
-      <td WIDTH="30%" VALIGN="MIDDLE" height="1">
-      </td>
+      <td>Email</td>
+      <td><input type="text" name="email" size="52"></td>
     </tr>
     <tr>
-      <td WIDTH="10%" VALIGN="MIDDLE" height="22">
-      <font FACE="Arial" SIZE="3" color="#000080">Tel</font></td>
-      <td WIDTH="90%" VALIGN="MIDDLE" COLSPAN="3" height="22"><font color="#000080"><b>
-      <!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="tel" size="20"></b></font></td>
+      <td>Contact number</td>
+      <td><input type="text" name="tel" size="52"></td>
     </tr>
-    </table>
-  <table border="0" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="656" height="247" cellpadding="2">
     <tr>
-      <td width="83" height="1">
-      <span lang="en-za"><b><font face="Arial" color="#000080">Request</font></b></span></td>
-      <td width="505" height="1"><font color="#000080"><b>
-      <textarea rows="4" name="Application_Desc" cols="50"></textarea></b></font></td>
-      <td width="52" height="1"></td>
+      <td>Request</td>
+      <td><textarea rows="4" name="Application_Desc" cols="50"></textarea></td>
     </tr>
     <tr>
       <td width="650" height="1" colspan="3">
-
-      <table cellspacing="0" border="0" cellpadding="8"
-style="background-color:#ffcc66;">
-<tr><td colspan="2" style="padding-bottom:5px;">
-<!-- Do not remove this link or we will block your website!
-Please refer to our ProCaptcha service which is ad-free -->
-<a href="http://www.SnapHost.com/captcha/ProCaptchaOverview.aspx"
-style="text-decoration:none; font-size:11px; font-family:Verdana, Arial, Helvetica; color:#000099;">
-This web form is protected from SPAM by
-<span style="text-decoration:underline;">SnapHost.com</span></a></td></tr>
-<tr><td>
-<!--webbot bot="Validation" b-value-required="TRUE" --><input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text"
-style="width:130px; height:48px; font-size:38px;" size="20" /><br />
-<i>Enter Captcha code</i></td><td>
-<a href="http://www.SnapHost.com/captcha/"><img
-alt="Captcha Code" style="border-width:0px;" src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=MFKT2L7JTQLS" /></a>
-</td></tr></table>
+      <table cellspacing="0" border="0px" cellpadding="8" style="background-color:#ffcc66;">
+        <tr>
+                    <td colspan="2" style="padding-bottom:5px;">
+          <!-- Do not remove this link or we will block your website!
+          Please refer to our ProCaptcha service which is ad-free -->
+          <a href="http://www.SnapHost.com/captcha/ProCaptchaOverview.aspx"
+          style="text-decoration:none; font-size:11px; font-family:Verdana, Arial, Helvetica; color:#000099;">
+          This web form is protected from SPAM by
+          <span style="text-decoration:underline;">SnapHost.com</span></a></td></tr>
+          <tr><td>
+          <!--webbot bot="Validation" b-value-required="TRUE" --><input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text"
+          style="width:130px; height:48px; font-size:38px;" size="20" /><br />
+          <i>Enter Captcha code</i></td><td>
+          <a href="http://www.SnapHost.com/captcha/"><img
+          alt="Captcha Code" style="border-width:0px;" src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=MFKT2L7JTQLS" /></a>
+          </td>
+        </tr>
+      </table>
 
 
 
