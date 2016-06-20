@@ -134,7 +134,7 @@ fp_iRegion=BOTID
 
 <p>&nbsp;</p>
 <p>
-<!--webbot bot="HitCounter" u-custom i-image="0" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../_vti_bin/fpcount.exe/stock/?Page=mall/xl_stock.asp|Image=0" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="6209" endspan -->
+
 visitors from Jan 13 2005</p>
 
 <!--msnavigation--></td></tr><!--msnavigation--></table></body>

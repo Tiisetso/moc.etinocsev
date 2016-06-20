@@ -307,7 +307,7 @@ fp_iRegion=BOTID
 </table>
 
 <p>
-<!--webbot bot="HitCounter" u-custom i-image="0" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../../_vti_bin/fpcount.exe/stock/?Page=mall/stff/export/exp_login.asp|Image=0" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="46214" endspan -->
+
 <font face="Arial" size="1">visitors since May 07 2004&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Updated <span lang="en-za">Dec 07 2006</span></font></p>
 

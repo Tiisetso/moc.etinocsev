@@ -218,7 +218,7 @@ fp_iRegion=BOTID
 
 <p><font face="Arial" size="1">
 Besoekers&nbsp;
-<!--webbot bot="HitCounter" u-custom i-image="0" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../../_vti_bin/fpcount.exe/stock/?Page=mall/lang/afrik/LTXL.asp|Image=0" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="19051" endspan -->&nbsp;
+
 Feb 20 2003</font></p>
 
 <table BORDER="0" COLS="4" cellspacing="1" height="55" width="592">

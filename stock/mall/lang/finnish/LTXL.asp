@@ -251,7 +251,7 @@ fp_iRegion=BOTID
 </table>
 
 <p><font face="Arial" size="1">
-<!--webbot bot="HitCounter" u-custom i-image="2" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../../_vti_bin/fpcount.exe/stock/?Page=mall/lang/finnish/LTXL.asp|Image=2" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="26109" endspan -->
+
 visitors since Mar 19 2003</font></p>
 
 <!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>

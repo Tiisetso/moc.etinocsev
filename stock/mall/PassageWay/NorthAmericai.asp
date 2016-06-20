@@ -329,7 +329,7 @@ fp_iRegion=BOTID
 </table>
 
 <p><font face="Arial" size="1">
-<!--webbot bot="HitCounter" u-custom i-image="2" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../_vti_bin/fpcount.exe/stock/?Page=mall/PassageWay/NorthAmericai.asp|Image=2" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="57558" endspan -->
+
 visitors</font></p>
 
 <p><b><font face="Arial" color="#FF0066"><a name="Date updated">Date updated</a></font></b></p>

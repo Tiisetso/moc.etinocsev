@@ -95,7 +95,7 @@ Zealand</a> </font> </span></td>
 </table>
 
 <p><font face="Arial" size="1">
-<!--webbot bot="HitCounter" u-custom i-image="2" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../_vti_bin/fpcount.exe/stock/?Page=mall/PassageWay/Oceania.asp|Image=2" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="41391" endspan -->
+
 visitors</font></p>
 
 <p>&nbsp;</p>
