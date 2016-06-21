@@ -22,7 +22,7 @@ $body_message .= 'Questions: '.$field_questions."\n";
 // $body_message .= .$DateTime '  ' .$ipaddress."\n";
 
 
-$mail_to = 'tii@vesconite.com';
+$mail_to = 'vesconite@vesconite.com';
 $subject = 'Request for Industrial Design Manual '.$field_contact;
 
 $headers = "From: ".$field_email_address."\r\n";

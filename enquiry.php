@@ -16,7 +16,7 @@ $body_message .= 'Comments: '.$field_comments."\n";
 
 
 
-$mail_to = 'tii@vesconite.com';
+$mail_to = 'vesconite@vesconite.com';
 $subject = 'Enquiry: '.$field_contact;
 
 $headers = "From: ".$field_email_address."\r\n";
