@@ -1,0 +1,1052 @@
+<!--
+<%@ Language=JavaScript%>
+//-->
+<html>
+
+<head>
+<META name=VI60_defaultClientScript content=JavaScript>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Design-a-bush</title>
+<meta name="robots" content="noindex,nofollow">
+<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+<!--
+
+function calc1_onclick()
+{
+
+var PF;
+
+if (eval(document.FrontPage_Form1.Tmin.value)<5.0)
+PF=(((5.0-eval(document.FrontPage_Form1.Tmin.value))*0.000054)+0.002)*eval(document.FrontPage_Form1.D.value)+0.05;
+else
+PF=(eval(document.FrontPage_Form1.D.value)*0.002)+0.05;
+
+NWT=(eval(document.FrontPage_Form1.D.value)-eval(document.FrontPage_Form1.d.value))/2.0;
+AC=(NWT*0.02)+0.05;
+
+document.FrontPage_Form1.P.value=(eval(document.FrontPage_Form1.M.value)*9.8)/(eval(document.FrontPage_Form1.d.value)*eval(document.FrontPage_Form1.L.value)*eval(document.FrontPage_Form1.N.value));
+document.FrontPage_Form1.V.value=(eval(document.FrontPage_Form1.d.value)*eval(document.FrontPage_Form1.R.value)*Math.PI)/1000;
+document.FrontPage_Form1.PV.value=eval(document.FrontPage_Form1.P.value)*eval(document.FrontPage_Form1.V.value);
+
+document.FrontPage_Form1.OD.value=eval(document.FrontPage_Form1.D.value)+PF;
+document.FrontPage_Form1.L1.value=eval(document.FrontPage_Form1.L.value);
+
+
+int2=((eval(document.FrontPage_Form1.D.value)*eval(document.FrontPage_Form1.D.value))-(eval(document.FrontPage_Form1.d.value)*eval(document.FrontPage_Form1.d.value)))/eval(document.FrontPage_Form1.d.value);
+if (eval(document.FrontPage_Form1.Tmax.value)<50)
+EC=0;
+else
+EC=int2*6.0*(eval(document.FrontPage_Form1.Tmax.value)-21.0)*0.00001;
+
+int1=PF*eval(document.FrontPage_Form1.D.value)/eval(document.FrontPage_Form1.d.value);
+document.FrontPage_Form1.ID.value=eval(document.FrontPage_Form1.d.value)+int1+AC+EC;
+
+document.FrontPage_Form1.WT.value=(document.FrontPage_Form1.OD.value-document.FrontPage_Form1.ID.value)*0.5;
+
+document.FrontPage_Form1.ODtol.value=eval(document.FrontPage_Form1.D.value)*0.001;
+document.FrontPage_Form1.IDtol.value=eval(document.FrontPage_Form1.d.value)*0.001;
+document.FrontPage_Form1.WTtol.value=0.0-0.005*document.FrontPage_Form1.WT.value;
+document.FrontPage_Form1.L1tol.value=eval(document.FrontPage_Form1.L.value)*0.005;
+
+if (document.FrontPage_Form1.ODtol.value<0.025)
+document.FrontPage_Form1.ODtol.value=0.025;
+if (document.FrontPage_Form1.IDtol.value<0.025)
+document.FrontPage_Form1.IDtol.value=0.025;
+if (document.FrontPage_Form1.WTtol.value<0.025)
+document.FrontPage_Form1.WTtol.value=0.025;
+if (document.FrontPage_Form1.L1tol.value<0.3)
+document.FrontPage_Form1.L1tol.value=0.3;
+
+document.FrontPage_Form1.OD.value=(Math.round(document.FrontPage_Form1.OD.value*100))/100;
+document.FrontPage_Form1.ID.value=(Math.round(document.FrontPage_Form1.ID.value*100))/100;
+document.FrontPage_Form1.WT.value=(Math.round(document.FrontPage_Form1.WT.value*100))/100;
+document.FrontPage_Form1.ODtol.value=(Math.round(document.FrontPage_Form1.ODtol.value*100))/100;
+document.FrontPage_Form1.IDtol.value=(Math.round(document.FrontPage_Form1.IDtol.value*100))/100;
+document.FrontPage_Form1.WTtol.value=(Math.round(document.FrontPage_Form1.WTtol.value*100))/100;
+document.FrontPage_Form1.L1tol.value=(Math.round(document.FrontPage_Form1.L1tol.value*100))/100;
+
+}
+
+//-->
+</SCRIPT>
+<meta name="Microsoft Border" content="b">
+</head>
+
+<body stylesrc="../Default.htm" style="font-family: Arial; font-size: 10pt" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  var checkOK = "0123456789-.";
+  var checkStr = theForm.D.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"D\" field.");
+    theForm.D.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"D\" field.");
+    theForm.D.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.";
+  var checkStr = theForm.d.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"d\" field.");
+    theForm.d.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"d\" field.");
+    theForm.d.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.";
+  var checkStr = theForm.Tmax.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Tmax\" field.");
+    theForm.Tmax.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Tmax\" field.");
+    theForm.Tmax.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.";
+  var checkStr = theForm.Tmin.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Tmin\" field.");
+    theForm.Tmin.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Tmin\" field.");
+    theForm.Tmin.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.OD.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"OD\" field.");
+    theForm.OD.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"OD\" field.");
+    theForm.OD.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.ODtol.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"ODtol\" field.");
+    theForm.ODtol.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"ODtol\" field.");
+    theForm.ODtol.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.ID.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"ID\" field.");
+    theForm.ID.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"ID\" field.");
+    theForm.ID.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.IDtol.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"IDtol\" field.");
+    theForm.IDtol.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"IDtol\" field.");
+    theForm.IDtol.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.L1.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"L1\" field.");
+    theForm.L1.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"L1\" field.");
+    theForm.L1.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.L1tol.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"L1tol\" field.");
+    theForm.L1tol.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"L1tol\" field.");
+    theForm.L1tol.focus();
+    return (false);
+  }
+
+  var chkVal = allNum;
+  var prsVal = parseFloat(allNum);
+  if (chkVal != "" && !(prsVal > "-0.3"))
+  {
+    alert("Please enter a value greater than \"-0.3\" in the \"L1tol\" field.");
+    theForm.L1tol.focus();
+    return (false);
+  }
+
+  if (theForm.Contact_person.value == "")
+  {
+    alert("Please enter a value for the \"Contact_person\" field.");
+    theForm.Contact_person.focus();
+    return (false);
+  }
+
+  if (theForm.email_address.value == "")
+  {
+    alert("Please enter a value for the \"email_address\" field.");
+    theForm.email_address.focus();
+    return (false);
+  }
+
+  if (theForm.Country.value == "")
+  {
+    alert("Please enter a value for the \"Country\" field.");
+    theForm.Country.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" action="../_vti_bin/shtml.dll/vesco/designabush.htm" onsubmit="return FrontPage_Form1_Validator(this)" name="FrontPage_Form1" webbot-action="--WEBBOT-SELF--" language="JavaScript">
+  <!--webbot bot="SaveResults" startspan
+  U-File="../_private/designabush_results.txt" S-Format="HTML/BR"
+  S-Label-Fields="TRUE" B-Reverse-Chronology="FALSE" S-Email-Format="HTML/BR"
+  S-Email-Address="vesconite@vesconite.com" B-Email-Label-Fields="TRUE"
+  B-Email-Subject-From-Field="FALSE" S-Email-Subject="Customer service "
+  S-Date-Format="%A, %B %d, %Y" S-Time-Format="%I:%M:%S %p"
+  S-Builtin-Fields="REMOTE_NAME REMOTE_USER HTTP_USER_AGENT Date Time"
+  U-Confirmation-Url="../confirm.htm" --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot
+  bot="SaveResults" endspan i-checksum="43374" -->
+  <div align="center">
+    <center>
+    <table border="0" cellspacing="0" bordercolor="#000086" bgcolor="#DFFFDF" width="590">
+      <tr>
+        <td width="653" align="right" colspan="6" bgcolor="#F3F8FE">
+          <div align="left">
+            <table border="1" cellspacing="0" bordercolor="#000086" cellpadding="0">
+              <tr>
+                <td><font face="Arial" size="2" color="#FF0000"><b><a href="../Default.htm">vesconite.com</a></b></font>&nbsp;&nbsp;&nbsp;
+      <b><font face="Arial" size="2" color="#000086"><font FACE="Wingdings">�</font>&nbsp;&nbsp;&nbsp;</font></b>&nbsp;&nbsp;
+      <b><font face="Arial" size="2" color="#FF0000"><a href="../lhs_headings/vescoplastics.htm">VescoPlastics</a></font><font face="Arial" size="2" color="#000080">&nbsp;&nbsp;&nbsp;
+      </font><font face="Arial" size="2" color="#000086"><font FACE="Wingdings">�</font>&nbsp;&nbsp;</font><font face="Arial" size="2" color="#000080">&nbsp;
+      </font><font face="Arial" size="2" color="#000086">Design-a-bush</font></b></td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td width="653" align="right" colspan="6" bgcolor="#F3F8FE">
+          <p align="left"><font face="Arial" size="4" color="#000086"><b>Design-a-bush
+          for Industrial Applications - Beta v02</b></font></td>
+      </tr>
+      <tr>
+        <td width="653" align="right" colspan="6">
+          <p align="left"><b><font face="Arial" size="2"><font color="#000086">Step 1</font>&nbsp;<font color="#000086">
+          </font></font></b><font color="#000086" face="Arial" size="2">Fill in your
+          dimensions, operating conditions and temperatures.&nbsp;
+          Use the units
+          specified to avoid errors.&nbsp; Enter numbers with no thousands
+          separators and use a decimal point if required.&nbsp;<br>
+          Change initial values to those of your application.</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">Housing
+          diameter (D)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="98" align="left"><font face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators="x." --><input type="text" name="D" size="7">
+          mm</font></td>
+        <td width="375" align="left" colspan="3"><font face="Arial" size="1">Housing
+          diameter must be &gt; Shaft diameter</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">Shaft diameter
+          (d)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="98" align="left"><font face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators="x." --><input type="text" name="d" size="7">
+          mm</font></td>
+        <td width="378" align="left" colspan="3" valign="top" rowspan="2">
+          <font face="Arial" size="1">If d&gt;200 mm, this is a large bush, and
+          it is suggested that your calculations and application be checked by a
+          Vesconite consultant. Use <font color="#000086">Customer Service</font>
+          below.</font>
+        </td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">Bush length (L)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="98" align="left"><font face="Arial" size="2"><input type="text" name="L" size="7">
+          mm</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">Total mass supported (M)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="98" align="left"><font face="Arial" size="2"><input type="text" name="M" size="7" value="0">
+          kg</font></td>
+        <td width="135" align="left">
+          &nbsp;
+        </td>
+        <td width="242" align="left">&nbsp;</td>
+        <td width="1">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">No. of bushes supporting total mass (N)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="98" align="left"><font face="Arial" size="2"><input type="text" name="N" size="3" value="1"></font></td>
+        <td width="135" align="left">
+          <p align="left">&nbsp;</p>
+        </td>
+        <td width="242" align="left">&nbsp;</td>
+        <td width="1">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">Revolutions per min (R)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="98" align="left"><font face="Arial" size="2"><input type="text" name="R" size="5" value="0">
+          rpm</font></td>
+        <td width="135" align="left">&nbsp;</td>
+        <td width="242" align="left">&nbsp;</td>
+        <td width="1">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font face="Arial" size="2">Max
+          operating temp (Tmax)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="98"><font face="Arial" size="2"><!--webbot bot="Validation"
+          S-Data-Type="Number" S-Number-Separators="x." --><input type="text" name="Tmax" size="4" value="21">
+          �C</font></td>
+        <td width="371" colspan="3" rowspan="2" valign="top"><font face="Arial" size="1">If Tmax
+          &gt; 70 <b>�</b>C then&nbsp;please request your application to be
+          checked by a Vesconite consultant.&nbsp; Use
+          <font color="#000086">Customer
+          Service</font>  below.</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font face="Arial" size="2">Min
+          operating temp (Tmin)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="98"><font face="Arial" size="2"><!--webbot bot="Validation"
+          S-Data-Type="Number" S-Number-Separators="x." --><input type="text" name="Tmin" size="4" value="21">
+          �C</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right">&nbsp;</td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="98" align="left">&nbsp;</td>
+        <td width="135" align="left">&nbsp;</td>
+        <td width="240" align="left" colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="200" align="right">
+          <p align="right"><font color="#000086"><font face="Arial" size="2">Scroll down for results </font><font FACE="Wingdings">�</font><font face="Arial" size="2">&nbsp;</font></font></p>
+        </td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="98" align="left"><font color="#000086"><input type="button" value="Calculate" name="calc1" LANGUAGE=javascript onclick="return calc1_onclick()" style="color: #000086; font-size: 10pt; font-family: Arial"></font></td>
+        <td width="375" align="left" colspan="3"><font color="#000086"><font FACE="Wingdings">�</font><font face="Arial" size="2">&nbsp;
+          Scroll down for results </font><font FACE="Wingdings">�</font><font face="Arial" size="2">&nbsp;</font></font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right" bgcolor="#FFFFFF">
+          &nbsp;
+        </td>
+        <td width="8" align="left" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="98" align="left" bgcolor="#FFFFFF">&nbsp;</td>
+        <td width="375" align="left" colspan="3" bgcolor="#FFFFFF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="200" align="right">
+          <p align="left"><font face="Arial"><b><font color="#000086" size="2">Step 2</font><font size="3">
+          </font></b><font size="2" color="#000086">Check loading</font></font><font face="Arial" size="2">&nbsp;<font color="#000086">P =</font></font></p>
+        </td>
+        <td width="8">&nbsp;</td>
+        <td width="98"><font face="Arial" size="2"><input type="text" name="P" size="5">MPa</font></td>
+        <td width="375" colspan="3"><font face="Arial" size="1">If
+          P &gt; 20MPa, this is a high bearing load application.&nbsp; We would be
+          happy to
+  check your requirements and provide additional advice. Use the <font color="#000086"> Customer Service</font>
+          below.&nbsp;</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right">&nbsp;</td>
+        <td width="8">&nbsp;</td>
+        <td width="98">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="200" align="right">
+          <p align="left"><font color="#000086"><b><font face="Arial" size="2" color="#000086">Step
+          3</font>&nbsp; </b><font face="Arial" size="2" color="#000086">Check shaft surface
+          speed&nbsp; V =</font></font></td>
+        <td width="8">&nbsp;</td>
+        <td width="98"><font face="Arial" size="2"><input type="text" name="V" size="5">
+          m/min</font></td>
+        <td width="375" colspan="3"><font face="Arial" size="1">If
+          V &gt; 300 m/min,&nbsp; have your
+          application checked by a Vesconite consultant.&nbsp; Use <font color="#000086">Customer
+          Service </font>below.</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right">
+          <p align="left"><b><font color="#000086" face="Arial" size="2">Step 4 </font></b><font size="2" color="#000086" face="Arial">Check PV
+          =</font></td>
+        <td width="8">&nbsp;</td>
+        <td width="98"><font face="Arial" size="2"><input type="text" name="PV" size="5"><br>
+          MPa.m/min</font></td>
+        <td width="375" colspan="3"><font face="Arial" size="1">If
+          PV &lt;&nbsp; 5 MPa.m/min, initial greasing or unlubricated<br>
+          &nbsp;5&nbsp;- 10 MPa.m/min, initial greasing required<br>
+          10 - 20&nbsp; MPa.m/min, regular greasing required<br>
+          20 - 40 MPa.m/min, continuous lubrication required<br>
+          40 - 200 MPa.m/min, operate under water.<br>
+          If
+          PV &gt; 20 MPa.m/min, have your application checked by a Vesconite consultant.&nbsp;
+          Use <font color="#000086">Customer
+          Service </font>below.</font></td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  <div align="center">
+    <center>
+    <table border="0" cellspacing="1" width="588" height="149">
+      <tr>
+        <td width="938" bgcolor="#000086" height="10" colspan="5">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="938" bgcolor="#DDDDDD" height="34" colspan="5"><b><font face="Arial" size="2">Step
+          5&nbsp;</font><font color="#FF8000">
+          </font></b><font color="#000086" face="Arial" size="2">Machine
+          your
+          bush to the dimensions below. For the nearest bushing or rod size, check
+          our <a href="../charts/prodlist.htm">stock
+          production sizes</a> or click for Customer Service.</font></td>
+      </tr>
+      <tr>
+        <td width="173" bgcolor="#DDDDDD" height="34"><font color="#000086" face="Arial" size="2">Machine bush outside
+          diameter</font></td>
+        <td width="136" bgcolor="#DDDDDD" height="34"><font color="#000086" face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="OD" size="6">
+          mm&nbsp;</font></td>
+        <td width="145" bgcolor="#DDDDDD" height="34" align="right"><font color="#000086" face="Arial" size="2">Tolerance&nbsp;<font FACE="Courier">�</font></font></td>
+        <td width="136" bgcolor="#DDDDDD" height="34" align="left"><font color="#000086" face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",." -->
+          <input type="text" name="ODtol" size="5">
+          mm&nbsp;</font></td>
+        <td width="348" bgcolor="#DDDDDD" height="34"><font face="Arial" size="1">Includes interference fit</font></td>
+      </tr>
+      <tr>
+        <td width="173" bgcolor="#DDDDDD" height="34"><font color="#000086" face="Arial" size="2">Machine bush<br>
+          inside
+          diameter</font></td>
+        <td width="136" bgcolor="#DDDDDD" height="34"><font color="#000086" face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="ID" size="6">
+          mm</font></td>
+        <td width="145" bgcolor="#DDDDDD" height="34" align="right"><font color="#000086" face="Arial" size="2">Tolerance&nbsp;<font FACE="Courier">�</font>
+          </font></td>
+        <td width="136" bgcolor="#DDDDDD" height="34" align="left"><font color="#000086" face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",." -->
+          <input type="text" name="IDtol" size="5">
+          mm</font></td>
+        <td width="348" bgcolor="#DDDDDD" height="34"><font face="Arial" size="1">Includes running clearance and allowance
+          for bore closure when press fitted.</font></td>
+      </tr>
+      <tr>
+        <td width="173" bgcolor="#DDDDDD" height="34"><font color="#000086" face="Arial" size="2">Wall
+          thickness</font></td>
+        <td width="136" bgcolor="#DDDDDD" height="34"><input type="text" name="WT" size="5">
+          <font face="Arial" size="2" color="#000086">mm</font></td>
+        <td width="145" bgcolor="#DDDDDD" height="34" align="right"><font color="#000086" face="Arial" size="2">Tolerance&nbsp;</font><font face="Courier" color="#000086" size="2">+0.0-</font></td>
+        <td width="136" bgcolor="#DDDDDD" height="34" align="left"><font face="Arial" size="2" color="#000086">
+          <input type="text" name="WTtol" size="5">  mm</font></td>
+        <td width="348" bgcolor="#DDDDDD" height="68" valign="top" rowspan="2"><font face="Arial" size="1">Check
+          your machined wall thickness is within tolerance, otherwise stacking
+          of tolerances could lead to seizures.</font></td>
+      </tr>
+      <tr>
+        <td width="173" bgcolor="#DDDDDD" height="34"><font color="#000086" size="2" face="Arial">Bush length</font></td>
+        <td width="136" bgcolor="#DDDDDD" height="34"><font face="Arial" size="2" color="#000086"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="L1" size="5">
+          mm</font></td>
+        <td width="145" bgcolor="#DDDDDD" height="34" align="right"><font color="#000086" face="Arial" size="2">Tolerance&nbsp;</font><font face="Courier" color="#000086" size="2">+0.0-</font></td>
+        <td width="136" bgcolor="#DDDDDD" height="34" align="left"><font color="#000086" face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+          S-Validation-Constraint="Greater than" S-Validation-Value="-0.3" --><input type="text" name="L1tol" size="5">
+          mm</font></td>
+      </tr>
+      <tr>
+        <td width="938" bgcolor="#000086" height="16" colspan="5">&nbsp;</td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  <div align="center">
+    <center>
+    <table border="0" cellspacing="1" width="589">
+      <tr>
+        <td colspan="2" width="581"><font color="#0000FF"><b><a name="tmax"></a></b></font><b><font color="#000086" face="Arial" size="4">Customer Service</font><font color="#0000FF"><br>
+  </font></b><font face="Arial" size="3">We would be happy to
+  check your application and provide additional advice.
+  Complete the 3 fields below, click the Customer Service
+  button and we will get back to you as soon as
+  possible.&nbsp;&nbsp;</font></td>
+      </tr>
+      <tr>
+        <td width="104"><font color="#000086" face="Arial" size="3">Contact name</font></td>
+        <td width="471"><!--webbot bot="Validation" B-Value-Required="TRUE" --><input type="text" name="Contact_person" size="20"></td>
+      </tr>
+      <tr>
+        <td width="104"><font color="#000086" face="Arial" size="3">e-mail address</font></td>
+        <td width="471"><!--webbot bot="Validation" B-Value-Required="TRUE" --><input type="text" name="email_address" size="20"></td>
+      </tr>
+      <tr>
+        <td width="104"><font color="#000086" face="Arial" size="3">Telephone</font></td>
+        <td width="471"><input type="text" name="tel" size="20"></td>
+      </tr>
+      <tr>
+        <td width="104"><font face="Arial" size="3" color="#000086">Country</font></td>
+        <td width="471"><!--webbot bot="Validation" B-Value-Required="TRUE" --><input type="text" name="Country" size="20"></td>
+      </tr>
+      <tr>
+        <td width="104"><font face="Arial" size="3" color="#000086">Comments</font></td>
+        <td width="471"><textarea rows="5" name="Comments" cols="55"></textarea></td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  <p align="left"><input type="submit" value="Customer Service" name="B1" style="color: #000086; font-family: Arial; font-size: 10pt"><input type="reset" value="Reset" name="B2" style="color: #000086; font-family: Arial; font-size: 10pt"></p>
+</form>
+<p align="left"><font color="#000086" face="Arial" size="2"><b>Disclaimer<br>
+</b>
+</font><font face="Arial" size="2">This Design-a-bush program is based on years of experience in
+manufacturing and designing bushes.<br>
+Experience shows that no two applications are the same in every detail, so
+VescoPlastics Sales (the Company) encourages that every application be treated
+as individual and unique.<br>
+This program is offered in good faith as part of our client service, but
+favourable results cannot be guaranteed.&nbsp; The program is intended for use
+by persons with technical skill, at their discretion and risk.&nbsp; The
+purchaser must determine the suitability of the program and goods for their
+intended purpose.<br>
+The Company does not hold itself responsible for any damage, incidental or
+consequential losses suffered as a result of the use of this program or the
+goods supplied.</font><font face="Arial" size="1">&nbsp;&nbsp;&nbsp; Last Updated:
+Jan 18 2001</font>
+
+<p align="left">&nbsp;<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+    <tr>
+      <td width="67" rowspan="2">
+        <a href="../index.htm"><font size="2">
+      <img border="0" src="../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></font></a></td>
+      <td width="16">&nbsp;</td>
+      <td width="644">
+        <p align="center">
+        <font face="Arial" size="2"><font color="#000000">
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
+        e-mail </font>
+        <a href="mailto:vesconite@vesconite.com?subject=Contact from www.vesconite.com">vesconite@vesconite.com</a></font><br>
+        <font face="Arial" color="#000080" size="2">
+        <b>South Africa </b>(011) 616 11 11&nbsp;&nbsp;
+        <b>&nbsp; Rest of world </b>+27 11 616 44 44</font></td>
+    </tr>
+    <tr>
+      <td width="16">&nbsp;</td>
+      <td width="644">
+        <p align="center">
+        <font face="Arial" size="2"><a href="../index.htm">Home</a><font color="#000080">&nbsp;
+        | &nbsp;</font><a href="contact.htm">Contact us</a> &nbsp;<font color="#000080">
+        |</font>&nbsp; <a href="site.htm">Site map</a>&nbsp;<font color="#000080">
+        |&nbsp; <a href="site_search.htm">Search</a>&nbsp;
+        |&nbsp;&nbsp;</font><a href="../enquiry.htm">Enquiry
+        form</a><font color="#000080">&nbsp;&nbsp; |&nbsp; <a href="../footer_links/copyright.htm">Copyright</a>&nbsp;
+        |&nbsp; <a href="../footer_links/privacy.htm">Privacy</a>&nbsp; |&nbsp; </font><span lang="en-za">
+        <a href="https://vescosales.com/wstore/">Webstore</a></span></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+<table border="0" cellpadding="2" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="635" height="186">
+              <tr>
+                <td width="323" height="1" valign="top">
+                  <font face="Arial" color="#FF0000" size="2">
+                    <span style="letter-spacing: -1pt">
+                      <b>Toll free/Linea gratuita</b>
+                    </span>
+                  </font>
+
+                  <!-- <font face="Arial" color="#000080" size="2">
+                    <b><br>Australia </b>
+                  </font>
+                  <font face="Arial" color="#000086" size="2">
+                    <a class="telephone" href="tel:+61 180 083 3448">
+                      +61 180 083 3448 NA -->
+                      <!-- 1800 833 448 -->
+                    <!-- </a>
+                  </font> -->
+
+                  <!-- <font face="Arial" size="2" color="#000080">
+                    <b><br>Brasil</b>
+                  </font>
+                  <strong style="font-weight: 400">
+                    <font face="Arial" color="#000080" size="2">
+                      <a class="telephone" href="tel:+55 800 891 8716">
+                        +55 800 891 8716 CF -->
+                        <!-- 0800 891 87 16 -->
+                      <!-- </a>
+                    </font>
+                  </strong> -->
+
+                  <!-- <font face="Arial" color="#000080" size="2">
+                    <b><br>Canada</b>
+                    <a class="telephone" href="tel:+1 866 682 3484">
+                      +1 866 682 3484 CF -->
+                      <!-- 1 866 682 3484 -->
+                    <!-- </a>
+                    <br><b>Chile</b>
+                  </font>
+                  <font face="Arial" size="2" color="#000086">
+                    <a class="telephone" href="tel:+56 2 570 3855">
+                      +56 2 570 3855 cf -->
+                      <!-- (2) 5703855 -->
+                    <!-- </a><br>
+                  </font> -->
+                  <font face="Arial" color="#000080" size="2">
+                    <br><b>Germany</b> <a class="telephone" href="tel:+49-443-1892-3899">
+                      +49 443 1892 3899
+                      <!-- 0443 1892 3899 -->
+                    </a>
+                  </font>
+                  <font face="Arial" size="2" color="#000086">
+                    <br>
+                  </font>
+                  <font face="Arial" size="2" color="#000080">
+                    <b>Hong Kong</b>
+                  </font>
+                  <font face="Arial" size="2" color="#000086">
+                    <a class="telephone" href="tel:+852-8-0093-0211">
+                      +852 8 0093 0211
+                      <!-- 800 930 211 -->
+                    </a>
+                  </font>
+                  <font face="Arial" size="2" color="#000080">
+                    <br>
+                  </font>
+                  <!-- <span class="443554203-21102008"><b>
+                    <font size="2" face="Arial" color="#000080">
+                      Ireland
+                    </font></b>
+                  </span>
+                  <font face="Arial" size="2" color="#000080">
+                    <a class="telephone" href="tel:+353 180 055 2711">
+                      +353 180 055 2711try again later -->
+                      <!-- 1800 552 711 -->
+                    <!-- </a>
+                  </font> -->
+                  <!-- <span class="443554203-21102008">
+                    <font size="2" face="Arial" color="#000080">
+                      <b>Netherlands&nbsp;</b>
+                    </font>
+                  </span>
+                  <font face="Arial" size="2" color="#000080">
+                    <a class="telephone" href="tel:+31 800 022 3805">
+                      +31 0800 022 3805 -->
+                      <!-- 08000 223 805 -->
+                    </a>
+                    <font face="Arial" size="2" color="#000080">
+                    <b>New Zealand</b>
+                    <a class="telephone" href="tel:+64-80-045-0878">
+                      +64 80 045 0878
+                      <!-- 0800 450 878 -->
+                    </a>
+                  </font>
+                    <!-- <b><br>Portugal</b>
+                    <a class="telephone" href="tel:+351 800 827 007">
+                      +351 800 827 007 redial carefully -->
+                      <!-- 800 827 007 -->
+                    <!-- </a><br> -->
+                  <!-- </font>
+                  <font face="Arial" size="2" color="#000086">
+                    <b>UAE</b>
+                    <a class="telephone" href="tel:+971 800 027 0103">
+                        +971 800 027 0103 CF -->
+                      <!-- 800 027 01 03 -->
+                    </a>
+                  </font>
+                  <font face="Arial" size="2" color="#000080">
+                    <br><b>UK </b>
+                    <a class="telephone" href="tel:+44-800-731-9745">
+                      +44 800 731 9745
+                      <!-- 0800 731 9745 -->
+                    </a>   /
+                    <a class="telephone" href="tel:+44-203-239-9044">
+                      +44 203 239 9044
+                      <!-- / 020 3239 9044 -->
+                     </a>
+                    <b><br>USA</b> (7-3EST)
+                    <a class="telephone" href="tel:+1-866-635-7596">
+                        +1 866 635 7596
+                      <!-- (7-3EST) 1 866 635 75 96 -->
+                    </a> /
+                    <a class="telephone" href="tel:+1-713-574-7255">
+                        +1 713 574 7255
+                       <!-- / (713) 574-7255 -->
+                    </a>
+                  </font>
+                </td>
+                <td width="1" height="1" valign="top">
+                  <font size="2" face="Arial">
+                    <br>&nbsp;
+                  </font>
+                </td>
+                <td width="299" height="1" valign="top">
+                  <font color="#FF0000" size="2" face="Arial">
+                    <b>Fax</b>
+                  </font>
+                  <!-- <font face="Arial" color="#000080" size="2">
+                    <b><br>Australia </b>
+                    <strong style="font-weight: 400">
+                      <a class="telephone" href="+61 386 485 671">
+                        +61 386 485 671 not in use -->
+                        <!-- +61 386 485 671 is the orignial number -->
+                      <!-- </a>
+                    </strong>
+                  </font><b>
+                  <font face="Arial" size="2" color="#000080">
+                    <br>Canada
+                  </font></b>
+                  <font face="Arial" color="#000080" size="2">
+                    <a class="telephone" href="tel:+1 416 352 1527">
+                      +1 416 352 1527 not in use -->
+                      <!-- (416) 352 15 27 -->
+                    <!-- </a><b></b>
+                    <strong style="font-weight: 400">
+                    </strong>&nbsp;
+                  </font> -->
+                  <font face="Arial" color="#000080" size="2">
+                    <br><b>UK</b>
+                      <a class="telephone" href="tel:+44-207-681-3444">
+                        +44 207 681 3444
+                        <!-- 0207 681 3444 -->
+                      </a>
+                    <b><br>USA</b>
+                    <a class="telephone" href="tel:+1-212-937-3184">
+                      +1 212 937 3184
+                      <!-- (212) 937 3184 -->
+                    </a>
+                  </font>
+                </td>
+              </tr>
+              <tr>
+                <td width="623" height="1" valign="top" colspan="3">
+                  <font size="2" face="Arial">
+                  </font>
+                    <span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px" class="Apple-style-span">2016 Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site may not be copied or redistributed without the express written consent of Vesco Plastics Sales, Pty Ltd.
+                    </span>
+                  <font size="2" face="Arial">&nbsp;&nbsp; <a href="../footer_links/warranty.htm">Warranty
+        disclaimer</a></font></td>
+  </tr>
+  </table>
+
+  </center>
+</div>
+
+</td></tr><!--msnavigation--></table></body>
+
+</html>

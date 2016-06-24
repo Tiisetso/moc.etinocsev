@@ -1,0 +1,8 @@
+vti_encoding:SR|utf8-nl
+/_fpclass/fpdbrgn1.inc:ltxl.asp
+x-dataconn\://www.vesconite.com/distrib/database4:ltxl.asp
+/_fpclass/fpdbrgn2.inc:ltxl.asp
+x-dataconn\://www.vesconite.com/distrib/wdistxl:ltxl.asp
+/index.htm:ltxl.asp
+/_fpclass/fpdblib.inc:ltxl.asp
+x-dataconn\://www.vesconite.com/distrib/wdistxl/driver={microsoft access driver (*.mdb)};dbq=url=fpdb/xl3.mdb:global.asa

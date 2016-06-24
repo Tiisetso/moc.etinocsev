@@ -1,0 +1,241 @@
+<html>
+
+<head>
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Technical terms</title>
+<meta name="Microsoft Border" content="b">
+</head>
+
+<body stylesrc="../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+
+<b>
+<table bordercolor="#000086" border="1" cellspacing="0" width="400">
+  <tr>
+    <td width="394">
+      <p align="center"><font face="Arial" size="2" color="#FF0000"><b><a href="../index.htm">vesconite.com</a></b></font>&nbsp;&nbsp;<font size="2">
+      <font FACE="Wingdings">�</font>&nbsp;&nbsp;&nbsp;</font> <b><font face="Arial" size="2" color="#FF0000"><a href="../lhs_headings/useful_info.htm">Useful
+      Info</a>&nbsp;&nbsp;</font><font face="Arial" size="2" color="#000086"> <font FACE="Wingdings">�</font>&nbsp;&nbsp;
+      Technical Terms</font></b></td>
+  </table>
+  <p><font face="Arial" color="#000086" size="4">Technical terms confusing?</font></p>
+</b>
+<p><font face="Arial" size="3">Do you sometimes get confused by the technical
+terms used to describe materials, especially plastics? Here is a simple English
+guide.</font></p>
+<div align="center">
+  <center>
+  <table border="1" cellspacing="0" width="600" bgcolor="#C8AFCF" bordercolor="#DFFFDF" cellpadding="4">
+    <tr>
+      <td width="176" valign="top"><b><font face="Arial" size="3" color="#000086">Coefficient
+        of Friction</font></b></td>
+      <td width="365"><font face="Arial" size="3">Resistance between two
+        surfaces to the force that causes sliding</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3" color="#000086"><b><font face="Arial">Coefficient
+        of Linear<br>
+        </font><font face="Arial" size="3">Thermal Expansion</font></b></font></td>
+      <td width="365"><font SIZE="3"><font face="Arial">Amount a material
+        expands or contracts as a result of a change in temperature</font></font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Compressive
+        Strength</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Maximum compressive load on a
+        material before material change</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Creep</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Amount that a material
+        squeezes thinner as a result of being under a load for a long period of
+        time</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Deflection
+        Temperature</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Temperature at which material
+        bends a given amount when under a specified load</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Dielectric
+        Strength</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Number of volts per millimetre
+        thickness of material required to cause some electricity to flow through
+        the material</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Dielectric
+        Constant</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Ability of material to store
+        an electrical charge</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Dimensional
+        Stability</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Change of height, length and
+        shape in a material due to changes in temperature, water absorption and
+        pressure</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3" color="#000086"><b><font face="Arial">Dynamic
+        Mechanical</font><font face="Arial" size="3"><br>
+        Analysis (DMA)</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Mechanical properties of a
+        material as a function of temperature</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Elongation</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Amount of stretch before
+        material damage</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Fatigue
+        Strength</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Resistance to a cyclical load</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Flexural
+        Strength</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Maximum strength of a material
+        when bent</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Hardness</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Ability of a material to
+        resist indentation. Usually measured with a small standard size point or
+        ball</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Heat
+        Conductivity</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Ability of a material to
+        transmit heat</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Infrared
+        Spectroscopy</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Unique &quot;fingerprint&quot;
+        of a chemical</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Izod
+        Impact</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Resistance of a material to
+        being broken by a swinging pendulum. Usually a notch is machined into
+        the sample so that a clean break can take place at the notch</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Melt
+        Point</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Temperature at which
+        crystalline phase melts from solid to liquid</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Modulus
+        of Elasticity</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Ratio of the force applied to
+        the deformation that results</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Shear
+        Strength</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Strength of a material when
+        punched or cut (See Compressive Strength)</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3" color="#000086"><b><font face="Arial">Specific
+        Gravity</font></b><font face="Arial">&nbsp;</font></font></td>
+      <td width="365"><font face="Arial" SIZE="3">The ratio of the mass of a
+        volume of the material to the same volume of water</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Surface
+        Resistivity</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Ability of material to prevent
+        the flow of electricity across its surface</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Tensile
+        Strength</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Maximum pulling force (tensile
+        force) on a material when pulled apart. It is a ratio of the pulling
+        force divided by the cross section of the material</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Tensile
+        Impact</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">Energy required to break a
+        material by pulling it apart in a quick stretch</font></td>
+    </tr>
+    <tr>
+      <td width="176" valign="top"><font SIZE="3"><b><font face="Arial" color="#000086">Tg</font></b></font></td>
+      <td width="365"><font face="Arial" SIZE="3">The glass transition point is
+        the temperature at which a material changes from solid to
+        rubbery/viscous</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p><font face="Arial" size="1">&nbsp;Updated Sept 04 2001</font></p>
+&nbsp;<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<div align="center">
+  <center>
+  <table border="0" cellspacing="1" cellpadding="2" width="570">
+    <tr>
+      <td width="4">
+        <p align="center"><a href="../index.htm"><img border="0" src="../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></p>
+      </td>
+      <td width="556">
+        <p align="center"><font face="Arial" size="2"><font color="#000000">
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
+e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</a></font>
+      </td>
+    </tr>
+    <tr>
+      <td width="528" colspan="2"><p align="center"><font face="Arial" size="2"><a href="../index.htm">Home</a><font color="#000080">&nbsp;
+        | &nbsp;</font><a href="../vesco/contact.htm">Contact us</a> &nbsp;<font color="#000080">
+        |</font>&nbsp; <a href="../vesco/site.htm">Site map</a>&nbsp;<font color="#000080">
+        |&nbsp; <a href="../vesco/site_search.htm">Search</a>&nbsp;
+        |&nbsp;&nbsp;</font><a href="../enquiry.htm">Enquiry
+        form</a><font color="#000080">&nbsp;&nbsp; |&nbsp; <a href="../footer_links/copyright.htm">Copyright</a>&nbsp;
+        |&nbsp; <a href="../footer_links/privacy.htm">Privacy</a></font></font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial"><font color="#FF0000">Feedback</font>
+        is appreciated!&nbsp; Please e-mail the <a href="mailto:jm@vescoplastics.com">webmaster</a></font></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font face="Arial" color="#FF0000" size="1">UK toll
+        free 0800 731 9745.&nbsp; USA toll
+        free (7-5 EST) 1-866-635-7596.&nbsp; Linea gratuita desde Chile 800 104 646<br>
+        &nbsp; Rest of world +2711 616 44 44. South
+        Africa (011) 616 11 11</font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial">All Rights Reserved �
+        1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../footer_links/warranty.htm">Warranty
+        disclaimer</a></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p>&nbsp;</p>
+
+</td></tr><!--msnavigation--></table></body>
+
+</html>

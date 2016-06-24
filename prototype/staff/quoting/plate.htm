@@ -1,0 +1,2436 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<%@ Language=JavaScript%>
+<HTML><HEAD><TITLE>Quotes for Plates</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content=JavaScript name=VI60_defaultClientScript>
+<META content=FrontPage.Editor.Document name=ProgId>
+<META content=noindex,nofollow name=robots>
+<SCRIPT id=clientEventHandlersJS language=javascript>
+<!--
+
+function calc1_onclick() 
+{
+
+<!-- ALLOCATIONS  -->
+
+len=(document.FrontPage_Form1.platelen.value);
+width=(document.FrontPage_Form1.platewidth.value);
+thick=(document.FrontPage_Form1.platethick.value);
+qtya=document.FrontPage_Form1.qtya.value;
+qtyb=document.FrontPage_Form1.qtyb.value;
+setup_factor=document.FrontPage_Form1.setup_factor.value;
+
+<!-- YIELD CLACULATIONS  -->
+a=0;
+b=0;
+c=0;
+d=0;
+e=0;
+f=0;
+g=0;
+h=0;
+i=0;
+j=0;
+k=0;
+l=0;
+
+<!-- USING A STANDARD 1000 X 200 PLATE  -->
+
+if (len<1005&&width<203)
+{
+a=Math.floor((1005-len)/(len*1+3));
+b=Math.floor((203-width)/(3+width*1.0));
+c=(a+1)*(b+1);
+}
+
+if (len<203&&width<1005)
+{
+d=Math.floor((203-len)/(len*1.0+3));
+e=Math.floor((1005-width)/(3+width*1));
+f=(d+1)*(e+1);
+}
+
+<!-- USING A STANDARD 500 x 400 PLATE  -->
+
+factor=1;
+if (thick>10)
+	factor=0;
+
+if (len<505&&width<405)
+{
+g=Math.floor((504-len)/(len*1+3));
+h=Math.floor((404-width)/(width*1+3));
+i=(g+1)*(h+1)*factor;
+}
+
+if (width<505&&len<405)
+{
+j=Math.floor((404-len)/(len*1+3));
+k=Math.floor((504-width)/(width*1+3));
+l=(j+1)*(k+1)*factor;
+}
+
+yield=c;
+if (f>c)
+	yield=f;
+if (i>yield)
+	yield=i;
+if (l>yield)
+	yield=l;
+
+
+<!-- THICKNESS OF PLATE REQUIRED  -->
+
+th=3;
+if (thick>3)
+	th=5;
+if (thick>5)
+	th=6;
+if (thick>6)
+	th=8;
+if (thick>8)
+	th=10;
+if (thick>10)
+	th=12;
+if (thick>12)
+	th=15;
+if (thick>15)
+	th=16;
+if (thick>16)
+	th=20;
+if (thick>20)
+	th=25;
+if (thick>25)
+	th=30;
+if (thick>30)
+	th=35;
+if (thick>35)
+	th=40;
+if (thick>40)
+	th=45;
+if (thick>45)
+	th=50;
+
+thickdiff=th-thick;
+
+<!-- Price OF VESCONITE PLATE REQUIRED  -->
+
+price=317;
+if (thick>3)
+	price=435;
+if (thick>5)
+	price=496;
+if (thick>6)
+	price=616;
+if (thick>8)
+	price=801;
+if (thick>10)
+	price=920;
+if (thick>12)
+	price=1105;
+if (thick>15)
+	price=1164;
+if (thick>16)
+	price=1407;
+if (thick>20)
+	price=1708;
+if (thick>25)
+	price=2010;
+if (thick>30)
+	price=2250;
+if (thick>35)
+	price=2616;
+if (thick>40)
+	price=2918;
+if (thick>45)
+	price=3221;
+
+<!-- Price OF VESCONITE HILUBE PLATE REQUIRED  -->
+
+priceh=433;
+if (thick>3)
+	priceh=595;
+if (thick>5)
+	priceh=677;
+if (thick>6)
+	priceh=841;
+if (thick>8)
+	priceh=1094;
+if (thick>10)
+	priceh=1256;
+if (thick>12)
+	priceh=1509;
+if (thick>15)
+	priceh=1589;
+if (thick>16)
+	priceh=1921;
+if (thick>20)
+	priceh=2331;
+if (thick>25)
+	priceh=2746;
+if (thick>30)
+	priceh=3200;
+if (thick>35)
+	priceh=3572;
+if (thick>40)
+	priceh=4312;
+if (thick>45)
+	priceh=4397;
+
+matmass=1.38*len*width*thick/1000;
+
+matcost=price/yield;
+matcosth=priceh/yield;
+
+perc=(len*width)/200000;
+
+percprice=perc*price*1.1;
+percpriceh=perc*priceh*1.1;
+
+if (matcost>percprice)
+	matcost=percprice;
+if (matcosth>percpriceh)
+	matcosth=percpriceh;
+
+<!-- MACHINING COSTS  -->
+
+macfac=1.5;
+if (len>300)
+	macfac=3;
+if (len>600)
+	macfac=4;
+if (len>900)
+	macfac=5;
+
+machine=macfac*1.54;
+
+planefac=0.25;
+if (len>300)
+	planefac=0.5;
+if (len>600)
+	planefac=0.75;
+if (len>900)
+	planefac=1;
+
+plane=planefac*1.5*thickdiff;
+
+
+maccost=machine+plane;
+
+dis1=8500;
+dis2=14500;
+dis3=30000;
+dis4=50000;
+dis5=90000;
+
+
+<!-- VESCONITE PRICES  -->
+
+<!-- PRICES FOR QTYA  -->
+
+mattotala=matcost*(document.FrontPage_Form1.qtya.value);
+qdisca=0;
+if (mattotala>dis1)
+	qdisca=10;
+if (mattotala>dis2)
+	qdisca=15;
+if (mattotala>dis3)
+	qdisca=20;
+if (mattotala>dis4)
+	qdisca=25;
+if (mattotala>dis5)
+	qdisca=30;
+
+matcosta=matcost*(100-qdisca)/100;
+
+setupa=0;
+if ((document.FrontPage_Form1.qtya.value)>0)
+	setupa=120*setup_factor/(document.FrontPage_Form1.qtya.value);
+
+pra=0;
+if (qtya>0)
+	pra=setupa+matcosta+maccost;
+pta=pra*(document.FrontPage_Form1.qtya.value);
+
+<!-- PRICES FOR QTY B  -->
+
+mattotalb=matcost*(document.FrontPage_Form1.qtyb.value);
+qdiscb=0;
+if (mattotalb>dis1)
+	qdiscb=10;
+if (mattotalb>dis2)
+	qdiscb=15;
+if (mattotalb>dis3)
+	qdiscb=20;
+if (mattotalb>dis4)
+	qdiscb=25;
+if (mattotalb>dis5)
+	qdiscb=30;
+
+matcostb=matcost*(100-qdiscb)/100;
+
+setupb=0;
+if ((document.FrontPage_Form1.qtyb.value)>0)
+	setupb=120*setup_factor/(document.FrontPage_Form1.qtyb.value);
+
+prb=0;
+if (qtyb>0)
+	prb=setupb+matcostb+maccost;
+ptb=prb*(document.FrontPage_Form1.qtyb.value);
+
+<!-- HILUBE CALCULATIONS-->
+<!-- PRICES FOR QTY A  -->
+
+mattotalha=matcosth*(document.FrontPage_Form1.qtya.value);
+qdischa=0;
+if (mattotalha>dis1)
+	qdischa=10;
+if (mattotalha>dis2)
+	qdischa=15;
+if (mattotalha>dis3)
+	qdischa=20;
+if (mattotalha>dis4)
+	qdischa=25;
+if (mattotalha>dis5)
+	qdischa=30;
+
+matcostha=matcosth*(100-qdischa)/100;
+
+prha=0;
+if (qtya>0)
+	prha=setupa+matcostha+maccost;
+ptha=prha*(document.FrontPage_Form1.qtya.value);
+
+<!-- PRICES CALC FOR QTY B   -->
+
+mattotalhb=matcosth*(document.FrontPage_Form1.qtyb.value);
+qdischb=0;
+if (mattotalhb>dis1)
+	qdischb=10;
+if (mattotalhb>dis2)
+	qdischb=15;
+if (mattotalhb>dis3)
+	qdischb=20;
+if (mattotalhb>dis4)
+	qdischb=25;
+if (mattotalhb>dis5)
+	qdischb=30;
+
+matcosthb=matcosth*(100-qdischb)/100;
+
+prhb=0;
+if (qtyb>0)
+	prhb=setupb+matcosthb+maccost;
+pthb=prhb*(document.FrontPage_Form1.qtyb.value);
+
+prfraca=pta/price;
+prfracb=ptb/price;
+
+prfracha=ptha/priceh;
+prfrachb=pthb/priceh;
+
+
+<!-- PRICES ULTRA BLACK  -->
+
+
+
+<!-- ULTRA BLACK YIELDS -->
+
+if (len<2005&&width<1005)
+{
+m=Math.floor((2005-len)/(len*1+3));
+n=Math.floor((1005-width)/(3+width*1.0));
+o=(m+1)*(n+1);
+}
+
+if (len<1005&&width<2005)
+{
+p=Math.floor((1005-len)/(len*1.0+3));
+q=Math.floor((2005-width)/(3+width*1));
+r=(p+1)*(q+1);
+}
+
+yieldub=o;
+if (r>o)
+	yieldub=r;
+
+
+<!-- THICKNESS OF PLATE REQUIRED  -->
+
+thub=6;
+if (thick>6)
+	thub=8;
+if (thick>8)
+	thub=10;
+if (thick>10)
+	thub=12;
+if (thick>12)
+	thub=16;
+if (thick>16)
+	thub=20;
+if (thick>20)
+	thub=25;
+if (thick>25)
+	thub=30;
+if (thick>30)
+	thub=40;
+
+<!-- ULTRA BLACK PLATE PRICES -->
+
+priceub=958;
+if (thick>6)
+	priceub=1289;
+if (thick>8)
+	priceub=1597;
+if (thick>10)
+	priceub=1916;
+if (thick>12)
+	priceub=2555;
+if (thick>16)
+	priceub=3193;
+if (thick>20)
+	priceub=3992;
+if (thick>25)
+	priceub=4790;
+if (thick>30)
+	priceub=6386;
+
+
+
+matmassub=len*width*thick/1000;
+matcostub=priceub/yieldub;
+
+percub=(len*width)/2000000;
+percpriceub=percub*priceub*1.2
+
+if (matcostub>percpriceub)
+	matcostub=percpriceub;
+
+thickdiffub=thub-thick;
+planeub=planefac*1.5*thickdiffub;
+
+maccostub=machine+planeub;
+
+
+<!-- DISCOUNTS UB QTY A -->
+
+mattotaluba=matcostub*(document.FrontPage_Form1.qtya.value);
+qdiscuba=0;
+if (mattotaluba>8500)
+	qdiscuba=10;
+if (mattotaluba>14500)
+	qdiscuba=15;
+if (mattotaluba>30000)
+	qdiscuba=20;
+if (mattotaluba>50000)
+	qdiscuba=25;
+if (mattotaluba>90000)
+	qdiscuba=30;
+
+matcostuba=matcostub*(100-qdiscuba)/100;
+
+<!-- DISCOUNTS UB QTY B -->
+
+mattotalubb=matcostub*(document.FrontPage_Form1.qtyb.value);
+
+qdiscubb=0;
+if (mattotalubb>8500)
+	qdiscubb=10;
+if (mattotalubb>14500)
+	qdiscubb=15;
+if (mattotalubb>30000)
+	qdiscubb=20;
+if (mattotalubb>50000)
+	qdiscubb=25;
+if (mattotalubb>90000)
+	qdiscubb=30;
+
+matcostubb=matcostub*(100-qdiscubb)/100;
+
+prua=0;
+prub=0;
+if (qtya>0)
+	prua=matcostuba+setupa+maccost;
+if (qtyb>0)
+	prub=matcostubb+setupb+maccost;
+ptua=prua*qtya;
+ptub=prub*qtyb;
+prfracuba=ptua/priceub;
+prfracubb=ptub/priceub;
+
+
+popup3=("  ");
+if (ptha>5000||pthb>5000||ptua>5000||ptub>5000)
+	popup3=("Refer to Managing Director");
+popup2=("  ");
+if (yield==0)
+	popup2=("Not possible in Vesconite or Hilube");
+popup1=("  ");
+if (yieldub==0)
+	popup1=("Not possible in UltraBlack");
+
+
+<!-- OUTPUTS  -->
+
+document.FrontPage_Form1.pricea.value=(Math.round(pra*100))/100;
+document.FrontPage_Form1.priceb.value=(Math.round(prb*100))/100;
+document.FrontPage_Form1.priceha.value=(Math.round(prha*100))/100;
+document.FrontPage_Form1.pricehb.value=(Math.round(prhb*100))/100;
+document.FrontPage_Form1.priceua.value=(Math.round(prua*100))/100;
+document.FrontPage_Form1.priceub.value=(Math.round(prub*100))/100;
+
+document.FrontPage_Form1.ordera.value=Math.round(pta);
+document.FrontPage_Form1.orderb.value=Math.round(ptb);
+document.FrontPage_Form1.orderha.value=Math.round(ptha);
+document.FrontPage_Form1.orderhb.value=Math.round(pthb);
+document.FrontPage_Form1.orderua.value=Math.round(ptua);
+document.FrontPage_Form1.orderub.value=Math.round(ptub);
+
+document.FrontPage_Form1.qa.value=qtya;
+document.FrontPage_Form1.qb.value=qtyb;
+document.FrontPage_Form1.qha.value=qtya;
+document.FrontPage_Form1.qhb.value=qtyb;
+document.FrontPage_Form1.qua.value=qtya;
+document.FrontPage_Form1.qub.value=qtyb;
+
+document.FrontPage_Form1.out1.value=qdisca;
+document.FrontPage_Form1.out2.value=qdiscb;
+document.FrontPage_Form1.out3.value=qdischa;
+document.FrontPage_Form1.out4.value=qdischb;
+document.FrontPage_Form1.out5.value=qdiscuba;
+document.FrontPage_Form1.out6.value=qdiscubb;
+
+document.FrontPage_Form1.thick.value=th;
+document.FrontPage_Form1.thickh.value=th;
+document.FrontPage_Form1.thickub.value=thub; 
+
+document.FrontPage_Form1.out7.value=(Math.round(matcost*100))/100;
+document.FrontPage_Form1.out8.value=(Math.round(matcosth*100))/100;
+document.FrontPage_Form1.out17.value=(Math.round(matcostub*100))/100;
+
+document.FrontPage_Form1.out9.value=yield;
+document.FrontPage_Form1.out18.value=yield;
+document.FrontPage_Form1.out19.value=yieldub;
+
+document.FrontPage_Form1.out10.value=(Math.round(maccost*100))/100;
+document.FrontPage_Form1.out21.value=(Math.round(maccost*100))/100;
+document.FrontPage_Form1.out20.value=(Math.round(maccostub*100))/100;
+
+document.FrontPage_Form1.mass.value=Math.round(matmass);
+document.FrontPage_Form1.massh.value=Math.round(matmass);
+document.FrontPage_Form1.massub.value=Math.round(matmassub);
+
+document.FrontPage_Form1.out11.value=(Math.round(prfraca*10000))/10000;
+document.FrontPage_Form1.out12.value=(Math.round(prfracb*10000))/10000;
+document.FrontPage_Form1.out13.value=(Math.round(prfracha*10000))/10000;
+document.FrontPage_Form1.out14.value=(Math.round(prfrachb*10000))/10000;
+document.FrontPage_Form1.out15.value=(Math.round(prfracuba*10000))/10000;
+document.FrontPage_Form1.out16.value=(Math.round(prfracubb*10000))/10000;
+
+
+document.FrontPage_Form1.popup1.value=popup1;
+document.FrontPage_Form1.popup2.value=popup2;
+document.FrontPage_Form1.popup3.value=popup3;
+
+
+}
+
+//-->
+</SCRIPT>
+
+<META content="Microsoft FrontPage 4.0" name=GENERATOR>
+</HEAD>
+<BODY topMargin=0 stylesrc="../_private/index.html" bgcolor="#F1F1F1"><!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.platelen.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"platelen\" field.");
+    theForm.platelen.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"platelen\" field.");
+    theForm.platelen.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.platewidth.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"platewidth\" field.");
+    theForm.platewidth.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"platewidth\" field.");
+    theForm.platewidth.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.platethick.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"platethick\" field.");
+    theForm.platethick.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"platethick\" field.");
+    theForm.platethick.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qtya.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qtya\" field.");
+    theForm.qtya.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qtya\" field.");
+    theForm.qtya.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qtyb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qtyb\" field.");
+    theForm.qtyb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qtyb\" field.");
+    theForm.qtyb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qa.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qa\" field.");
+    theForm.qa.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qa\" field.");
+    theForm.qa.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qb\" field.");
+    theForm.qb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qb\" field.");
+    theForm.qb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.pricea.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"pricea\" field.");
+    theForm.pricea.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"pricea\" field.");
+    theForm.pricea.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.priceb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"priceb\" field.");
+    theForm.priceb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"priceb\" field.");
+    theForm.priceb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.ordera.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"ordera\" field.");
+    theForm.ordera.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"ordera\" field.");
+    theForm.ordera.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.orderb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"orderb\" field.");
+    theForm.orderb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"orderb\" field.");
+    theForm.orderb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qha.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qha\" field.");
+    theForm.qha.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qha\" field.");
+    theForm.qha.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qhb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qhb\" field.");
+    theForm.qhb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qhb\" field.");
+    theForm.qhb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.priceha.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"priceha\" field.");
+    theForm.priceha.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"priceha\" field.");
+    theForm.priceha.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.pricehb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"pricehb\" field.");
+    theForm.pricehb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"pricehb\" field.");
+    theForm.pricehb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.orderha.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"orderha\" field.");
+    theForm.orderha.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"orderha\" field.");
+    theForm.orderha.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.orderhb.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"orderhb\" field.");
+    theForm.orderhb.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"orderhb\" field.");
+    theForm.orderhb.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qua.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qua\" field.");
+    theForm.qua.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qua\" field.");
+    theForm.qua.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.qub.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"qub\" field.");
+    theForm.qub.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"qub\" field.");
+    theForm.qub.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.priceua.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"priceua\" field.");
+    theForm.priceua.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"priceua\" field.");
+    theForm.priceua.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.priceub.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"priceub\" field.");
+    theForm.priceub.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"priceub\" field.");
+    theForm.priceub.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.orderua.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"orderua\" field.");
+    theForm.orderua.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"orderua\" field.");
+    theForm.orderua.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.orderub.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"orderub\" field.");
+    theForm.orderub.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"orderub\" field.");
+    theForm.orderub.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out1.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out1\" field.");
+    theForm.out1.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out1\" field.");
+    theForm.out1.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out2.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out2\" field.");
+    theForm.out2.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out2\" field.");
+    theForm.out2.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out3.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out3\" field.");
+    theForm.out3.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out3\" field.");
+    theForm.out3.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out4.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out4\" field.");
+    theForm.out4.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out4\" field.");
+    theForm.out4.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out5.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out5\" field.");
+    theForm.out5.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out5\" field.");
+    theForm.out5.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out6.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out6\" field.");
+    theForm.out6.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out6\" field.");
+    theForm.out6.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out7.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out7\" field.");
+    theForm.out7.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out7\" field.");
+    theForm.out7.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out8.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out8\" field.");
+    theForm.out8.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out8\" field.");
+    theForm.out8.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out10.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out10\" field.");
+    theForm.out10.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out10\" field.");
+    theForm.out10.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out9.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out9\" field.");
+    theForm.out9.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out9\" field.");
+    theForm.out9.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out11.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out11\" field.");
+    theForm.out11.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out11\" field.");
+    theForm.out11.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out12.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out12\" field.");
+    theForm.out12.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out12\" field.");
+    theForm.out12.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out13.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out13\" field.");
+    theForm.out13.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out13\" field.");
+    theForm.out13.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out14.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out14\" field.");
+    theForm.out14.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out14\" field.");
+    theForm.out14.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out15.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out15\" field.");
+    theForm.out15.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out15\" field.");
+    theForm.out15.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.out16.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"out16\" field.");
+    theForm.out16.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"out16\" field.");
+    theForm.out16.focus();
+    return (false);
+  }
+
+  if (theForm.Contact_person.value == "")
+  {
+    alert("Please enter a value for the \"Contact_person\" field.");
+    theForm.Contact_person.focus();
+    return (false);
+  }
+
+  if (theForm.email_address.value == "")
+  {
+    alert("Please enter a value for the \"email_address\" field.");
+    theForm.email_address.focus();
+    return (false);
+  }
+
+  if (theForm.Country.value == "")
+  {
+    alert("Please enter a value for the \"Country\" field.");
+    theForm.Country.focus();
+    return (false);
+  }
+
+  if (theForm.Fax.value == "")
+  {
+    alert("Please enter a value for the \"Fax\" field.");
+    theForm.Fax.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><FORM action=../_vti_bin/shtml.dll/quoting/plate.htm method=post 
+      name=FrontPage_Form1 onsubmit="return FrontPage_Form1_Validator(this)" webbot-action="--WEBBOT-SELF--" language="JavaScript"><!--webbot
+  bot="SaveResults" startspan S-Email-Format="HTML/BR"
+  S-Email-Address="moffett@vescoplastics.com" B-Email-Label-Fields="TRUE"
+  B-Email-Subject-From-Field="FALSE" S-Email-Subject="Quotes" S-Builtin-Fields --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot
+  bot="SaveResults" endspan i-checksum="43374" --> 
+      <DIV align=center>
+      <CENTER>
+      <TABLE border=0 cellSpacing=1 width=600>
+        <TBODY>
+        <TR>
+          <TD colSpan=7 height=1 width=710><B><FONT color=#000086 face=Arial 
+            size=4>Quotes for Plates v2.3  Updated June 2003</FONT></B></TD></TR>
+        <TR>
+          <TD height=25 width=114><FONT color=#000086 face=Arial 
+            size=3>Length</FONT></TD>
+          <TD height=25 width=84><FONT color=#000086 face=Arial size=3><!--webbot
+            bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=platelen size=6 tabIndex=1 value=""></FONT></TD>
+          <TD height=25 width=110><FONT color=#000086 face=Arial 
+            size=3>Width</FONT></TD>
+          <TD height=25 width=103><FONT color=#000086 face=Arial size=3><!--webbot
+            bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=platewidth size=6 tabIndex=2 value=""></FONT></TD>
+          <TD height=25 width=135><FONT color=#000086 face=Arial 
+            size=3>Thickness</FONT></TD>
+          <TD height=25 width=140><FONT color=#000086 face=Arial size=3><!--webbot
+            bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=platethick size=6 tabIndex=3 value=""></FONT></TD>
+          <TD height=25 width=109></TD></TR>
+        <TR>
+          <TD height=25 width=114><FONT color=#000086 face=Arial 
+            size=3>Quantities</FONT></TD>
+          <TD height=25 width=84><FONT color=#000086 face=Arial size=3>Qty 
+            A</FONT></TD>
+          <TD height=25 width=73><FONT color=#000086 face=Arial size=3>Qty 
+            B</FONT></TD>
+          <TD colSpan=4 height=25 width=439><INPUT name=popup1 size=30 
+            tabIndex=-1 value="  "></TD></TR>
+        <TR>
+          <TD height=25 width=114></TD>
+          <TD height=25 width=84><FONT color=#000086 face=Arial size=3><!--webbot
+            bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=qtya size=6 tabIndex=4 value=0></FONT></TD>
+          <TD height=25 width=73><FONT color=#000086 face=Arial size=3><!--webbot
+            bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=qtyb size=6 tabIndex=5 value=0></FONT></TD>
+          <TD colSpan=4 height=25 width=439><INPUT name=popup2 size=30 
+            tabIndex=-1 value="  "></TD></TR>
+        <TR>
+          <TD height=20 width=114>&nbsp;&nbsp;</TD>
+          <TD height=20 width=84></TD>
+          <TD height=20 width=73></TD>
+          <TD height=20 width=92></TD>
+          <TD height=20 width=105></TD>
+          <TD height=20 width=133></TD>
+          <TD height=20 width=109></TD></TR>
+        <TR>
+          <TD height=27 width=114></TD>
+          <TD colSpan=2 height=27 width=157><INPUT language=javascript name=calc1 onclick="return calc1_onclick()" style="COLOR: #000086; FONT-FAMILY: Arial; FONT-SIZE: 10pt; LETTER-SPACING: -1pt" tabIndex=7 type=button value=Calculate></TD>
+          <TD height=27 width=92></TD>
+          <TD height=27 width=105></TD>
+          <TD height=27 width=133></TD>
+          <TD height=27 width=109></TD></TR></TBODY></TABLE></CENTER></DIV>
+      <DIV align=center>
+      <CENTER>
+      <TABLE border=1 borderColor=#000086 cellPadding=0 cellSpacing=0 
+        width=600><TBODY>
+        <TR>
+          <TD>
+            <DIV align=center>
+            <TABLE border=0 cellSpacing=1>
+              <TBODY>
+              <TR>
+                <TD bgColor=#d6ddd8><FONT face=Arial 
+                size=3>&nbsp;&nbsp;</FONT></TD>
+                <TD bgColor=#dfffdf colSpan=2>
+                  <P align=center><FONT color=#000086 face=Arial 
+                  size=3><B>Vesconite</B></FONT></P></TD></TR>
+              <TR>
+                <TD bgColor=#d6ddd8 height=20 width=114><FONT face=Arial 
+                  size=3>Quantities</FONT></TD>
+                <TD bgColor=#dfffdf height=20 width=84><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=qa size=6 tabIndex=-1></TD>
+                <TD bgColor=#dfffdf height=20 width=73><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=qb size=6 tabIndex=-1></TD></TR>
+              <TR>
+                <TD bgColor=#d6ddd8 height=20 width=114><FONT face=Arial 
+                  size=3>Price<BR>each R</FONT></TD>
+                <TD bgColor=#dfffdf height=20 width=84><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=pricea size=6 tabIndex=-1></TD>
+                <TD bgColor=#dfffdf height=20 width=73><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=priceb size=6 tabIndex=-1></TD></TR>
+              <TR>
+                <TD bgColor=#d6ddd8 height=20 width=114><FONT face=Arial 
+                  size=3>Order<BR>value R</FONT></TD>
+                <TD bgColor=#dfffdf height=20 width=84><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=ordera size=8 tabIndex=-1></TD>
+                <TD bgColor=#dfffdf height=20 width=73><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=orderb size=7 
+            tabIndex=-1></TD></TR></TBODY></TABLE></DIV></TD>
+          <TD>
+            <DIV align=left>
+            <TABLE border=0 cellSpacing=1 width=193>
+              <TBODY>
+              <TR>
+                <TD align=middle bgColor=#f7ddd7 colSpan=3 width=179><FONT 
+                  color=#000086 face=Arial size=3><B>&nbsp;</B> 
+                  <B>Hilube</B></FONT></TD></TR>
+              <TR>
+                <TD align=middle bgColor=#f7ddd7 height=20 width=15><FONT 
+                  face=Arial size=3>&nbsp;</FONT></TD>
+                <TD align=left bgColor=#f7ddd7 height=20 width=71><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=qha size=6 tabIndex=-1></TD>
+                <TD align=left bgColor=#f7ddd7 width=87><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=qhb size=6 tabIndex=-1></TD></TR>
+              <TR>
+                <TD align=middle bgColor=#f7ddd7 height=20 width=15><FONT 
+                  face=Arial size=3>&nbsp;<BR>&nbsp;</FONT></TD>
+                <TD align=left bgColor=#f7ddd7 height=20 width=71><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=priceha size=6 tabIndex=-1></TD>
+                <TD align=left bgColor=#f7ddd7 width=87><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=pricehb size=6 tabIndex=-1></TD></TR>
+              <TR>
+                <TD align=middle bgColor=#f7ddd7 height=20 width=15><FONT 
+                  face=Arial size=3>&nbsp;<BR>&nbsp;</FONT></TD>
+                <TD align=left bgColor=#f7ddd7 height=20 width=71><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=orderha size=7 tabIndex=-1></TD>
+                <TD align=left bgColor=#f7ddd7 width=87><!--webbot
+                  bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+                  --><INPUT 
+                  name=orderhb size=8 tabIndex=-1></TD></TR></TBODY></TABLE></DIV></TD>
+          <TD>
+            <DIV align=left>
+            <TABLE border=0 cellSpacing=1 width=175>
+              <TBODY>
+              <TR>
+                <TD align=middle bgColor=#d2f0ff colSpan=3 width=161><FONT 
+                  color=#000086 face=Arial size=3><B>&nbsp; 
+                UltraBlack</B></FONT></TD></TR>
+              <TR>
+                <TD bgColor=#d2f0ff width=16><FONT face=Arial 
+                  size=3>&nbsp;&nbsp;</FONT></TD>
+                <TD bgColor=#d2f0ff width=67><!--webbot bot="Validation"
+                  S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+                  name=qua size=6 tabIndex=-1></TD>
+                <TD bgColor=#d2f0ff width=72><!--webbot bot="Validation"
+                  S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+                  name=qub size=6 tabIndex=-1></TD></TR>
+              <TR>
+                <TD bgColor=#d2f0ff width=16><FONT face=Arial 
+                  size=3>&nbsp;&nbsp;<BR>&nbsp;</FONT></TD>
+                <TD bgColor=#d2f0ff width=67><!--webbot bot="Validation"
+                  S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+                  name=priceua size=6 tabIndex=-1></TD>
+                <TD bgColor=#d2f0ff width=72><!--webbot bot="Validation"
+                  S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+                  name=priceub size=6 tabIndex=-1></TD></TR>
+              <TR>
+                <TD bgColor=#d2f0ff width=16><FONT face=Arial 
+                  size=3>&nbsp;&nbsp;<BR>&nbsp;</FONT></TD>
+                <TD bgColor=#d2f0ff width=67><!--webbot bot="Validation"
+                  S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+                  name=orderua size=7 tabIndex=-1></TD>
+                <TD bgColor=#d2f0ff width=72><!--webbot bot="Validation"
+                  S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+                  name=orderub size=7 
+        tabIndex=-1></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></CENTER></DIV>
+      <DIV align=center>
+      <CENTER>
+      <TABLE border=0 cellSpacing=1 height=49 width=600>
+        <TBODY>
+        <TR>
+          <TD bgColor=#f7fff7 height=15 width=84><FONT face=Arial 
+            size=3>Material Disc </FONT></TD>
+          <TD bgColor=#d6ddd8 height=15 width=66><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out1 size=8></TD>
+          <TD bgColor=#d6ddd8 height=15 width=73><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out2 size=7></TD>
+          <TD bgColor=#d6ddd8 height=15 width=77><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out3 size=7></TD>
+          <TD bgColor=#d6ddd8 height=15 width=87><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out4 size=8></TD>
+          <TD bgColor=#d6ddd8 height=15 width=88><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out5 size=7></TD>
+          <TD bgColor=#d6ddd8 height=15 width=81><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out6 size=7></TD></TR>
+        <TR>
+          <TD bgColor=#f7fff7 height=9 width=84><FONT face=Arial 
+            size=3>Material<BR>thickness</FONT></TD>
+          <TD bgColor=#d6ddd8 height=9 width=66><FONT face=Arial 
+            size=3> </FONT></TD>
+          <TD bgColor=#d6ddd8 height=9 width=73><INPUT name=thick size=5></TD>
+          <TD bgColor=#d6ddd8 height=9 width=77><FONT face=Arial 
+            size=3>  </FONT></TD>
+          <TD bgColor=#d6ddd8 height=9 width=87><INPUT name=thickh size=5></TD>
+          <TD bgColor=#d6ddd8 height=9 width=88><FONT face=Arial 
+            size=3>  </FONT></TD>
+          <TD bgColor=#d6ddd8 height=9 width=81><INPUT name=thickub 
+size=5></TD></TR>
+        <TR>
+          <TD bgColor=#f7fff7 height=1 width=84><FONT face=Arial 
+            size=3>Material Price </FONT></TD>
+          <TD bgColor=#d6ddd8 height=1 width=66><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out7 size=8></TD>
+          <TD bgColor=#d6ddd8 height=1 width=73>&nbsp;</TD>
+          <TD bgColor=#d6ddd8 height=1 width=77><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out8 size=8></TD>
+          <TD bgColor=#d6ddd8 height=1 width=87>&nbsp;</TD>
+          <TD bgColor=#d6ddd8 height=1 width=88><INPUT name=out17 size=6 
+            tabIndex=-1></TD>
+          <TD bgColor=#d6ddd8 height=1 width=81>&nbsp;</TD></TR>
+        <TR>
+          <TD bgColor=#f7fff7 height=1 width=84><FONT face=Arial 
+            size=3>Machining Cost Rand</FONT></TD>
+          <TD bgColor=#d6ddd8 height=1 width=66><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out10 size=8></TD>
+          <TD bgColor=#d6ddd8 height=1 width=73><FONT face=Arial 
+            size=3>  </FONT></TD>
+          <TD bgColor=#d6ddd8 height=1 width=77><INPUT name=out21
+          size=7></TD>
+          <TD bgColor=#d6ddd8 height=1 width=87>&nbsp;</TD>
+          <TD bgColor=#d6ddd8 height=1 width=88><INPUT name=out20 size=6 
+            tabIndex=-1></TD>
+          <TD bgColor=#d6ddd8 height=1 width=81>&nbsp;</TD></TR>
+        <TR>
+          <TD bgColor=#f7fff7 height=3 width=84><FONT face=Arial size=3>Plate 
+            Yield </FONT></TD>
+          <TD bgColor=#d6ddd8 height=3 width=66><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out9 size=8></TD>
+          <TD bgColor=#d6ddd8 height=3 width=73>&nbsp;</TD>
+          <TD bgColor=#d6ddd8 height=3 width=77><INPUT name=out18 size=6 
+            tabIndex=-1></TD>
+          <TD bgColor=#d6ddd8 height=3 width=87>&nbsp;</TD>
+          <TD bgColor=#d6ddd8 height=3 width=88><INPUT name=out19 size=6 
+            tabIndex=-1></TD>
+          <TD bgColor=#d6ddd8 height=3 width=81>&nbsp;</TD></TR>
+        <TR>
+          <TD bgColor=#f7fff7 height=1 width=84><FONT face=Arial 
+            size=3>Invoice fraction </FONT></TD>
+          <TD bgColor=#d6ddd8 height=1 width=66><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out11 size=8></TD>
+          <TD bgColor=#d6ddd8 height=1 width=73><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out12 size=7></TD>
+          <TD bgColor=#d6ddd8 height=1 width=77><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out13 size=7></TD>
+          <TD bgColor=#d6ddd8 height=1 width=87><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out14 size=8></TD>
+          <TD bgColor=#d6ddd8 height=1 width=88><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out15 size=7></TD>
+          <TD bgColor=#d6ddd8 height=1 width=81><!--webbot bot="Validation"
+            S-Data-Type="Number" S-Number-Separators=",." --><INPUT 
+            name=out16 size=7></TD></TR>
+        <TR>
+          <TD bgColor=#f7fff7 height=1 width=84><FONT face=Arial size=3>Mass 
+            of part grams</FONT></TD>
+          <TD bgColor=#d6ddd8 height=1 width=66><INPUT name=mass size=6></TD>
+          <TD bgColor=#d6ddd8 height=1 width=73>&nbsp;</TD>
+          <TD bgColor=#d6ddd8 height=1 width=77><INPUT name=massh size=6 
+            tabIndex=-1></TD>
+          <TD bgColor=#d6ddd8 height=1 width=87>&nbsp;</TD>
+          <TD bgColor=#d6ddd8 height=1 width=88><INPUT name=massub size=6 
+            tabIndex=-1></TD>
+          <TD bgColor=#d6ddd8 height=1 width=81>&nbsp;</TD></TR>
+        <TR>
+          <TD bgColor=#000086 height=19 width=84>&nbsp;</TD>
+          <TD bgColor=#000086 height=19 width=66>&nbsp;</TD>
+          <TD bgColor=#000086 height=19 width=73>&nbsp;</TD>
+          <TD bgColor=#000086 height=19 width=77>&nbsp;</TD>
+          <TD bgColor=#000086 height=19 width=87>&nbsp;</TD>
+          <TD bgColor=#000086 height=19 width=88>&nbsp;</TD>
+          <TD bgColor=#000086 height=19 
+      width=81>&nbsp;</TD></TR></TBODY></TABLE></CENTER></DIV>
+      <DIV align=center>
+      <CENTER>
+      <TABLE border=0 cellSpacing=1 height=259 width=600>
+        <TBODY>
+        <TR>
+          <TD colSpan=4 height=25 width=512><FONT face=Arial 
+            size=3>&nbsp;&nbsp;</FONT></TD></TR>
+        <TR>
+          <TD colSpan=4 height=25 width=512><INPUT name=popup3 size=30 
+            tabIndex=-1 value="  "></TD></TR></CENTER>
+        <TR>
+          <TD colSpan=4 height=25 width=512>
+            <P align=left><FONT color=#000086 face=Arial size=3>Vesco staff 
+            name</FONT>&nbsp;&nbsp;&nbsp; <FONT color=#000086 face=Arial size=3><!--webbot
+            bot="Validation" B-Value-Required="TRUE" --><INPUT 
+            name=Contact_person tabIndex=8 size="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            </FONT><FONT face=Arial size=3>Setup factor&nbsp; </FONT><INPUT 
+            name=setup_factor size=5 tabIndex=7 value=0.5></P></TD></TR>
+        <CENTER>
+        <TR>
+          <TD colSpan=2 height=25 width=304><B><FONT color=#000086 face=Arial 
+            size=3>Customer Information</FONT></B></TD>
+          <TD align=right height=25 width=67></TD>
+          <TD height=25 width=141></TD></TR></CENTER>
+        <TR>
+          <TD align=left height=25 width=134>
+            <P align=left><FONT color=#000086 face=Arial size=3>Contact 
+            name</FONT></P></TD>
+          <CENTER>
+          <TD height=25 width=170><FONT color=#000086 face=Arial size=3><INPUT 
+            name=Customer_name tabIndex=9></FONT></TD>
+          <TD align=right height=25 width=79><FONT color=#000086 face=Arial 
+            size=3>Company</FONT> </TD>
+          <TD height=25 width=161><INPUT name=Company 
+        tabIndex=10></TD></TR></CENTER>
+        <TR>
+          <TD align=left height=25 width=122>
+            <P align=left><FONT color=#000086 face=Arial size=3>e-mail 
+            address</FONT></P></TD>
+          <CENTER>
+          <TD height=25 width=150><FONT color=#000086 face=Arial size=3><!--webbot
+            bot="Validation" B-Value-Required="TRUE" --><INPUT 
+            name=email_address tabIndex=11 size="20"></FONT></TD>
+          <TD align=right height=25 width=79>
+            <P align=right><FONT color=#000086 face=Arial 
+            size=3>Telephone</FONT></P></TD>
+          <TD height=25 width=161><FONT color=#000086 face=Arial size=3><INPUT 
+            name=tel tabIndex=12></FONT></TD></TR>
+        <TR>
+          <TD align=left height=25 width=122><FONT color=#000086 face=Arial 
+            size=3>Country</FONT></TD>
+          <TD height=25 width=150><!--webbot bot="Validation"
+            B-Value-Required="TRUE" --><INPUT name=Country 
+            tabIndex=13 size="20"></TD>
+          <TD align=right height=25 width=67><FONT color=#000086 face=Arial 
+            size=3>Fax</FONT></TD>
+          <TD height=25 width=141><FONT color=#000086 face=Arial size=3><!--webbot
+            bot="Validation" B-Value-Required="TRUE" --><INPUT 
+            name=Fax tabIndex=14 size="20"></FONT></TD></TR>
+        <TR>
+          <TD align=right height=76 width=134><FONT color=#000086 face=Arial 
+            size=3>Comments</FONT></TD>
+          <TD colSpan=3 height=76 width=390><FONT color=#000086 face=Arial 
+            size=3><TEXTAREA cols=54 name=Comments rows=3 tabIndex=15></TEXTAREA></FONT></TD></TR>
+        <TR>
+          <TD colSpan=2 height=27 width=265><INPUT name=B1 style="BACKGROUND-COLOR: #f1f1f1; BORDER-BOTTOM-COLOR: #f1f1f1; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #f1f1f1; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #f1f1f1; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #f1f1f1; BORDER-TOP-STYLE: solid; COLOR: #f1f1f1; FONT-FAMILY: Arial; FONT-SIZE: 10pt" tabIndex=16 type=submit value=Send> 
+            &nbsp;</TD>
+          <TD height=27 width=67></TD>
+          <TD height=27 width=141><FONT size=1 face="Arial">Updated June 2003</FONT></TD></TR></TBODY></TABLE></CENTER></DIV></FORM>&nbsp;</BODY></HTML>

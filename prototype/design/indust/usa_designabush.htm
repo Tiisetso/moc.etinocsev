@@ -1,0 +1,982 @@
+<!--
+<%@ Language=JavaScript%>
+//-->
+<html>
+
+<head>
+<meta name="VI60_defaultClientScript" content="JavaScript">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="robots" content="noindex,nofollow">
+<title>American Inches - Design-a-bush Calculator</title>
+<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+
+<!--
+
+<!--    AMERICAN INCHES   -->
+
+function calc1_onclick()
+{
+
+<!--   INPUT   -->
+	Tmin=eval(document.FrontPage_Form1.Tmin.value);
+	Tmax=eval(document.FrontPage_Form1.Tmax.value);
+	D=eval(document.FrontPage_Form1.D.value);
+	d=eval(document.FrontPage_Form1.d.value);
+	M=eval(document.FrontPage_Form1.M.value);
+	L=eval(document.FrontPage_Form1.L.value);
+	N=eval(document.FrontPage_Form1.N.value);
+	R=eval(document.FrontPage_Form1.R.value);
+	L=eval(document.FrontPage_Form1.L.value);
+
+if (Tmin<41.0)
+	PF=((41.0-Tmin)*0.00003+0.002)*D+0.002;
+else
+	PF=(D*0.002)+0.002;
+
+NWT=(D-d)/2.0;
+AC=(NWT*0.02)+0.002;
+
+P=M/(d*L*N);
+V=(d*R*Math.PI)/12;
+PV=P*V;
+OD=D+PF;
+
+int2=((D*D)-(d*d))/d;
+	if (Tmax<122)
+		EC=0;
+	else
+		EC=int2*3.3*(Tmax-70.0)*0.00001;
+int1=PF*D/d;
+
+ID=d+int1+AC+EC;
+WT=(OD-ID)*0.5;
+
+<!-- ROUNDING  -->
+	P=(Math.round(P*10))/10;
+	V=(Math.round(V*10))/10;
+	PV=(Math.round(PV*10))/10;
+
+<!-- OUTPUT -->
+	document.FrontPage_Form1.P.value=P;
+	document.FrontPage_Form1.V.value=V;
+	document.FrontPage_Form1.PV.value=PV;
+	document.FrontPage_Form1.L1.value=L;
+
+<!-- TOLERANCES -->
+	ODtol=D*0.001;
+	IDtol=d*0.001;
+	WTtol=0.0-0.005*WT;
+	L1tol=L*0.005;
+
+	if (ODtol<0.001)
+		ODtol=0.001;
+	if (IDtol<0.001)
+		IDtol=0.001;
+	if (WTtol<0.001)
+		WTtol=0.001;
+	if (L1tol<0.012)
+		L1tol=0.012;
+
+<!-- ROUNDING  -->
+	OD=(Math.round(OD*1000))/1000;
+	ID=(Math.round(ID*1000))/1000;
+	WT=(Math.round(WT*1000))/1000;
+	ODtol=(Math.round(ODtol*1000))/1000;
+	IDtol=(Math.round(IDtol*1000))/1000;
+	WTtol=(Math.round(WTtol*1000))/1000;
+	L1tol=(Math.round(L1tol*1000))/1000;
+
+
+
+
+<!-- OUTPUT  -->
+	document.FrontPage_Form1.OD.value=OD;
+	document.FrontPage_Form1.ID.value=ID;
+	document.FrontPage_Form1.WT.value=WT;
+	document.FrontPage_Form1.ODtol.value=ODtol;
+	document.FrontPage_Form1.IDtol.value=IDtol;
+	document.FrontPage_Form1.WTtol.value=WTtol;
+	document.FrontPage_Form1.L1tol.value=L1tol;
+
+<!--MOVE VALUES FOR STRAIGHT BUSH DRAWING -->
+	document.FrontPage_Form1.sbOD.value=OD;
+	document.FrontPage_Form1.sbID.value=ID;
+
+	document.FrontPage_Form1.sbODtol.value=ODtol;
+	document.FrontPage_Form1.sbIDtol.value=IDtol;
+	document.FrontPage_Form1.sbL1.value=L;
+	document.FrontPage_Form1.sbL1tol.value=L1tol;
+
+	document.FrontPage_Form1.sbD.value=D;
+	document.FrontPage_Form1.sbd.value=d;
+
+}
+
+//-->
+</SCRIPT>
+<meta name="Microsoft Border" content="none">
+</head>
+
+<body stylesrc="../../Default.htm" style="font-family: Arial; font-size: 10pt" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  var checkOK = "0123456789-.";
+  var checkStr = theForm.D.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"D\" field.");
+    theForm.D.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"D\" field.");
+    theForm.D.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.";
+  var checkStr = theForm.d.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"d\" field.");
+    theForm.d.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"d\" field.");
+    theForm.d.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.";
+  var checkStr = theForm.Tmax.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Tmax\" field.");
+    theForm.Tmax.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Tmax\" field.");
+    theForm.Tmax.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.";
+  var checkStr = theForm.Tmin.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Tmin\" field.");
+    theForm.Tmin.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Tmin\" field.");
+    theForm.Tmin.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.OD.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"OD\" field.");
+    theForm.OD.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"OD\" field.");
+    theForm.OD.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.ODtol.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"ODtol\" field.");
+    theForm.ODtol.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"ODtol\" field.");
+    theForm.ODtol.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.ID.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"ID\" field.");
+    theForm.ID.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"ID\" field.");
+    theForm.ID.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.IDtol.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"IDtol\" field.");
+    theForm.IDtol.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"IDtol\" field.");
+    theForm.IDtol.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.L1.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"L1\" field.");
+    theForm.L1.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"L1\" field.");
+    theForm.L1.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.L1tol.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"L1tol\" field.");
+    theForm.L1tol.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"L1tol\" field.");
+    theForm.L1tol.focus();
+    return (false);
+  }
+
+  var chkVal = allNum;
+  var prsVal = parseFloat(allNum);
+  if (chkVal != "" && !(prsVal > "-0.3"))
+  {
+    alert("Please enter a value greater than \"-0.3\" in the \"L1tol\" field.");
+    theForm.L1tol.focus();
+    return (false);
+  }
+
+  if (theForm.Contact_person.value == "")
+  {
+    alert("Please enter a value for the \"Contact_person\" field.");
+    theForm.Contact_person.focus();
+    return (false);
+  }
+
+  if (theForm.email_address.value == "")
+  {
+    alert("Please enter a value for the \"email_address\" field.");
+    theForm.email_address.focus();
+    return (false);
+  }
+
+  if (theForm.Country.value == "")
+  {
+    alert("Please enter a value for the \"Country\" field.");
+    theForm.Country.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" action="../../_vti_bin/shtml.dll/design/indust/usa_designabush.htm" onsubmit="return FrontPage_Form1_Validator(this)" name="FrontPage_Form1" webbot-action="--WEBBOT-SELF--" language="JavaScript">
+  <!--webbot bot="SaveResults" startspan S-Email-Format="HTML/BR"
+  B-Email-Label-Fields="TRUE" B-Email-Subject-From-Field="FALSE"
+  S-Email-Subject="American Inches Industrial Design-a-bush.  Customer service"
+  S-Builtin-Fields="REMOTE_NAME REMOTE_USER HTTP_USER_AGENT"
+  S-Form-Fields="D d L M N R Tmax Tmin calc1 P V PV OD ODtol ID IDtol WT WTtol L1 L1tol Contact_person email_address tel Country Quote_req qty_per_year Qty_per_order Comments B1 "
+  U-Confirmation-Url="../../confirm.htm"
+  S-Email-Address="vesconite@vesconite.com" --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot
+  bot="SaveResults" endspan i-checksum="43374" -->
+  <div align="center">
+    <center>
+    <table border="0" cellspacing="0" bordercolor="#000086" bgcolor="#EFA992" width="600">
+      <tr>
+        <td width="653" align="right" colspan="6" bgcolor="#F3F8FE">
+          <div align="left">
+            <table border="1" cellspacing="0" bordercolor="#000086" cellpadding="0" width="100%">
+              <tr>
+                <td>
+                  <p align="center"><font face="Arial" size="2" color="#FF0000"><b><a href="../../Default.htm">vesconite.com</a></b></font><b><font face="Arial" size="2" color="#000086"><font FACE="Wingdings">�</font>&nbsp;</font><font face="Arial" size="2" color="#FF0000"><a href="../../lhs_headings/vescoplastics.htm">VescoPlastics</a></font><font face="Arial" size="2" color="#000086"><font FACE="Wingdings">�</font>&nbsp;American Inches
+                  Industrial Design-a-bush
+                  Calculator</font></b></p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td width="653" align="right" colspan="6" bgcolor="#000086">
+          <div align="left">
+            <table border="0" cellspacing="1" width="586">
+              <tr>
+                <td width="143"><b><font face="Arial" size="3" color="#EFA992">American
+                  Inches</font></b></td>
+                <td width="429"><font face="Arial" color="#FFFFFF" size="3"><b>Design-a-bush
+          Calculator for Industrial Apps - </b></font><font face="Arial" color="#FFFFFF" size="2"> Beta
+                  v01</font></td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td width="653" align="right" colspan="6">
+          <p align="left"><b><font face="Arial" size="2"><font color="#000086">Step 1</font>&nbsp;<font color="#000086">
+          </font></font></b><font color="#000086" face="Arial" size="2">Fill in your
+          dimensions, operating conditions and temperatures.&nbsp;
+          Use the units
+          specified to avoid errors.&nbsp; Enter numbers with no thousands
+          separators and use a decimal point if required.&nbsp;<br>
+          Change initial values to those of your application.</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">Housing
+          diameter (D)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="122" align="left"><font face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators="x." --><input type="text" name="D" size="5">inches</font></td>
+        <td width="351" align="left" colspan="3"><font face="Arial" size="1">Housing
+          diameter must be &gt; Shaft diameter</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">Shaft diameter
+          (d)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="122" align="left"><font face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators="x." --><input type="text" name="d" size="5">inches</font></td>
+        <td width="354" align="left" colspan="3" valign="top" rowspan="2">
+          <font face="Arial" size="1">If d&gt;8 inches, this is a large bush, and
+          it is suggested that your calculations and application be checked by a
+          consultant.&nbsp;<br>
+ Use <font color="#000086">Customer Service</font>
+          below.</font>
+        </td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">Bush length (L)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="122" align="left"><font face="Arial" size="2"><input type="text" name="L" size="5">inches</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">Total mass supported (M)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="122" align="left"><font face="Arial" size="2"><input type="text" name="M" size="5" value="0">
+          </font><font face="Arial" size="2">lb</font></td>
+        <td width="111" align="left">
+          &nbsp;
+        </td>
+        <td width="242" align="left">&nbsp;</td>
+        <td width="1">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">No. of bushes supporting total mass (N)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="122" align="left"><font face="Arial" size="2"><input type="text" name="N" size="3" value="1"></font></td>
+        <td width="111" align="left">
+          <p align="left">&nbsp;</p>
+        </td>
+        <td width="242" align="left">&nbsp;</td>
+        <td width="1">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font size="2" face="Arial">Revolutions per min (R)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="122" align="left"><font face="Arial" size="2"><input type="text" name="R" size="5" value="0">
+          rpm</font></td>
+        <td width="111" align="left">&nbsp;</td>
+        <td width="242" align="left">&nbsp;</td>
+        <td width="1">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font face="Arial" size="2">Max
+          operating temp (Tmax)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="122"><font face="Arial" size="2"><!--webbot bot="Validation"
+          S-Data-Type="Number" S-Number-Separators="x." --><input type="text" name="Tmax" size="4" value="70">
+          &deg;F</font></td>
+        <td width="347" colspan="3" rowspan="2" valign="top"><font face="Arial" size="1">If Tmax
+          &gt; 158 <b>�</b>F then&nbsp;please request your application to be
+          checked by a Vesconite consultant.&nbsp; Use
+          <font color="#000086">Customer
+          Service</font>  below.</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right"><font face="Arial" size="2">Min
+          operating temp (Tmin)</font></td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="122"><font face="Arial" size="2"><!--webbot bot="Validation"
+          S-Data-Type="Number" S-Number-Separators="x." --><input type="text" name="Tmin" size="4" value="70">
+          &deg;F</font></td>
+      </tr>
+    </center>
+      <tr>
+        <td width="200" align="right">
+          <p align="right"><font color="#000086"><font face="Arial" size="2">Scroll down for results</font><font FACE="Wingdings">�</font><font face="Arial" size="2">&nbsp;</font></font></p>
+        </td>
+        <td width="8" align="left">&nbsp;</td>
+        <td width="122" align="left"><font color="#000086"><input type="button" value="Calculate" name="calc1" LANGUAGE=javascript onclick="return calc1_onclick()" style="color: #000086; font-size: 10pt; font-family: Arial"></font></td>
+        <td width="351" align="left" colspan="3"><font color="#000086"><font FACE="Wingdings"></font><font face="Arial" size="2">&nbsp;</font><font FACE="Wingdings">�</font><font face="Arial" size="2">&nbsp;&nbsp;&nbsp;
+          Drawing included&nbsp; </font><font FACE="Wingdings">�</font><font face="Arial" size="2">&nbsp;&nbsp;</font></font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right">
+          <p align="left"><font face="Arial"><b><font color="#000086" size="2">Step 2</font><font size="3">
+          </font></b><font size="2" color="#000086">Check loading</font></font><font face="Arial" size="2">&nbsp;<font color="#000086">P =</font></font></p>
+        </td>
+        <td width="8">&nbsp;</td>
+        <td width="122"><font face="Arial" size="2"><input type="text" name="P" size="5">Psi</font></td>
+        <td width="351" colspan="3"><font face="Arial" size="1">If
+          P &gt;&nbsp;3000 Psi, this is a high bearing load application.&nbsp; We would be
+          happy to
+  check your requirements and provide additional advice. Use the <font color="#000086"> Customer Service</font>
+          below.&nbsp;</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right">&nbsp;</td>
+        <td width="8">&nbsp;</td>
+        <td width="122">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="200" align="right">
+          <p align="left"><font color="#000086"><b><font face="Arial" size="2" color="#000086">Step
+          3</font>&nbsp; </b><font face="Arial" size="2" color="#000086">Check shaft surface
+          speed&nbsp; V =</font></font></td>
+        <td width="8">&nbsp;</td>
+        <td width="122"><font face="Arial" size="2"><input type="text" name="V" size="5">
+          fpm</font></td>
+        <td width="351" colspan="3"><font face="Arial" size="1">If
+          V &gt; 1000 fpm,&nbsp; have your
+          application checked by a Vesconite consultant.&nbsp; Use <font color="#000086">Customer
+          Service </font>below.</font></td>
+      </tr>
+      <tr>
+        <td width="200" align="right">
+          <p align="left"><b><font color="#000086" face="Arial" size="2">Step 4 </font></b><font size="2" color="#000086" face="Arial">Check PV
+          =</font></td>
+        <td width="8">&nbsp;</td>
+        <td width="122"><font face="Arial" size="2"><input type="text" name="PV" size="5">
+          Psi.fpm<br>
+          </font></td>
+        <td width="351" colspan="3"><font face="Arial" size="1">If
+          PV &lt;&nbsp; 2,300 Psi.fpm, initial greasing or unlubricated<br>
+          2,300&nbsp;- 4,600 Psi.fpm, initial greasing required<br>
+          4,600 - 9,300&nbsp; Psi.fpm, regular greasing required<br>
+          9,300 - 18,600 Psi.fpm, continuous lubrication required<br>
+          18,600 -&nbsp; 93,000Psi.fpm, operate under water.<br>
+          If
+          PV &gt; 93,000 Psi.fpm, have your application checked by a Vesconite consultant.&nbsp;
+          Use <font color="#000086">Customer
+          Service </font>below.</font></td>
+      </tr>
+    </table>
+  </div>
+  <div align="center">
+    <center>
+    <table border="0" cellspacing="1" width="600" height="114">
+      <tr>
+        <td width="1236" bgcolor="#000086" height="19" colspan="7">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="1236" bgcolor="#DDDDDD" height="34" colspan="7"><b><font face="Arial" size="2"><font color="#000086">Step
+          5</font>&nbsp;</font><font color="#FF8000">
+          </font></b><font color="#000086" face="Arial" size="2">Machine
+          your
+          bush to the dimensions below. For the nearest bushing or rod size, check
+          our <a href="../../charts/prodlist.htm">stock
+          production sizes</a> or click for Customer Service.</font></td>
+      </tr>
+      <tr>
+        <td width="173" bgcolor="#DDDDDD" height="34"><font color="#000086" face="Arial" size="2">Machine bush outside
+          diameter</font></td>
+    </center>
+        <td width="60" bgcolor="#DDDDDD" height="34"><font color="#000086" face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="OD" size="5">
+          </font></td>
+        <td width="63" bgcolor="#DDDDDD" height="34">
+          <p align="left"><font color="#000086" face="Arial" size="2">inches&nbsp;</font></p>
+      </td>
+    <center>
+        <td width="167" bgcolor="#DDDDDD" height="34" align="right"><font color="#000086" face="Arial" size="2">Tolerance&nbsp;<font FACE="Courier">�</font></font></td>
+        <td width="69" bgcolor="#DDDDDD" height="34" align="left"><font color="#000086" face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",." -->
+          <input type="text" name="ODtol" size="4">
+          </font></td>
+        <td width="82" bgcolor="#DDDDDD" height="34" align="left"><font color="#000086" face="Arial" size="2">&nbsp;inches&nbsp;</font></td>
+        <td width="622" bgcolor="#DDDDDD" height="34"><font face="Arial" size="1">Includes interference fit</font></td>
+      </tr>
+      <tr>
+        <td width="173" bgcolor="#DDDDDD" height="34"><font color="#000086" face="Arial" size="2">Machine bush<br>
+          inside
+          diameter</font></td>
+        <td width="60" bgcolor="#DDDDDD" height="34"><font color="#000086" face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="ID" size="5">
+          </font></td>
+        <td width="63" bgcolor="#DDDDDD" height="34"><font color="#000086" face="Arial" size="2">inches</font></td>
+        <td width="167" bgcolor="#DDDDDD" height="34" align="right"><font color="#000086" face="Arial" size="2">Tolerance&nbsp;<font FACE="Courier">�</font>
+          </font></td>
+        <td width="69" bgcolor="#DDDDDD" height="34" align="left"><font color="#000086" face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",." -->
+          <input type="text" name="IDtol" size="4">
+          </font></td>
+        <td width="82" bgcolor="#DDDDDD" height="34" align="left"><font color="#000086" face="Arial" size="2">&nbsp;inches</font></td>
+        <td width="622" bgcolor="#DDDDDD" height="34"><font face="Arial" size="1">Includes running clearance and allowance
+          for bore closure when press fitted.</font></td>
+      </tr>
+      <tr>
+        <td width="173" bgcolor="#DDDDDD" height="34"><font color="#000086" face="Arial" size="2">Wall
+          thickness</font></td>
+        <td width="60" bgcolor="#DDDDDD" height="34"><input type="text" name="WT" size="4">
+        </td>
+        <td width="63" bgcolor="#DDDDDD" height="34">
+          <font face="Arial" size="2" color="#000086">inches</font></td>
+        <td width="167" bgcolor="#DDDDDD" height="34" align="right"><font color="#000086" face="Arial" size="2">Tolerance&nbsp;</font><font face="Courier" color="#000086" size="2">+0.0-</font></td>
+        <td width="69" bgcolor="#DDDDDD" height="34" align="left"><font face="Arial" size="2" color="#000086">
+          <input type="text" name="WTtol" size="4">  </font></td>
+        <td width="82" bgcolor="#DDDDDD" height="34" align="left"><font face="Arial" size="2" color="#000086">
+          &nbsp;inches</font></td>
+        <td width="622" bgcolor="#DDDDDD" height="68" valign="top" rowspan="2"><font face="Arial" size="1">Check
+          your machined wall thickness is within tolerance, otherwise stacking
+          of tolerances could lead to loss of clearance.</font></td>
+      </tr>
+      <tr>
+        <td width="173" bgcolor="#DDDDDD" height="34"><font color="#000086" size="2" face="Arial">Bush length</font></td>
+        <td width="60" bgcolor="#DDDDDD" height="34"><font face="Arial" size="2" color="#000086"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="L1" size="4">
+          </font></td>
+        <td width="63" bgcolor="#DDDDDD" height="34"><font face="Arial" size="2" color="#000086">inches</font></td>
+        <td width="167" bgcolor="#DDDDDD" height="34" align="right"><font color="#000086" face="Arial" size="2">Tolerance&nbsp;</font><font face="Courier" color="#000086" size="2">+0.0-</font></td>
+        <td width="69" bgcolor="#DDDDDD" height="34" align="left"><font color="#000086" face="Arial" size="2"><!--webbot
+          bot="Validation" S-Data-Type="Number" S-Number-Separators=",."
+          S-Validation-Constraint="Greater than" S-Validation-Value="-0.3" --><input type="text" name="L1tol" size="4">
+          </font></td>
+        <td width="82" bgcolor="#DDDDDD" height="34" align="left"><font color="#000086" face="Arial" size="2">&nbsp;inches</font></td>
+      </tr>
+      <tr>
+        <td width="1236" bgcolor="#000086" height="19" colspan="7">&nbsp;</td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  <div align="center">
+    <center>
+    <table border="0" cellspacing="1" width="600" height="259" bgcolor="#EFA992">
+      <tr>
+        <td colspan="4" width="549" height="57"><font size="3"><b><font color="#000086" face="Arial">Customer Service</font><font color="#0000FF">&nbsp;
+          </font></b><font face="Arial" size="3">We will happily
+  check your application and provide additional advice.
+  Complete the fields below, click the Customer Service
+  button and we will get back to you as soon as
+  possible.&nbsp;&nbsp;</font></font></td>
+      </tr>
+      <tr>
+        <td width="134" height="25"><font color="#000086" face="Arial" size="3">Contact name</font></td>
+        <td width="170" height="25"><!--webbot bot="Validation"
+          B-Value-Required="TRUE" --><input type="text" name="Contact_person" size="20"></td>
+        <td width="122" height="25" align="right"><font color="#000086" face="Arial" size="3">e-mail address</font></td>
+        <td width="150" height="25"><!--webbot bot="Validation"
+          B-Value-Required="TRUE" --><input type="text" name="email_address" size="20"></td>
+      </tr>
+      <tr>
+        <td width="134" height="25"><font color="#000086" face="Arial" size="3">Telephone</font></td>
+        <td width="170" height="25"><input type="text" name="tel" size="20"></td>
+        <td width="122" height="25" align="right"><font face="Arial" size="3" color="#000086">Country</font></td>
+        <td width="150" height="25"><!--webbot bot="Validation"
+          B-Value-Required="TRUE" --><input type="text" name="Country" size="20"></td>
+      </tr>
+    </center>
+      <tr>
+        <td colspan="2" width="265" height="25"><font face="Arial" size="3" color="#000086">Quote
+          me Y/N</font> <input type="text" name="Quote_req" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp; <font face="Arial" size="3" color="#000086">Qty required</font></td>
+    <center>
+        <td colspan="2" width="278" height="25"><font face="Arial" size="3" color="#000086"><input type="text" name="qty_per_year" size="7">per
+          year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="Qty_per_order" size="7">per
+          order</font></td>
+      </tr>
+      <tr>
+        <td width="134" height="76"><font face="Arial" size="3" color="#000086">Comments</font></td>
+        <td width="454" colspan="3" height="76"><textarea rows="2" name="Comments" cols="57"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" width="265" height="27"><input type="submit" value="Customer Service" name="B1" style="color: #000086; font-family: Arial; font-size: 10pt">
+          <input type="reset" value="Reset" name="B2" style="color: #000086; font-family: Arial; font-size: 10pt"></td>
+        <td width="122" height="27"></td>
+        <td width="150" height="27"></td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  <hr>
+  <div align="center">
+    <center>
+    <table border="0" cellspacing="1" width="558">
+      <tr>
+        <td width="103"><img border="0" src="../../VSalesLogo.gif" width="93" height="35"></td>
+        <td width="19"></td>
+        <td width="202"><font face="Arial" size="3">Tel:&nbsp; 011 616 1111<br>
+          Fax: 011 616 2222<br>
+          www.vesconite.com</font></td>
+        <td width="53"></td>
+        <td width="226">
+          <p align="center"><b><font face="Arial" size="5">Straight Bush</font></b></p>
+          <p align="center">Not to scale</td>
+      </tr>
+    </table>
+    </center>
+  </div>
+  <hr>
+  <p align="center">&nbsp;</p>
+  <div align="center">
+    <center>
+    <table border="0" cellspacing="1">
+      <tr>
+        <td></td>
+        <td>
+          <p align="center"><font face="Arial" size="2" color="#000086">Length </font><input type="text" name="sbL1" size="5"><font color="#000086" face="Arial" size="2">
+          +0.0-</font><input type="text" name="sbL1tol" size="4">  <font face="Arial" size="2" color="#000086">inches</font></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><font face="Arial" size="2" color="#000086">Outside Diameter<br>
+          </font><input type="text" name="sbOD" size="5"><font color="#000086" face="Arial" size="2">&nbsp;</font><font face="Courier" size="2" color="#000086"><sup>�</sup></font><font color="#000086" face="Arial" size="2"><input type="text" name="sbODtol" size="4"></font><br>
+          <font color="#000086" face="Arial" size="2">inches</font></td>
+        <td><img border="0" src="../../_private/bush.gif" width="315" height="238"></td>
+        <td><font face="Arial" size="2" color="#000086">Inside Diameter<br>
+          </font><input type="text" name="sbID" size="5"> <sup><font face="Courier" size="2" color="#000086">�</font></sup><font FACE="Courier"><input type="text" name="sbIDtol" size="4"></font><br>
+          <font color="#000086" size="2" face="Arial">inches</font></td>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <hr>
+          <div align="left">
+            <table border="0" cellspacing="11" width="539">
+              <tr>
+                <td width="86"><font face="Arial" size="3">Housing:</font></td>
+                <td width="439">
+                <font face="Arial" size="3"><input type="text" name="sbD" size="5">
+                inches</font>
+                </td>
+              </tr>
+              <tr>
+                <td width="86"><font face="Arial" size="3">Shaft:</font></td>
+                <td width="439">
+                <font face="Arial" size="3"><input type="text" name="sbd" size="5">
+                inches</font>
+                </td>
+              </tr>
+              <tr>
+                <td width="86"><font face="Arial" size="3">Material:</font></td>
+                <td width="439">
+                <font face="Arial" size="3">Vesconite</font>
+                </td>
+              </tr>
+              <tr>
+                <td width="525" colspan="2"><font face="Arial" size="3">Special
+                  Instructions:</font></td>
+              </tr>
+              <tr>
+                <td width="86"></td>
+                <td width="439">
+                </td>
+              </tr>
+              <tr>
+                <td width="86"></td>
+                <td width="439">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+    </center>
+  </div>
+</form>
+
+<hr>
+<p>&nbsp;</p>
+<p><font face="Arial" size="2"><b><font color="#000086">Disclaimer</font></b><font color="#000086">
+<br>
+</font>This Design-a-bush program is based on years of experience in
+manufacturing and designing bushes.&nbsp; Experience shows that no two
+applications are the same in every detail, so VescoPlastics Sales (the Company)
+encourages that every application be treated as individual and unique. This
+program is offered in good faith as part of our client service, but favourable
+results cannot be guaranteed. The program is intended for use by persons with
+technical skill, at their discretion and risk.&nbsp; The purchaser must
+determine the suitability of the program and goods for their intended purpose.
+The Company does not hold itself responsible for any damage, incidental or
+consequential losses suffered as a result of the use of this program or the
+goods supplied.&nbsp;&nbsp;&nbsp;&nbsp; </font><font face="Arial" size="1">Last
+Updated: Jun 26 2001</font></p>
+</body>
+
+</html>

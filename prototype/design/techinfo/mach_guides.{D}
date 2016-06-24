@@ -1,0 +1,481 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <meta name="ProgId" content="FrontPage.Editor.Document">
+	<TITLE>Machining guidelines for Vesconite.</TITLE>
+    <STYLE>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+	-->
+	</STYLE>
+<meta name="Microsoft Border" content="b">
+</HEAD>
+<BODY stylesrc="../../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<table border="1" width="94%" bordercolor="#000086" cellspacing="0" cellpadding="2">
+  <tr>
+    <td width="100%">
+      <p align="center"><font face="Arial" size="2"><b><a href="../../index.htm">vesconite.com</a>&nbsp;<font color="#FF0000">
+      </font><font color="#000086">&gt; &nbsp;<a href="techinfo_links.htm">Design
+      technical information</a>&nbsp; &gt;&nbsp; Machining
+guidelines</font></b></font></td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in; text-decoration: none"><B><font face="Arial" size="5" color="#000086">Machining
+guidelines for Vesconite.</font></B><SPAN STYLE="text-decoration: none"><FONT size=3 face="Arial"><br>
+Vesconite
+is easily machined to fine tolerances on standard metal working
+equipment.<br>
+&nbsp;&nbsp;</FONT>  </SPAN></P>
+<table border="0" width="100%">
+  <tr>
+    <td width="10%" valign="top"><FONT size=3 face="Arial" COLOR="#0000ff"><a href="#Turning">Turning</a></FONT></td>
+    <td width="90%"><FONT size=3 face="Arial" COLOR="#0000ff"><a href="#Tool Cutting Angles">Tool
+      cutting angles</a><a href="#Cutting Speeds and feeds"><br>
+      Cutting
+speeds<br>
+      </a><a href="#Machining standard bearings.  Diameters &lt; 200 mm (8&quot;)">Machining
+standard bearings with diameters &lt; 200 mm<br>
+      </a><a href="bearing_groove.htm">
+      Bearing groove design<br>
+      </a><a href="#Machining standard large bearings.  Diameters &gt;200 mm (8&quot;)">Machining
+bearings with diameters &gt; 200 mm</a></FONT></td>
+  </tr>
+  <tr>
+    <td width="100%" colspan="2"><FONT size=3 face="Arial" COLOR="#0000ff"><a href="#Drilling solid rod">Drilling
+solid rod</a><a href="#Milling"><br>
+      Milling</a><a href="#Sawing"><br>
+      Sawing</a></FONT></td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in; text-decoration: none"><FONT size=3 face="Arial">Please
+refer to the <U><FONT COLOR="#0047ff"><a href="../../charts/safety_data.htm">Material Safety Data Sheet</a></FONT></U>
+for Vesconite for material safety precautions.</FONT></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="Turning">Turning</a></FONT></B><SPAN STYLE="text-decoration: none"><FONT size=3 face="Arial"><br>
+Vesconite
+bearings machine easily on standard steel or woodworking lathes.<br>
+</FONT></SPAN><FONT size=3 face="Arial">Extra
+care needs to be taken when machining larger bearings with diameters
+&gt; 200 mm. Coolant should be used to ensure that the heat buildup
+is limited.<br>
+</FONT></P>
+<div align="left">
+  <table border="0" width="82%">
+    <tr>
+      <td width="53%">
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="Tool Cutting Angles">Tool
+Cutting Angles</a></FONT></B></P>
+<blockquote>
+<P STYLE="margin-bottom: 0in"><FONT size=3 face="Arial" color="#000086">Top
+rake   	: 0&deg; to 5&deg;<br>
+Side
+rake 	: 5&deg; to 11&deg;<br>
+Front
+clearance : 5&deg; to 11&deg;</FONT></P>
+</blockquote>
+      </td>
+      <td width="49%"><B><FONT size=3 face="Arial" color="#000086"><img border="0" src="tool.gif" align="left" width="240" height="166"></FONT></B></td>
+    </tr>
+  </table>
+</div>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="Cutting Speeds and feeds">Cutting
+Speeds and feeds</a></FONT></B></P>
+<DL>
+	<DL>
+		<DD>
+		<TABLE WIDTH=341 BORDER=1 BORDERCOLOR="#00FFFF" CELLPADDING=4 CELLSPACING=0 bgcolor="#C0C0C0">
+			<COL WIDTH=123>
+			<COL WIDTH=102>
+			<COL WIDTH=90>
+			<THEAD>
+				<TR VALIGN=TOP>
+					<TH WIDTH=123>
+						<P><font face="Arial" size="3">Outside Diameter (mm)</font></P>
+					</TH>
+					<TH WIDTH=102>
+						<P><font face="Arial" size="3">Outside Diameter (&quot;)</font></P>
+					</TH>
+					<TH WIDTH=90>
+						<P><font face="Arial" size="3">RPM</font></P>
+					</TH>
+				</TR>
+			</THEAD>
+			<TBODY>
+				<TR VALIGN=BOTTOM>
+					<TD WIDTH=123 SDVAL="200" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">200</font></P>
+					</TD>
+					<TD WIDTH=102 SDVAL="4" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">4</font></P>
+					</TD>
+					<TD WIDTH=90 SDVAL="350" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">350</font></P>
+					</TD>
+				</TR>
+				<TR VALIGN=BOTTOM>
+					<TD WIDTH=123 SDVAL="300" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">300</font></P>
+					</TD>
+					<TD WIDTH=102 SDVAL="12" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">12</font></P>
+					</TD>
+					<TD WIDTH=90 SDVAL="300" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">300</font></P>
+					</TD>
+				</TR>
+				<TR VALIGN=BOTTOM>
+					<TD WIDTH=123 SDVAL="400" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">400</font></P>
+					</TD>
+					<TD WIDTH=102 SDVAL="8" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">8</font></P>
+					</TD>
+					<TD WIDTH=90 SDVAL="200" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">200</font></P>
+					</TD>
+				</TR>
+				<TR VALIGN=BOTTOM>
+					<TD WIDTH=123 SDVAL="500" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">500</font></P>
+					</TD>
+					<TD WIDTH=102 SDVAL="20" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">20</font></P>
+					</TD>
+					<TD WIDTH=90 SDVAL="150" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">150</font></P>
+					</TD>
+				</TR>
+				<TR VALIGN=BOTTOM>
+					<TD WIDTH=123 SDVAL="600" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">600</font></P>
+					</TD>
+					<TD WIDTH=102 SDVAL="24" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">24</font></P>
+					</TD>
+					<TD WIDTH=90 SDVAL="100" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">100</font></P>
+					</TD>
+				</TR>
+				<TR VALIGN=BOTTOM>
+					<TD WIDTH=123 SDVAL="700" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">700</font></P>
+					</TD>
+					<TD WIDTH=102 SDVAL="28" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">28</font></P>
+					</TD>
+					<TD WIDTH=90 SDVAL="70" SDNUM="1033;">
+						<P ALIGN=CENTER><font face="Arial" size="3">70</font></P>
+					</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+	</DL>
+</DL>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3">This
+needs to be to a maximum of 300 m/min</font>
+</P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086">Cutting
+Feeds</FONT></B><FONT size=3 face="Arial"><br>
+Rough
+turning	0,5 -  0,7 mm per revolution (20 - 30 thousandths per
+revolution)<br>
+Finish
+turning	0,3 -  0,4 mm per revolution (0.012&quot; - 0.016&quot; per
+revolution.)</FONT></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="Machining standard bearings.  Diameters &lt; 200 mm (8&quot;)">Machining
+standard bearings.&nbsp; Diameters
+&lt; 200 mm (8&quot;)</a></FONT></B><font face="Arial" size="3"><br>
+An
+efficient way to manufacture these bearings can be used.</font>
+</P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><img border="0" src="images/Mach_step2.gif" align="right" width="236" height="185">Step
+1 - Cut to length</FONT></B><FONT size=3 face="Arial"><br>
+Cut
+the bearing to its length using a cut-off circular saw. Take care to
+ensure that the cut is square.</FONT></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086">Step
+2 - Machining the outside diameter</FONT></B><FONT size=3 face="Arial"><br>
+Manufacture
+mandrels that are size to size with the Vesconite bearing. Machine
+one for the chuck and another for the tail stock. These mandrels can
+be made of Vesconite, steel or any other material able to hold size
+and easily available.<br>
+Support
+the bearing between these two mandrels applying a light pressure.<br>
+Machine
+the outside diameter to the size required. The cuts should not be more
+than 2 mm deep or else the bearing could crack.</FONT></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><img border="0" src="images/Mach_step3.gif" align="right" width="151" height="184">Step
+3 - Machining the inside diameter</FONT></B><FONT size=3 face="Arial"><br>
+Manufacture
+a &quot;pot&quot; with an inside diameter size to size with the
+outside diameter of the Bearing already machined. Make the length of
+the pot about 5mm longer than the length of the bearing. Manufacturer
+a disc to be placed inside the pot to remove the part after
+machining. The parts are then pushed lightly into the Pot. Machine
+the ID ensuring that the cuts are less than 2 mm. Ensure that there
+is not a large buildup of shavings inside the bearing being machined.</FONT></P>
+<P STYLE="margin-bottom: 0in; text-decoration: none"><B><FONT size=3 face="Arial" color="#000086">Please
+refer to the <U><a href="../../charts/safety_data.htm">Material Safety Data Sheet</a></U>
+<a href="../../charts/safety_data.htm"> </a>
+for Vesconite for material safety precautions.</FONT></B></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><img border="0" src="images/Mach_flange.gif" align="right" width="170" height="184"><a name="Machining a flanged bearing">Machining
+a flanged bearing</a></FONT></B><font face="Arial" size="3"><br>
+These bearings are generally made
+by securing each part in the chuck. When holding Vesconite in a
+chuck, take care that pressure is applied only to hold the bearing.
+Too much pressure can deform or break the bearing.</font>
+</P>
+<ul>
+  <li>
+    <p STYLE="margin-bottom: 0in"><FONT size=3 face="Arial">First
+	cut the bearing approximately to length using a cut off saw. Allow
+	sufficient material to face both ends to length. Ensure that the
+	bearing is cut square.</FONT></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><FONT size=3 face="Arial">Place
+	the bearing into the chuck and face the one end. Make sure that the
+	bearing is placed square up against the chuck backing plate.</FONT></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><FONT size=3 face="Arial">Machine
+	the inside diameter to the correct size taking less than 2 mm cut
+	depth.</FONT></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><FONT size=3 face="Arial">Machine
+	the outside diameter of the bearing</FONT></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><FONT size=3 face="Arial">Turn
+	the bearing around in the chuck.</FONT></li>
+	<LI><P STYLE="margin-bottom: 0in"><FONT size=3 face="Arial">Face
+	the flange and machine the flange diameter.</FONT></P>
+</ul>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="Machining in NC lathes">Machining
+in NC lathes</a></FONT></B><FONT size=3 face="Arial"><a name="Machining in NC lathes"><br>
+</a>Vesconite
+can easily be machined on automatic machines.<br>
+Face
+the end furthest from the chuck<br>
+Machine
+the inside diameter<br>
+Machine
+the outside diameter<br>
+Cut
+to length at the chuck end</FONT></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086">Machining
+bearings with grooves</FONT></B><FONT COLOR="#0000ff"><U><FONT size=3 face="Arial"><br>
+<a href="bearing_groove.htm">Groove
+design</a></FONT></U></FONT>
+</P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="Machining spiral and round grooves">Machining
+spiral and round grooves</a></FONT></B><FONT size=3 face="Arial"><a name="Machining spiral and round grooves"><br>
+</a>This
+is done on the NC or manual lathe by normal operating procedures.<br>
+If
+the groove continues right through the bearing, it will usually be
+required to face the bearing after cutting the grooves.</FONT></P>
+<P STYLE="margin-bottom: 0in; font-weight: medium"><B><FONT size=3 face="Arial" color="#000086">Machining
+straight grooves</FONT></B><FONT size=3 face="Arial"><br>
+Secure
+the bearing in the chuck or pot and lock the chuck<br>
+Attach
+a broaching tool to the tool post<br>
+Set
+up the tool and machine a groove taking no more than 2 mm with a cut.<br>
+Index
+the chuck to the next point and repeat the process.</FONT>
+</P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="Machining standard large bearings.  Diameters &gt;200 mm (8&quot;)">Machining
+standard large bearings.&nbsp; Diameters
+&gt;200 mm (8&quot;)</a></FONT></B><FONT size=3 face="Arial"><br>
+Due
+to the size of these bearings, extra care needs to be taken to ensure
+that there are no unnecessary stresses placed on the material. These
+bearing are referred to as XL bearings.<br>
+Vesconite
+XL bearings are easily machined on standard lathes if proper support
+is provided to prevent deformation and cracking.<br>
+Remember
+that Vesconite should not be clamped like a metal, but should be
+clamped gently and with care to avoid distortion.<br>
+Allow
+50 mm (2&quot;) extra length for holding and parting the bearing.</FONT>
+</P>
+<P STYLE="margin-bottom: 0in">&nbsp;
+</P>
+<table border="0" cellspacing="0" cellpadding="5" width="600">
+  <tr>
+    <td width="448" valign="top"><B><font face="Arial" size="3" color="#000086">Step
+1</font></B><font face="Arial" size="3"><SPAN STYLE="font-weight: medium">&nbsp;
+Set
+the bearing in the chuck. First face one end of the bearing square.
+</SPAN>This helps with alignment. To prevent deformation and
+cracking, it is important to use an internal support disc machined to
+size. This disc may be machined from steel, wood, particle board or
+plywood about 30mm (1&frac14;&quot;) thick.</font></td>
+    <td width="198"><B><font face="Arial" size="3" color="#000086"><img border="0" src="images/XL1.gif" align="right" width="193" height="132"></font></B></td>
+  </tr>
+  <tr>
+    <td width="448" valign="top"><B><font face="Arial" size="3" color="#000086">The
+jaw clamping pressure should not be excessive but only enough to
+secure the bearing.</font></B></td>
+    <td width="198"><img border="0" src="images/Disc1.gif" width="80" height="132"></td>
+  </tr>
+  <tr>
+    <td width="448" valign="top"><B><font face="Arial" size="3" color="#000086">Step
+2</font></B><font face="Arial" size="3">&nbsp; Switch bearing around, align and face
+the other end. Once again the internal support is required.</font>
+    </td>
+    <td width="198"><img border="0" src="images/XL2.gif" width="181" height="151"></td>
+  </tr>
+  <tr>
+    <td width="448" valign="top"><B><font face="Arial" size="3" color="#000086">Step
+3</font></B><SPAN STYLE="font-weight: medium"><font face="Arial" size="3">&nbsp;
+Machine
+the outside diameter of the bearing. Maximum cut depth is 5 mm. Allow
+bearing to cool before taking final cut. Final cut to be no more than
+2 mm deep.</font></SPAN>
+    </td>
+    <td width="198"><img border="0" src="images/XL3.gif" width="198" height="151"></td>
+  </tr>
+  <tr>
+    <td width="448" valign="top"><B><font face="Arial" size="3" color="#000086">Step
+4</font></B><font face="Arial" size="3">&nbsp;
+Machine the inside diameter without
+removing the bearing from the chuck, and with the support disc in
+place. Ensure that there is not a large buildup of shavings on the
+tool. Maximum cut depth is 5 mm. Allow bearing to cool before taking
+final cut. Final cut to be no more than 2 mm deep.</font></td>
+    <td width="198"><img border="0" src="images/XL4.gif" width="189" height="170"></td>
+  </tr>
+  <tr>
+    <td width="448" valign="top">
+<P STYLE="margin-bottom: 0in; line-height: 100%"><B><font face="Arial" size="3" color="#000086">Step
+5</font></B><font face="Arial" size="3">&nbsp;
+Face the bearing to the required
+length taking care that the bearing does not fall.</font>
+</P>
+    </td>
+    <td width="198"><img border="0" src="images/XL5.gif" width="161" height="151"></td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in; line-height: 100%">&nbsp;</P>
+<P STYLE="margin-bottom: 0in; text-decoration: none"><B><FONT size=3 face="Arial" color="#000086">Please
+refer to the <U><a href="../../charts/safety_data.htm">Material Safety Data Sheet</a></U>
+for Vesconite for material safety precautions.</FONT></B></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial"><a name="Drilling solid rod"><font color="#000086">Drilling
+solid rod</font></a></FONT></B><FONT size=3 face="Arial"><br>
+Drilling
+a large diameter Vesconite rod</FONT></P>
+<ul>
+  <li>
+    <p STYLE="margin-bottom: 0in"><font face="Arial" size="3">Use
+	high speed twist drills</font></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><font face="Arial" size="3">Drill
+	a pilot hole of &plusmn;15mm initially</font></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><SPAN STYLE="font-weight: medium"><FONT COLOR="#000000" face="Arial" size="3">Cooling
+	is very important. Use cutting fluid or water. This is one of the
+	biggest reasons for failures.</FONT></SPAN></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><font face="Arial" size="3">It
+	is very important to remove the shavings when drilling. It is best
+	to regularly withdraw the drill and remove shavings, and then only
+	continue with drilling.</font></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><FONT size=3 face="Arial">Once the 15mm hole is
+	achieved, machine to the required inside diameter using a boring bar
+	on a lathe.&#160;Do NOT use a larger drill, this could lead to
+	cracking.</FONT></li>
+</ul>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="Sawing">Sawing</a></FONT></B><FONT size=3 face="Arial"><br>
+Use
+band saws and circular saws for Vesconite. If possible use saws with
+offset teeth to minimize heat build up and blocking of the saw.</FONT></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086">Band saw:</FONT></B><FONT size=3 face="Arial"><br>
+Tooth
+pitch	3-5 mm<br>
+Saw
+speed	200-500 m/min</FONT></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086">Circular
+saw</FONT></B><FONT size=3 face="Arial"><br>
+Tooth
+pitch	8-12 mm<br>
+Saw
+speed 	500-1500 m/min.</FONT></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="Milling">Milling</a></FONT></B><FONT size=3 face="Arial"><br>
+Use
+single point tungsten carbide tipped fly cutters or alternatively
+staggered tooth cutters.</FONT>
+</P>
+<P STYLE="margin-left: 0.49in; margin-bottom: 0in"><FONT size=3 face="Arial">Cutting
+Speed		500 m/min<br>
+Feed
+rate			0.1 &#150; 0.5 mm/rev<br>
+Tool
+relief angle		5&deg; to 10&deg;<br>
+Tool
+rake angle		0&deg; to 5&deg;</FONT></P>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="1">Updated Jan 25 2002</font>
+</P>
+<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<div align="center">
+  <center>
+  <table border="0" cellspacing="1" cellpadding="2" width="570">
+    <tr>
+      <td width="4">
+        <p align="center"><a href="../../index.htm"><img border="0" src="../../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></p>
+      </td>
+      <td width="556">
+        <p align="center"><font face="Arial" size="2"><font color="#000000">
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
+e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</a></font>
+      </td>
+    </tr>
+    <tr>
+      <td width="528" colspan="2"><p align="center"><font face="Arial" size="2"><a href="../../index.htm">Home</a><font color="#000080">&nbsp;
+        | &nbsp;</font><a href="../../vesco/contact.htm">Contact us</a> &nbsp;<font color="#000080">
+        |</font>&nbsp; <a href="../../vesco/site.htm">Site map</a>&nbsp;<font color="#000080">
+        |&nbsp; <a href="../../vesco/site_search.htm">Search</a>&nbsp;
+        |&nbsp;&nbsp;</font><a href="../../enquiry.htm">Enquiry
+        form</a><font color="#000080">&nbsp;&nbsp; |&nbsp; <a href="../../footer_links/copyright.htm">Copyright</a>&nbsp;
+        |&nbsp; <a href="../../footer_links/privacy.htm">Privacy</a></font></font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial"><font color="#FF0000">Feedback</font>
+        is appreciated!&nbsp; Please e-mail the <a href="mailto:jm@vescoplastics.com">webmaster</a></font></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font face="Arial" color="#FF0000" size="1">UK toll
+        free 0800 731 9745.&nbsp; USA toll
+        free (7-5 EST) 1-866-635-7596.&nbsp; Linea gratuita desde Chile 800 104 646<br>
+        &nbsp; Rest of world +2711 616 44 44. South
+        Africa (011) 616 11 11</font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial">All Rights Reserved �
+        1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../../footer_links/warranty.htm">Warranty
+        disclaimer</a></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p>&nbsp;</p>
+
+</td></tr><!--msnavigation--></table></BODY>
+</HTML>

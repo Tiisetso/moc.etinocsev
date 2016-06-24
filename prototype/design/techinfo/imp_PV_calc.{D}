@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+	<TITLE>Imperial PV calculations for Vesconite design</TITLE>
+    <STYLE>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+	-->
+	</STYLE>
+    <meta name="Microsoft Border" content="b">
+</HEAD>
+<BODY stylesrc="../../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<table border="1" width="92%" bordercolor="#000086" cellspacing="0" cellpadding="2">
+  <tr>
+    <td width="100%">
+      <p align="center"><B><font face="Arial" size="2"><a href="../../index.htm">vesconite.com</a><font color="#FF0000">&nbsp;
+      </font><font face="Arial" size="2" color="#000086">&nbsp;&gt;&nbsp; &nbsp;&nbsp;<a href="techinfo_links.htm">Design
+      technical information</a> &gt;&nbsp;&nbsp;
+      Imperial PV calculations&nbsp;</font></font></B></td>
+  </tr>
+</table>
+<table border="0" width="89%">
+  <tr>
+    <td width="70%"><b><font face="Arial" color="#000086" size="2">&nbsp;&nbsp;</font></b></td>
+    <td width="30%"></td>
+  </tr>
+  <tr>
+    <td width="70%"><B><font face="Arial" color="#000086" size="5">Imperial PV
+      calculations</font></B></td>
+    <td width="30%">
+<P STYLE="margin-bottom: 0in; text-decoration: none" align="right"><B><font face="Arial" color="#000086" size="3"><a href="metric_PV_calc.htm"> 			<U>Metric
+calculations</U></a></font></B></P>
+    </td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3">All
+plain bearing materials have limits in their ability to sustain a
+given loading at a particular speed. This is known as the <b><font color="#000086"> pressure x
+velocity </font></b> or <font color="#000086"><b> PV</b></font> limit. The heat buildup that limits the PV is
+influenced by a number of factors including:</font>
+</P>
+<table border="0" width="102%">
+  <tr>
+    <td width="61%">
+<ul>
+  <li>
+    <p STYLE="margin-bottom: 0in"><font face="Arial" size="3">Coefficient
+	of friction between the bearing and the shaft</font></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><font face="Arial" size="3">Loading
+	of surface, expressed as P</font></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><font face="Arial" size="3">Sliding
+	speed, expressed as V</font></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><font face="Arial" size="3">Ability
+	to dissipate the heat</font></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><font face="Arial" size="3">Lubrication
+	and cooling available</font></li>
+  <li>
+    <p STYLE="margin-bottom: 0in"><font face="Arial" size="3">Dry,
+	wet or immersed application</font></li>
+</ul>
+    </td>
+    <td width="41%"><font face="Arial" size="3"><img border="0" src="images/PV.gif" align="right" width="255" height="180"></font></td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3">Vesconite
+and Vesconite Hilube are internally lubricated and have low friction
+coefficients. These materials are also polymers, and as such cannot
+dissipate the heat as easily as metals.<br>
+The
+following equations apply:<BR>
+&nbsp;&nbsp;</font></P>
+<table border="0" width="100%" cellpadding="4" cellspacing="0">
+  <tr>
+    <td width="19%" rowspan="2">
+      <p align="left"><B><FONT color="#008000" face="Arial" size="3">Loading
+(P) =</FONT></B></td>
+    <td width="81%"><B><U><FONT color="#008000" face="Arial" size="3">mass supported per bearing (lbs)</FONT></U></B></td>
+  </tr>
+  <tr>
+    <td width="81%">
+<P STYLE="margin-bottom: 0in"><B>
+ <FONT color="#008000" face="Arial" size="3">
+ shaft diameter (inches) x bearing length (inches)</FONT></B></P>
+    </td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3">The load <font color="#008000"><b>
+(P)</b></font> is in Pounds per square inch (Psi)<br>
+The
+recommended design loading for general applications is 4000 Psi for
+negligible sliding speeds.<br>
+&nbsp;&nbsp;
+</font></P>
+<table border="0" width="86%" cellpadding="4" cellspacing="0">
+  <tr>
+    <td width="31%" rowspan="2">
+      <p align="left"><B><FONT color="#008000" face="Arial" size="3">Surface
+speed (V) =</FONT></B></td>
+    <td width="69%" valign="baseline"><B><U><FONT color="#008000" face="Arial" size="3">RPM x 3.14 x shaft diameter (inches)</FONT></U></B></td>
+  </tr>
+  <tr>
+    <td width="69%">
+<P STYLE="margin-bottom: 0in" align="left"><B>					<FONT color="#008000" face="Arial" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+12</FONT></B></P>
+    </td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3">Surface
+speed <b><font color="#008000"> (V) </font></b> is given as feet per minute.<br>
+If there
+is negligible or no load, the surface speed is limited to 1000 fpm in
+unlubricated conditions. Higher surface speeds are acceptable when
+lubricated or immersed in water.</font></P>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3">PV is
+the combination of the load (P) in Psi and the speed (V) in fpm.<br>
+The
+units of<font color="#000086"> <B>PV</B> </font> are therefore Psi.fpm<br>
+The
+level of lubrication that is required is determined by the<font color="#000086"> <B>PV</B></font>.
+This lubrication is required to dissipate the heat build-up and to
+reduce the friction coefficient.</font></P>
+<P STYLE="margin-bottom: 0in">&nbsp;
+</P>
+<div align="center">
+  <center>
+<TABLE width=582 BORDER=1 CELLPADDING=0 CELLSPACING=0 bordercolor="#FFCCCC" bgcolor="#FFECEC">
+	<COL WIDTH=55*>
+	<COL WIDTH=201*>
+	<TR VALIGN=TOP>
+		<TD WIDTH=121>
+			<P><B><font face="Arial" size="3" color="#000086">PV &lt; 2500</font></B></P>
+		</TD>
+		<TD WIDTH=455>
+			<P STYLE="font-weight: medium"><font face="Arial" size="3">No
+			lubrication is required although lubrication aids a long life.</font></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=121>
+			<P><B><font face="Arial" size="3" color="#000086">PV &lt; 5000</font></B></P>
+		</TD>
+		<TD WIDTH=455>
+			<P STYLE="font-weight: medium"><font face="Arial" size="3">Initial
+			lubrication on installation of the bearing</font></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=121>
+			<P><B><font face="Arial" size="3" color="#000086">PV &lt; 10 000</font></B></P>
+		</TD>
+		<TD WIDTH=455>
+			<P STYLE="font-weight: medium"><font face="Arial" size="3">Regular
+			lubrication is required</font></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=121>
+			<P><B><font face="Arial" size="3" color="#000086">PV &lt; 20 000</font></B></P>
+		</TD>
+		<TD WIDTH=455>
+			<P STYLE="font-weight: medium"><font face="Arial" size="3">Circulating
+			oil lubrication is required</font></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=121>
+			<P><B><font face="Arial" size="3" color="#000086">PV &gt; 100 000</font></B></P>
+		</TD>
+		<TD WIDTH=455>
+			<P STYLE="font-weight: medium"><font face="Arial" size="3">Bearing
+			must be immersed in water</font></P>
+		</TD>
+	</TR>
+</TABLE>
+  </center>
+</div>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3">Vesconite
+can be easily lubricated by grease, oil, water and certain fluids.<br>
+Where
+the application has a PV higher than 10 Mpa.m/min, please contact
+VescoPlastics.<br>
+While
+many applications do not require lubrication, lubrication is useful
+as it promotes extra-long life. Even once off initial lubrication at
+installation gives a better wear life. Simple <FONT COLOR="#0047ff"><a href="bearing_groove.htm">grooves</a></FONT>
+further enhance life substantially.</font></P>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="1">Updated&nbsp; Jan 25 2002</font></P>
+<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<div align="center">
+  <center>
+  <table border="0" cellspacing="1" cellpadding="2" width="570">
+    <tr>
+      <td width="4">
+        <p align="center"><a href="../../index.htm"><img border="0" src="../../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></p>
+      </td>
+      <td width="556">
+        <p align="center"><font face="Arial" size="2"><font color="#000000">
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
+e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</a></font>
+      </td>
+    </tr>
+    <tr>
+      <td width="528" colspan="2"><p align="center"><font face="Arial" size="2"><a href="../../index.htm">Home</a><font color="#000080">&nbsp;
+        | &nbsp;</font><a href="../../vesco/contact.htm">Contact us</a> &nbsp;<font color="#000080">
+        |</font>&nbsp; <a href="../../vesco/site.htm">Site map</a>&nbsp;<font color="#000080">
+        |&nbsp; <a href="../../vesco/site_search.htm">Search</a>&nbsp;
+        |&nbsp;&nbsp;</font><a href="../../enquiry.htm">Enquiry
+        form</a><font color="#000080">&nbsp;&nbsp; |&nbsp; <a href="../../footer_links/copyright.htm">Copyright</a>&nbsp;
+        |&nbsp; <a href="../../footer_links/privacy.htm">Privacy</a></font></font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial"><font color="#FF0000">Feedback</font>
+        is appreciated!&nbsp; Please e-mail the <a href="mailto:jm@vescoplastics.com">webmaster</a></font></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font face="Arial" color="#FF0000" size="1">UK toll
+        free 0800 731 9745.&nbsp; USA toll
+        free (7-5 EST) 1-866-635-7596.&nbsp; Linea gratuita desde Chile 800 104 646<br>
+        &nbsp; Rest of world +2711 616 44 44. South
+        Africa (011) 616 11 11</font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial">All Rights Reserved �
+        1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../../footer_links/warranty.htm">Warranty
+        disclaimer</a></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p>&nbsp;</p>
+
+</td></tr><!--msnavigation--></table></BODY>
+</HTML>

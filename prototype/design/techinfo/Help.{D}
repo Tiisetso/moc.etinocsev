@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+	<TITLE>HELP in using Design-a-Bearing calculator for Vesconite</TITLE>
+    <STYLE>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+	-->
+	</STYLE>
+    <meta name="Microsoft Border" content="b">
+</HEAD>
+<BODY stylesrc="../../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<table border="1" width="71%" bordercolor="#000086" cellspacing="0" cellpadding="2">
+  <tr>
+    <td width="100%">
+      <p align="center"><b><font face="Arial" size="2"><a href="../../index.htm">vesconite.com</a>&nbsp;<font color="#FF0000">
+      </font><font face="Arial" size="2" color="#000086">&nbsp;&gt;&nbsp; <a href="techinfo_links.htm">Design
+      technical information</a>&nbsp;&nbsp; &gt;&nbsp;&nbsp;Help</font></font></b></td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in; text-decoration: none; page-break-before: always"><B><font face="Arial" size="5" color="#000086">HELP
+in using Design-a-Bearing calculator<br>
+</font></B><FONT size=3 face="Arial">This
+Vesconite Design-a-Bearing calculator is a technical aid for correct
+bearing design. Frequently, bearing failures are caused by bad design
+rather than bad materials.<br>
+The
+calculator assists customers in assessing the suitability of
+Vesconite as a bearing material for the application.&nbsp; It will also assist
+in designing&nbsp; the
+bearing sizes to suit Vesconite in the operating conditions.</FONT></P>
+<P STYLE="margin-bottom: 0in"><font size="3"><B><FONT face="Arial" color="#000086">Step
+1<BR></FONT></B><FONT face="Arial">Fill in the information in the appropriate fields
+using TAB, or your mouse to move from one field to the next. Fill in
+both the sizes of the housing, shaft and bearing length as well as
+the operational conditions of loading, speeds and operational
+temperature where this information is avaiable.</FONT></font></P>
+<P STYLE="margin-bottom: 0in"><font size="3"><B><FONT face="Arial" color="#000086">Step
+2<BR></FONT></B><FONT face="Arial">Press the CALCULATE button</FONT></font></P>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3"><B><font color="#000086">Step
+3<BR></font></B>View the results<BR>This will give the following:<BR>An
+assesment of the application in terms of the PV (combination of load
+and speed). This gives and indication of the lubrication level that
+would be required to ensure a long life.<BR>The bearing sizes with
+proposed machining tolernaces for Vesconite.<BR>An engineering
+drawing is given for manufacturing. This is given together with a
+chart that will adjust the machined bearing sizes to suit the
+temperature of machining.<BR><BR>
+</font><font size="3"><B><FONT face="Arial" color="#000086">Step
+4<BR></FONT></B><FONT face="Arial">If you require VescoPlastics to assess the
+application or provide you with a quotation for the material required
+for manufacture or the finished parts, then complete the information
+at the end of the form and press <font color="#000086"><b> SUBMIT</b></font> or print and fax to
+VescoPlastics for a prompt service.</FONT></font>
+</P>
+<P STYLE="margin-bottom: 0in"><font size="3"><B><FONT face="Arial" color="#000086">Useful
+links<BR></FONT></B><FONT face="Arial">The <a href="../bush/entry_alldesigns2.htm"> Design-a-Bearing
+online calculator</a> gives a number of links that
+are helpful if you wish to design your own bearing or understand the
+design parameters for Vesconite.</FONT></font></P>
+<P STYLE="margin-bottom: 0in">&nbsp;</P>
+<table border="1" bordercolor="#000086" cellspacing="0" cellpadding="2" width="605">
+  <tr>
+    <td width="186" bgcolor="#E5E5E5">&nbsp;</td>
+    <td width="207" colspan="2" bgcolor="#E5E5E5">
+      <p ALIGN="CENTER"><b><font face="Arial" size="3" color="#000086">Industrial
+      and Pumps</font></b></p>
+    </td>
+    <td width="192" bgcolor="#E5E5E5">
+      <p align="center"><b><font face="Arial" size="3" color="#000086">Marine</font></b></td>
+  </tr>
+  <tr>
+    <td width="186" bgcolor="#FFFFFF"><font face="Arial" size="3" color="#000086"><b>Size
+      calculations</b></font></td>
+    <td width="75" bgcolor="#FFE6E6" align="center"><font face="Arial" size="3"><a href="metric_size_calc.htm">Metric</a></font></td>
+    <td width="126" bgcolor="#D2FFD2" align="center"><font face="Arial" size="3"><a href="imp_size_calc.htm">Imperial</a></font></td>
+    <td width="192" bgcolor="#FFE6E6" align="center"><font face="Arial" size="3"><a href="size_calc_marine.htm">Metric
+      / Imperial</a></font></td>
+  </tr>
+  <tr>
+    <td width="186" bgcolor="#FFFFFF"><font face="Arial" size="3" color="#000086"><b>PV
+      calculations</b></font></td>
+    <td width="75" bgcolor="#FFE6E6" align="center"><font face="Arial" size="3"><a href="metric_PV_calc.htm">Metric</a></font></td>
+    <td width="126" bgcolor="#D2FFD2" align="center"><font face="Arial" size="3"><a href="imp_PV_calc.htm">Imperial</a></font></td>
+    <td width="192" bgcolor="#FFE6E6" align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="186" bgcolor="#FFFFFF"><font face="Arial" size="3" color="#000086"><b>Machining
+      tolerances</b></font></td>
+    <td width="75" bgcolor="#FFE6E6" align="center"><font face="Arial" size="3"><a href="metric_size_calc.htm#Machining tolerances">Metric</a></font></td>
+    <td width="126" bgcolor="#D2FFD2" align="center"><font face="Arial" size="3"><a href="imp_size_calc.htm#Machining tolerances">Imperial</a></font></td>
+    <td width="192" bgcolor="#FFE6E6" align="center"><font face="Arial" size="3"><a href="size_calc_marine.htm#Machining tolerances">Metric
+      / Imperial</a></font></td>
+  </tr>
+  <tr>
+    <td width="186" bgcolor="#FFFFFF"><font face="Arial" size="3" color="#000086"><b>Temperature
+      calculations and limits</b></font></td>
+    <td width="75" bgcolor="#FFE6E6" align="center"><font face="Arial" size="3"><a href="metric_size_calc.htm#Temperature limits">Metric</a></font></td>
+    <td width="126" bgcolor="#D2FFD2" align="center"><font face="Arial" size="3"><a href="imp_size_calc.htm#Temperature limits">Imperial</a></font></td>
+    <td width="192" bgcolor="#FFE6E6" align="center">&nbsp;</td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in"><font size="3" face="Arial" COLOR="#0047ff"><a href="bearing_ret.htm">Bearing
+retention.</a></font><font size="3" face="Arial"><font color="#0047ff">&nbsp; </font>Keep
+your Vesconite bearing in place during operation.<br>
+</font><font size="3" face="Arial" COLOR="#0047ff"><a href="bearing_groove.htm">Bearing
+groove design.</a>&nbsp; </font><font size="3" face="Arial">Appropriate groove
+design proposals.<br>
+</font><font size="3" face="Arial" COLOR="#0047ff"><a href="../../charts/prodlist.htm">Production
+sizes.</a>&nbsp;&nbsp;</font><font size="3" face="Arial"> Vesconite stock range.<br>
+</font><font size="3" face="Arial" COLOR="#0047ff"><a href="press_freeze_fit.htm">Press
+and freeze fitting</a></font><font size="3" face="Arial"><font color="#0047ff">.&nbsp;
+</font>Install your Vesconite bearing.<br>
+</font><font size="3" face="Arial" COLOR="#0047ff"><a href="mach_guides.htm">Machining
+guidelines.</a>&nbsp; </font><font size="3" face="Arial">How to machine
+Vesconite quickly and correctly.<br>
+</font><font size="3" face="Arial" COLOR="#0047ff"><a href="tech_tips.htm">Housing
+and shaft.</a>&nbsp; </font><font face="Arial" size="3">Materials, tolerances
+and surface finishes for mating surfaces.<br>
+</font><font size="3" face="Arial" COLOR="#0047ff"><a href="../../charts/safety_data.htm">Material
+safety data sheet (MSDS).&nbsp;</a> </font><font face="Arial" size="3">Safety
+procedures and specifications for machining Vesconite bearings.</font></P>
+<P STYLE="margin-bottom: 0in">&nbsp;</P>
+<div align="center">
+  <center>
+  <table border="0" width="70%" cellspacing="0" cellpadding="5" height="214">
+    <tr>
+      <td width="100%" colspan="3" align="center" height="24"><font size="4" face="Arial" color="#000080"><b>Order
+        free Design Manuals</b></font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" height="150"><a href="../../request.htm"><img border="0" src="../../images/fb400_small.jpg" width="100" height="137" alt="Free Vesconite Design Manual"></a></td>
+      <td width="33%" align="center" height="150"><a href="../../vesco/pump_design.htm"><img border="0" src="../../images/pumpman_small.jpg" width="100" height="119" alt="Free Pump Design Manual"></a></td>
+      <td width="34%" align="center" height="150"><a href="../../vesco/marine_design.htm"><img border="0" src="../../images/marman_small.jpg" width="100" height="148" alt="Free Marine Design Manual"></a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" height="1"><font face="Arial" size="3"><b><a href="../../request.htm">Industrial</a></b></font></td>
+      <td width="33%" align="center" height="1"><font face="Arial" size="3"><b><a href="../../vesco/pump_design.htm">Pump</a></b></font></td>
+      <td width="34%" align="center" height="1"><font face="Arial" size="3"><b><a href="../../vesco/marine_design.htm">Marine</a></b></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3"><BR>
+</font><font face="Arial" size="1">Updated&nbsp; Jan 25 2002</font>
+</P>
+<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<div align="center">
+  <center>
+  <table border="0" cellspacing="1" cellpadding="2" width="570">
+    <tr>
+      <td width="4">
+        <p align="center"><a href="../../index.htm"><img border="0" src="../../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></p>
+      </td>
+      <td width="556">
+        <p align="center"><font face="Arial" size="2"><font color="#000000">
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
+e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</a></font>
+      </td>
+    </tr>
+    <tr>
+      <td width="528" colspan="2"><p align="center"><font face="Arial" size="2"><a href="../../index.htm">Home</a><font color="#000080">&nbsp;
+        | &nbsp;</font><a href="../../vesco/contact.htm">Contact us</a> &nbsp;<font color="#000080">
+        |</font>&nbsp; <a href="../../vesco/site.htm">Site map</a>&nbsp;<font color="#000080">
+        |&nbsp; <a href="../../vesco/site_search.htm">Search</a>&nbsp;
+        |&nbsp;&nbsp;</font><a href="../../enquiry.htm">Enquiry
+        form</a><font color="#000080">&nbsp;&nbsp; |&nbsp; <a href="../../footer_links/copyright.htm">Copyright</a>&nbsp;
+        |&nbsp; <a href="../../footer_links/privacy.htm">Privacy</a></font></font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial"><font color="#FF0000">Feedback</font>
+        is appreciated!&nbsp; Please e-mail the <a href="mailto:jm@vescoplastics.com">webmaster</a></font></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font face="Arial" color="#FF0000" size="1">UK toll
+        free 0800 731 9745.&nbsp; USA toll
+        free (7-5 EST) 1-866-635-7596.&nbsp; Linea gratuita desde Chile 800 104 646<br>
+        &nbsp; Rest of world +2711 616 44 44. South
+        Africa (011) 616 11 11</font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial">All Rights Reserved �
+        1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../../footer_links/warranty.htm">Warranty
+        disclaimer</a></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p>&nbsp;</p>
+
+</td></tr><!--msnavigation--></table></BODY>
+</HTML>

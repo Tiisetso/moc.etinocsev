@@ -1,0 +1,611 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Vesconite Safety Data Sheet</title>
+<meta name="Microsoft Border" content="b">
+</head>
+
+<body stylesrc="../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000">
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+
+<div align="center">
+  <center>
+  <table border="1" cellspacing="0" bordercolor="#000086" cellpadding="0" width="433">
+    <tr>
+      <td width="429">
+        <p align="center"><font face="Arial" size="2" color="#FF0000"><b><a href="../index.htm">vesconite.com</a></b></font>&nbsp;&nbsp;<font size="2">
+        <font FACE="Wingdings">�</font>&nbsp;&nbsp;&nbsp;</font> <b><font face="Arial" size="2" color="#FF0000"><a href="../lhs_headings/useful_info.htm">Useful
+        Info</a>&nbsp;&nbsp;</font><font face="Arial" size="2" color="#000086"> <font FACE="Wingdings">�</font>&nbsp;&nbsp;
+        </font><font color="#000080" size="2" face="Arial">Safety Data Sheet</font></b></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p align="center"><b><font face="Arial" size="5" color="#000086">MATERIAL SAFETY
+DATA SHEET<br>
+VESCONITE</font></b></p>
+<div align="center">
+  <center>
+  <table CELLSPACING="0" BORDER="1" CELLPADDING="0" WIDTH="600">
+    <tr>
+      <td WIDTH="100%" colspan="2" bgcolor="#DEDEDE">
+        <p align="center"><b><font face="Arial" size="3" color="#000086">Product
+        Information</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%"><font face="Arial" size="3">Product identifier:<br>
+        Product use:</font></td>
+      <td WIDTH="50%"><font face="Arial" size="3">Vesconite<br>
+        Plain bearing and bushing material</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%"><font face="Arial" size="3" color="#000086">Manufacturer
+        name and address</font></td>
+      <td WIDTH="50%"><font face="Arial" size="3">Virginia Engineering Services
+        (Pty) Ltd</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p>&nbsp;</td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">P O Box 47<br>
+        Virginia<br>
+        South Africa<br>
+        9430<br>
+        Tel no. +27 (57) 212 0000<br>
+        Fax no. +27 (57) 212 3355</font></p>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+<b></b>
+<div align="center">
+  <center>
+  <table CELLSPACING="0" BORDER="1" CELLPADDING="2" WIDTH="600">
+    <tr>
+      <td WIDTH="100%" colspan="2"><b><font face="Arial" size="3" color="#000086">&nbsp;&nbsp;&nbsp;</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="100%" colspan="2" bgcolor="#DEDEDE">
+        <p align="center"><b><font face="Arial" size="3" color="#000086">Hazards
+        Identification</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="100%" colspan="2"><font face="Arial" size="3">Ingredients are
+        not considered a health hazard under current legislation</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="100%" colspan="2"><b><font face="Arial" size="3" color="#000086">&nbsp;&nbsp;&nbsp;</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="100%" colspan="2" bgcolor="#DEDEDE"><b>
+        <p align="center"><font face="Arial" size="3" color="#000086">Physical
+        Data</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Physical state:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Solid, non metallic</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Appearance:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Grey black</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Odour:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">None</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Odour threshold:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Not Applicable</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Specific gravity:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">1.38</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Vapour pressure:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Not Applicable</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Vapour density:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Evaporation rate:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Melting point:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">260<sup>o</sup>C / 500<sup>o</sup>F</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Freezing point:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">pH:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Solubility in water:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Non-soluble</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Percent volatiles:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">None</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table CELLSPACING="0" BORDER="1" CELLPADDING="0" WIDTH="600">
+    <tr>
+      <td WIDTH="100%" colspan="2"><font face="Arial" size="3">&nbsp;&nbsp;&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="100%" colspan="2" bgcolor="#DEDEDE"><b>
+        <p align="center"><font face="Arial" size="3" color="#000086">Handling
+        and Storage</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">General information:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">No special protective measures required</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Precautions against fire and</font> <font face="Arial" size="3">explosion:</font></p>
+      </td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">No special precautions against fire and
+        explosion required</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table CELLSPACING="0" BORDER="1" CELLPADDING="2" WIDTH="600">
+    <tr>
+      <td WIDTH="100%" colspan="2"><b><font face="Arial" size="3" color="#000086">&nbsp;&nbsp;&nbsp;</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="100%" colspan="2" bgcolor="#DEDEDE"><b>
+        <p align="center"><font face="Arial" size="3" color="#000086">Fire and
+        Emergency Response Data</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Conditions of flammability:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Can be made to burn with difficulty by
+        persistent application of a flame</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Flashpoint:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Not Applicable</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Upper flammable limit:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Lower flammable limit:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Auto-ignition temperature:</font></td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">510<sup>o</sup>C</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Explosion data sensitivity</font> <font face="Arial" size="3">to
+        mechanical impact:<br>
+        to static discharge:</font></p>
+      </td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">N/A</font></p>
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Extinguishing media:</font></p>
+      </td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">All generally used extinguishing media
+        may be used: water; dry chemical; foam; carbon dioxide or sand</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Extinguishing media which must</font> <font face="Arial" size="3">not
+        be used for safety reasons:</font></p>
+      </td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Not known according to previous
+        experience.</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Special procedures:</font></p>
+      </td>
+      <td WIDTH="50%">
+        <p><font face="Arial" size="3">Evacuate all non emergency personnel to a
+        safe area. Fire fighters should use self contained breathing apparatus.
+        Avoid breathing smoke, fumes and decomposition products. Use water spray
+        to quench smouldering materials. Burning produces intense heat, toxic
+        gases and dense smoke.</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table CELLSPACING="0" BORDER="1" CELLPADDING="2" WIDTH="600">
+    <tr>
+      <td WIDTH="100%" colspan="2"><font face="Arial" size="3">&nbsp;&nbsp;&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="100%" colspan="2" bgcolor="#DEDEDE"><b>
+        <p align="center"><font size="3" face="Arial" color="#000086">Reactivity
+        Data</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="43%">
+        <p><font face="Arial" size="3">Stability:</font></p>
+      </td>
+      <td WIDTH="57%">
+        <p><font face="Arial" size="3">Stable, no known conditions to avoid. If
+        stored and handled in accordance with standard industrial practices, no
+        hazardous reactions are known.</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="43%">
+        <p><font face="Arial" size="3">Incompatibility:</font></td>
+      <td WIDTH="57%">
+        <p><font face="Arial" size="3">Not Applicable</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="43%">
+        <p><font face="Arial" size="3">Hazardous decomposition products:</font></p>
+      </td>
+      <td WIDTH="57%">
+        <p><font face="Arial" size="3">Decomposition begins above 250<sup>o</sup>C,
+        but at this temperature fumes are innocuous. Above 300<sup>o</sup>C more
+        complex breakdown occurs and the resulting fumes are irritants. Carbon
+        monoxide (CO), carbon dioxide (CO<sub>2</sub>) and low molecular weight
+        compounds under certain conditions.</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="43%">
+        <p><font face="Arial" size="3">Hazardous polymerisation:</font></td>
+      <td WIDTH="57%">
+        <p><font face="Arial" size="3">Will not occur</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table CELLSPACING="0" BORDER="1" CELLPADDING="2" WIDTH="600">
+    <tr>
+      <td WIDTH="586" align="center" colspan="2"><font face="Arial" size="3" color="#000086">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="592" colspan="2" align="center" bgcolor="#DEDEDE"><b><font face="Arial" size="3" color="#000086">Toxicological
+        Properties</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Exposure limits:</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Skin contact:</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Skin absorption:</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Eye contact:</font></p>
+      </td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">In the form of shavings or dust only.
+        Abrasion hazard from machining or grinding</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Inhalation:</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">General information:</font></p>
+      </td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">According to present experience, the
+        material is physiologically compatible and is neither mutagenic,
+        carcinogenic or teratogenic.</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Accute toxicity:</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">No data known</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table CELLSPACING="0" BORDER="1" CELLPADDING="2" WIDTH="600">
+    <tr>
+      <td WIDTH="586" colspan="2"><font face="Arial" size="3">&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="592" colspan="2" bgcolor="#DEDEDE"><b>
+        <p align="center"><font face="Arial" size="3" color="#000086">Preventive
+        Measures</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Respiratory protection:</font></p>
+      </td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">No special precautions necessary. When
+        grinding use a dust mask, as material will produce a nuisance dust if no
+        coolant or extraction equipment is used</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Ventilation:</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">As required to avoid nuisance dust</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Long term EL (8 hrs):</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">No standard</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Protective gloves:</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Eye protection:</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">Protective glasses if grinding or
+        machining</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Other protective equipment:</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Handling precautions:</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Spills:</font></td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">N/A</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="251">
+        <p><font face="Arial" size="3">Waste disposal:</font></p>
+      </td>
+      <td WIDTH="335">
+        <p><font face="Arial" size="3">Dispose as solid waste according to local
+        laws</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table CELLSPACING="0" BORDER="1" CELLPADDING="2" WIDTH="600">
+    <tr>
+      <td WIDTH="100%" colspan="2"><font face="Arial" size="3">&nbsp;&nbsp;&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="100%" colspan="2" bgcolor="#DEDEDE"><b>
+        <p align="center"><font face="Arial" size="3" color="#000086">First Aid
+        Measures</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="20%">
+        <p><font face="Arial" size="3">Swallowing:</font></td>
+      <td WIDTH="80%">
+        <p><font face="Arial" size="3">No special measures necessary. Give water
+        to drink.</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="20%">
+        <p><font face="Arial" size="3">Skin:</font></p>
+      </td>
+      <td WIDTH="80%">
+        <p><font face="Arial" size="3">It is good personal hygiene practice to
+        wash hands after handling.</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="20%">
+        <p><font face="Arial" size="3">Inhalation:</font></td>
+      <td WIDTH="80%">
+        <p><font face="Arial" size="3">No special precautions are necessary.
+        Avoid inhalation of dust and decomposition products by use of adequate
+        ventilation. If coughing or other respiratory symptoms occur, the person
+        should seek fresh air and if they persist, see a physician.</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="20%">
+        <p><font face="Arial" size="3">Eyes:</font></p>
+      </td>
+      <td WIDTH="80%">
+        <p><font face="Arial" size="3">Flush or remove dust particles as with
+        any other non hazardous substances. Continue to rinse for at least 15
+        minutes and obtain medical attention in case of continuous irritation.</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table CELLSPACING="0" BORDER="1" CELLPADDING="0" WIDTH="600">
+    <tr>
+      <td WIDTH="594" colspan="2"><font face="Arial" size="3">&nbsp;&nbsp;&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="596" colspan="2" bgcolor="#DEDEDE"><b>
+        <p align="center"><font face="Arial" size="3" color="#000086">Management
+        Data</font></b></td>
+    </tr>
+    <tr>
+      <td WIDTH="258">
+        <p><font face="Arial" size="3">Prepared by:</font></td>
+      <td WIDTH="336">
+        <p><font face="Arial" size="3">Dr J-P Leger</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="258">
+        <p><font face="Arial" size="3">Telephone no.:</font></td>
+      <td WIDTH="336">
+        <p><font face="Arial" size="3">+27 (57) 212 0000</font></td>
+    </tr>
+    <tr>
+      <td WIDTH="258">
+        <p><font face="Arial" size="3">Preparation date:</font></td>
+      <td WIDTH="336">
+        <p><font face="Arial" size="3">12 April 2001</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p><font face="Arial" size="3">All information contained in this material safety
+data sheet has been prepared from information supplied by the primary chemical
+producers or suppliers to Virginia Engineering Services (Pty) Ltd. This
+information is supplied free of charge and is based on technical data believed
+to be correct and reliable. It is intended for the use of persons having
+technical skills at their own discretion.</font></p>
+<p><font face="Arial" size="3">Information contained herein is given with the
+understanding that those using it will satisfy themselves that their particular
+conditions of use present no health or safety hazards. Since conditions of use
+are outside the control of the manufacturer, the manufacturer and its agents
+make no warranties expressed or implied, and assume no liability in connection
+with any use of this information.</font></p>
+<p><font face="Arial" size="1">Updated Feb 26 2002</font> <!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<div align="center">
+  <center>
+  <table border="0" cellspacing="1" cellpadding="2" width="570">
+    <tr>
+      <td width="4">
+        <p align="center"><a href="../index.htm"><img border="0" src="../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></p>
+      </td>
+      <td width="556">
+        <p align="center"><font face="Arial" size="2"><font color="#000000">
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
+e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</a></font>
+      </td>
+    </tr>
+    <tr>
+      <td width="528" colspan="2"><p align="center"><font face="Arial" size="2"><a href="../index.htm">Home</a><font color="#000080">&nbsp;
+        | &nbsp;</font><a href="../vesco/contact.htm">Contact us</a> &nbsp;<font color="#000080">
+        |</font>&nbsp; <a href="../vesco/site.htm">Site map</a>&nbsp;<font color="#000080">
+        |&nbsp; <a href="../vesco/site_search.htm">Search</a>&nbsp;
+        |&nbsp;&nbsp;</font><a href="../enquiry.htm">Enquiry
+        form</a><font color="#000080">&nbsp;&nbsp; |&nbsp; <a href="../footer_links/copyright.htm">Copyright</a>&nbsp;
+        |&nbsp; <a href="../footer_links/privacy.htm">Privacy</a></font></font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial"><font color="#FF0000">Feedback</font>
+        is appreciated!&nbsp; Please e-mail the <a href="mailto:jm@vescoplastics.com">webmaster</a></font></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font face="Arial" color="#FF0000" size="1">UK toll
+        free 0800 731 9745.&nbsp; USA toll
+        free (7-5 EST) 1-866-635-7596.&nbsp; Linea gratuita desde Chile 800 104 646<br>
+        &nbsp; Rest of world +2711 616 44 44. South
+        Africa (011) 616 11 11</font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial">All Rights Reserved �
+        1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../footer_links/warranty.htm">Warranty
+        disclaimer</a></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p>&nbsp;</p>
+
+</td></tr><!--msnavigation--></table></body>
+
+</html>

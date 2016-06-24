@@ -1,0 +1,2005 @@
+<%@ Language=JavaScript%>
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta name="VI60_defaultClientScript" content="JavaScript">
+<meta name="Author" content="Joan Marran">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<script ID="clientEventHandlersJS" LANGUAGE="javascript">
+<!--
+
+disc = 0.7;
+T1price = 22.45;
+T2price = 26.36;
+T3aprice = 34.96;
+T3bprice = 34.96;
+T3cprice = 34.96;
+T4aprice = 36.80;
+T4bprice = 36.80;
+T5aprice = 26.36;
+T6price = 32.35;
+T5bprice = 26.36;
+T5cprice = 26.36;
+I1price = 26.36;
+I2price = 34.96;
+N1price = 29.68;
+N2aprice = 36.93;
+N2bprice = 36.93;
+F1price = 31.08;
+F2price = 33.55;
+R1price = 557.29;
+R2price = 1178.0;
+R3price = 1624.0;
+B1price = 25.43;
+B2price = 33.08;
+B3price = 58.10;
+B4price = 72.81;
+
+function calc_totals() {
+document.FrontPage_Form1.FinalTotal.value=parseFloat(document.FrontPage_Form1.Total1.value)+
+parseFloat(document.FrontPage_Form1.Total2.value)+parseFloat(document.FrontPage_Form1.Total3.value)+
+parseFloat(document.FrontPage_Form1.Total4.value)+parseFloat(document.FrontPage_Form1.Total5.value)+
+parseFloat(document.FrontPage_Form1.Total6.value)+parseFloat(document.FrontPage_Form1.Total7.value)+
+parseFloat(document.FrontPage_Form1.Total8.value)+parseFloat(document.FrontPage_Form1.Total9.value)+
+parseFloat(document.FrontPage_Form1.Total10.value)+parseFloat(document.FrontPage_Form1.Total11.value)+
+parseFloat(document.FrontPage_Form1.Total12.value)+parseFloat(document.FrontPage_Form1.Total13.value)+
+parseFloat(document.FrontPage_Form1.Total14.value)+parseFloat(document.FrontPage_Form1.Total15.value)+
+parseFloat(document.FrontPage_Form1.Total16.value)+parseFloat(document.FrontPage_Form1.Total17.value)+
+parseFloat(document.FrontPage_Form1.Total18.value)+parseFloat(document.FrontPage_Form1.Total20.value)+
+parseFloat(document.FrontPage_Form1.Total21.value)+parseFloat(document.FrontPage_Form1.Total22.value)+
+parseFloat(document.FrontPage_Form1.Total23.value)+parseFloat(document.FrontPage_Form1.Total24.value)+
+parseFloat(document.FrontPage_Form1.Total25.value)+parseFloat(document.FrontPage_Form1.Total26.value);
+}
+
+function T1_onchange() {
+document.FrontPage_Form1.Total1.value=(T1price*document.FrontPage_Form1.T1.value*disc);
+calc_totals();
+}
+
+function T2_onchange() {
+document.FrontPage_Form1.Total2.value=(T2price*document.FrontPage_Form1.T2.value*disc);
+calc_totals();
+}
+
+function T3a_onchange() {
+document.FrontPage_Form1.Total3.value=(T3aprice*document.FrontPage_Form1.T3a.value*disc);
+calc_totals();
+}
+
+function T3b_onchange() {
+document.FrontPage_Form1.Total4.value=(T3bprice*document.FrontPage_Form1.T3b.value*disc);
+calc_totals();
+}
+
+function T3c_onchange() {
+document.FrontPage_Form1.Total5.value=(T3cprice*document.FrontPage_Form1.T3c.value*disc);
+calc_totals();
+}
+
+function T4a_onchange() {
+document.FrontPage_Form1.Total6.value=(T4aprice*document.FrontPage_Form1.T4a.value*disc);
+calc_totals();
+}
+
+function T4b_onchange() {
+document.FrontPage_Form1.Total7.value=(T4bprice*document.FrontPage_Form1.T4b.value*disc);
+calc_totals();
+}
+
+function T5a_onchange() {
+document.FrontPage_Form1.Total8.value=(T5aprice*document.FrontPage_Form1.T5a.value*disc);
+calc_totals();
+}
+
+function T5b_onchange() {
+document.FrontPage_Form1.Total10.value=(T5bprice*document.FrontPage_Form1.T5b.value*disc);
+calc_totals();
+}
+
+function T5c_onchange() {
+document.FrontPage_Form1.Total11.value=(T5cprice*document.FrontPage_Form1.T5c.value*disc);
+calc_totals();
+}
+
+function T6_onchange() {
+document.FrontPage_Form1.Total9.value=(T6price*document.FrontPage_Form1.T6.value*disc);
+calc_totals();
+}
+
+function F1_onchange() {
+document.FrontPage_Form1.Total17.value=(F1price*document.FrontPage_Form1.F1.value*disc);
+calc_totals();
+}
+
+function F2_onchange() {
+document.FrontPage_Form1.Total18.value=(F2price*document.FrontPage_Form1.F2.value*disc);
+calc_totals();
+}
+
+function I1_onchange() {
+document.FrontPage_Form1.Total12.value=(I1price*document.FrontPage_Form1.I1.value*disc);
+calc_totals();
+}
+
+function I2_onchange() {
+document.FrontPage_Form1.Total13.value=(I2price*document.FrontPage_Form1.I2.value*disc);
+calc_totals();
+}
+
+function N1_onchange() {
+document.FrontPage_Form1.Total14.value=(N1price*document.FrontPage_Form1.N1.value*disc);
+calc_totals();
+}
+
+function N2a_onchange() {
+document.FrontPage_Form1.Total15.value=(N2aprice*document.FrontPage_Form1.N2a.value*disc);
+calc_totals();
+}
+
+function N2b_onchange() {
+document.FrontPage_Form1.Total16.value=(N2bprice*document.FrontPage_Form1.N2b.value*disc);
+calc_totals();
+}
+
+function R1_onchange() {
+document.FrontPage_Form1.Total20.value=(R1price*document.FrontPage_Form1.R1.value*disc);
+calc_totals();
+}
+
+function R2_onchange() {
+document.FrontPage_Form1.Total21.value=(R2price*document.FrontPage_Form1.R2.value*disc);
+calc_totals();
+}
+
+function R3_onchange() {
+document.FrontPage_Form1.Total22.value=(R3price*document.FrontPage_Form1.R3.value*disc);
+calc_totals();
+}
+
+function B1_onchange() {
+document.FrontPage_Form1.Total23.value=(B1price*document.FrontPage_Form1.B1.value*disc);
+calc_totals();
+}
+
+function B2Input_onchange() {
+document.FrontPage_Form1.Total24.value=(B2price*document.FrontPage_Form1.B2Input.value*disc);
+calc_totals();
+}
+
+function B3_onchange() {
+document.FrontPage_Form1.Total25.value=(B3price*document.FrontPage_Form1.B3.value*disc);
+calc_totals();
+}
+
+function B4_onchange() {
+document.FrontPage_Form1.Total26.value=(B4price*document.FrontPage_Form1.B4.value*disc);
+calc_totals();
+}
+
+
+
+//-->
+</script>
+
+<title>Orders: Vescoflex shackle bushes for 4x4's and 4x2's</title>
+
+
+<meta name="Microsoft Border" content="b">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+
+<body stylesrc="http://marran/vescoflex/Default.htm">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KCWDZ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCWDZ6');</script>
+<!-- End Google Tag Manager -->
+
+<!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+
+<p align="center"><a name="top"></a><font face="Arial" color="#FF0000" size="5"><strong>VESCOFLEX
+Orders</strong></font></p>
+
+<p align="left"><font face="Arial" size="3" color="#000000"><strong>Discount 30% for
+internet orders.&nbsp; </strong>The discount is incorporated into the calculations for
+each line total.&nbsp; The line total you see is the total you pay.</font></p>
+
+<p align="left"><font color="#0000FF"><strong><font face="Arial,Helvetica" size="3">VESCOFLEX
+Shackle Bushes</font><big> </big><font face="Arial,Helvetica">for 4 x 4's and 4 x 2's:</font>
+</strong><br>
+</font><font face="Arial,Helvetica">Customers please check physical sizes of bushes and
+total numbers required.</font> <br>
+<font face="Arial,Helvetica">The simplest is to measure the pin and housing sizes. All
+dimensions in mm.</font> <br>
+<font face="Arial,Helvetica">OD = outside diameter, ID = inside diameter</font> <br>
+<font size="+1" color="#00CC00" face="Arial,Helvetica"><br>
+</font><strong><font face="Arial" size="3" color="#000000">A Vesconite consultant will get
+back to you promptly. </font></strong></p>
+
+<p align="left"><font face="Arial" size="3">We aim to reply to all enquiries within 1 to 2
+working days.&nbsp; If you do not receive a reply, please <a href="mailto:vesconite@vesconite.com">e-mail about your enquiry</a>.</font></p>
+
+<p><font face="Arial" size="3">Please enter your name, e-mail address and <font color="#0000FF">quantities </font>of bushes to be ordered.<br>
+Then print this page, complete your credit card details at the end and fax VescoPlastics
+Sales at&nbsp; (27 11)&nbsp; 616 2222.</font></p>
+
+<p><font face="Arial" size="3">In the interests of our customers' credit card security and
+protection, this information is not transferred electronically.</font></p>
+
+<p><font face="Arial" size="3" color="#0000FF"><strong>Price calculations:</strong>&nbsp; <br>
+$1 =&nbsp;</font><font color="#0000FF"><font face="Arial" size="3"> </font><font FACE="Times New Roman">�</font></font><font face="Arial" size="3" color="#0000FF">6 Rands<br>
+To get US $ price, divide Rand price by 6.</font></p>
+
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.username.value == "")
+  {
+    alert("Please enter a value for the \"username\" field.");
+    theForm.username.focus();
+    return (false);
+  }
+
+  if (theForm.email.value == "")
+  {
+    alert("Please enter a value for the \"email\" field.");
+    theForm.email.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.T1.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"T1\" field.");
+    theForm.T1.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total1.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total1\" field.");
+    theForm.Total1.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total1\" field.");
+    theForm.Total1.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.T2.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"T2\" field.");
+    theForm.T2.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total2.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total2\" field.");
+    theForm.Total2.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total2\" field.");
+    theForm.Total2.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.T3a.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"T3a\" field.");
+    theForm.T3a.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total3.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total3\" field.");
+    theForm.Total3.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total3\" field.");
+    theForm.Total3.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.T3b.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"T3b\" field.");
+    theForm.T3b.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total4.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total4\" field.");
+    theForm.Total4.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total4\" field.");
+    theForm.Total4.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.T3c.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"T3c\" field.");
+    theForm.T3c.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total5.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total5\" field.");
+    theForm.Total5.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total5\" field.");
+    theForm.Total5.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.T4a.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"T4a\" field.");
+    theForm.T4a.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total6.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total6\" field.");
+    theForm.Total6.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total6\" field.");
+    theForm.Total6.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.T4b.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"T4b\" field.");
+    theForm.T4b.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total7.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total7\" field.");
+    theForm.Total7.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total7\" field.");
+    theForm.Total7.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.T5a.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"T5a\" field.");
+    theForm.T5a.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total8.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total8\" field.");
+    theForm.Total8.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total8\" field.");
+    theForm.Total8.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.T6.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"T6\" field.");
+    theForm.T6.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total9.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total9\" field.");
+    theForm.Total9.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total9\" field.");
+    theForm.Total9.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.T5b.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"T5b\" field.");
+    theForm.T5b.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total10.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total10\" field.");
+    theForm.Total10.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total10\" field.");
+    theForm.Total10.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.T5c.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"T5c\" field.");
+    theForm.T5c.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total11.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total11\" field.");
+    theForm.Total11.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total11\" field.");
+    theForm.Total11.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.I1.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"I1\" field.");
+    theForm.I1.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total12.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total12\" field.");
+    theForm.Total12.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total12\" field.");
+    theForm.Total12.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.I2.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"I2\" field.");
+    theForm.I2.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total13.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total13\" field.");
+    theForm.Total13.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total13\" field.");
+    theForm.Total13.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.N1.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"N1\" field.");
+    theForm.N1.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total14.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total14\" field.");
+    theForm.Total14.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total14\" field.");
+    theForm.Total14.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.N2a.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"N2a\" field.");
+    theForm.N2a.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total15.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total15\" field.");
+    theForm.Total15.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total15\" field.");
+    theForm.Total15.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.N2b.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"N2b\" field.");
+    theForm.N2b.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total16.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total16\" field.");
+    theForm.Total16.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total16\" field.");
+    theForm.Total16.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.F1.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"F1\" field.");
+    theForm.F1.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total17.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total17\" field.");
+    theForm.Total17.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total17\" field.");
+    theForm.Total17.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.F2.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"F2\" field.");
+    theForm.F2.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.Total18.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Total18\" field.");
+    theForm.Total18.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Total18\" field.");
+    theForm.Total18.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.FinalTotal.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"FinalTotal\" field.");
+    theForm.FinalTotal.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"FinalTotal\" field.");
+    theForm.FinalTotal.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" action="_vti_bin/shtml.dll/quoteflex.htm" onsubmit="return FrontPage_Form1_Validator(this)" name="FrontPage_Form1" webbot-action="--WEBBOT-SELF--" language="JavaScript">
+  <!--webbot bot="SaveResults" S-Email-Format="TEXT/CSV" S-Email-Address="jm@vescoplastics.com" B-Email-Label-Fields="TRUE" S-Builtin-Fields="Date Time REMOTE_NAME REMOTE_USER HTTP_USER_AGENT" U-Confirmation-Url="confirmj.htm" startspan --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot bot="SaveResults" endspan i-checksum="43374" --><table border="0" width="98%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="20%" bgcolor="#FFFFFF"><font face="Arial" size="3" color="#FF0000"><strong>Contact
+      Name</strong></font></td>
+      <td width="80%" bgcolor="#FFFFFF"><!--webbot bot="Validation" B-Value-Required="TRUE" --><input type="text" name="username" size="42" tabindex="1"></td>
+    </tr>
+    <tr>
+      <td width="20%" bgcolor="#FFFFFF"><strong><font face="Arial" size="3" color="#FF0000">E-mail</font></strong></td>
+      <td width="80%" bgcolor="#FFFFFF"><!--webbot bot="Validation" B-Value-Required="TRUE" --><input type="text" name="email" size="42" tabindex="2"></td>
+    </tr>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="98%">
+    <tr>
+      <td colspan="2" height="23" bordercolor="#EAEAEA" bordercolorlight="#EAEAEA" bordercolordark="#EAEAEA" bgcolor="#FFFFFF" width="49"><font face="Arial" size="3" color="#0000FF"><strong>Qty </strong></font></td>
+      <td height="23" align="left" bordercolor="#EAEAEA" bordercolorlight="#EAEAEA" bordercolordark="#EAEAEA" bgcolor="#FFFFFF" width="441"><strong><font face="Arial" color="#0000FF" size="2"><a NAME="toyata"></a></font><font face="Arial" size="3" color="#0000FF">Toyota </font></strong></td>
+      <td height="23" align="right" bordercolor="#EAEAEA" bordercolorlight="#EAEAEA" bordercolordark="#EAEAEA" bgcolor="#FFFFFF" width="51"><strong><font face="Arial" color="#0000FF" size="2">Price<br>
+      each<br>
+      Rands</font></strong></td>
+      <td height="23" align="center" bordercolor="#EAEAEA" bordercolorlight="#EAEAEA" bordercolordark="#EAEAEA" bgcolor="#FFFFFF" width="64"><font face="Arial" size="3" color="#0000FF"><div align="center"><center><p><strong>Total</strong></font></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><b><font face="Arial,Helvetica"><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="T1" size="2" LANGUAGE="javascript" onchange="return T1_onchange()" tabindex="3"></font></b></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><b><font face="Arial,Helvetica">T1</font></b></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><font color="#000040"><small><font face="Arial,Helvetica"><b>FJ45; HJ45&nbsp; (Up to 1979)</b></font> </small></font></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">22.45</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input name="Total1" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return T1_onchange()" style="float: none" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="18" bgcolor="#FFFFFF" width="29"></td>
+      <td height="18" bgcolor="#FFFFFF" width="20"></td>
+      <td height="18" align="left" bgcolor="#FFFFFF" width="441"><small><font face="Arial,Helvetica">Flange OD 30; Bush OD 24; ID 15; Length 41 (front - 12 per set)</font></small></td>
+      <td height="18" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="18" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><b><font face="Arial,Helvetica"><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="T2" size="2" LANGUAGE="javascript" onchange="return T2_onchange()" tabindex="4"></font></b></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><b><font face="Arial,Helvetica">T2</font></b></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 34; Bush OD 29; ID 18; Length 41(rear - 12 per set)</font>
+      </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">22.36</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input name="Total2" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return T2_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="T3a" size="2" LANGUAGE="javascript" onchange="return T3a_onchange()" tabindex="5"></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><font face="Arial,Helvetica"><b>T3</b>
+      </font></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 44; Bush OD 35; ID 18; Length 44 (24 per set)</font> </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">34.96</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total3" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return T3a_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"><font color="#000040"><small><font face="Arial,Helvetica"><b>FJ60; HJ60&nbsp; (1979 - 1986)</b></font> </small></font></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="T3b" size="2" LANGUAGE="javascript" onchange="return T3b_onchange()" tabindex="6"></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><font face="Arial,Helvetica"><b>T3</b>
+      </font></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 44; Bush OD 35; ID 18; Length 44 (24 per set)</font> </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">34.96</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total4" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return T3b_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"><font color="#000040"><small><font face="Arial,Helvetica"><b>FJ62; HJ62; FJ75; HJ75&nbsp; (1986 - 1992) </b>(confirm sizing)</font>
+      </small></font></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"><font color="#000040"><small><strong><font face="Arial,Helvetica">SA assembled vehicles:</font> </strong></small></font></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="T3c" size="2" LANGUAGE="javascript" onchange="return T3c_onchange()" tabindex="7"></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><font face="Arial,Helvetica"><b>T3</b>
+      </font></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 44; Bush OD 35;ID 18; Length 44 (24 per set)</font> </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">34.96</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total5" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return T3c_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"><font color="#000040"><small><strong><font face="Arial,Helvetica">Japanese assembled vehicles:</font> </strong></small></font></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><b><font face="Arial,Helvetica"><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="T4a" size="2" LANGUAGE="javascript" onchange="return T4a_onchange()" tabindex="8"></font></b></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><b><font face="Arial,Helvetica">T4</font></b></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 50; Bush OD 40; ID 18; Length 44,4 (24 per set)</font> </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">36.80</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total6" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return T4a_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"><font color="#000040"><small><font face="Arial,Helvetica"><b>FJ75; HJ75&nbsp; (1991 to present)</b></font> </small></font></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="T4b" size="2" LANGUAGE="javascript" onchange="return T4b_onchange()" tabindex="9"></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><font face="Arial,Helvetica"><b>T4</b>
+      </font></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 50; Bush OD 40; ID 18; Length 44,4 (24 per set)</font> </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">36.80</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total7" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return T4b_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" height="22" bgcolor="#FFFFFF" width="49"></td>
+      <td height="22" align="left" bgcolor="#FFFFFF" width="441"><font color="#3333FF" face="Arial,Helvetica" size="3"><b>Toyota Hilux 4 x 4</b></font><big> </big></td>
+      <td height="22" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="22" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><b><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="T5a" size="2" LANGUAGE="javascript" onchange="return T5a_onchange()" tabindex="10"></b></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><font face="Arial,Helvetica"><b>T5</b></font></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 35; Bush OD 29; ID 18; Length 37 (20 per set)</font> </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">26.36</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total8" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return T5a_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><b><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="T6" size="2" LANGUAGE="javascript" onchange="return T6_onchange()" tabindex="11"></b></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><font face="Arial,Helvetica"><b>T6</b></font></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 35; Bush OD 29; ID 18; Length 55 (4 per set)</font> </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">32.35</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total9" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return T6_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" height="22" bgcolor="#FFFFFF" width="49"></td>
+      <td height="22" align="left" bgcolor="#FFFFFF" width="441"><font color="#3333FF" face="Arial,Helvetica" size="3"><b>Toyota Hilux 4 x 2</b></font><big> </big></td>
+      <td height="22" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="22" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D3D3D3" width="29"><small><font face="Arial,Helvetica"><b><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="T5b" size="2" LANGUAGE="javascript" onchange="return T5b_onchange()" tabindex="12"></b></font></small></td>
+      <td height="19" bgcolor="#D3D3D3" width="20"><small><font face="Arial,Helvetica"><b>T5</b></font></small></td>
+      <td height="19" align="left" bgcolor="#D3D3D3" width="441"><small><font face="Arial,Helvetica">Flange OD 35; Bush OD 29; ID 18; Length 37 (12 per set)</font> </small></td>
+      <td height="19" align="center" bgcolor="#D3D3D3" width="51"><font face="Arial" size="2">26.36</font></td>
+      <td height="19" bgcolor="#D3D3D3" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total10" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return T5b_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" height="22" bgcolor="#FFFFFF" width="49"></td>
+      <td height="22" align="left" bgcolor="#FFFFFF" width="441"><font color="#3333FF" face="Arial,Helvetica" size="3"><b>Toyota Stallion, TUV, Venture</b></font><big> </big></td>
+      <td height="22" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="22" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="T5c" size="2" LANGUAGE="javascript" onchange="return T5c_onchange()" tabindex="13"></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><font face="Arial,Helvetica"><small><b>T5</b>
+      </small></font></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 35; Bush OD 29; ID 18; Length 37 (rear only - 12 per set)</font>
+      </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">26.36</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total11" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return T5c_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" height="22" bgcolor="#FFFFFF" width="49"></td>
+      <td height="22" align="left" bgcolor="#FFFFFF" width="441"><big><a NAME="isuzu"></a></big><font color="#3333FF" face="Arial,Helvetica" size="3"><b>Isuzu 4 x 4 and 4 x 2</b></font></td>
+      <td height="22" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="22" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"><small><font face="Arial,Helvetica">All Isuzu 4 x 4 and 4 x 2 vehicles with rear axles leaf suspensions</font>
+      </small></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"><font color="#000040"><small><font face="Arial,Helvetica"><b>Shackle bushes (All models)</b></font> </small></font></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><small><font face="Arial,Helvetica"><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="I1" size="2" LANGUAGE="javascript" onchange="return I1_onchange()" tabindex="14"></font></small></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><font face="Arial,Helvetica"><b>I1</b> </font></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><font face="Arial" size="2">Flange
+      OD 35; Bush OD 30,1; ID 18; Length 33 (8 per set) </font></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">26.36</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total12" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return I1_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="38" bgcolor="#FFFFFF" width="29"></td>
+      <td height="38" bgcolor="#FFFFFF" width="20"></td>
+      <td height="38" align="left" bgcolor="#FFFFFF" width="441"><font face="Arial,Helvetica" color="#000040"><small><b>Spring eye bushes: (All models to end 1988, not used on later
+      TFR series)</b></small></font></td>
+      <td height="38" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="38" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><b><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="I2" size="2" LANGUAGE="javascript" onchange="return I2_onchange()" tabindex="15"></b></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><b><font face="Arial,Helvetica">I2</font></b></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 45; Bush OD 40; ID 18; Length 35 (4 per set)</font></small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">34.96</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total13" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return I2_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" height="22" bgcolor="#FFFFFF" width="49"></td>
+      <td height="22" align="left" bgcolor="#FFFFFF" width="441"><big><a NAME="nissan"></a></big><font color="#3333FF" face="Arial,Helvetica" size="3"><b>Nissan 1 Tonner</b></font></td>
+      <td height="22" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="22" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><b><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="N1" size="2" LANGUAGE="javascript" onchange="return N1_onchange()" tabindex="16"></b></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><font face="Arial,Helvetica"><b>N1</b></font></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 38; Bush OD 32; ID 20; Length 36 (rear - 8 per set)</font>
+      </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">29.68</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total14" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return N1_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><b><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="N2a" size="2" LANGUAGE="javascript" onchange="return N2a_onchange()" tabindex="17"></b></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><font face="Arial,Helvetica"><b>N2</b></font></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 47; Bush OD 40; ID 18; Length 37 (front - 4 per set)</font>
+      </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">36.93</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total15" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return N2a_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" height="22" bgcolor="#FFFFFF" width="49"></td>
+      <td height="22" align="left" bgcolor="#FFFFFF" width="441"><font color="#3333FF" face="Arial,Helvetica" size="3"><b>Nissan 2 Tonner</b></font><big> </big></td>
+      <td height="22" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="22" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><b><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="N2b" size="2" LANGUAGE="javascript" onchange="return N2b_onchange()" tabindex="18"></b></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><font face="Arial,Helvetica"><b>N2</b></font></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 47; Bush OD 40; ID 18; Length 37 (12 per set)</font> </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">36.93</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total16" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return N2b_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#FFFFFF" width="29"></td>
+      <td height="19" bgcolor="#FFFFFF" width="20"></td>
+      <td height="19" align="left" bgcolor="#FFFFFF" width="441"></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" height="22" bgcolor="#FFFFFF" width="49"></td>
+      <td height="22" align="left" bgcolor="#FFFFFF" width="441"><big><a NAME="fordmazda"></a></big><font color="#3333FF" face="Arial,Helvetica" size="3"><b>Ford &amp; Mazda 1 Tonner</b></font></td>
+      <td height="22" align="center" bgcolor="#FFFFFF" width="51"></td>
+      <td height="22" bgcolor="#FFFFFF" width="64"></td>
+    </tr>
+    <tr align="center">
+      <td bgcolor="#D7D7D7"><small><font face="Arial,Helvetica"><b><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="F1" size="2" LANGUAGE="javascript" onchange="return F1_onchange()" tabindex="19"></b></font></small>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><font face="Arial,Helvetica"><b>F1</b></font></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 38; Bush OD 32; ID 18; Length 37 (4 per set)</font> </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">31.08</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total17" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return F1_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td height="19" bgcolor="#D7D7D7" width="29"><small><font face="Arial,Helvetica"><!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="," --><input type="text" name="F2" size="2" LANGUAGE="javascript" onchange="return F2_onchange()" tabindex="20"></font></small></td>
+      <td height="19" bgcolor="#D7D7D7" width="20"><small><font face="Arial,Helvetica"><b>F2</b>
+      </font></small></td>
+      <td height="19" align="left" bgcolor="#D7D7D7" width="441"><small><font face="Arial,Helvetica">Flange OD 38; Bush OD 32; ID 18; Length 47 (4 per set)</font> </small></td>
+      <td height="19" align="center" bgcolor="#D7D7D7" width="51"><font face="Arial" size="2">33.55</font></td>
+      <td height="19" bgcolor="#D7D7D7" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="Total18" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return F2_onchange()" value="0"></td>
+    </tr>
+  </table>
+  <div align="center"><center><table border="0" cellpadding="0" cellspacing="0" width="98%">
+    <tr>
+      <td width="87"></td>
+      <td width="81"></td>
+      <td width="81"></td>
+      <td width="240"></td>
+      <td width="52"></td>
+      <td width="64">&nbsp;&nbsp;&nbsp; </td>
+    </tr>
+    <tr>
+      <td width="489" colspan="4"><div align="left"><p><font face="Arial" size="3" color="#0000FF"><strong><b>Vescoflex Solid Rod for Do-it-Yourself Machining</b> </strong></font>
+        </div>
+      </td>
+      <td width="52"><div align="center"><center><p><font color="#0000FF" face="Arial" size="2"><strong>per<br>
+      metre</strong></font></td>
+      <td width="64" align="center"></td>
+    </tr>
+    <tr align="center">
+      <td width="87" bgcolor="#DEDEDE"><font face="Arial" size="2"><input type="text" name="R1" size="3" LANGUAGE="javascript" onchange="return R1_onchange()">metre</font></td>
+      <td width="81" bgcolor="#DEDEDE"><font face="Arial" size="2">35 mm OD</font></td>
+      <td width="81" bgcolor="#DEDEDE">&nbsp;&nbsp;</td>
+      <td width="240" bgcolor="#DEDEDE">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td width="52" align="center" bgcolor="#DEDEDE"><font face="Arial" size="2">557.29</font></td>
+      <td width="64" bgcolor="#DEDEDE"><input type="text" name="Total20" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return R1_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td width="87" bgcolor="#DEDEDE"><font face="Arial" size="2"><input type="text" name="R2" size="3" LANGUAGE="javascript" onchange="return R2_onchange()">metre</font></td>
+      <td width="81" bgcolor="#DEDEDE"><font face="Arial" size="2">50 mm OD</font></td>
+      <td width="81" bgcolor="#DEDEDE">&nbsp;&nbsp;&nbsp;</td>
+      <td width="240" bgcolor="#DEDEDE">&nbsp;&nbsp;</td>
+      <td width="52" align="center" bgcolor="#DEDEDE"><font face="Arial" size="2">1178.00</font></td>
+      <td width="64" bgcolor="#DEDEDE"><input type="text" name="Total21" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return R2_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td width="87" bgcolor="#DEDEDE"><font face="Arial" size="2"><input type="text" name="R3" size="3" LANGUAGE="javascript" onchange="return R3_onchange()">metre</font></td>
+      <td width="81" bgcolor="#DEDEDE"><font face="Arial" size="2">65 mm OD</font></td>
+      <td width="81" bgcolor="#DEDEDE">&nbsp;&nbsp;</td>
+      <td width="240" bgcolor="#DEDEDE">&nbsp;&nbsp;</td>
+      <td width="52" align="center" bgcolor="#DEDEDE"><font face="Arial" size="2">1624.00</font></td>
+      <td width="64" bgcolor="#DEDEDE"><input type="text" name="Total22" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return R3_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td width="87"></td>
+      <td width="81"></td>
+      <td width="81"></td>
+      <td width="240"></td>
+      <td width="52"></td>
+      <td width="64"></td>
+    </tr>
+    <tr align="center">
+      <td width="489" colspan="4"><font color="#0000FF" face="Arial,Helvetica"><big><strong>&nbsp;&nbsp;&nbsp;&nbsp;
+      </strong></big></font></td>
+      <td width="52"></td>
+      <td width="64"><div align="left"></div></td>
+    </tr>
+    <tr align="center">
+      <td width="489" colspan="4"><div align="left"><p><strong><font face="Arial" size="3" color="#0000FF">Vescoflex Blanks for Do-it-Yourself Machining</font></strong>
+        </div>
+      </td>
+      <td width="52"><div align="center"><center><p><font color="#0000FF" face="Arial" size="2"><strong>each</strong></font></td>
+      <td width="64" align="center"></td>
+    </tr>
+    <tr align="center">
+      <td width="87" bgcolor="#E3E3E3" align="center">&nbsp;&nbsp;</td>
+      <td width="81" bgcolor="#E3E3E3" valign="bottom" align="center"><font face="Arial" size="2">OD mm</font></td>
+      <td width="81" bgcolor="#E3E3E3" valign="bottom" align="center"><div align="center"><center><p><font face="Arial" size="2">ID mm</font></td>
+      <td width="240" bgcolor="#E3E3E3" valign="bottom" align="center"><div align="left"><p><font face="Arial" size="2">Length</font></td>
+      <td width="52" bgcolor="#E3E3E3" align="center">&nbsp;&nbsp;</td>
+      <td width="64" bgcolor="#E3E3E3" align="center">&nbsp;&nbsp;</td>
+    </tr>
+    <tr align="center">
+      <td width="87" bgcolor="#E3E3E3"><input type="text" name="B1" size="3" LANGUAGE="javascript" onchange="return B1_onchange()"></td>
+      <td width="81" bgcolor="#E3E3E3" align="center"><font face="Arial" size="2">30</font></td>
+      <td width="81" bgcolor="#E3E3E3" align="center"><font face="Arial" size="2">15</font></td>
+      <td width="240" bgcolor="#E3E3E3" align="left"><font face="Arial" size="2">&nbsp;&nbsp; 90</font></td>
+      <td width="52" align="center" bgcolor="#E3E3E3"><font face="Arial" size="2">25.43</font></td>
+      <td width="64" bgcolor="#E3E3E3"><input type="text" name="Total23" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return B1_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td width="87" bgcolor="#E3E3E3"><input type="text" name="B2Input" size="3" LANGUAGE="javascript" onchange="return B2Input_onchange()"></td>
+      <td width="81" bgcolor="#E3E3E3" align="center"><font face="Arial" size="2">35</font></td>
+      <td width="81" bgcolor="#E3E3E3" align="center"><font face="Arial" size="2">18</font></td>
+      <td width="240" bgcolor="#E3E3E3" align="left"><font face="Arial" size="2">&nbsp;&nbsp; 90</font></td>
+      <td width="52" align="center" bgcolor="#E3E3E3"><font face="Arial" size="2">33.08</font></td>
+      <td width="64" bgcolor="#E3E3E3"><input type="text" name="Total24" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return B2Input_onchange()" value="0"></td>
+    </tr>
+    <tr align="center">
+      <td width="87" bgcolor="#E3E3E3"><font face="Arial" size="2"><input type="text" name="B3" size="3" LANGUAGE="javascript" onchange="return B3_onchange()"></font></td>
+      <td width="81" bgcolor="#E3E3E3" align="center"><font face="Arial" size="2">45</font></td>
+      <td width="81" bgcolor="#E3E3E3" align="center"><font face="Arial" size="2">18</font></td>
+      <td width="240" bgcolor="#E3E3E3" align="left"><font face="Arial" size="2">&nbsp;&nbsp; 90</font></td>
+      <td width="52" align="center" bgcolor="#E3E3E3"><font face="Arial" size="2">58.10</font></td>
+      <td width="64" bgcolor="#E3E3E3"><font face="Arial" size="2"><input type="text" name="Total25" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return B3_onchange()" value="0"></font></td>
+    </tr>
+    <tr align="center">
+      <td width="87" bgcolor="#E3E3E3"><font face="Arial" size="2"><input type="text" name="B4" size="3" LANGUAGE="javascript" onchange="return B4_onchange()"></font></td>
+      <td width="81" bgcolor="#E3E3E3" align="center"><font face="Arial" size="2">50</font></td>
+      <td width="81" bgcolor="#E3E3E3" align="center"><font face="Arial" size="2">18</font></td>
+      <td width="240" bgcolor="#E3E3E3" align="left"><font face="Arial" size="2">&nbsp;&nbsp; 90</font></td>
+      <td width="52" align="center" bgcolor="#E3E3E3"><font face="Arial" size="2">72.81</font></td>
+      <td width="64" bgcolor="#E3E3E3"><font face="Arial" size="2"><input type="text" name="Total26" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return B4_onchange()" value="0"></font></td>
+    </tr>
+    <tr align="center">
+      <td width="87" bgcolor="#FFFFFF"></td>
+      <td width="81" bgcolor="#FFFFFF" align="center"></td>
+      <td width="81" bgcolor="#FFFFFF" align="center"></td>
+      <td width="240" bgcolor="#FFFFFF"></td>
+      <td height="19" align="center" bgcolor="#FFFFFF" width="51"><div align="right"><p><strong><font color="#0000FF" face="Arial" size="2">Total</font></strong></td>
+      <td height="19" bgcolor="#FFFFFF" width="64"><!--webbot bot="Validation" S-Data-Type="Number" S-Number-Separators=",." --><input type="text" name="FinalTotal" size="6" tabindex="-1" LANGUAGE="javascript" onchange="return calc_totals()" value="0"></td>
+    </tr>
+  </table>
+  </center></div><div align="left"><p><strong><font color="#0000FF" face="Arial"><br>
+  Comments or queries<br>
+    </font></strong><textarea rows="7" name="S1" cols="45"></textarea></p>
+  </div><div align="center"><center><p><font face="Arial" size="2"><input type="reset" value="Reset" name="B2"></font>&nbsp;</p>
+  </center></div>
+</form>
+<font size="1">
+
+<p align="center">&nbsp;</p>
+<div align="center"><center>
+
+<table border="0" width="100%">
+  <tr>
+    <td valign="top"><p align="left"><font face="Arial" color="#FF0000" size="5"><strong>Credit
+    Card Authorization</strong></font></td>
+  </tr>
+</table>
+</center></div><div align="center"><center>
+
+<table border="0" width="100%" height="300" bordercolor="#000000" bordercolorlight="#000000" bordercolordark="#000000" cellspacing="4" cellpadding="4">
+  <tr>
+    <td width="54%" height="21"><font face="Arial" size="3">Name of Card Holder</font></td>
+    <td width="46%" height="21"><font face="Arial" size="3">&nbsp; </font></td>
+  </tr>
+  <tr>
+    <td width="54%" height="22"><font face="Arial" size="3">Type of&nbsp; Card<br>
+    (only Master or Visa Cards accepted)</font></td>
+    <td width="46%" height="22"><font face="Arial" size="3">&nbsp; </font></td>
+  </tr>
+  <tr>
+    <td width="54%" height="20"><font face="Arial" size="3">Card No</font></td>
+    <td width="46%" height="20"><font face="Arial" size="3">&nbsp; </font></td>
+  </tr>
+  <tr>
+    <td width="54%" height="21"><font face="Arial" size="3">Card expiry date</font></td>
+    <td width="46%" height="21"><font face="Arial" size="3">&nbsp; </font></td>
+  </tr>
+  <tr>
+    <td width="54%" height="21"><font face="Arial" size="3">Amount authorised<br>
+    (US$ for all customers outside South Africa)</font></td>
+    <td width="46%" height="21"><font face="Arial" size="3">&nbsp; </font></td>
+  </tr>
+  <tr>
+    <td width="54%" height="21"><font face="Arial" size="3">Delivery address<br>
+    (include country and postal code)</font><p>&nbsp;</td>
+    <td width="46%" height="21">&nbsp;<p>&nbsp;</p>
+    <p>&nbsp; </td>
+  </tr>
+  <tr>
+    <td width="54%" height="21"><font face="Arial" size="3">Your telephone number</font></td>
+    <td width="46%" height="21"><font face="Arial" size="3">&nbsp;&nbsp;&nbsp; </font></td>
+  </tr>
+  <tr>
+    <td width="54%" height="21"><font face="Arial" size="3">Your fax number</font></td>
+    <td width="46%" height="21"><font face="Arial" size="3">&nbsp;&nbsp; </font></td>
+  </tr>
+  <tr>
+    <td width="54%" height="21"><font face="Arial" size="3">Your authorized signature</font></td>
+    <td width="46%" height="21"><font face="Arial" size="3">&nbsp;&nbsp; </font></td>
+  </tr>
+  <tr>
+    <td width="54%" height="21"><font face="Arial" size="3">Other</font><p>&nbsp;</p>
+    <p>&nbsp;</td>
+    <td width="46%" height="21"><p align="left">&nbsp;&nbsp; </p>
+    <p align="left">&nbsp;</p>
+    <p align="left">&nbsp;</td>
+  </tr>
+</table>
+</center></div><div align="left">
+
+<table border="0" cellspacing="4" cellpadding="3">
+  <tr>
+    <td width="59%" height="19"><p align="left"><font face="Arial" size="2"><strong><em>For
+    Office use only </em></strong></font></td>
+    <td width="41%" height="19">&nbsp; </td>
+  </tr>
+  <tr>
+    <td width="59%" height="19"><font face="Arial" size="2">Sales Rep</font></td>
+    <td width="41%" height="19">&nbsp; </td>
+  </tr>
+  <tr>
+    </font><td width="59%" height="19"><font face="Arial" size="2">Invoice Number</font></td>
+    <font size="1"><td width="41%" height="19">&nbsp; </font></td>
+  </tr>
+  <tr>
+    <td width="59%" height="19"><font face="Arial" size="2">Transfer Date</font></td>
+    <font size="1"><td width="41%" height="19">&nbsp; </font></td>
+  </tr>
+  <tr>
+    <td width="59%" height="19"><font face="Arial" size="2">Copies</font></td>
+    <font size="1"><td width="41%" height="19"><p align="left">&nbsp; </font></td>
+  </tr>
+  <tr>
+    <td width="59%" height="19"><font face="Arial" size="2">Printouts Attached</font></td>
+    <font size="1"><td width="41%" height="19"></font></td>
+  </tr>
+</table>
+</div>
+
+<p align="left"><br>
+<a href="#top"><font face="Arial,Helvetica" size="1">Back to top</font><font size="-1" face="Wingdings">�</font></a></p>
+
+<p align="left"><font face="Arial,Helvetica" size="1">Last updated:&nbsp;Aug 06, 1999<br>
+</font><font size="-1"><font face="Wingdings"><br>
+</font>&nbsp;</font>
+<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+
+<div align="center"><center>
+
+<table BORDER="0" COLS="4" cellpadding="2" height="50" width="592">
+  <tr>
+    <td width="582" height="17" colspan="4"><font face="Arial,Helvetica" color="#000000" size="2">For </font><font color="#FF0000" face="Arial,Helvetica" size="2">information and quotes</font><font face="Arial,Helvetica" color="#000000" size="2"> on your requirements, e-mail </font><font face="Arial,Helvetica" size="2"><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</a></font>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="76" height="33" rowspan="2"><img border="0" src="images/VSalesLogo.gif" width="72" height="34"></td>
+    <td width="161" height="17"><p align="center"><font face="Arial" size="1"><a href="http://www.vesconite.com/">www.vesconite.com</a></font></td>
+    <td width="155" height="17"><font size="1" face="Wingdings"><p align="center"></font><a href="index.htm"><font face="Arial" size="1">vescoflex home page</font></a></td>
+    <td width="166" height="17"><p align="center"><a href="orders.htm"><font face="Arial" size="1">vescoflex
+      orders</font></a></td>
+  </tr>
+  <tr>
+    <td width="498" height="16" colspan="3" align="center"><font face="Arial" size="1">All
+    Rights Reserved&nbsp; � 1999-2003&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;
+    <a href="warranty.htm">Warranty
+    disclaimer</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+  </tr>
+</table>
+</center></div>
+
+<p>&nbsp;</p>
+</td></tr><!--msnavigation--></table></body>
+</html>
