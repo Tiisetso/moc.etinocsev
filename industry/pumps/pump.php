@@ -17,7 +17,7 @@ $body_message .= 'Email: '.$field_email_address."\n";
 
 
 $mail_to = 'vesconite@vesconite.com';
-$subject = 'Request for a free bump bearing design manual ';
+$subject = 'Request for a free pump bearing design manual ';
 
 $headers = "From: ".$field_email_address."\r\n";
 $headers .= "Reply-To: ".$field_email_address."\r\n";
@@ -26,7 +26,7 @@ $mail_status = mail($mail_to, $subject, $body_message,$headers);
 
 if ($mail_status) { ?>
     <script language="javascript" type="text/javascript">
-        alert('Your bump bearing design manual will be emailed to you shortly.');
+        alert('Your pump bearing design manual will be emailed to you shortly.');
         history.back(1);
     </script>
 <?php
@@ -64,7 +64,7 @@ h1 {
 <body>
 <h1>Welcome to Vesconite</h1>
 <p>Dear Sir/Madam,</p>
-<p>Thank you for requesting a free bump bearing design manual.</p>
+<p>Thank you for requesting a free pump bearing design manual.</p>
 <p>We hope you find it helpful for your application. Please don't hesitate to contact us.</p>
 <p>Take a look at our <a href='http://www.vesconite.com'>website</a> to find out more about Vesconite.</p>
 <p>Kind regards,</p>
