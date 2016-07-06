@@ -30,7 +30,7 @@ $mail_status = mail($mail_to, $subject, $body_message,$headers);
 
 if ($mail_status) { ?>
     <script language="javascript" type="text/javascript">
-        alert('Thank you for your request we will be in touch shortly.');
+    alert('Thank you for contacting VescoPlastics Sales.\n\nA Vesconite consultant will get back to you promptly.\n\nIf you have not heard from us within 2 working days please e-mail:\n\nvesconite@vesconite.com.\n\nWe look forward to discussing your unique requirements and applications.');
         history.back(1);
     </script>
 <?php

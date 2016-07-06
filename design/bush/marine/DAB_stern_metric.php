@@ -95,7 +95,7 @@ $mail_status = mail($mail_to, $subject, $body_message,$headers);
 
 if ($mail_status) { ?>
     <script language="javascript" type="text/javascript">
-        alert('Thank you for the message. We will contact you shortly.');
+    alert('Thank you for contacting VescoPlastics Sales.\n\nA Vesconite consultant will get back to you promptly.\n\nIf you have not heard from us within 2 working days please e-mail:\n\nvesconite@vesconite.com.\n\nWe look forward to discussing your unique requirements and applications.');
         history.back(1);
     </script>
 <?php
@@ -133,7 +133,7 @@ h1 {
 <body>
 <h1>Welcome to Vesconite</h1>
 <p>Dear $field_contact.</p>
-<p>Thank your for using our bearing calculator.</p>
+<p>Thank you for using our bearing calculator.</p>
 <p>We will contact you soon to follow up on your inquiry.</p>
 <p>Take a look at our <a href='http://www.vesconite.com'>website</a> to find out more about Vesconite.</p>
 <p>Kind regards,</p>
