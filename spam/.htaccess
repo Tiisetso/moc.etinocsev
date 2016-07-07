@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^spam\.vesconite\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.spam\.vesconite\.com$
+RewriteRule ^/?$ "https\:\/\/web\.mailspamprotection\.com\/" [R=301,L]
+

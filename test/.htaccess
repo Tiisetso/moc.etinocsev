@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^test\.vesconite\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.test\.vesconite\.com$
+RewriteRule ^/?$ "https\:\/\/docs\.google\.com\/spreadsheets\/d\/1KB53TR8c6OK46bkeWVWV3TjiDDTRqYDheuf5GjGrp_s\/edit\?usp\=sharing" [R=301,L]
+
