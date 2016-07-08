@@ -1,0 +1,349 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+	<TITLE>Imperial PV calculations for Vesconite bearing design</TITLE>
+    <STYLE>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+	-->
+	</STYLE>
+    <meta name="Microsoft Border" content="b">
+</HEAD>
+<BODY stylesrc="../../index.htm" topmargin="0" bgcolor="#F3F8FE" text="#000000"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top">
+<table border="1" width="97%" bordercolor="#000086" cellspacing="0" cellpadding="2">
+  <tr>
+    <td width="100%">
+      <p align="center"><b><font face="Arial" size="2"><a href="../../index.htm">vesconite.com<font color="#FF0000">&nbsp;</font></a><font color="#FF0000">
+      </font><font face="Arial" size="2" color="#000086">&nbsp;&gt;&nbsp; &nbsp;&nbsp;<a href="techinfo_links.htm">Design
+      technical information</a> &gt;&nbsp;&nbsp; Imperial size calculations</font></font></b></td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in"><B><font face="Arial" size="4"><a name="Imperial size calculations"><font color="#000086">Imperial
+size calculations&nbsp;</font></a><font color="#000086">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></font><U><a href="metric_size_calc.htm"><font face="Arial" size="3">Metric
+calculations</font></a></U></B><font face="Arial" size="4"><br>
+</font><font face="Arial" size="3">
+These
+are standard imperial calculations for Vesconite in industrial and
+pump applications. When considering marine applications, unique
+<FONT COLOR="#0000ff"><U><a href="size_calc_marine.htm">marine equations</a></U><SPAN STYLE="text-decoration: none">
+</SPAN></FONT><SPAN STYLE="text-decoration: none"><FONT COLOR="#000000">need
+to be used.<br>
+</FONT></SPAN></font></P>
+<table border="0" width="100%">
+  <tr>
+    <td width="50%"><FONT COLOR="#0000ff" face="Arial" size="3"><a href="#Press fits / interference fits">Press
+fits / interference fits</a><BR><a href="#Bore closure">Bore closure</a><BR><a href="#Assembly Clearance">Assembly clearance</a><BR><a href="#High temperature calculations:">High
+temperature calculations</a><BR><a href="#Low temperature calculations">Low temperature calculations</a><a href="#Calculation of the bearing size"><br>
+      Calculation
+of the bearing size</a></FONT><SPAN STYLE="font-weight: medium"><FONT COLOR="#0000ff" face="Arial" size="3"><a href="#Final machining of a bearing after installation"><br>
+      Final
+machining of a bearing after installation</a><a href="#Temperature limits"><br>
+      Temperature
+limits</a><a href="#Machining tolerances"><br>
+      Machining
+tolerances</a></FONT></SPAN></td>
+    <td width="50%"><img border="0" src="images/bearing_fit_colour.jpg" width="330" height="261"></td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in"><B><font face="Arial" size="3" color="#000086"><a name="Press fits / interference fits">Press
+fits / interference fits</a></font></B><font face="Arial" size="3"><a name="Press fits / interference fits"><br>
+</a>This is
+the most common method for securing a Vesconite bearing. Usually
+suitably to secure a bearing under standard environmental operating
+temperatures from 23&deg; to 158&deg;F.<br>
+Bearings
+with an interference fit are installed by <FONT COLOR="#0047ff"><U><a href="press_freeze_fit.htm">pressing
+or freezing</a></U><a href="press_freeze_fit.htm">.</a><br>
+</FONT>The
+interference fit / press fit is calculated as:<br>
+<BR><font color="#008000"><B>Press
+fit = 0.002&quot; + (0.002 x housing diameter)</B><SPAN STYLE="font-weight: medium"><BR></SPAN></font><BR>
+For
+temperatures below 41&deg;F, use<SPAN STYLE="text-decoration: none"><FONT COLOR="#000000">
+<a href="#Low temperature calculations">low temperature</a> equations.<br>
+</FONT></SPAN>For
+temperatures above 122&deg;F, use <FONT COLOR="#0000ff"><U><a href="#High temperature calculations:">high
+temperature</a></U><SPAN STYLE="text-decoration: none"> </SPAN></FONT><SPAN STYLE="text-decoration: none"><FONT COLOR="#000000">equations.</FONT></SPAN></font></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="Bore closure">Bore
+closure</a></FONT></B><FONT size=3 face="Arial"><a name="Bore closure"><br>
+</a>The
+closing of the Inside diameter when a bearing is pressed into a
+housing is called the bore closure. </FONT>
+</P>
+<table border="0" width="100%" cellpadding="4">
+  <tr>
+    <td width="23%" rowspan="2">
+      <p align="left"><B><FONT size=3 face="Arial" color="#008000">Bore
+closure =</FONT></B></td>
+    <td width="77%" valign="baseline"><B><u><FONT size=3 face="Arial" color="#008000">total press fit x housing diameter</FONT></u></B></td>
+  </tr>
+  <tr>
+    <td width="77%"><B>				
+         <FONT size=3 face="Arial" color="#008000">				
+         shaft diameter</FONT></B></td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="Assembly Clearance">Assembly
+Clearance</a></FONT></B><FONT size=3 face="Arial"><br>
+This
+is the gap between the bearing inside diameter and the shaft after
+installation. An assembly clearance is needed to allow free movement
+of the shaft across its standard operating temperature
+range.<br>
+<BR><B><font color="#008000">Assembly clearance =  0.002&quot;
++ (0.02 x wall thickness)</font></B></FONT></P>
+<P STYLE="margin-bottom: 0in"><B><FONT size=3 face="Arial" color="#000086"><a name="High temperature calculations:">High
+temperature calculations:</a><br>
+Temperatures
+from 122&deg; to 158&deg;F</FONT></B><font face="Arial" size="3"><br>
+Add and
+extra clearance to allow for thermal expansion of the bearing and
+avoid seizure on the shaft at the high temperatures.<BR></font></P>
+<table border="0" width="607" cellpadding="4">
+  <tr>
+    <td width="85" rowspan="2">
+      <p align="left"><font face="Arial" size="3" color="#008000"><B>Extra
+      clearance=</B></font></td>
+    <td width="496"><font face="Arial" size="3" color="#008000"><B><u>[(housing diameter)&sup2;-(shaft diameter)&sup2;] *
+      (Tmax-122)*0.000033&quot;</u></B></font></td>
+  </tr>
+  <tr>
+    <td width="496">
+      <p align="center"><B>					<FONT size=3 face="Arial" color="#008000">					shaft
+diameter</FONT></B></td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in"><B><font face="Arial" size="3" color="#000086">For
+temperatures higher than 158&deg;F</font></B><font face="Arial" size="3"><br>
+It is
+not possible to use an interference fit as the resulting strain and
+loss of elasticity at elevated temperatures can result in bearings
+becoming loose at ambient temperatures. The bearing needs to have an
+expansion gap and needs to be <a href="bearing_ret.htm#Mechanical securing">mechanically
+secured.</a><BR><BR>
+The size
+of the expansion gap is calculated as:</font></P>
+<table border="0" width="100%" cellpadding="4">
+  <tr>
+    <td width="24%">
+      <p align="left"><B><font face="Arial" size="3" color="#008000">Expansion
+gap =</font></B></td>
+    <td width="76%"><B><font face="Arial" size="3" color="#008000">&nbsp; 0.005&quot; + (housing diameter x 3.14 x (Tmax-77) x
+0.000033)</font></B></td>
+  </tr>
+  <tr>
+    <td width="24%"><font face="Arial" size="3"><B><font color="#008000">Press
+      fit=0</font></B></font></td>
+    <td width="76%"></td>
+  </tr>
+</table>
+<P STYLE="margin-bottom: 0in"><B><font face="Arial" size="3" color="#000086"><a name="Low temperature calculations">Low
+temperature calculations<br>
+</a></font></B><font face="Arial" size="3">When
+temperatures are below 41&deg;F, additional press fits are required
+to ensure that the bearing remains secure at the low temperatures.<br>
+The
+additional press fit is calculated as:<br>
+<BR><B><font color="#008000">Additional press fit = (77-Tmin) * 0.00003 * (housing diameter)&nbsp;<br>
+</font></B></font><B><FONT color="#008000" face="Arial" size="3">Total
+press fit = standard press fit + additional press fit.</FONT></B></P>
+<P STYLE="margin-bottom: 0in"><B><font face="Arial" size="3" color="#000086"><a name="Calculation of the bearing size">Calculation
+of the bearing size</a></font><FONT size=3 face="Arial" color="#008000"><br>
+Outside
+diameter = housing diameter + total press fit<br>
+Inside
+diameter = shaft diameter + assembly clearance + bore closure + extra
+clearance</FONT></B></P>
+<P STYLE="margin-bottom: 0in"><B><font face="Arial" size="3" color="#000086"><a name="Final machining of a bearing after installation">Final
+machining of a bearing after installation</a></font></B><font face="Arial" size="3"><br>
+In some
+cases it is required to first install the bearing and then machine
+the inside diameter. In the case of an oval housing or when line
+boring is required, this might be required.</font></P>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3"><B><font color="#008000">Outside
+diameter = housing diameter + total press fit</font></B><BR>
+<B><font color="#008000">Inside
+diameter after installation = shaft diameter + assembly clearance +
+extra clearance<BR></font></B><BR>
+</font><B><FONT size=3 face="Arial" color="#000086"><a name="Temperature limits">Temperature
+limits</a></FONT></B><font face="Arial" size="3"><br>
+While
+Vesconite can operate safely up to 250&deg;F in dry conditions and in
+wet conditions up to 160&deg;F. Temperatures below -40&deg;F are
+regarded as low.<br>
+If the
+operational temperature for your application is higher than 150&deg;F
+or below 5&deg;F technical solutions are available such as high
+temperature materials like HiTemp 150. Please contact VescoPlastics
+for further information.</font>
+</P>
+<P STYLE="margin-bottom: 0in; font-weight: medium"><FONT size=3 face="Arial">Where
+the application has a temperature higher than 122&deg;F or lower than
+41&deg;C, additional size considerations are made. Please refer to
+the <U><FONT COLOR="#0047ff"><a href="#Imperial size calculations">Vesconite size calculations</a></FONT></U><SPAN STYLE="text-decoration: none"><FONT COLOR="#000000">
+for
+<U><FONT COLOR="#0000ff"><a href="#High temperature calculations:">high</a></FONT></U> and <U><FONT COLOR="#0000ff"><a href="#Low temperature calculations">low</a></FONT></U>
+temperatures.</FONT></SPAN></FONT></P>
+<P STYLE="margin-bottom: 0in; font-weight: medium"><FONT size=3 face="Arial"><B><font color="#000086"><a name="Machining tolerances">Machining
+tolerances</a><br>
+</font></B>Vesconite
+bearings machine easily on standard metalworking or wood working
+equipment.<br>
+The
+following tolerances are suited to most general purpose applications.</FONT></P>
+<DL>
+	<DD>
+	<TABLE WIDTH=540 BORDER=1 BORDERCOLOR="#FF66CC" CELLPADDING=4 CELLSPACING=0 bgcolor="#FFECF5">
+		<COL WIDTH=125>
+		<COL WIDTH=181>
+		<COL WIDTH=208>
+		<THEAD>
+			<TR VALIGN=TOP>
+				<TD ROWSPAN=2 WIDTH=125>
+					<P><font face="Arial" size="3" color="#000086">Outside diameter</font>
+					</P>
+				</TD>
+				<TD WIDTH=181>
+					<P><font face="Arial" size="3" color="#000086">OD tolerance</font></P>
+				</TD>
+				<TD WIDTH=208>
+					<P><font face="Arial" size="3" color="#000086">&plusmn; 0.1% outside diameter</font></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=181>
+					<P><font face="Arial" size="3" color="#000086">Minimum</font></P>
+				</TD>
+				<TD WIDTH=208>
+					<P><font face="Arial" size="3" color="#000086">&plusmn; 0.001&quot;</font></P>
+				</TD>
+			</TR>
+		</THEAD>
+		<TBODY>
+			<TR VALIGN=TOP>
+				<TD ROWSPAN=2 WIDTH=125>
+					<P><font face="Arial" size="3" color="#000086">Inside diameter</font>
+					</P>
+				</TD>
+				<TD WIDTH=181>
+					<P><font face="Arial" size="3" color="#000086">ID tolerance</font></P>
+				</TD>
+				<TD WIDTH=208>
+					<P><font face="Arial" size="3" color="#000086">&plusmn;  0.1% inside diameter</font></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=181>
+					<P><font face="Arial" size="3" color="#000086">Minimum</font></P>
+				</TD>
+				<TD WIDTH=208>
+					<P><font face="Arial" size="3" color="#000086">&plusmn; 0.001&quot;</font></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD ROWSPAN=2 WIDTH=125>
+					<P><font face="Arial" size="3" color="#000086">Wall thickness</font></P>
+				</TD>
+				<TD WIDTH=181>
+					<P><font face="Arial" size="3" color="#000086">Wall thickness tolerance</font></P>
+				</TD>
+				<TD WIDTH=208>
+					<P><font face="Arial" size="3" color="#000086">+ 0.0 / -0.5% wall thickness</font></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=181>
+					<P><font face="Arial" size="3" color="#000086">Minimum</font></P>
+				</TD>
+				<TD WIDTH=208>
+					<P><font face="Arial" size="3" color="#000086">+ 0.0 / -0.001&quot;</font></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD ROWSPAN=2 WIDTH=125>
+					<P><font face="Arial" size="3" color="#000086">Length</font></P>
+				</TD>
+				<TD WIDTH=181>
+					<P><font face="Arial" size="3" color="#000086">Length tolerance</font></P>
+				</TD>
+				<TD WIDTH=208>
+					<P><font face="Arial" size="3" color="#000086">+ 0.0 / -0.5% length</font></P>
+				</TD>
+			</TR>
+			<TR VALIGN=TOP>
+				<TD WIDTH=181>
+					<P><font face="Arial" size="3" color="#000086">Minimum</font></P>
+				</TD>
+				<TD WIDTH=208>
+					<P><font face="Arial" size="3" color="#000086">+ 0.0 / -0.001&quot;</font></P>
+				</TD>
+			</TR>
+		</TBODY>
+	</TABLE>
+</DL>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3"><BR>
+When
+specifying the dimensions of a bearing especially with a thin walled
+bearing, it is usually better to specify the outside diameter and
+tolerance with the wall thickness and tolerance. This reduces the
+possible error caused by the stacking of tolerances that could lead
+to a shaft seizure even though dimensions are all within the
+specified tolerance.</font>
+</P>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="3"><a href="mach_guides.htm">Machining
+guidelines for Vesconite</a><br>
+<a href="bearing_groove.htm">Bearing groove
+design</a></font></P>
+<P STYLE="margin-bottom: 0in"><font face="Arial" size="1">Updated Jan 25&nbsp; 2002</font></P>
+<!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<div align="center">
+  <center>
+  <table border="0" cellspacing="1" cellpadding="2" width="570">
+    <tr>
+      <td width="4">
+        <p align="center"><a href="../../index.htm"><img border="0" src="../../_borders/VSalesLogo.gif" width="67" height="30" alt="Vesconite Manufacturer: Home Page"></a></p>
+      </td>
+      <td width="556">
+        <p align="center"><font face="Arial" size="2"><font color="#000000">
+        For </font><font color="#FF0000">information and quotes,</font><font color="#000000">
+e-mail </font><a href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</a></font>
+      </td>
+    </tr>
+    <tr>
+      <td width="528" colspan="2"><p align="center"><font face="Arial" size="2"><a href="../../index.htm">Home</a><font color="#000080">&nbsp;
+        | &nbsp;</font><a href="../../vesco/contact.htm">Contact us</a> &nbsp;<font color="#000080">
+        |</font>&nbsp; <a href="../../vesco/site.htm">Site map</a>&nbsp;<font color="#000080">
+        |&nbsp; <a href="../../vesco/site_search.htm">Search</a>&nbsp;
+        |&nbsp;&nbsp;</font><a href="../../enquiry.htm">Enquiry
+        form</a><font color="#000080">&nbsp;&nbsp; |&nbsp; <a href="../../footer_links/copyright.htm">Copyright</a>&nbsp;
+        |&nbsp; <a href="../../footer_links/privacy.htm">Privacy</a></font></font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial"><font color="#FF0000">Feedback</font>
+        is appreciated!&nbsp; Please e-mail the <a href="mailto:jm@vescoplastics.com">webmaster</a></font></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font face="Arial" color="#FF0000" size="1">UK toll
+        free 0800 731 9745.&nbsp; USA toll
+        free (7-5 EST) 1-866-635-7596.&nbsp; Linea gratuita desde Chile 800 104 646<br>
+        &nbsp; Rest of world +2711 616 44 44. South
+        Africa (011) 616 11 11</font></td>
+    </tr>
+    <tr>
+      <td width="560" colspan="2">
+        <p align="center"><font size="1" face="Arial">All Rights Reserved ©
+        1999-2002&nbsp; VescoPlastics Sales (Pty) Ltd&nbsp;&nbsp;&nbsp; <a href="../../footer_links/warranty.htm">Warranty
+        disclaimer</a></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p>&nbsp;</p>
+
+</td></tr><!--msnavigation--></table></BODY>
+</HTML>

@@ -1,0 +1,972 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0072)http://www.vesconite.co.za/quote/design/DAB/Indust/DAB_indust_metric.htm -->
+<HTML><HEAD><TITLE>Vesconite Industrial Design-a-Bearing Calculator Metric</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content=JavaScript name=VI60_defaultClientScript>
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<META content=noindex,nofollow name=robots><!--
+<%@ Language=JavaScript%>
+//-->
+<SCRIPT id=clientEventHandlersJS language=javascript>
+<!--
+
+function calc1_onclick() 
+{
+
+<!--  INPUT AND ALLOCATIONS -->
+	
+	Dmax=eval(document.FrontPage_Form1.Dmax.value);
+	
+	d=eval(document.FrontPage_Form1.d.value);
+	L=eval(document.FrontPage_Form1.L.value);
+	Tmax=eval(document.FrontPage_Form1.Tmax.value);
+	Tmin=eval(document.FrontPage_Form1.Tmin.value);
+	M=eval(document.FrontPage_Form1.M.value);
+	n=eval(document.FrontPage_Form1.n.value);
+	R=eval(document.FrontPage_Form1.R.value);
+	r=eval(document.FrontPage_Form1.r.value);
+	deg=eval(document.FrontPage_Form1.deg.value);
+	freq=eval(document.FrontPage_Form1.freq.value);
+	trav=eval(document.FrontPage_Form1.trav.value);
+
+
+if (document.FrontPage_Form1.Dmax.value=="")
+	alert("Please insert an Outside Diameter!");
+if (document.FrontPage_Form1.d.value=="")
+	alert("Please insert an Inside Diameter!");
+if (document.FrontPage_Form1.L.value=="")
+	alert("Please insert a length!");
+	
+<!-- GET SYSTEM DATE   -->
+		 if (document.FrontPage_Form1.today.value=="")  
+	 	 {	Date=new Date();  
+			document.FrontPage_Form1.today.value=Date;  }
+
+<!--   CALCS -->	 
+<!--   POPUPS Wall and Ovality  -->
+
+popup_ovality="  ";
+
+
+popup_wallthick="  ";
+wallperc=(Dmax-d)/(2*Dmax);
+if (wallperc<0.05)
+	popup_wallthick="Thin walled bush, possibly difficult to machine and secure. Consider thicker wall.";
+
+
+<!--   CALCULATION OF THE SLIDING SPEED V and LOAD P and the PV-->	
+
+	Vrot=0;
+	Vosc=0;
+	Vlin=0;	
+	V=0;
+
+	Vrot=3.14*d*R/1000;
+	Vosc=r*6.28*d*deg/360000;
+	Vlin=freq*trav*2/1000;
+	V=Vrot+Vosc+Vlin;
+P=0;
+if (Dmax>0||L>0)
+	P=(M*9.81)/(d*L*n);
+
+PV=P*V;
+
+<!--   CALCULATION OF THE OUTPUTS -->
+
+popup_load=("  ");
+
+if(P>20)
+	popup_load=("High load application, contact VescoPlastics");
+
+popup_speed=("  ");
+
+if(V>200)
+	popup_speed=("High speed application, contact VescoPlastics");
+
+popup_PV="  "; 
+
+popup_PV=("No lubrication is required, but initial lubrication increases life");
+if(PV>5)
+	popup_PV="Initial lubrication is required for Vesconite";
+if(PV>10)
+	popup_PV="Regular lubrication is required for Vesconite";
+if(PV>20)
+	popup_PV="Continuous lubrication is required for Vesconite";
+if(PV>40)
+	popup_PV="Underwater operation, please contact VescoPlastics";
+
+
+
+<!--   CALCULATIONS OF PRESS FIT RUNNING CLEARNACE AND BUSH SIZES -->	
+
+<!--   PRESS FITS -->
+fitfac=1;
+if (document.FrontPage_Form1.pressfit.checked==false)
+	fitfac=0;
+NWT=0;
+int2=0;
+NWT=(Dmax-d)/2;
+if (d>0)
+	int2=(Dmax*Dmax-d*d)/d;
+
+PFstd=0;
+PFadd=0;
+PF=0;
+expgap=0;
+popup_expgap=" ";
+
+PFstd=(Dmax*0.002)+0.05;
+PFadd=0.0;
+AC=(NWT*0.02)+0.05;
+EC=0.0;
+expgap=0.0;
+popup_expgap="  ";
+expgap1=0.0;
+popup_expgap1="   ";
+
+
+if(Tmin<5.0)
+	PFadd=(5.0-Tmin)*0.000054*Dmax;
+if(Tmax>50.0)
+	EC=int2*6.0*(Tmax-50.0)*0.00001;
+if(Tmax>70.0)
+	{PFstd=0;
+	PFadd=0;
+	EC=0;
+	expgap=d*3.14*0.00006*(Tmax-21.0)+0.2;
+	popup_expgap1="Secure bush mechanically.";
+	popup_expgap="Expansion gap required.  Secure bush mechanically.";}
+
+PF=(PFstd+PFadd)*fitfac;
+
+popup_temphot="  ";
+popup_tempcold="  ";
+
+
+coldtemp=0.0-Tmin;
+if(coldtemp>10.0)
+	popup_tempcold=("Cold temperature, contact VescoPlastics");
+if(Tmax>70.0)
+	popup_temphot=("High temperature, contact VescoPlastics");
+
+BC=0;
+if (d>0)
+	BC=PF*Dmax/d;
+OD=0;
+ID=0;
+L1=0;
+
+OD=Dmax+PF;
+ID=d+BC+EC+AC;
+FID=d+EC+AC;
+L1=L;
+
+<!--   CALCULATION OF FORCE REQUIRED TO FIT -->
+
+force=0;
+if (Dmax>0)
+	force=(PF*L*(Dmax-d))/(10*Dmax);
+nnn=Math.ceil(force*10)/10;
+
+popup_temp1=" ";
+popup_temp1="  ";
+Ffit1=0;
+Ffit2=0;
+
+Ffit1=OD*0.9961;
+Ffit2=OD*0.9922;
+
+
+<!--   TEMPERATURE ADJUSTMENTS -->
+
+ODtemp1=OD*0.99883;
+ODtemp2=OD*0.999155;
+ODtemp3=OD*0.99948;
+ODtemp4=OD;
+ODtemp5=OD*1.00052;
+ODtemp6=OD*1.000845;
+
+IDTemp1=ID*0.99883;
+IDTemp2=ID*0.999155;
+IDTemp3=ID*0.99948;
+IDTemp4=ID*1.0;
+IDTemp5=ID*1.00052;
+IDTemp6=ID*1.000845;
+
+
+<!--   TOLERANCES  -->
+
+ODtol=OD*0.001;
+IDtol=ID*0.001;
+L1=L;
+L1tol=L*0.005;
+WT=(OD-ID)/2;
+WTtol=0.005*WT;
+
+if (ODtol<0.025)
+	ODtol=0.025;
+if (IDtol<0.025)
+	IDtol=0.025;
+if (WTtol<0.025)
+	WTtol=0.025;
+if (L1tol<0.3)
+	L1tol=0.3;
+
+D_out=Dmax;
+d_out=d;
+
+Fclear=ID-BC-d;
+
+
+
+<!-- INTERMEDIATE  -->
+
+
+	document.FrontPage_Form1.P.value=(Math.round(P*100))/100;
+	document.FrontPage_Form1.V.value=(Math.round(V*100))/100;
+	document.FrontPage_Form1.PV.value=(Math.round(PV*100))/100;
+
+	document.FrontPage_Form1.expgap.value=(Math.round(expgap*100))/100;
+	document.FrontPage_Form1.popup_expgap.value=popup_expgap;
+
+	document.FrontPage_Form1.PF.value=(Math.round(PF*100))/100;
+	document.FrontPage_Form1.BC.value=(Math.round(BC*100))/100;
+	document.FrontPage_Form1.EC.value=(Math.round(EC*100))/100;
+	document.FrontPage_Form1.FID.value=(Math.round(FID*100))/100;
+	document.FrontPage_Form1.Fclear.value=(Math.round(Fclear*100))/100;
+	document.FrontPage_Form1.nnn.value=nnn;
+	document.FrontPage_Form1.Ffit1.value=(Math.round(Ffit1*10))/10;
+	document.FrontPage_Form1.Ffit2.value=(Math.round(Ffit2*10))/10;
+
+
+
+document.FrontPage_Form1.popup_wallthick.value=popup_wallthick;
+document.FrontPage_Form1.popup_temphot.value=popup_temphot;
+document.FrontPage_Form1.popup_tempcold.value=popup_tempcold;
+document.FrontPage_Form1.popup_load.value=popup_load;
+document.FrontPage_Form1.popup_speed.value=popup_speed;
+document.FrontPage_Form1.popup_PV.value=popup_PV;
+
+
+document.FrontPage_Form1.expgap1.value=(Math.round(expgap*100))/100;
+document.FrontPage_Form1.popup_expgap1.value=popup_expgap1;
+
+
+<!-- ROUNDING -->
+
+	
+
+<!-- STRAIGHT BUSH DRAWING OUTPUT  -->
+
+	document.FrontPage_Form1.ODtemp1.value=(Math.round(ODtemp1*100))/100;
+	document.FrontPage_Form1.ODtemp2.value=(Math.round(ODtemp2*100))/100;
+	document.FrontPage_Form1.ODtemp3.value=(Math.round(ODtemp3*100))/100;
+	document.FrontPage_Form1.ODtemp4.value=(Math.round(ODtemp4*100))/100;
+	document.FrontPage_Form1.ODtemp5.value=(Math.round(ODtemp5*100))/100;
+	document.FrontPage_Form1.ODtemp6.value=(Math.round(ODtemp6*100))/100;
+
+	document.FrontPage_Form1.IDTemp1.value=(Math.round(IDTemp1*100))/100;
+	document.FrontPage_Form1.IDTemp2.value=(Math.round(IDTemp2*100))/100;
+	document.FrontPage_Form1.IDTemp3.value=(Math.round(IDTemp3*100))/100;
+	document.FrontPage_Form1.IDTemp4.value=(Math.round(IDTemp4*100))/100;
+	document.FrontPage_Form1.IDTemp5.value=(Math.round(IDTemp5*100))/100;
+	document.FrontPage_Form1.IDTemp6.value=(Math.round(IDTemp6*100))/100;
+
+
+	document.FrontPage_Form1.OD.value=(Math.round(OD*100))/100;
+	document.FrontPage_Form1.ODtol.value=(Math.round(ODtol*100))/100;
+	document.FrontPage_Form1.ID.value=(Math.round(ID*100))/100;
+	document.FrontPage_Form1.IDtol.value=(Math.round(IDtol*100))/100;
+	document.FrontPage_Form1.L1.value=(Math.round(L1*100))/100;
+	document.FrontPage_Form1.L1tol.value=(Math.round(L1tol*100))/100;
+	document.FrontPage_Form1.WT.value=(Math.round(WT*100))/100;
+	document.FrontPage_Form1.WTtol.value=(Math.round(WTtol*100))/100;
+
+	document.FrontPage_Form1.ODc.value=(Math.round(OD*100))/100;
+	document.FrontPage_Form1.ODtolc.value=(Math.round(ODtol*100))/100;
+	document.FrontPage_Form1.IDc.value=(Math.round(ID*100))/100;
+	document.FrontPage_Form1.IDtolc.value=(Math.round(IDtol*100))/100;
+	document.FrontPage_Form1.L1c.value=(Math.round(L1*100))/100;
+	document.FrontPage_Form1.L1tolc.value=(Math.round(L1tol*100))/100;
+
+
+	document.FrontPage_Form1.D_out.value=D_out;
+	document.FrontPage_Form1.d_out.value=d_out;
+
+	document.FrontPage_Form1.Tmax_out.value=Tmax;
+	document.FrontPage_Form1.Tmin_out.value=Tmin;
+
+
+}
+
+//-->
+</SCRIPT>
+
+<STYLE></STYLE>
+
+<meta name="Microsoft Border" content="none">
+</HEAD>
+<BODY bgColor=#ffffff style="FONT-FAMILY: Arial; FONT-SIZE: 10pt" topMargin=0>
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.d.value == "")
+  {
+    alert("Please enter a value for the \"d\" field.");
+    theForm.d.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.";
+  var checkStr = theForm.d.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"d\" field.");
+    theForm.d.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"d\" field.");
+    theForm.d.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.";
+  var checkStr = theForm.Tmax.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Tmax\" field.");
+    theForm.Tmax.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Please enter a valid number in the \"Tmax\" field.");
+    theForm.Tmax.focus();
+    return (false);
+  }
+
+  if (theForm.Contact_person.value == "")
+  {
+    alert("Please enter a value for the \"Contact_person\" field.");
+    theForm.Contact_person.focus();
+    return (false);
+  }
+
+  if (theForm.email_address.value == "")
+  {
+    alert("Please enter a value for the \"email_address\" field.");
+    theForm.email_address.focus();
+    return (false);
+  }
+
+  if (theForm.tel.value == "")
+  {
+    alert("Please enter a value for the \"tel\" field.");
+    theForm.tel.focus();
+    return (false);
+  }
+
+  if (theForm.Fax.value == "")
+  {
+    alert("Please enter a value for the \"Fax\" field.");
+    theForm.Fax.focus();
+    return (false);
+  }
+
+  if (theForm.Company.value == "")
+  {
+    alert("Please enter a value for the \"Company\" field.");
+    theForm.Company.focus();
+    return (false);
+  }
+
+  if (theForm.Country.value == "")
+  {
+    alert("Please enter a value for the \"Country\" field.");
+    theForm.Country.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><FORM action=../../../_vti_bin/shtml.dll/design/bush/indust/DAB_indust_metric.htm 
+method=POST name=FrontPage_Form1 
+onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" webbot-action="--WEBBOT-SELF--">
+  <!--webbot bot="SaveResults" S-Email-Format="HTML/BR" S-Email-Address="vesconite@vesconite.com" B-Email-Label-Fields="TRUE" B-Email-Subject-From-Field="FALSE" S-Email-Subject="Customer Service: Industrial Metric Design-a-Bearing " S-Date-Format="%A, %B %d, %Y" S-Time-Format="%I:%M:%S %p" S-Builtin-Fields="Date Time" S-Form-Fields="Contact_person email_address tel Country Company quote_request Qty_per_order qty_per_year Comments Dmax d L pressfit Tmax Tmin M n R deg trav r freq P V PV " U-Confirmation-Url="../DAB_confirm.htm" startspan --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot bot="SaveResults" i-checksum="43374" endspan --> 
+<DIV align=center>
+<TABLE bgColor=#dfffdf border=0 borderColor=#000086 cellSpacing=0 height=630 
+width=600>
+  <TBODY>
+  <TR>
+    <TD align=right bgColor=#009BE6 colSpan=5 height=24 width=593 bordercolor="#009BE6">
+      <P align=left><B><FONT color=#000080 face=Arial size=4>Vesconite 
+      </FONT><span style="background-color: #DFFFDF">
+      <FONT color=#000080 face=Arial size=4>INDUSTRIAL</FONT></span><FONT 
+      color=#000080 face=Arial size=4>&nbsp;  Design-a-Bearing&nbsp;Calculator </FONT>
+      <span style="background-color: #DFFFDF">
+      <FONT face=Arial size=4 color="#000080">Metric </FONT></span>
+      <FONT 
+      color=#000080 face=Arial size=2>v 2.4</FONT></B></P></TD></TR>
+  <CENTER>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=1 width=241>
+      <P align=right><FONT face=Arial size=2>Housing size</FONT></P></TD>
+    <TD align=left bgColor=#dfffdf height=1 width=8>&nbsp;</TD>
+    <TD align=left bgColor=#dfffdf height=1 width=111><FONT face=Arial 
+      size=2><INPUT name=Dmax size=7 tabIndex=1> mm</FONT></TD>
+    <TD align=left bgColor=#dfffdf colSpan=2 height=90 vAlign=top 
+      width=262 rowspan="3"><font face="Arial" size="2" color="#FF0000"><b><a href="../../techinfo/help.htm">Help</a></b></font><TEXTAREA cols=45 name=popup_wallthick style="FONT-FAMILY: Times New Roman" tabIndex=-1 rows="2">  </TEXTAREA> 
+ </TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=30 width=241><FONT face=Arial 
+      size=2>Shaft size</FONT></TD>
+    <TD align=left bgColor=#dfffdf height=30 width=8>&nbsp;</TD>
+    <TD align=left bgColor=#dfffdf height=30 width=111><FONT face=Arial 
+size=2>
+    <!--webbot bot="Validation" s-data-type="Number" s-number-separators="x." b-value-required="TRUE" --><INPUT name=d size=7 tabIndex=3> 
+      mm</FONT></TD>
+  </TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=30 width=241><FONT face=Arial 
+      size=2>Bearing length</FONT></TD>
+    <TD align=left bgColor=#dfffdf height=30 width=8>&nbsp;</TD>
+    <TD align=left bgColor=#dfffdf height=30 width=111><FONT face=Arial 
+      size=2><INPUT name=L size=7 tabIndex=4> mm</FONT></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=20 width=241><FONT face=Arial 
+      size=2>Press fit?</FONT></TD>
+    <TD align=left bgColor=#dfffdf height=20 width=8>&nbsp;</TD>
+    <TD align=left bgColor=#dfffdf height=20 width=111><FONT face=Arial 
+      size=2><INPUT CHECKED name=pressfit tabIndex=5 type=checkbox 
+      value=ON></FONT></TD>
+    <TD align=left bgColor=#dfffdf colSpan=2 height=40 rowSpan=2 width=257><TEXTAREA cols=45 name=popup_temphot style="FONT-FAMILY: Times New Roman" tabIndex=-1 rows="2">  </TEXTAREA> 
+    </TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=35 width=241><FONT face=Arial 
+      size=2>Maximum operating temp</FONT></TD>
+    <TD align=left bgColor=#dfffdf height=35 width=8>&nbsp;</TD>
+    <TD align=left bgColor=#dfffdf height=35 width=111><FONT face=Arial 
+size=2>
+    <!--webbot bot="Validation" s-data-type="Number" s-number-separators="x." --><INPUT name=Tmax size=4 tabIndex=6 value=40> °C</FONT></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=20 width=241><FONT face=Arial 
+      size=2>Minimum operating temp</FONT></TD>
+    <TD align=left bgColor=#dfffdf height=20 width=8>&nbsp;</TD>
+    <TD align=left bgColor=#dfffdf height=20 width=111><FONT face=Arial 
+      size=2><INPUT name=Tmin size=4 tabIndex=7 value=-5> °C</FONT></TD>
+    <TD align=left bgColor=#dfffdf colSpan=2 height=60 rowSpan=3 width=257><TEXTAREA cols=45 name=popup_tempcold style="FONT-FAMILY: Times New Roman" tabIndex=-1 rows="2">  </TEXTAREA> 
+    </TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=20 width=241><FONT face=Arial 
+      size=2>Total mass supported</FONT></TD>
+    <TD align=left bgColor=#dfffdf height=20 width=8>&nbsp;</TD>
+    <TD align=left bgColor=#dfffdf height=20 width=111><FONT face=Arial 
+      size=2><INPUT name=M size=7 tabIndex=8 value=0> kg</FONT></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=20 width=241><FONT face=Arial 
+      size=2>Number of bearings<BR>supporting total mass</FONT></TD>
+    <TD align=left bgColor=#dfffdf height=20 width=8>&nbsp;</TD>
+    <TD align=left bgColor=#dfffdf height=20 width=111><FONT face=Arial 
+      size=2><INPUT name=n size=4 tabIndex=9 value=1></FONT></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf colSpan=5 height=86 width=617>
+      <DIV align=center>
+      <CENTER>
+      <TABLE bgColor=#dfffdf border=0 cellSpacing=1 width=596>
+        <TBODY>
+        <TR>
+          <TD width=112></TD>
+          <TD width=150><FONT face=Arial size=2><I><FONT 
+            color=#000086>Rotation</FONT></I></FONT></TD>
+          <TD width=216><FONT face=Arial size=2><I><FONT 
+            color=#000086>Oscillation</FONT></I>&nbsp;</FONT></TD>
+          <TD width=235><FONT face=Arial size=2><I><FONT 
+            color=#000086>Linear</FONT></I></FONT></TD></TR>
+        <TR>
+          <TD width=112></TD>
+          <TD width=150><FONT face=Arial size=2><INPUT name=R size=4 
+            tabIndex=10 value=0> rpm</FONT></TD>
+          <TD width=216><FONT face=Arial size=2><INPUT name=deg size=4 
+            tabIndex=11 value=0> degrees</FONT></TD>
+          <TD width=235><FONT face=Arial size=2><INPUT name=trav size=4 
+            tabIndex=13 value=0> mm travelled</FONT></TD></TR>
+        <TR>
+          <TD width=112></TD>
+          <TD width=150></TD>
+          <TD width=216><FONT face=Arial size=2><INPUT name=r size=4 
+            tabIndex=12 value=0> cycles per minute</FONT></TD>
+          <TD width=235><FONT face=Arial size=2><INPUT name=freq size=4 
+            tabIndex=14 value=0> cycles per 
+      minute</FONT></TD></TR></TBODY></TABLE></CENTER></DIV></TD></TR></CENTER>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=27 width=241><FONT color=#000086 
+      face=Arial size=2>Scroll down for results </FONT><FONT color=#000086 
+      face=Wingdings size=2>ê</FONT><FONT color=#000086 face=Arial 
+      size=2>&nbsp;</FONT> </TD>
+    <TD align=left bgColor=#dfffdf height=27 width=8>&nbsp;</TD>
+    <TD align=left bgColor=#dfffdf height=27 width=111><FONT color=#000086 
+      face=Arial size=2>
+    <INPUT language=javascript name=calc1 onclick="return calc1_onclick()" style="COLOR: #000086; FONT-FAMILY: Arial; FONT-SIZE: 12pt; font-weight:bold" tabIndex=15 type=button value=Calculate></FONT></TD>
+    <TD align=left bgColor=#dfffdf colSpan=2 height=27 width=262><FONT 
+      color=#000086 face=Wingdings size=2>ê</FONT><FONT color=#000086 
+      face=Arial size=2>&nbsp; Drawing included&nbsp; </FONT><FONT color=#000086 
+      face=Wingdings size=2>ê</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#dfffdf colSpan=5 height=18 width=622>&nbsp; 
+  </TD></TR>
+  <TR>
+    <TD align=middle bgColor=#009BE6 colSpan=5 height=18 width=622 bordercolor="#009BE6">
+      <P align=center><b><FONT 
+      color=#000080 face="Arial" size="3">&nbsp;<SUP>Outside Dia</SUP></FONT></b><FONT color=#ffffff face=Arial size=3><b><FONT color=#000080> 
+      </FONT></b><FONT color=#000080 face=Arial size=3><SUP><b><INPUT name=ODc size=5 tabIndex=-1></b></SUP></FONT><b><FONT color=#000080> 
+      </FONT></b><SUP><FONT color=#000080 face=Arial size=3><b>±<INPUT name=ODtolc size=3 tabIndex=-1>&nbsp; &nbsp; Inside 
+      Dia <INPUT name=IDc size=5 tabIndex=-1> ±<INPUT name=IDtolc size=3 
+      tabIndex=-1>&nbsp;&nbsp;&nbsp; Length <INPUT name=L1c size=4 tabIndex=-1> 
+      +0.0/- <INPUT name=L1tolc size=3 tabIndex=-1></b></FONT></SUP></FONT></P></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=62 width=241>
+      <P align=right><FONT face=Arial size=2>Loading&nbsp;P =</FONT></P></TD>
+    <TD bgColor=#dfffdf height=62 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=62 width=111><FONT face=Arial size=2><INPUT 
+      name=P size=5 tabIndex=-1> MPa</FONT></TD>
+    <TD bgColor=#dfffdf colSpan=2 height=62 width=262><TEXTAREA cols=45 name=popup_load style="FONT-FAMILY: Times New Roman" tabIndex=-1 rows="2">  </TEXTAREA></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=62 width=241>
+      <P align=right><FONT face=Arial size=2>Shaft surface speed&nbsp; V 
+      =</FONT></P></TD>
+    <TD bgColor=#dfffdf height=62 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=62 width=111><FONT face=Arial size=2><INPUT 
+      name=V size=5 tabIndex=-1> m/min</FONT></TD>
+    <TD bgColor=#dfffdf colSpan=2 height=62 width=262><TEXTAREA cols=45 name=popup_speed style="FONT-FAMILY: Times New Roman" tabIndex=-1 rows="2"></TEXTAREA></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=62 width=241>
+      <P align=right><FONT face=Arial size=2>PV =</FONT></P></TD>
+    <TD bgColor=#dfffdf height=62 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=62 width=111><FONT face=Arial size=2><INPUT 
+      name=PV size=5 tabIndex=-1>MPa.m/min</FONT></TD>
+    <TD bgColor=#dfffdf colSpan=2 height=62 width=262><TEXTAREA cols=45 name=popup_PV style="FONT-FAMILY: Times New Roman" tabIndex=-1 rows="2"></TEXTAREA></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=62 width=241>
+      <P align=right><FONT face=Arial size=2>Expansion gap</FONT></P></TD>
+    <TD bgColor=#dfffdf height=62 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=62 width=111><FONT face=Arial size=2><INPUT 
+      name=expgap size=6 tabIndex=-1> mm</FONT></TD>
+    <TD bgColor=#dfffdf colSpan=2 height=62 width=262><FONT face=Arial size=2><TEXTAREA cols=45 name=popup_expgap style="FONT-FAMILY: Times New Roman" tabIndex=-1 rows="2">  </TEXTAREA></FONT></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=25 width=241><FONT face=Arial 
+      size=2>Interference fit</FONT></TD>
+    <TD bgColor=#dfffdf height=25 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=25 width=111><FONT face=Arial size=2><INPUT 
+      name=PF size=4 tabIndex=-1> mm</FONT></TD>
+    <TD bgColor=#dfffdf height=25 width=262 colspan="2"><font face="Arial" size="2" color="#000086"><a href="../../techinfo/techinfo_links.htm">Useful
+      links</a></font></TD>
+  </TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=25 width=241><FONT face=Arial 
+      size=2>Bore closure</FONT></TD>
+    <TD bgColor=#dfffdf height=25 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=25 width=111><FONT face=Arial size=2><INPUT 
+      name=BC size=4 tabIndex=-1> mm</FONT></TD>
+    <TD bgColor=#dfffdf height=25 width=131><FONT color=#000086 face=Arial 
+      size=2><a href="../../techinfo/bearing_ret.htm">Bearing 
+      retention</a></FONT></TD>
+    <TD bgColor=#dfffdf height=25 width=131><FONT color=#000086 face=Arial 
+      size=2><a href="../../techinfo/metric_PV_calc.htm">PV 
+      calculations</a></FONT></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=25 width=241><FONT face=Arial 
+      size=2>Additional clearance</FONT></TD>
+    <TD bgColor=#dfffdf height=25 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=25 width=111><FONT face=Arial size=2><INPUT 
+      name=EC size=4 tabIndex=-1> mm</FONT></TD>
+    <TD bgColor=#dfffdf height=25 width=131><FONT color=#000086 
+      face=Arial size=2><a href="../../../charts/prodlist.htm">Production 
+      range</a></FONT></TD>
+    <TD bgColor=#dfffdf height=25 width=131><font face="Arial" size="2" color="#000086"><a href="../../techinfo/bearing_groove.htm">Grooves</a></font></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=25 width=241><font face="Arial" size="2">Assembled
+      clearance</font></TD>
+    <TD bgColor=#dfffdf height=25 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=25 width=111><FONT face=Arial size=2><INPUT 
+      name=Fclear size=4 tabIndex=-1> mm</FONT></TD>
+    <TD bgColor=#dfffdf colSpan=2 height=25 width=262><FONT color=#000086 
+      face=Arial size=2><a href="../../techinfo/mach_guides.htm">Machining 
+      guidelines</a></FONT> </TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=25 width=241><font face="Arial" size="2">Fitted
+      inside diameter</font></TD>
+    <TD bgColor=#dfffdf height=25 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=25 width=111><font face="Arial" size="2"><input type="text" name="FID" size="4" tabindex="-1">
+      mm</font></TD>
+    <TD bgColor=#dfffdf colSpan=2 height=25 width=262>&nbsp;</TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=25 width=241><FONT face=Arial 
+      size=2>Press fit force</FONT></TD>
+    <TD bgColor=#dfffdf height=25 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=25 width=111><FONT face=Arial size=2><INPUT 
+      name=nnn size=4 tabIndex=-1> tons</FONT></TD>
+    <TD bgColor=#dfffdf colSpan=2 height=25 width=262><FONT color=#000086 
+      face=Arial size=2><a href="../../techinfo/metric_size_calc.htm#Temperature limits">Temperature 
+      calculations &amp; limits</a>&nbsp;</FONT> </TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=25 width=241><FONT face=Arial 
+      size=2>OD after cooling with dry ice</FONT></TD>
+    <TD bgColor=#dfffdf height=25 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=25 width=111><FONT face=Arial size=2><INPUT 
+      name=Ffit1 size=4 tabIndex=-1> mm</FONT></TD>
+    <TD bgColor=#dfffdf colSpan=2 height=25 width=262><FONT color=#000086 
+      face=Arial size=2><a href="../../techinfo/press_freeze_fit.htm">Press and
+      freeze fitting</a></FONT></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf height=25 width=241><FONT face=Arial 
+      size=2>&nbsp;OD after cooling with liquid nitrogen</FONT></TD>
+    <TD bgColor=#dfffdf height=25 width=8>&nbsp;</TD>
+    <TD bgColor=#dfffdf height=25 width=111><FONT face=Arial size=2><INPUT 
+      name=Ffit2 size=4 tabIndex=-1> mm</FONT></TD>
+    <TD bgColor=#dfffdf colSpan=2 height=25 width=262><FONT color=#000086 
+      face=Arial size=2><a href="../../techinfo/metric_size_calc.htm">Size 
+      calculations</a></FONT></TD></TR></TBODY></TABLE></DIV>
+<P align="center"><FONT 
+      color=#000086 face=Wingdings size=2>ê</FONT><FONT color=#000086 
+      face=Arial size=2>&nbsp; Drawing included&nbsp; </FONT><FONT color=#000086 
+      face=Wingdings size=2>ê</FONT></P>
+<HR>
+
+<DIV align=center>
+<CENTER>
+<TABLE border=0 cellSpacing=1 height=55 width=600>
+  <TBODY>
+  <TR>
+    <TD height=51 width=281><FONT face=Arial size=3>Tel:&nbsp; +27 11 616 
+      1111<BR>Fax: +27 11 616 2222<BR>e-mail: <A 
+      href="mailto:vesconite@vesconite.com">vesconite@vesconite.com</A><BR><A 
+      href="http://www.vesconite.com/">www.vesconite.com/</A></FONT></TD>
+    <TD height=51 width=42></TD>
+    <TD height=51 width=280>
+      <P align=center><B><FONT face=Arial size=5>Free Standing Bearing<BR></FONT></B>Not to scale<FONT color=#000086 face=Arial 
+      size=3><BR></FONT><FONT color=#000086 face=Arial size=4><B>Material: 
+      Vesconite</B></FONT></P></TD></TR></TBODY></TABLE></CENTER></DIV>
+<HR>
+
+<DIV align=center>
+<CENTER>
+<TABLE border=0 cellSpacing=1 height=614 width=579>
+  <TBODY>
+  <TR>
+    <TD height=20 width=139></TD></CENTER>
+    <TD height=20 width=160>
+      <P align=right><FONT color=#000086 face=Arial size=2>Length&nbsp; 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT></P></TD>
+    <CENTER>
+    <TD height=20 width=159></TD>
+    <TD height=20 width=138></TD></TR>
+  <TR>
+    <TD height=23 width=139></TD>
+    <TD colSpan=2 height=23 width=319>
+      <P align=center><FONT color=#000086 face=Arial size=2>&nbsp; </FONT><INPUT 
+      name=L1 size=6 tabIndex=-1><FONT color=#000086 face=Arial size=2> 
+      +0.0/</FONT><FONT color=#000086 face=Arial size=3>- </FONT><INPUT 
+      name=L1tol size=3 tabIndex=-1> <FONT color=#000086 face=Arial 
+      size=2>mm</FONT></P></TD>
+    <TD height=23 width=138></TD></TR>
+  <TR>
+    <TD height=238 width=139><FONT size=2><FONT color=#000086 
+      face=Arial>Outside Diameter<BR></FONT><INPUT name=OD size=6 
+      tabIndex=-1><FONT color=#000086 face=Arial 
+      size=2>&nbsp;</FONT></FONT><FONT color=#000086 face=Arial 
+      size=2>+/</FONT><FONT color=#000086 face=Arial size=3>-</FONT><FONT 
+      color=#000086 face=Arial size=2><INPUT name=ODtol size=3 tabIndex=-1> 
+      mm</FONT></TD>
+    <TD colSpan=2 height=238 width=319><img border="0" src="../bushwt2.gif" width="321" height="234"></TD>
+    <TD height=238 width=138>
+      <P><BR><BR><BR><BR></P>
+      <P><FONT color=#000086 face=Arial size=2>Inside Diameter<BR></FONT><INPUT 
+      name=ID size=6 tabIndex=-1> <FONT color=#000086 face=Arial 
+      size=2>+/</FONT><FONT color=#000086 face=Arial size=3>-</FONT><FONT 
+      face=Arial size=2><INPUT name=IDtol size=3 tabIndex=-1> </FONT><FONT 
+      color=#000086 face=Arial size=2>mm</FONT></P>
+      <P><FONT color=#000086 face=Arial size=2><BR><BR><BR>Wall Thickness 
+      mm</FONT><BR><INPUT name=WT size=4 tabIndex=-1> <FONT color=#000086 
+      face=Arial size=2>+0.0/</FONT><FONT color=#000086 face=Arial 
+      size=3>-</FONT><INPUT name=WTtol size=4 tabIndex=-1></P></TD></TR>
+  <TR>
+    <TD colSpan=4 height=317 width=585>&nbsp; 
+      <DIV align=left>
+      <TABLE border=0 cellPadding=0 cellSpacing=0 height=295 width=600>
+        <TBODY>
+        <TR>
+          <TD colSpan=5 height=25 width=566><FONT face=Arial size=3>Expansion 
+            gap <INPUT name=expgap1 size=3 tabIndex=-1> 
+            mm&nbsp;&nbsp;</FONT>&nbsp; <FONT face=Arial size=3><INPUT 
+            name=popup_expgap1 size=37 style="FONT-FAMILY: Times New Roman" 
+            tabIndex=-1></FONT></TD></TR>
+        <TR>
+          <TD colSpan=5 height=18 width=566>&nbsp;&nbsp;</TD></TR>
+        <TR>
+          <TD colSpan=5 height=21 width=566>
+            <HR>
+          </TD></TR>
+        <TR>
+          <TD colSpan=4 height=33 width=330><FONT face=Arial size=3>Housing 
+            <INPUT name=D_out size=6 tabIndex=-1> mm&nbsp;&nbsp;&nbsp; Shaft 
+            <INPUT name=d_out size=6 tabIndex=-1>&nbsp; mm</FONT></TD>
+          <TD height=206 rowSpan=7 width=242>
+            <DIV align=right>
+            <TABLE border=1 borderColor=#0080c0 borderColorDark=#0080c0 
+            borderColorLight=#0080c0 cellPadding=0 cellSpacing=0 width=246 height="195">
+              <TBODY>
+              <TR>
+                <TD align=middle colSpan=3 width=250 height="32">
+                  <P align=center><FONT color=#000080 face=Arial size=2>Size 
+                  adjustment for various machining temperatures</FONT></P></TD></TR>
+              <CENTER></CENTER>
+              <TR>
+                <TD align=middle width=136 height="15">
+                  <P align=left><FONT color=#000080 face=Arial size=2><B>Bearing 
+                  temp</B></FONT></P></TD>
+                <CENTER>
+                <TD align=middle width=61 height="15"><B>
+                <FONT color=#000080 face=Arial 
+                  size=2>OD mm</FONT></B></TD>
+                <TD align=middle width=94 height="15"><B>
+                <FONT color=#000080 face=Arial 
+                  size=2>ID mm</FONT></B></TD></TR>
+              <TR>
+                <TD align=middle vAlign=center width=136 height="22"><FONT color=#000086 
+                  face=Arial size=2>5-10 °C</FONT></TD>
+                <CENTER></CENTER>
+                <TD align=left vAlign=center width=61 height="22">
+                  <P align=left><INPUT name=ODtemp1 size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 value=0></P></TD>
+                <CENTER>
+                <TD align=middle vAlign=center width=94 height="22"><INPUT name=IDTemp1 
+                  size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 value=0></TD></TR>
+              <TR>
+                <TD align=middle vAlign=center width=136 height="22"><FONT color=#000086 
+                  face=Arial size=2>10-15 °C</FONT></TD>
+                <TD align=left vAlign=center width=61 height="22"><INPUT name=ODtemp2 
+                  size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 value=0></TD>
+                <TD align=middle vAlign=center width=94 height="22"><INPUT name=IDTemp2 
+                  size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 value=0></TD></TR>
+              <TR>
+                <TD align=middle vAlign=center width=136 height="22"><FONT color=#000086 
+                  face=Arial size=2>15-20 °C</FONT></TD>
+                <TD align=left vAlign=center width=61 height="22"><INPUT name=ODtemp3 
+                  size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 value=0></TD>
+                <TD align=middle vAlign=center width=94 height="22"><INPUT name=IDTemp3 
+                  size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 value=0></TD></TR>
+              <TR>
+                <TD align=middle vAlign=center width=136 height="22"><FONT color=#000086 
+                  face=Arial size=2>20-30 °C</FONT></TD>
+                <TD align=left vAlign=center width=61 height="22"><INPUT name=ODtemp4 
+                  size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 value=0></TD>
+                <TD align=middle vAlign=center width=94 height="22"><INPUT name=IDTemp4 
+                  size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 value=0></TD></TR>
+              <TR>
+                <TD align=middle vAlign=center width=136 height="22"><FONT color=#000086 
+                  face=Arial size=2>30-35 °C</FONT></TD>
+                <TD align=left vAlign=center width=61 height="22"><INPUT name=ODtemp5 
+                  size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 value=0></TD>
+                <TD align=middle vAlign=center width=94 height="22"><INPUT name=IDTemp5 
+                  size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 value=0></TD></TR>
+              <TR>
+                <TD align=middle vAlign=center width=136 height="22"><FONT color=#000086 
+                  face=Arial size=2>35-40 °C</FONT></TD>
+                <TD align=left vAlign=center width=61 height="22"><INPUT name=ODtemp6 
+                  size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 value=0></TD>
+                <TD align=middle vAlign=center width=94 height="22"><INPUT name=IDTemp6 
+                  size=7 
+                  style="BORDER-BOTTOM-COLOR: #ffffff; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #ffffff; BORDER-RIGHT-STYLE: solid; BORDER-TOP-COLOR: #ffffff; BORDER-TOP-STYLE: solid" 
+                  tabIndex=-1 
+            value=0></TD></TR></TBODY></TABLE></DIV></CENTER></CENTER></TD></TR>
+        <CENTER></CENTER>
+        <TR>
+          <TD align=middle colSpan=4 height=26 width=265>
+            <P align=left></P></TD>
+          <CENTER></CENTER>
+          <CENTER></TR></CENTER>
+        <TR>
+          <TD align=middle colSpan=4 height=33 width=265>
+            <P align=left><FONT size=3>Maximum operating temp <FONT 
+            color=#000086 face=Arial size=2><FONT color=#000000>°C</FONT> 
+            </FONT><INPUT name=Tmax_out size=4 tabIndex=-1></FONT></P></TD>
+          <CENTER></TR>
+        <TR>
+          <TD align=left colSpan=4 height=32 width=265><FONT size=3>Minimum 
+            operating temp <FONT color=#000086 face=Arial size=2><FONT 
+            color=#000000>°C</FONT> </FONT><INPUT name=Tmin_out size=4 
+            tabIndex=-1></FONT></TD></TR>
+        <TR>
+          <TD align=middle height=25 width=71></TD>
+          <TD align=middle height=25 width=47></TD>
+          <TD align=middle height=25 width=42></TD>
+          <TD align=middle height=25 width=105></TD></TR>
+        <TR>
+          <TD align=left colSpan=4 height=25 width=262></TD></TR></CENTER>
+        <CENTER></CENTER>
+        <TR>
+          <TD align=middle colSpan=4 height=32 width=265>
+            <P align=left><FONT color=#000086 size=3>Date&nbsp;&nbsp;&nbsp; 
+            </FONT><FONT size=3><INPUT name=today size=15 
+          tabIndex=-1></FONT></P></TD>
+          <CENTER>
+          <CENTER></TR></CENTER>
+        <CENTER></CENTER>
+        <CENTER></TBODY></TABLE></DIV></CENTER></CENTER></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<CENTER>
+<TABLE bgColor=#dfffdf border=0 cellSpacing=1 height=175 width=605>
+  <TBODY>
+  <TR>
+    <TD bgColor=#009BE6 borderColor=#009BE6 colSpan=4 height=10 
+    width=550>&nbsp;</TD></TR></CENTER>
+  <TR>
+    <TD bgColor=#dfffdf borderColor=#dfffdf colSpan=4 height=57 width=550>
+      <P align=left><FONT size=3><B><FONT color=#000086 face=Arial>Customer
+      service and quote requests.&nbsp; </FONT></B><FONT face=Arial size=3>We 
+      will be happy to check your application and quote your bearings.&nbsp; 
+      Complete the fields below and <font color="#000086"><b>Submit</b> or print 
+      and fax to&nbsp; +27 11 616 
+      2222&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></FONT></FONT><FONT color=#ff0000 face=Arial size=2>* 
+      required</FONT></P></TD></TR>
+  <CENTER>
+  <TR>
+    <TD align=right bgColor=#dfffdf borderColor=#dfffdf height=25 
+      width=171><FONT color=#000086 face=Arial size=3>Contact name</FONT><FONT 
+      color=#ff0000 face=Arial size=3>*</FONT></TD>
+    <TD bgColor=#dfffdf borderColor=#dfffdf height=25 width=150>
+    <!--webbot bot="Validation" b-value-required="TRUE" --><INPUT 
+      name=Contact_person tabIndex=16 size="20"></TD>
+    <TD align=right bgColor=#dfffdf borderColor=#dfffdf height=25 
+      width=163><FONT color=#000086 face=Arial size=3>e-mail</FONT><FONT 
+      color=#ff0000 face=Arial size=3>*</FONT></TD>
+    <TD bgColor=#dfffdf borderColor=#dfffdf height=25 width=151>
+    <!--webbot bot="Validation" b-value-required="TRUE" --><INPUT 
+      name=email_address tabIndex=17 size="20"></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf borderColor=#dfffdf height=25 
+      width=171><FONT color=#000086 face=Arial size=3>Telephone</FONT><FONT 
+      color=#ff0000 face=Arial size=3>*</FONT></TD>
+    <TD bgColor=#dfffdf borderColor=#dfffdf height=25 width=150>
+    <!--webbot bot="Validation" b-value-required="TRUE" --><INPUT name=tel 
+      tabIndex=18 size="20"></TD>
+    <TD align=right bgColor=#dfffdf borderColor=#dfffdf height=25 
+      width=163><FONT color=#000086 face=Arial size=3>Fax</FONT><FONT 
+      color=#ff0000 face=Arial size=3>*</FONT></TD>
+    <TD bgColor=#dfffdf borderColor=#dfffdf height=25 width=151>
+    <!--webbot bot="Validation" b-value-required="TRUE" --><INPUT name=Fax size="20" tabindex="19"></TD></TR>
+  <TR>
+    <TD align=right bgColor=#dfffdf borderColor=#dfffdf height=25 
+      width=171><FONT color=#000086 face=Arial size=3>Company</FONT><FONT 
+      color=#ff0000 face=Arial size=3>*</FONT></TD>
+    <TD bgColor=#dfffdf borderColor=#dfffdf height=25 width=150>
+    <!--webbot bot="Validation" b-value-required="TRUE" --><INPUT name=Company 
+      tabIndex=20 size="20"></TD>
+    <TD align=right bgColor=#dfffdf borderColor=#dfffdf height=25 
+      width=163><FONT color=#000086 face=Arial size=3>Country</FONT><FONT 
+      color=#ff0000 face=Arial size=3>*</FONT></TD>
+    <TD bgColor=#dfffdf borderColor=#dfffdf height=25 width=151>
+    <!--webbot bot="Validation" b-value-required="TRUE" --><INPUT name=Country 
+      tabIndex=21 size="20"></TD></TR></CENTER>
+  <TR>
+    <TD bgColor=#dfffdf borderColor=#dfffdf colSpan=4 height=25 width=544>
+      <P align=right><FONT color=#000086 face=Arial size=3>Please quote <INPUT 
+      CHECKED name=quote_request tabIndex=22 type=checkbox 
+      value=ON></FONT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT color=#000086 
+      face=Arial size=3>Quantity&nbsp;&nbsp;<INPUT name=Qty_per_order size=7 
+      tabIndex=23> per order&nbsp;&nbsp;&nbsp; <INPUT name=qty_per_year size=7 
+      tabIndex=24> per year &nbsp;&nbsp;&nbsp;&nbsp;</FONT></P></TD>
+    <CENTER></TR>
+  <TR>
+    <TD bgColor=#dfffdf borderColor=#dfffdf height=39 width=171><FONT 
+      color=#000086 face=Arial size=3>Comments and<BR>application 
+      description</FONT></TD>
+    <TD bgColor=#dfffdf borderColor=#dfffdf colSpan=3 height=39 width=476><TEXTAREA cols=40 name=Comments rows=4 tabIndex=25></TEXTAREA></TD></TR>
+  <TR>
+    <TD bgColor=#dfffdf borderColor=#dfffdf colSpan=2 height=27 width=224>
+    <INPUT name=B1 style="COLOR: #000086; FONT-FAMILY: Arial; FONT-SIZE: 12pt; FONT-WEIGHT: bold" tabIndex=26 type=submit value=Submit> 
+<INPUT name=B2 style="COLOR: #000086; FONT-FAMILY: Arial; FONT-SIZE: 12pt; font-weight:bold" tabIndex=27 type=reset value=Reset>&nbsp;&nbsp;</TD>
+    <TD bgColor=#dfffdf borderColor=#dfffdf height=27 width=163></TD>
+    <TD bgColor=#dfffdf borderColor=#dfffdf height=27 
+width=151></TD></TR></TBODY></TABLE></CENTER></DIV></FORM>
+  <P align=left>
+  <!--webbot bot="HitCounter" u-custom i-image="2" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="0" startspan --><img src="../../../_vti_bin/fpcount.exe/?Page=design/bush/indust/DAB_indust_metric.htm|Image=2" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="5005" endspan --> 
+  visitors since May 21 2002</P>
+  <P align=center><FONT color=#0000ff><FONT face=Arial size=2><U><A 
+href="http://www.vesconite.com/">Home</A></U> | <U><A 
+href="http://www.vesconite.com/vesco/contact.htm">Contact us</A></U></FONT> | 
+<FONT face=Arial size=2><U><A 
+href="http://www.vesconite.com/warranty.htm">Disclaimer</A></U> |&nbsp;<U><A 
+href="http://www.vesconite.com/privacy.htm">Privacy Policy</A></U> | <U><A 
+href="http://www.vesconite.com/copyright.htm">Copyright</A></U></FONT>&nbsp;|</FONT><FONT face=Arial size=2>Updated 
+  Oct 25 2010 <SUP>©</SUP>VescoPlastics Sales 2003</FONT></P></CENTER></BODY></HTML>
