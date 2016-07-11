@@ -14,7 +14,8 @@ $body_message = 'Contact: '.$field_contact."\n";
 $body_message .= 'Email: '.$field_email_address."\n";
 $body_message .= 'Company: '.$field_company."\n";
 $body_message .= 'Telephone: '.$field_telephone."\n";
-$body_message .= 'Prototype request: '.$field_comments."\n";
+$body_message .= 'Prototype request: '.$field_comments."\n\n";
+$body_message .= 'Page URL: vesconite.com/vesco/prototype.htm\n";
 
 
 
