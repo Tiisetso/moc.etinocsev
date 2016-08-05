@@ -19,10 +19,10 @@ $body_message .= 'Company: '.$field_telephone."\n";
 $body_message .= 'Country: '.$field_telephone."\n";
 $body_message .= 'Design Manual: '.$field_designManual."\n";
 $body_message .= 'Newsletter?: '.$field_newsletter."\n";
+$body_message .= '\n Sent from URL: http://www.vesconite.com/es/request.htm';
 
 
-
-$mail_to = 'tii@vesconite.com';
+$mail_to = 'vesconite@vesconite.com';
 $subject = 'Enquiry: '.$field_contact;
 
 $headers = "From: ".$field_email_address."\r\n";

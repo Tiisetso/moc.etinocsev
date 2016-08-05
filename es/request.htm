@@ -4,9 +4,9 @@
 <head>
 <meta http-equiv="Content-Language" content="es-ar">
 <meta charset="utf-8">
-<meta name="Keywords" content="solicitud,vesconite,Manual de dise�o, bolet�n, de ,informaciones">
+<meta name="Keywords" content="solicitud,vesconite,manual,diseño, boletín, información,diseno, boletin, informacion">
 <meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Vesconite - Manual de dise�o, bolet�n de informaciones</title>
+<title>Vesconite - Manual de diseño, boletín de información</title>
 
 <meta name="Microsoft Border" content="b">
 <link rel="stylesheet" type="text/css" href="../css/main.css">
@@ -30,13 +30,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <td bordercolor="#000086" width="543">
       <p align="center"><font face="Arial" size="2" color="#FF0000"><b><a href="http://www.vesconite.com/">vesconite.com</a></b></font><font size="2"><font FACE="Wingdings"> ></font>&nbsp;</font>
       <b><font face="Arial" size="2" color="#FF0000"><a href="http://www.vesconite.com/lhs_headings/vescoplastics.htm">VescoPlastics</a></font><font face="Arial" size="2"><font FACE="Wingdings"> ></font>&nbsp;
-      </font><font face="Arial" size="2" color="#000086">Manual de diseño,
-      bolet�n de informaciones</font></b></td>
+      </font><font face="Arial" size="2" color="#000086">Manual de diseño, boletín de información</font></b></td>
+
   </tr>
 </table>
 
 <div class="Section1">
-  <p class="MsoNormal"><b><font color="#000086" face="Arial" size="5">Solicitud</font></b><font face="Arial" size="3"><o:p>
+  <p class="MsoNormal"><b><font color="#000086" face="Arial" size="5">Solicitar manuales</font></b><font face="Arial" size="3"><o:p>
   </o:p>
   &nbsp;<o:p>
   </o:p>
@@ -51,63 +51,63 @@ function FrontPage_Form1_Validator(theForm)
 
   if (theForm.Contact_person.value == "")
   {
-    alert("Please enter a value for the \"Contact_person\" field.");
+    alert("Por favor, introduzca un nombre en la casilla de \"Contact_person\".");
     theForm.Contact_person.focus();
     return (false);
   }
 
   if (theForm.Contact_person.value.length > 100)
   {
-    alert("Please enter at most 100 characters in the \"Contact_person\" field.");
+    alert("Por favor, introduzca un máximo de 100 caracteres en la casilla de \"Contact_person\".");
     theForm.Contact_person.focus();
     return (false);
   }
 
   if (theForm.Company.value == "")
   {
-    alert("Please enter a value for the \"Company\" field.");
+    alert("Por favor, introduzca el nombre de la compañía en la casilla de \"Company\".");
     theForm.Company.focus();
     return (false);
   }
 
   if (theForm.Address.value == "")
   {
-    alert("Please enter a value for the \"Address\" field.");
+    alert("Por favor, introduzca la dirección de correo en la casilla de \"Address\".");
     theForm.Address.focus();
     return (false);
   }
 
   if (theForm.City.value == "")
   {
-    alert("Please enter a value for the \"City\" field.");
+    alert("Por favor, introduzca la ciudad en la casilla de \"City\".");
     theForm.City.focus();
     return (false);
   }
 
   if (theForm.Country.value == "")
   {
-    alert("Please enter a value for the \"Country\" field.");
+    alert("Por favor, introduzca el país en la casilla de \"Country\".");
     theForm.Country.focus();
     return (false);
   }
 
   if (theForm.email_address.value == "")
   {
-    alert("Please enter a value for the \"email_address\" field.");
+    alert("Por favor, introduzca un correo electrónico en la casilla de \"email_address\".");
     theForm.email_address.focus();
     return (false);
   }
 
   if (theForm.email_address.value.length > 100)
   {
-    alert("Please enter at most 100 characters in the \"email_address\" field.");
+    alert("Por favor, introduzca un máximo de 100 caracteres en la casilla de \"email_address\".");
     theForm.email_address.focus();
     return (false);
   }
 
   if (theForm.Telephone.value == "")
   {
-    alert("Please enter a value for the \"Telephone\" field.");
+    alert("Por favor, introduzca un número de teléfono en la casilla de \"Telephone\".");
     theForm.Telephone.focus();
     return (false);
   }
@@ -119,45 +119,45 @@ function FrontPage_Form1_Validator(theForm)
 
     <table border="0px" style="font-family: Arial; max-width:900px" cellspacing="0px" cellpadding="2" align=center>
       <tr>
-        <td  colspan="2">Se requieren los campos que est�n en rojo</td>
+        <td colspan="2">Se necesitan datos para las casillas en rojo</td>
       </tr>
       <tr>
-        <td><input type="checkbox" name="newsletter" value="ON" checked></td>
-        <td>Env�eme por e-mail acerca de Pl�sticos de Ingenier�a</td>
+        <td  align="right"><input type="checkbox" name="newsletter" value="ON" checked></td>
+        <td>Envíenme por e-mail el manual seleccionado</td>
       </tr>
       <tr>
         <td>Su nombre</td>
         <td><input type="text" name="Contact_person" size="20" maxlength="100" required></td>
       </tr>
       <tr>
-        <td>Compa��a</td>
-        <td><input type="text" name="Company" size="20"></td>
+        <td>Compañía</td>
+        <td><input type="text" name="Company" size="20" required></td>
       </tr>
       <tr>
-        <td>Pais</td>
-        <td><input type="text" name="Country" size="20"></td>
+        <td>País</td>
+        <td><input type="text" name="Country" size="20" required></td>
       </tr>
       <tr>
-        <td>Direcci�n de e-mail</td>
+        <td>Dirección de e-mail</td>
         <td><input type="text" name="email_address" size="20" maxlength="100" required></td>
       </tr>
       <tr>
-        <td>N�mero de tel�fono</td>
-        <td><input type="text" name="Telephone" size="20"></td>
+        <td>Número de teléfono</td>
+        <td><input type="text" name="Telephone" size="20" required></td>
       </tr>
       <tr>
-        <td>Design Manual</td>
+        <td>Manual de Diseño</td>
         <td>
           <select id="myDropdown">
-              <option value="0" data-imagesrc="img/Vesconite_Bujes_en_Argentina_Contratistas.jpg" data-description="Description">Vesconite Bujes en Argentina Contratistas</option>
-              <option value="1" data-imagesrc="img/Vesconite_Equipos_de_Movimiento_de_Tierra.jpg" data-description="Description">Vesconite Equipos de Movimiento de Tierra</option>
-              <option value="2" data-imagesrc="img/Vesconite_Hilube_Hydro_Electricidad.jpg" data-description="Description">Vesconite Hilube Hydro Electricidad</option>
-              <option value="3" data-imagesrc="img/Vesconite_Cojinetes_Navales.jpg" data-description="Description">Vesconite Cojinetes Navales</option>
-              <option value="4" data-imagesrc="img/Vesconite_Cojinetes_para_Timon_Rudders.jpg" data-description="Description">Vesconite Cojinetes para Timon Rudders</option>
-              <option value="5" data-imagesrc="img/Vesconite_Bujes_de_Propulsion_Stern.jpg" data-description="Description">Vesconite Bujes de Propulsion Stern</option>
-              <option value="6" data-imagesrc="img/Vesconite_Hilube_Para_Bombas.jpg" data-description="Description">Vesconite Hilube Para Bombas</option>
-              <option value="7" data-imagesrc="img/Vesconite_bujes_ideal_bajo_agua.jpg" data-description="Description">Vesconite bujes ideal bajo agua</option>
-              <option value="8"  selected="selected" data-imagesrc="img/Vesconite_Bujes_Manual_de_Diseno_Industrialis.jpg" data-description="Description">Vesconite Bujes Manual de Diseño Industrialis</option>
+              <option value="0" data-imagesrc="img/Vesconite_Bujes_en_Argentina_Contratistas.jpg" data-description="Manual de Diseño">Bujes Vesconite y Contratistas en Argentina</option>
+              <option value="1" data-imagesrc="img/Vesconite_Equipos_de_Movimiento_de_Tierra.jpg" data-description="Manual de Diseño">Aplicaciones de Vesconite: Equipos de Movimiento de Tierra</option>
+              <option value="2" data-imagesrc="img/Vesconite_Hilube_Hydro_Electricidad.jpg" data-description="Manual de Diseño">Hidroeléctricas – Vesconite Hilube</option>
+              <option value="3" data-imagesrc="img/Vesconite_Cojinetes_Navales.jpg" data-description="Manual de Diseño">Cojinetes Navales - Vesconite y Vesconite Hilube</option>
+              <option value="4" data-imagesrc="img/Vesconite_Cojinetes_para_Timon_Rudders.jpg" data-description="Manual de Diseño">Cojinetes para Timón de Vesconite</option>
+              <option value="5" data-imagesrc="img/Vesconite_Bujes_de_Propulsion_Stern.jpg" data-description="Manual de Diseño">Bujes para ejes de Propulsión</option>
+              <option value="6" data-imagesrc="img/Vesconite_Hilube_Para_Bombas.jpg" data-description="Manual de Diseño">Vesconite y Vesconite Hilube Para Bombas</option>
+              <option value="7" data-imagesrc="img/Vesconite_bujes_ideal_bajo_agua.jpg" data-description="Manual de Diseño">Bujes Vesconite: Ideal bajo agua</option>
+              <option value="8"  selected="selected" data-imagesrc="img/Vesconite_Bujes_Manual_de_Diseno_Industrialis.jpg" data-description="Manual de Diseño">Industrial de Vesconite y Vesconite Hilube</option>
           </select>
         </td>
       </tr>
@@ -220,11 +220,34 @@ function FrontPage_Form1_Validator(theForm)
           <!-- </a><br>
         </font> -->
         <font face="Arial" color="#000080" size="2">
-          <br><b>Germany</b> <a class="telephone" href="tel:+49-443-1892-3899">
+          <br><b>Alemania</b> <a class="telephone" href="tel:+49-443-1892-3899">
             +49 443 1892 3899
             <!-- 0443 1892 3899 -->
           </a>
         </font>
+        <font face="Arial" color="#000080" size="2">
+          <br><b>Argentina</b> <a class="telephone" href="tel:+54-11-5353-0499">
+            +54 11 5353 0499
+            <!-- 0443 1892 3899 -->
+          </a>
+        </font>
+        <font face="Arial" color="#000080" size="2">
+          <br><b>España</b> <a class="telephone" href="tel:+34-910-285-410">
+            +34 910 285 410
+            <!-- 0443 1892 3899 -->
+          </a>
+        </font>
+            <font face="Arial" color="#000080" size="2">
+        <b><br>EEUU</b> (7-3EST)
+        <a class="telephone" href="tel:+1-866-635-7596">
+            +1 866 635 7596
+          <!-- (7-3EST) 1 866 635 75 96 -->
+        </a> /
+        <a class="telephone" href="tel:+1-713-574-7255">
+            +1 713 574 7255
+           <!-- / (713) 574-7255 -->
+        </a>
+          </font>
         <font face="Arial" size="2" color="#000086">
           <br>
         </font>
@@ -262,7 +285,7 @@ function FrontPage_Form1_Validator(theForm)
             <!-- 08000 223 805 -->
           </a>
           <font face="Arial" size="2" color="#000080">
-          <b>New Zealand</b>
+          <b>Nueva Zelanda</b>
           <a class="telephone" href="tel:+64-80-045-0878">
             +64 80 045 0878
             <!-- 0800 450 878 -->
@@ -282,7 +305,7 @@ function FrontPage_Form1_Validator(theForm)
           </a>
         </font>
         <font face="Arial" size="2" color="#000080">
-          <br><b>UK </b>
+          <br><b>Reino Unido </b>
           <a class="telephone" href="tel:+44-800-731-9745">
             +44 800 731 9745
             <!-- 0800 731 9745 -->
@@ -291,15 +314,20 @@ function FrontPage_Form1_Validator(theForm)
             +44 203 239 9044
             <!-- / 020 3239 9044 -->
            </a>
-          <b><br>USA</b> (7-3EST)
-          <a class="telephone" href="tel:+1-866-635-7596">
-              +1 866 635 7596
-            <!-- (7-3EST) 1 866 635 75 96 -->
-          </a> /
-          <a class="telephone" href="tel:+1-713-574-7255">
-              +1 713 574 7255
-             <!-- / (713) 574-7255 -->
-          </a>
+           <font face="Arial" color="#000080" size="2">
+             <br><b>Sudáfrica</b> <a class="telephone" href="tel:+27-11-616-1111">
+               +27 11 616 1111
+               <!-- 0443 1892 3899 -->
+             </a>
+           </font>
+
+           <font face="Arial" color="#000080" size="2">
+             <br><b>Resto del mundo</b> <a class="telephone" href="tel:+27-11-616-4444">
+               +27 11 616 4444
+               <!-- 0443 1892 3899 -->
+             </a>
+           </font>
+
         </font>
       </td>
       <td width="1" height="1" valign="top">
@@ -332,12 +360,12 @@ function FrontPage_Form1_Validator(theForm)
           </strong>&nbsp;
         </font> -->
         <font face="Arial" color="#000080" size="2">
-          <br><b>UK</b>
+          <br><b>Reino Unido</b>
             <a class="telephone" href="tel:+44-207-681-3444">
               +44 207 681 3444
               <!-- 0207 681 3444 -->
             </a>
-          <b><br>USA</b>
+          <b><br>EEUU</b>
           <a class="telephone" href="tel:+1-212-937-3184">
             +1 212 937 3184
             <!-- (212) 937 3184 -->
@@ -349,7 +377,7 @@ function FrontPage_Form1_Validator(theForm)
       <td width="623" height="1" valign="top" colspan="3">
         <font size="2" face="Arial">
         </font>
-          <span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px" class="Apple-style-span">2016 Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site may not be copied or redistributed without the express written consent of Vesco Plastics Sales, Pty Ltd.
+        <span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px" class="Apple-style-span">2016 Vesco Plastics Sales, Pty Ltd. All rights reserved. Content of this site may not be copied or redistributed without the express written consent of Vesco Plastics Sales, Pty Ltd.
           </span>
         <font size="2" face="Arial">&nbsp;&nbsp;
           <a href="footer_links/warranty.htm">Warranty disclaimer</a>

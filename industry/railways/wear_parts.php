@@ -15,6 +15,7 @@ $body_message .= 'Email: '.$field_email_address."\n";
 $body_message .= 'Telephone: '.$field_telephone."\n";
 $body_message .= 'Country: '.$field_country."\n";
 $body_message .= 'Application: '.$field_application."\n";
+$body_message .= '\nSent from URL: www.vesconite.com/industry/railways/wear_parts.htm';
 
 // $body_message .= "\n\n\n";
 // $body_message .= .$DateTime '  ' .$ipaddress."\n";
